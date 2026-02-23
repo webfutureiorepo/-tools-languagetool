@@ -1,5 +1,43 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Alcalá Meco;NPCSG00
+Mas Marroch;NPMSG00
+Unión Explosivos Río Tinto;NPFSO00
+pla Inuncat;NPMSO00
+pla Infocat;NPMSO00
+pla Allaucat;NPMSO00
+pla PIVE;NPMSO00
+pla Moves;NPMSO00
+pla Ventcat;NPMSO00
+pla Neucat;NPMSO00
+pla Kanpai;NPMSO00
+síndrome de Rett;NCFS000
+síndrome de Sjögren;NCFS000
+Ruta del Bakalao;NPFSO00
+Sancho de Ávila;NPMSSP0
+operació Sindoor;NPFSO00
+operació Cadera;NPFSO00
+operació Influencer;NPFSO00
+operació Oikos;NPFSO00
+operació Petrum;NPFSO00
+operació Shodka;NPFSO00
+operació Soule;NPFSO00
+operació Térmyca;NPFSO00
+Lotto 6/49;NPFSO00
+palau Chigi;NPMSG00
+palau de Christiansborg;NPMSG00
+palau de Meseberg;NPMSG00
+palau Montecitorio;NPMSG00
+palau Quemado;NPMSG00
+palau del Quirinal;NPMSG00
+palau de Saint James;NPMSG00
+palau de Stormont;NPMSG00
+palau de Hofburg;NPMSG00
+Fundació Vicki Bernadet;NPFSO00
+Fundació Villavecchia;NPFSO00
+Fòrum d'Ermua;NPMSO00
+Pichi Alonso;NPMSSP0
+Àngel Pichi Alonso;NPMSSP0
 Joan Torras;NPMSSP0
 Isabel Farnese;NPFSSP0
 Alexandre Farnese;NPMSSP0
