@@ -3740,6 +3740,22 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
+        <rule id='UNS_ALGUNS_UMAS_ALGUMAS' name="uns/umas → alguns/algumas" type='style' tone_tags='formal' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <pattern>
+                <token regexp='yes' inflected='yes'>fazer|haver</token>
+                <marker>
+                    <token regexp='yes'>uns|umas</token>
+                </marker>
+                <token postag='NC.P.+' postag_regexp='yes' regexp='yes' inflected='yes'>&expressoes_de_tempo;</token>
+            </pattern>
+            <message>&quot;Uns/umas&quot; são formas informais. Em contextos mais formais, prefira &quot;alguns/algumas&quot;.</message>
+            <suggestion><match no='2' postag='DI.+' postag_regexp='yes'>algum</match></suggestion>
+            <example correction="alguns">Isso aconteceu há <marker>uns</marker> minutos.</example>
+            <example correction="algumas">Isso aconteceu há <marker>umas</marker> horas.</example>
+        </rule>
+
+
         <rule id='COMO_SEGUNDO_CONFORME' name="Como/segundo → conforme" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
