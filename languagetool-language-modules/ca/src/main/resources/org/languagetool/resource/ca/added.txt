@@ -320,6 +320,7 @@ Lasa	Lasa	NPCNSP0
 Lauderdale	Lauderdale	NPCSG00
 Lebensraum	Lebensraum	NCMS000
 Lecornu	Lecornu	NPCNSP0
+Leica	Leica	NPCNO00
 Lewinsky	Lewinsky	NPCNSP0
 Lildami	Lildami	NPMSSP0
 Limónov	Limónov	NPCNSP0
@@ -416,6 +417,7 @@ PcComponentes	PcComponentes	NPCNO00
 Peano	Peano	NPCNSP0
 Pearce	Pearce	NPCNSP0
 Pedescoll	Pedescoll	NPCNSP0
+Pennsilvània	Pennsilvània	NPFSG00
 Perelman	Perelman	NPCNSP0
 Peyu	Peyu	NPMSSP0
 Pichilemu	Pichilemu	NPCSG00
@@ -653,6 +655,12 @@ antiinundacions	antiinundacions	AQ0CN0
 antilàser	antilàser	AQ0CN0
 antilàser	antilàser	NCMS000
 antilàsers	antilàser	NCMP000
+antimessianisme	antimessianisme	NCMS000
+antimessianismes	antimessianisme	NCMP000
+antimessiànic	antimessiànic	AQ0MS0
+antimessiànica	antimessiànic	AQ0FS0
+antimessiànics	antimessiànic	AQ0MP0
+antimessiàniques	antimessiànic	AQ0FP0
 antipedagogisme	antipedagogisme	NCMS000
 antipedagogismes	antipedagogisme	NCMP000
 antipedagogista	antipedagogista	AQ0CS0
@@ -760,6 +768,8 @@ autocuratela	autocuratela	NCFS000
 autocurateles	autocuratela	NCFP000
 autodefinit	autodefinit	NCMS000
 autodefinits	autodefinit	NCMP000
+autoemasculacions	autoemasculació	NCFP000
+autoemasculació	autoemasculació	NCFS000
 autoevangelitzacions	autoevangelització	NCFP000
 autoevangelització	autoevangelització	NCFS000
 autoexposicions	autoexposició	NCFP000
@@ -2029,6 +2039,8 @@ electromobilitat	electromobilitat	NCFS000
 electromobilitats	electromobilitat	NCFP000
 elefantet	elefantet	NCMS000
 elefantets	elefantet	NCMP000
+embastardiment	embastardiment	NCMS000
+embastardiments	embastardiment	NCMP000
 emmanyocada	emmanyocat	AQ0FS0
 emmanyocades	emmanyocat	AQ0FP0
 emmanyocat	emmanyocat	AQ0MS0
@@ -3433,6 +3445,10 @@ manaquins	manaquí	NCMP000
 manaquí	manaquí	NCMS000
 mandarinisme	mandarinisme	NCMS000
 mandarinismes	mandarinisme	NCMP000
+maquiavel·liana	maquiavel·lià	AQ0FS0
+maquiavel·lianes	maquiavel·lià	AQ0FP0
+maquiavel·lians	maquiavel·lià	AQ0MP0
+maquiavel·lià	maquiavel·lià	AQ0MS0
 marededeueta	marededeueta	NCFS000
 marededeuetes	marededeueta	NCFP000
 mareogràfic	mareogràfic	AQ0MS0

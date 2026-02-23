@@ -316,6 +316,7 @@ Lasa
 Lauderdale
 Lebensraum
 Lecornu
+Leica
 Lewinsky
 Lildami
 Limónov
@@ -412,6 +413,7 @@ PcComponentes
 Peano
 Pearce
 Pedescoll
+Pennsilvània
 Perelman
 Peyu
 Pichilemu
@@ -648,6 +650,12 @@ antiespionatge
 antiinundacions
 antilàser
 antilàsers
+antimessianisme
+antimessianismes
+antimessiànic
+antimessiànica
+antimessiànics
+antimessiàniques
 antipedagogisme
 antipedagogismes
 antipedagogista
@@ -745,6 +753,8 @@ autocuratela
 autocurateles
 autodefinit
 autodefinits
+autoemasculacions
+autoemasculació
 autoevangelitzacions
 autoevangelització
 autoexposicions
@@ -1777,6 +1787,8 @@ electromobilitat
 electromobilitats
 elefantet
 elefantets
+embastardiment
+embastardiments
 emmanyocada
 emmanyocades
 emmanyocat
@@ -3003,6 +3015,10 @@ manaquins
 manaquí
 mandarinisme
 mandarinismes
+maquiavel·liana
+maquiavel·lianes
+maquiavel·lians
+maquiavel·lià
 marededeueta
 marededeuetes
 mareogràfic
