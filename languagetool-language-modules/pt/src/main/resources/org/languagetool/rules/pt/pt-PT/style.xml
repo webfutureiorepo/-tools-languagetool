@@ -87,19 +87,42 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id="STYLE" name="[pt-PT] Regras de Estilo" type="style">
 
 
-    <rule id='CONFUSÃO_CAIXA_EMBALAGEM' name="[pt-PT] Confusão: Caixa/embalagem (fármacos)" tone_tags="objective">
-        <!-- Used ChatGPT 4o for enhancements and extra accuracy -->
-        <pattern>
-            <token skip='4' regexp='yes' inflected='yes'>administrar|dosar|ingerir|injec?tar|prescrever|ministrar|tomar</token>
-            <marker>
-                <token regexp='yes'>caixas?<exception scope='previous' postag='_PUNCT'/></token>
-            </marker>
-        </pattern>
-        <message>Se estiver a referir-se a fármacos ou afins, empregue o termo &quot;embalagem&quot;.</message>
-        <suggestion><match no='5' postag='NC.(.)000' postag_replace='NCF$1000'>embalagem</match></suggestion>
-        <example correction="embalagem">Vou tomar uma <marker>caixa</marker> de Xanax.</example>
-        <example correction="embalagens">Vou tomar várias <marker>caixas</marker> de Xanax.</example>
-    </rule>
+      <rulegroup id="CONFUSAO_CAIXA_EMBALAGEM_FARMACOS" name="[pt-PT] Confusão: caixa/embalagem (fármacos)" tone_tags='objective' default='temp_off'>
+      <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+
+            <!-- #1: (mais comum): verbo + caixa + medicamento (alta precisão) -->
+            <rule>
+                <pattern>
+                    <token skip='3' regexp='yes' inflected='yes'>administrar|dosar|ingerir|injec?tar|prescrever|ministrar|tomar|receitar|indicar|instituir|iniciar|reiniciar|manter|suspender|descontinuar|substituir|ajustar|titrar|aplicar|instilar|inalar|perfudir|infundir|vacinar|dispensar|aviar|fornecer|renovar|cumprir|autoadministrar|medicar</token>
+                    <marker>
+                        <token regexp='yes'>caixas?</token>
+                    </marker>
+                    <token min='0' max='1' regexp='yes'>de|d[ao]s?</token> <!-- ligação opcional -->
+                    <token regexp='yes' case_sensitive='no'>xanax|alprazolam|lexotan|bromazepam|valium|diazepam|ativan|lorazepam|brufen|ibuprofeno|voltaren|diclofenac|benuron|ben-u-ron|paracetamol|aspirina|ácido|acetilsalicílico|augmentin|amoxicilina|clavulânico|omeprazol|pantoprazol|lansoprazol|zoloft|sertralina|prozac|fluoxetina|citalopram|escitalopram|keflex|cefalexina|azitromicina|claritromicina|metformina|atorvastatina|sinvastatina|ventolin|salbutamol|symbicort|synthroid|levotiroxina|cápsulas?|comprimidos?|drageias?</token> <!-- medicamento (marca ou DCI), acrescentei três tokens no final -->
+                </pattern>
+                <message>Se estiver a referir-se a fármacos, prefira &quot;embalagem&quot; em vez de &quot;caixa&quot;.</message>
+                <suggestion><match no='2' postag="NC.(.)000" postag_replace="NCF$1000">embalagem</match></suggestion>
+                <example correction="embalagem">Vou tomar uma <marker>caixa</marker> de Xanax.</example>
+                <example correction="embalagens">Foram prescritas várias <marker>caixas</marker> de ibuprofeno.</example>
+            </rule>
+
+
+            <!-- #2: (caso invertido):  medicamento + caixa + verbo (alta precisão) -->
+            <rule>
+                <pattern>
+                    <token skip='3' regexp='yes' case_sensitive='no'>xanax|alprazolam|lexotan|bromazepam|valium|diazepam|ativan|lorazepam|brufen|ibuprofeno|voltaren|diclofenac|benuron|ben-u-ron|paracetamol|aspirina|ácido|acetilsalicílico|augmentin|amoxicilina|clavulânico|omeprazol|pantoprazol|lansoprazol|zoloft|sertralina|prozac|fluoxetina|citalopram|escitalopram|keflex|cefalexina|azitromicina|claritromicina|metformina|atorvastatina|sinvastatina|ventolin|salbutamol|symbicort|synthroid|levotiroxina|cápsulas?|comprimidos?|drageias?</token> <!-- medicamento (marca ou DCI), acrescentei três tokens no final -->
+                    <marker>
+                        <token skip='3' regexp='yes'>caixas?</token>
+                    </marker>
+                    <token regexp='yes' inflected='yes'>administrar|dosar|ingerir|injec?tar|prescrever|ministrar|tomar|receitar|indicar|instituir|iniciar|reiniciar|manter|suspender|descontinuar|substituir|ajustar|titrar|aplicar|instilar|inalar|perfudir|infundir|vacinar|dispensar|aviar|fornecer|renovar|cumprir|autoadministrar|medicar</token>
+                </pattern>
+                <message>Se estiver a referir-se a fármacos, prefira &quot;embalagem&quot; em vez de &quot;caixa&quot;.</message>
+                <suggestion><match no='2' postag="NC.(.)000" postag_replace="NCF$1000">embalagem</match></suggestion>
+                <example correction="embalagem">Xanax: uma <marker>caixa</marker> para tomar à noite.</example>
+                <example correction="embalagens">Ibuprofeno: duas <marker>caixas</marker> a tomar após as refeições.</example>
+          </rule>
+
+      </rulegroup>
 
 
     <rule id='PRAZER_GOSTO' name="[pt-PT] 'prazer' em → 'gosto'" tone_tags="formal">
