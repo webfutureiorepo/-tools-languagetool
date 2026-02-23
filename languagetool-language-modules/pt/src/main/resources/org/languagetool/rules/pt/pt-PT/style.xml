@@ -93,12 +93,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <!-- #1: (mais comum): verbo + caixa + medicamento (alta precisão) -->
             <rule>
                 <pattern>
-                    <token skip='3' regexp='yes' inflected='yes'>administrar|dosar|ingerir|injec?tar|prescrever|ministrar|tomar|receitar|indicar|instituir|iniciar|reiniciar|manter|suspender|descontinuar|substituir|ajustar|titrar|aplicar|instilar|inalar|perfudir|infundir|vacinar|dispensar|aviar|fornecer|renovar|cumprir|autoadministrar|medicar</token>
+                    <token skip='3' regexp='yes' inflected='yes'>administrar|dosar|ingerir|injec?tar|prescrever|ministrar|tomar|receitar|indicar|instituir|iniciar|reiniciar|manter|suspender|descontinuar|substituir|ajustar|titrar|aplicar|instilar|inalar|perfundir|infundir|vacinar|dispensar|aviar|fornecer|renovar|cumprir|autoadministrar|medicar</token>
                     <marker>
                         <token regexp='yes'>caixas?</token>
                     </marker>
                     <token min='0' max='1' regexp='yes'>de|d[ao]s?</token> <!-- ligação opcional -->
-                    <token regexp='yes' case_sensitive='no'>xanax|alprazolam|lexotan|bromazepam|valium|diazepam|ativan|lorazepam|brufen|ibuprofeno|voltaren|diclofenac|benuron|ben-u-ron|paracetamol|aspirina|ácido|acetilsalicílico|augmentin|amoxicilina|clavulânico|omeprazol|pantoprazol|lansoprazol|zoloft|sertralina|prozac|fluoxetina|citalopram|escitalopram|keflex|cefalexina|azitromicina|claritromicina|metformina|atorvastatina|sinvastatina|ventolin|salbutamol|symbicort|synthroid|levotiroxina|cápsulas?|comprimidos?|drageias?</token> <!-- medicamento (marca ou DCI), acrescentei três tokens no final -->
+                    <token regexp='yes' case_sensitive='no'>xanax|alprazolam|lexotan|bromazepam|valium|diazepam|ativan|lorazepam|brufen|ibuprofeno|voltaren|diclofenac|benuron|ben-u-ron|paracetamol|aspirina|acetilsalicílico|augmentin|amoxicilina|clavulânico|omeprazol|pantoprazol|lansoprazol|zoloft|sertralina|prozac|fluoxetina|citalopram|escitalopram|keflex|cefalexina|azitromicina|claritromicina|metformina|atorvastatina|sinvastatina|ventolin|salbutamol|symbicort|synthroid|levotiroxina|cápsulas?|comprimidos?|drageias?|pílulas?|contracep?tivos?|preservativos?</token> <!-- medicamento (marca ou DCI), acrescentei tokens no final -->
                 </pattern>
                 <message>Se estiver a referir-se a fármacos, prefira &quot;embalagem&quot; em vez de &quot;caixa&quot;.</message>
                 <suggestion><match no='2' postag="NC.(.)000" postag_replace="NCF$1000">embalagem</match></suggestion>
@@ -110,11 +110,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <!-- #2: (caso invertido):  medicamento + caixa + verbo (alta precisão) -->
             <rule>
                 <pattern>
-                    <token skip='3' regexp='yes' case_sensitive='no'>xanax|alprazolam|lexotan|bromazepam|valium|diazepam|ativan|lorazepam|brufen|ibuprofeno|voltaren|diclofenac|benuron|ben-u-ron|paracetamol|aspirina|ácido|acetilsalicílico|augmentin|amoxicilina|clavulânico|omeprazol|pantoprazol|lansoprazol|zoloft|sertralina|prozac|fluoxetina|citalopram|escitalopram|keflex|cefalexina|azitromicina|claritromicina|metformina|atorvastatina|sinvastatina|ventolin|salbutamol|symbicort|synthroid|levotiroxina|cápsulas?|comprimidos?|drageias?</token> <!-- medicamento (marca ou DCI), acrescentei três tokens no final -->
+                    <token skip='3' regexp='yes' case_sensitive='no'>xanax|alprazolam|lexotan|bromazepam|valium|diazepam|ativan|lorazepam|brufen|ibuprofeno|voltaren|diclofenac|benuron|ben-u-ron|paracetamol|aspirina|acetilsalicílico|augmentin|amoxicilina|clavulânico|omeprazol|pantoprazol|lansoprazol|zoloft|sertralina|prozac|fluoxetina|citalopram|escitalopram|keflex|cefalexina|azitromicina|claritromicina|metformina|atorvastatina|sinvastatina|ventolin|salbutamol|symbicort|synthroid|levotiroxina|cápsulas?|comprimidos?|drageias?|pílulas?|contracep?tivos?|preservativos?</token> <!-- medicamento (marca ou DCI), acrescentei tokens no final -->
                     <marker>
                         <token skip='3' regexp='yes'>caixas?</token>
                     </marker>
-                    <token regexp='yes' inflected='yes'>administrar|dosar|ingerir|injec?tar|prescrever|ministrar|tomar|receitar|indicar|instituir|iniciar|reiniciar|manter|suspender|descontinuar|substituir|ajustar|titrar|aplicar|instilar|inalar|perfudir|infundir|vacinar|dispensar|aviar|fornecer|renovar|cumprir|autoadministrar|medicar</token>
+                    <token regexp='yes' inflected='yes'>administrar|dosar|ingerir|injec?tar|prescrever|ministrar|tomar|receitar|indicar|instituir|iniciar|reiniciar|manter|suspender|descontinuar|substituir|ajustar|titrar|aplicar|instilar|inalar|perfundir|infundir|vacinar|dispensar|aviar|fornecer|renovar|cumprir|autoadministrar|medicar</token>
                 </pattern>
                 <message>Se estiver a referir-se a fármacos, prefira &quot;embalagem&quot; em vez de &quot;caixa&quot;.</message>
                 <suggestion><match no='2' postag="NC.(.)000" postag_replace="NCF$1000">embalagem</match></suggestion>
