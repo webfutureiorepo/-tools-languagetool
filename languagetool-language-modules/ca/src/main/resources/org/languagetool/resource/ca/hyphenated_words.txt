@@ -800,8 +800,10 @@ Stone-Weierstrass
 Casorati-Weierstrass
 Saas-Fee
 Abd-ar-Rahman
+ar-Rahman
 Abdel-Rahman
 Abd-al-Rahman
+al-Rahman
 Abd-Al·lah
 Abd-al-Aziz
 Abd-al-Qàdir

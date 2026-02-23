@@ -487,6 +487,7 @@ Steinmeier	Steinmeier	NPCNSP0
 Stone-Weierstrass	Stone-Weierstrass	NPCNSP0
 Stuyvesant	Stuyvesant	NPCNSP0
 Sundance	Sundance	NPCNSP0
+Swab	Swab	NPCNSP0
 TCAI	TCAI	NCCN000
 TWh	TWh	NCMN000
 Takaichi	Takaichi	NPCNSP0

@@ -1,8 +1,11 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Joan Torras;NPMSSP0
 Isabel Farnese;NPFSSP0
 Alexandre Farnese;NPMSSP0
 Isabel de Farnesio;NPFSSP0
+Palais des Arts;NPMSO00
+Palau de les Arts;NPMSO00
 Musée des Beaux-Arts;NPMSO00
 Musée des beaux-arts;NPMSO00
 Pilar Pedraza;NPFSSP0
@@ -4374,7 +4377,6 @@ Sven-David Sandström;NPMSSP0 # esadir
 Svenja Leiber;NPFSSP0 # esadir
 Svetlana Kuznetsova;NPFSSP0 # esadir
 Sviatoslav Vakartxuk;NPMSSP0 # esadir
-Swab;NPMSSP0 # esadir
 Sydney Schertenleib;NPFSSP0 # esadir
 Sylvain Cambreling;NPMSSP0 # esadir
 Sylvain Chavanel;NPMSSP0 # esadir

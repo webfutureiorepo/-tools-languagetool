@@ -807,6 +807,7 @@ Parlament de les Illes Balears
 presidenta de les Illes Balears
 president de les Illes Balears
 Govern de les Illes Balears
+Govern Balear
 WiZink Center
 enquesta de població activa
 Bartolomé de las Casas
@@ -2476,3 +2477,6 @@ Cadena SER
 Camí de Sant Jaume
 estret d'Ormuz
 Mar-a-Lago
+Das Lied von der Erde
+John von Neumann
+Von Neumann
