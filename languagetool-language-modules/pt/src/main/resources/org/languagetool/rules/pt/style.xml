@@ -9698,7 +9698,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='APAGAR_INDELÉVEL' name="[Universitário][Científico] Não conseguir apagar → Indelével" tone_tags="academic" is_goal_specific="true">
+        <rule id='APAGAR_INDELÉVEL' name="🎓[Científico] Não conseguir apagar → Indelével" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <marker>
                     <token>que
@@ -9716,7 +9716,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='BÁSICO_ELEMENTAR' name="[Universitário][Científico] Básico → Elementar" tone_tags="academic" is_goal_specific="true">
+        <rule id='BÁSICO_ELEMENTAR' name="🎓[Científico] Básico → Elementar" tone_tags="academic" is_goal_specific="true">
             <antipattern>
                 <token regexp='yes'>unidades?</token>
                 <token regexp='yes'>básicas?</token>
@@ -9747,7 +9747,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='MUITO_BASTANTE_EXTENSIVAMENTE' name="[Universitário][Científico] Muito/bastante/enormemente → Extensivamente/amplamente" tone_tags="academic" is_goal_specific="true" tags="picky">
+        <rule id='MUITO_BASTANTE_EXTENSIVAMENTE' name="🎓[Científico] Muito/bastante/enormemente → Extensivamente/amplamente" tone_tags="academic" is_goal_specific="true" tags="picky">
             <pattern>
                 <token inflected='yes' regexp='yes'>ter|ser</token>
                 <token min='0' regexp='yes'>sido|es[st][ae]s?|aquel[ae]s?</token>
@@ -9802,7 +9802,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-       <rule id='FICAR_PARADO_TEMPO_ESTAGNAR' name="[Universitário][formal] 'Ficar parado no tempo' → estagnar" tone_tags="academic" is_goal_specific="true">
+       <rule id='FICAR_PARADO_TEMPO_ESTAGNAR' name="🎓[formal] 'Ficar parado no tempo' → estagnar" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <marker>
                     <token inflected='yes'>ficar</token>
@@ -9818,7 +9818,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='TOMAR_ASSUMIR' name="[Universitário][Científico] V. Tomar → V. Assumir" tone_tags="academic" is_goal_specific="true">
+        <rule id='TOMAR_ASSUMIR' name="🎓[Científico] V. Tomar → V. Assumir" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <token postag='SENT_START|AQ.+|NC.+|NP.+|CS|CC' postag_regexp='yes'/>
                 <marker>
@@ -9932,7 +9932,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
 
-       <rule id='SER_CONSISTIR_RESIDIR' name="[Universitário][Científico] V.Ser → V.Consistir/V.Residir" tone_tags="academic" is_goal_specific="true">
+       <rule id='SER_CONSISTIR_RESIDIR' name="🎓[Científico] V.Ser → V.Consistir/V.Residir" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <token regexp='yes' inflected='yes'>assimetria|diferença|dissemelhança|disparidade|distinção|oposição|oposto</token>
                 <token min='0' max='1' postag='NC.+|AQ.+|V.+' postag_regexp='yes'>
@@ -11297,7 +11297,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id="AJUDAR_AUXILIAR" name="[Universitário][Científico] ajudar → auxiliar" type='style' tags='picky' tone_tags="academic">
+        <rulegroup id="AJUDAR_AUXILIAR" name="🎓[Científico] ajudar → auxiliar" type='style' tags='picky' tone_tags="academic">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-12/26/27 (2-MAR-2023+) -->
             <!--
             SUBRULE 1:
@@ -11358,7 +11358,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='DAR_ATRIBUIR_CONFERIR_V2' name="[Universitário][Científico] dar → conferir" type='style' tone_tags='academic'>
+        <rule id='DAR_ATRIBUIR_CONFERIR_V2' name="🎓[Científico] dar → conferir" type='style' tone_tags='academic'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <antipattern>
@@ -11395,7 +11395,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='SER_SIGNIFICATIVO' name="[Universitário][Científico] 'fazer toda a diferença' → 'ser significativo/expressivo'" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
+        <rulegroup id='SER_SIGNIFICATIVO' name="🎓[Científico] 'fazer toda a diferença' → 'ser significativo/expressivo'" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
 
             <!-- #1: é significativo -->
             <rule>
@@ -11444,7 +11444,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='FAZER_EXERCER' name="[Universitário][Científico] Verbo Fazer → Verbo Exercer" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
+        <rule id='FAZER_EXERCER' name="🎓[Científico] Verbo Fazer → Verbo Exercer" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
             <antipattern>
                 <token postag='V.+' postag_regexp='yes'/>
                 <token min='0' max='1' postag='D[AI].+|NC.+|AQ.+' postag_regexp='yes'/>
@@ -11505,7 +11505,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- NÃO SE PODE APAGAR é indelével -->
-        <rule id='NÃO_SE_PODE_APAGAR_É_INDELÉVEL' name="[Universitário][Científico] 'não se pode apagar' → 'é indelével'" type="style">
+        <rule id='NÃO_SE_PODE_APAGAR_É_INDELÉVEL' name="🎓[Científico] 'não se pode apagar' → 'é indelével'" type="style">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-29 (2-MAR-2023+) -->
             <!--
             Eu queria, mas não se pode apagar o passado. → Eu queria, mas o passado é indelével.
@@ -11528,7 +11528,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='EVIDENCIAR_COMPROVAR_DEMONSTRAR' name="[Universitário] Mostrar → evidenciar/comprovar/demonstrar/indicar" type='style' tags='picky' tone_tags='academic'>
+        <rule id='EVIDENCIAR_COMPROVAR_DEMONSTRAR' name="🎓 Mostrar → evidenciar/comprovar/demonstrar/indicar" type='style' tags='picky' tone_tags='academic'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <antipattern>
@@ -11553,7 +11553,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PHD_TESE_FICOU_DEMONSTRADO_QUE_DEMONSTRÁMOS_QUE' name="[Universitário] Expressões do tipo 'ficou demonstrado que' → ‘demonstrámos que'" type='style' tags="picky" tone_tags="academic" is_goal_specific="true">
+        <rule id='PHD_TESE_FICOU_DEMONSTRADO_QUE_DEMONSTRÁMOS_QUE' name="🎓 Expressões do tipo 'ficou demonstrado que' → ‘demonstrámos que'" type='style' tags="picky" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <marker>
                     <and>
@@ -11574,7 +11574,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PHD_TESE_PARA_AJUDAR_A_VINFINITIVO_PARA_VINFINITIVO' name="[Universitário] Para Ajudar a + V.Inf. → Para V.Inf." type='style' tone_tags="academic">
+        <rule id='PHD_TESE_PARA_AJUDAR_A_VINFINITIVO_PARA_VINFINITIVO' name="🎓 Para Ajudar a + V.Inf. → Para V.Inf." type='style' tone_tags="academic">
             <pattern>
                 <marker>
                     <token>para</token>
@@ -11591,7 +11591,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PHD_TESE_POSSA_POSSAM_PÔR' name="[Universitário] Evitar expressões do tipo 'possa(m) pôr’ → 'ponha(m)'" type='style' tags="picky" tone_tags="academic">
+        <rule id='PHD_TESE_POSSA_POSSAM_PÔR' name="🎓 Evitar expressões do tipo 'possa(m) pôr’ → 'ponha(m)'" type='style' tags="picky" tone_tags="academic">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima and Susana Boatto suggestions, Portuguese rule 2022-11-30 (25-JUL-2022+) -->
             <!--
             Para impedir que o radical possa pôr em perigo o ocidente. → Para impedir que o radical ponha em perigo o ocidente.
@@ -11630,7 +11630,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PHD_TESE_PROCURAR_PROVAR_PROVARA' name="[Universitário] Evitar expressões do tipo 'procura provar'" type='style' tags='picky' tone_tags='academic' is_goal_specific='true'>
+        <rule id='PHD_TESE_PROCURAR_PROVAR_PROVARA' name="🎓 Evitar expressões do tipo 'procura provar'" type='style' tags='picky' tone_tags='academic' is_goal_specific='true'>
             <!-- Used ChatGPT 4o for enhancements and extra accuracy -->
 
             <antipattern> <!-- Remove interrogation sentences -->
@@ -11726,7 +11726,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PHD_TESE_REFERIREMOS_A_SEGUIR_REFERIDAS_REFERIDOS' name="[Universitário] Expressões do tipo 'que/como referiremos a seguir' → 'referidas a seguir'" type="style" tags="picky" tone_tags="academic">
+        <rule id='PHD_TESE_REFERIREMOS_A_SEGUIR_REFERIDAS_REFERIDOS' name="🎓 Expressões do tipo 'que/como referiremos a seguir' → 'referidas a seguir'" type="style" tags="picky" tone_tags="academic">
             <pattern>
                 <marker>
                     <token regexp='yes'>que|como</token>
@@ -11747,7 +11747,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="referidas a seguir|referidos a seguir">Existem algumas críticas ao modelo, <marker>como referiremos de seguida</marker>.</example>
         </rule>
 
-        <rulegroup id='PHD_TESE_PODE_SER_PART_PASS_É_PART_PASS' name="[Universitário] Expressões do tipo 'pode ser usado' → 'é usado'" type="style" tags='picky' default='off' tone_tags="academic">
+        <rulegroup id='PHD_TESE_PODE_SER_PART_PASS_É_PART_PASS' name="🎓 Expressões do tipo 'pode ser usado' → 'é usado'" type="style" tags='picky' default='off' tone_tags="academic">
             <rule>
                 <pattern>
                     <marker>
