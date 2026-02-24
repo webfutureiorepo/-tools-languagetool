@@ -3740,7 +3740,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='UNS_ALGUNS_UMAS_ALGUMAS' name="uns/umas → alguns/algumas" type='style' tone_tags='formal' default='temp_off'>
+        <rule id='UNS_ALGUNS_UMAS_ALGUMAS' name="uns/umas → alguns/algumas" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token regexp='yes' inflected='yes'>fazer|haver</token>
