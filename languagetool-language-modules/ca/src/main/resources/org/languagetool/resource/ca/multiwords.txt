@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Komsomolsk de l'Amur;NPMSG00
 Alcalá Meco;NPCSG00
 Mas Marroch;NPMSG00
 Unión Explosivos Río Tinto;NPFSO00

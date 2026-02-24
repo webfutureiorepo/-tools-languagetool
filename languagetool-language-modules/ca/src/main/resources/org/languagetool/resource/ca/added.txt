@@ -30,6 +30,8 @@ Aineta	Aineta	NPFSSP0
 Aixura	Aixura	NPFSO00
 Akhmàtova	Akhmàtova	NPCNSP0
 Al-Azraq	Al-Azraq	NPMSSP0
+Al-Hassà	Al-Hassà	NPCSG00
+Al-Hijaz	Al-Hijaz	NPCSG00
 Aleesha	Aleesha	NPFSSP0
 Alstom	Alstom	NPCNSP0
 Amaiur	Amaiur	NPCNO00
@@ -76,6 +78,7 @@ Bolzano	Bolzano	NPCNSP0
 Bolzano-Weierstrass	Bolzano-Weierstrass	NPCNSP0
 Bonabé	Bonabé	NPCSG00
 Bond	Bond	NPCNSP0
+Bonoloto	Bonoloto	NPFSO00
 BonÀrea	BonÀrea	NPCNO00
 Boole	Boole	NPCNSP0
 Bormio	Bormio	NPCSG00
@@ -282,8 +285,12 @@ Jesuset	Jesuset	NPMSSP0
 Jimeno	Jimeno	NPCNSP0
 Josepet	Josepet	NPMSSP0
 Journavx	Journavx	NPCNO00
+Jupol	Jupol	NPCNO00
+Jusapol	Jusapol	NPCNO00
 Jàfet	Jàfet	NPMSSP0
+KKR	KKR	NPCNO00
 Kabardino-Balkària	Kabardino-Balkària	NPCSG00
+Kamasutra	Kamasutra	NPMSO00
 Karadžić	Karadžić	NPCNSP0
 Karagandí	Karagandí	NPCSG00
 Karatxai-Txerquèssia	Karatxai-Txerquèssia	NPCSG00
@@ -307,6 +314,7 @@ Kràmnik	Kràmnik	NPCNSP0
 Kurtxàtov	Kurtxàtov	NPCSG00
 Kusturica	Kusturica	NPCNSP0
 Kutaissi	Kutaissi	NPCSG00
+Kutxabank	Kutxabank	NPCNO00
 Kuçovë	Kuçovë	NPCSG00
 Königshütte	Königshütte	NPCSG00
 LERU	LERU	NPFSO00
@@ -322,6 +330,7 @@ Lebensraum	Lebensraum	NCMS000
 Lecornu	Lecornu	NPCNSP0
 Leica	Leica	NPCNO00
 Lewinsky	Lewinsky	NPCNSP0
+Liberbank	Liberbank	NPCNO00
 Lildami	Lildami	NPMSSP0
 Limónov	Limónov	NPCNSP0
 Lipovetsky	Lipovetsky	NPCNSP0
@@ -330,8 +339,10 @@ Lissenko	Lissenko	NPCNSP0
 Livigno	Livigno	NPCSG00
 Lluïset	Lluïset	NPMSSP0
 Lomonóssov	Lomonóssov	NPCNSP0
+Lottomatica	Lottomatica	NPCNO00
 Lqliâa	Lqliâa	NPCSG00
 Lublin	Lublin	NPCSG00
+Lírids	Lírids	NPMPO00
 Lódz	Lódz	NPCSG00
 M'Rirt	M'Rirt	NPCSG00
 Macaulay	Macaulay	NPCNSP0
@@ -360,6 +371,7 @@ McNulty	McNulty	NPCNSP0
 Mearsheimer	Mearsheimer	NPCNSP0
 Meiji	Meiji	NPCNSP0
 Meiningen	Meiningen	NPCSG00
+Mencho	Mencho	NPMSSP0
 Mendizorrotza	Mendizorrotza	NPMSG00
 Mersenne	Mersenne	NPCNSP0
 Meteosat	Meteosat	NPMNO00
@@ -378,9 +390,11 @@ Mossad	Mossad	NPMSO00
 Mountbatten	Mountbatten	NPCNSP0
 Mugabe	Mugabe	NPCNSP0
 Munné	Munné	NPCNSP0
+MásMóvil	MásMóvil	NPCNO00
 Mèlich	Mèlich	NPCNSP0
 Mürren	Mürren	NPCSG00
 NOAA	NOAA	NPFSO00
+Naksa	Naksa	NPFSO00
 Naour	Naour	NPCSG00
 Narciset	Narciset	NPMSSP0
 Natanz	Natanz	NPCSG00
@@ -438,6 +452,7 @@ Ramayana	Ramayana	NPMSO00
 Ramsay	Ramsay	NPCNSP0
 Ramsey	Ramsey	NPCNSP0
 Redford	Redford	NPCNSP0
+Redsys	Redsys	NPCNO00
 Resilis	Resilis	NPCSO00
 Reverte	Reverte	NPCNSP0
 Rhodes	Rhodes	NPCNSP0
@@ -468,6 +483,7 @@ Scottsdale	Scottsdale	NPCSG00
 Sebastianet	Sebastianet	NPMSSP0
 Selouane	Selouane	NPCSG00
 Sendra	Sendra	NPCNSP0
+ServiCaixa	ServiCaixa	NPCNO00
 Seur	Seur	NPCNO00
 Shangri-La	Shangri-La	NPCSG00
 Siktivkar	Siktivkar	NPCSG00
@@ -486,6 +502,7 @@ Steinbeck	Steinbeck	NPCNSP0
 Steinmeier	Steinmeier	NPCNSP0
 Stone-Weierstrass	Stone-Weierstrass	NPCNSP0
 Stuyvesant	Stuyvesant	NPCNSP0
+Sulayman	Sulayman	NPCNSP0
 Sundance	Sundance	NPCNSP0
 Swab	Swab	NPCNSP0
 TCAI	TCAI	NCCN000
@@ -2243,6 +2260,9 @@ ex-amant	ex-amant	NCCS000
 ex-amants	ex-amant	NCCP000
 ex-estrella	ex-estrella	NCFS000
 ex-estrelles	ex-estrella	NCFP000
+ex-àrbitra	ex-àrbitre	NCFS000
+ex-àrbitre	ex-àrbitre	NCMS000
+ex-àrbitres	ex-àrbitre	NCCP000
 exajoule	exajoule	NCMS000
 exajoules	exajoule	NCMP000
 exaltada	exaltat	AQ0FS0
@@ -2371,6 +2391,9 @@ extranatural	extranatural	AQ0CS0
 extranaturals	extranatural	AQ0CP0
 extraorganitzacional	extraorganitzacional	AQ0CS0
 extraorganitzacionals	extraorganitzacional	AQ0CP0
+exàrbitra	exàrbitre	NCFS000
+exàrbitre	exàrbitre	NCMS000
+exàrbitres	exàrbitre	NCCP000
 facsimilar	facsimilar	AQ0CS0
 facsimilars	facsimilar	AQ0CP0
 fanguet	fanguet	NCMS000

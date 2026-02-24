@@ -26,6 +26,8 @@ Aineta
 Aixura
 Akhmàtova
 Al-Azraq
+Al-Hassà
+Al-Hijaz
 Aleesha
 Alstom
 Amaiur
@@ -72,6 +74,7 @@ Bolzano
 Bolzano-Weierstrass
 Bonabé
 Bond
+Bonoloto
 BonÀrea
 Boole
 Bormio
@@ -278,8 +281,12 @@ Jesuset
 Jimeno
 Josepet
 Journavx
+Jupol
+Jusapol
 Jàfet
+KKR
 Kabardino-Balkària
+Kamasutra
 Karadžić
 Karagandí
 Karatxai-Txerquèssia
@@ -303,6 +310,7 @@ Kràmnik
 Kurtxàtov
 Kusturica
 Kutaissi
+Kutxabank
 Kuçovë
 Königshütte
 LERU
@@ -318,6 +326,7 @@ Lebensraum
 Lecornu
 Leica
 Lewinsky
+Liberbank
 Lildami
 Limónov
 Lipovetsky
@@ -326,8 +335,10 @@ Lissenko
 Livigno
 Lluïset
 Lomonóssov
+Lottomatica
 Lqliâa
 Lublin
+Lírids
 Lódz
 M'Rirt
 Macaulay
@@ -356,6 +367,7 @@ McNulty
 Mearsheimer
 Meiji
 Meiningen
+Mencho
 Mendizorrotza
 Mersenne
 Meteosat
@@ -374,9 +386,11 @@ Mossad
 Mountbatten
 Mugabe
 Munné
+MásMóvil
 Mèlich
 Mürren
 NOAA
+Naksa
 Naour
 Narciset
 Natanz
@@ -434,6 +448,7 @@ Ramayana
 Ramsay
 Ramsey
 Redford
+Redsys
 Resilis
 Reverte
 Rhodes
@@ -464,6 +479,7 @@ Scottsdale
 Sebastianet
 Selouane
 Sendra
+ServiCaixa
 Seur
 Shangri-La
 Siktivkar
@@ -482,6 +498,7 @@ Steinbeck
 Steinmeier
 Stone-Weierstrass
 Stuyvesant
+Sulayman
 Sundance
 Swab
 TCAI
@@ -1967,6 +1984,9 @@ ex-amant
 ex-amants
 ex-estrella
 ex-estrelles
+ex-àrbitra
+ex-àrbitre
+ex-àrbitres
 exajoule
 exajoules
 exaltada
@@ -2071,6 +2091,9 @@ extranatural
 extranaturals
 extraorganitzacional
 extraorganitzacionals
+exàrbitra
+exàrbitre
+exàrbitres
 facsimilar
 facsimilars
 fanguet
