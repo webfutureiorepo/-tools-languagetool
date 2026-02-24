@@ -87,7 +87,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id="STYLE" name="[pt-PT] Regras de Estilo" type="style">
 
 
-      <rulegroup id="CONFUSAO_CAIXA_EMBALAGEM_FARMACOS" name="[pt-PT] Confusão: caixa/embalagem (fármacos)" tone_tags='objective' default='temp_off'>
+      <rulegroup id="CONFUSAO_CAIXA_EMBALAGEM_FARMACOS" name="[pt-PT] Confusão: caixa/embalagem (fármacos)" tone_tags='objective'>
       <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <!-- #1: (mais comum): verbo + caixa + medicamento (alta precisão) -->
