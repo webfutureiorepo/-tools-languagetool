@@ -6257,6 +6257,9 @@ Mitt Romney
 European Space Agency
 International Atomic Energy Agency
 Henri Becquerel
+Antoine Becquerel
+Antoine César Becquerel
+Antoine Henri Becquerel
 Offenbach am Main
 Graham Greene
 Saul Bellow
@@ -23061,6 +23064,7 @@ Rising Stars Challenge
 Dartmouth College
 Seattle SuperSonics
 Bab El Oued
+Bab El-Oued
 Ernesto Ekaizer
 GNU's Not Unix
 GNU’s Not Unix
@@ -26921,6 +26925,7 @@ Opel Vectra
 Adolf von Henselt
 Philippe Van Parijs
 Allium sativum
+Allium cepa
 Quincy Promes
 Jayson Tatum
 Joel Embiid
@@ -30033,3 +30038,25 @@ Susan Rice
 Joris Hoefnagel
 Georg Hoefnagel
 La Belle et la Bête
+Armand de Brignac
+Morris Halle
+Alan Mathison Turing
+Alan M. Turing
+Alan Turing
+Nemesio Oseguera Cervantes
+Rubén Nemesio Oseguera Cervantes
+Oseguera Cervantes
+International Business Machines Corporation
+International Business Machines
+Quai d'Orsay
+Quai d’Orsay
+Barbican Centre
+Barbican Hall
+BBC Singers
+Béjart Ballet Lausanne
+Béjart Ballet
+Collegium Vocale Gent
+xAI
+Ronald Koeman
+Finnegans Wake
+Pierluigi Collina
