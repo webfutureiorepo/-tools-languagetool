@@ -882,3 +882,4 @@ gata moixes=gates moixes	Plural adequat.
 rifi-rafe=batussa|picabaralla|baralla
 rifi-rafes=batusses|picabaralles|baralles
 Pau Cubarsi=Pau Cubarsí
+la Masella=Masella	S'usa sense article.

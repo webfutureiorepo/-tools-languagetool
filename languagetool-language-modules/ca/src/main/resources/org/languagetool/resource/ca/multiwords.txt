@@ -1,5 +1,10 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Tots els Sants;NPMPO00
+Xavier Pericay;NPMSSP0
+Ramon Alcoberro;NPMSSP0
+Agustí Alcoberro;NPMSSP0
+Alcoberro i Pericay;NPCNSP0
 Komsomolsk de l'Amur;NPMSG00
 Alcalá Meco;NPCSG00
 Mas Marroch;NPMSG00
