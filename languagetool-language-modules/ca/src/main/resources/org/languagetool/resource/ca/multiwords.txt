@@ -1,5 +1,52 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Alagna-Valsesia;NPCSG00 # esadir estacions d'esquí
+Breuil-Cervínia;NPCSG00 # esadir estacions d'esquí
+Folgaria-Lavarone-Luserna;NPCSG00 # esadir estacions d'esquí
+Morzine-Avoriaz;NPCSG00 # esadir estacions d'esquí
+Saint-Lary-Soulan;NPCSG00 # esadir estacions d'esquí
+Valgrande-Pajares;NPCSG00 # esadir estacions d'esquí
+Piau-Engaly;NPCSG00 # esadir estacions d'esquí
+Tonale-Presena;NPCSG00 # esadir estacions d'esquí
+Super-Besse;NPCSG00 # esadir estacions d'esquí
+Luz-Ardiden;NPCSG00 # esadir estacions d'esquí
+Alba di Canazei;NPCSG00 # esadir estacions d'esquí
+Alto Campoo;NPCSG00 # esadir estacions d'esquí
+Aramón Formigal;NPCSG00 # esadir estacions d'esquí
+Aramón Panticosa;NPCSG00 # esadir estacions d'esquí
+Aramón Valdelinares;NPCSG00 # esadir estacions d'esquí
+Cavalese-Alpe Cermis;NPCSG00 # esadir estacions d'esquí
+Chiesa Valmalenco;NPCSG00 # esadir estacions d'esquí
+Gornaia Karussel;NPCSG00 # esadir estacions d'esquí
+Gressoney-La Trinité;NPCSG00 # esadir estacions d'esquí
+La Mauselaine;NPCSG00 # esadir estacions d'esquí
+La Plagne;NPCSG00 # esadir estacions d'esquí
+La Planche des Belles Filles;NPCSG00 # esadir estacions d'esquí
+La Rosière;NPCSG00 # esadir estacions d'esquí
+Espace San Bernardo;NPCSG00 # esadir estacions d'esquí
+Lech Zürs;NPCSG00 # esadir estacions d'esquí
+Les Deux Alpes;NPCSG00 # esadir estacions d'esquí
+Les Menuires;NPCSG00 # esadir estacions d'esquí
+Les Sybelles;NPCSG00 # esadir estacions d'esquí
+Madonna di Campiglio;NPCSG00 # esadir estacions d'esquí
+Muela de San Juan;NPCSG00 # esadir estacions d'esquí
+Orcières Merlette;NPCSG00 # esadir estacions d'esquí
+Pla de Negua;NPCSG00 # esadir estacions d'esquí
+Plateau de Beille;NPCSG00 # esadir estacions d'esquí
+Port Ainé;NPCSG00 # esadir estacions d'esquí
+Pra Loup;NPCSG00 # esadir estacions d'esquí
+Prato Nevoso;NPCSG00 # esadir estacions d'esquí
+Roza Khutor;NPCSG00 # esadir estacions d'esquí
+San Sicario;NPCSG00 # esadir estacions d'esquí
+Santa Caterina Valfurva;NPCSG00 # esadir estacions d'esquí
+Sauze d'Oulx;NPCSG00 # esadir estacions d'esquí
+Serre Chevalier;NPCSG00 # esadir estacions d'esquí
+Sierra de Béjar-La Covatilla;NPCSG00 # esadir estacions d'esquí
+St. Anton am Arlberg;NPCSG00 # esadir estacions d'esquí
+Station des Rousses;NPCSG00 # esadir estacions d'esquí
+Tuixent-la Vansa;NPCSG00 # esadir estacions d'esquí
+Val Gardena;NPCSG00 # esadir estacions d'esquí
+Zell am See;NPCSG00 # esadir estacions d'esquí
 Tots els Sants;NPMPO00
 Xavier Pericay;NPMSSP0
 Ramon Alcoberro;NPMSSP0
