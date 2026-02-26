@@ -9698,7 +9698,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='APAGAR_INDELÉVEL' name="🎓[Científico] Não conseguir apagar → Indelével" tone_tags="academic" is_goal_specific="true">
+        <rule id='APAGAR_INDELÉVEL' name="🎓🔬 Não conseguir apagar → Indelével" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <marker>
                     <token>que
@@ -9716,7 +9716,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='BÁSICO_ELEMENTAR' name="🎓[Científico] Básico → Elementar" tone_tags="academic" is_goal_specific="true">
+        <rule id='BÁSICO_ELEMENTAR' name="🎓🔬 Básico → Elementar" tone_tags="academic" is_goal_specific="true">
             <antipattern>
                 <token regexp='yes'>unidades?</token>
                 <token regexp='yes'>básicas?</token>
@@ -9747,7 +9747,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='MUITO_BASTANTE_EXTENSIVAMENTE' name="🎓[Científico] Muito/bastante/enormemente → Extensivamente/amplamente" tone_tags="academic" is_goal_specific="true" tags="picky">
+        <rule id='MUITO_BASTANTE_EXTENSIVAMENTE' name="🎓🔬 Muito/bastante/enormemente → Extensivamente/amplamente" tone_tags="academic" is_goal_specific="true" tags="picky">
             <pattern>
                 <token inflected='yes' regexp='yes'>ter|ser</token>
                 <token min='0' regexp='yes'>sido|es[st][ae]s?|aquel[ae]s?</token>
@@ -9818,7 +9818,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='TOMAR_ASSUMIR' name="🎓[Científico] V. Tomar → V. Assumir" tone_tags="academic" is_goal_specific="true">
+        <rule id='TOMAR_ASSUMIR' name="🎓🔬 V. Tomar → V. Assumir" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <token postag='SENT_START|AQ.+|NC.+|NP.+|CS|CC' postag_regexp='yes'/>
                 <marker>
@@ -9932,7 +9932,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
 
-       <rule id='SER_CONSISTIR_RESIDIR' name="🎓[Científico] V.Ser → V.Consistir/V.Residir" tone_tags="academic" is_goal_specific="true">
+       <rule id='SER_CONSISTIR_RESIDIR' name="🎓🔬 V.Ser → V.Consistir/V.Residir" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <token regexp='yes' inflected='yes'>assimetria|diferença|dissemelhança|disparidade|distinção|oposição|oposto</token>
                 <token min='0' max='1' postag='NC.+|AQ.+|V.+' postag_regexp='yes'>
@@ -10360,7 +10360,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
 
-        <rule id='CIENTÍFICO_CONTRÁRIO_OPOSTO' name="[Científico] Contrário → Oposto" type="style" tags="picky" tone_tags="academic" is_goal_specific="true">
+        <rule id='CIENTÍFICO_CONTRÁRIO_OPOSTO' name="🔬 Contrário → Oposto" type="style" tags="picky" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <token postag='V.+' postag_regexp='yes'/>
                 <token min="0" max="1" postag='RM'/>
@@ -10374,7 +10374,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="oposto">A Ana percebeu exatamente o <marker>contrário</marker>.</example>
         </rule>
 
-        <rule id='CIENTÍFICO_CORRIGIR_ERROS_FALHAS_IMPRECISÕES' name="[Científico] Corrigir 'erros/falhas' → 'imprecisões'" type="style" tone_tags="academic" default="off">
+        <rule id='CIENTÍFICO_CORRIGIR_ERROS_FALHAS_IMPRECISÕES' name="🔬 Corrigir 'erros/falhas' → 'imprecisões'" type="style" tone_tags="academic" default="off">
             <pattern>
                 <token inflected='yes'>corrigir</token>
                 <token regexp='yes' inflected='yes'>&adverbios_de_intensidade;|algum|inúmero|pequeno</token>
@@ -10387,7 +10387,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example type='incorrect'>Vou corrigir algumas <marker>falhas</marker> no texto.</example>
         </rule>
 
-        <rulegroup id='DE_PROPOSITO_DELIBERADAMENTE' name="[Científico] 'de propósito' → 'deliberadamente'" type="style" tags="picky" tone_tags="formal">
+        <rulegroup id='DE_PROPOSITO_DELIBERADAMENTE' name="🔬 'de propósito' → 'deliberadamente'" type="style" tags="picky" tone_tags="formal">
             <rule>
                 <pattern>
                     <token inflected='yes'>fazer</token>
@@ -10406,7 +10406,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='CIENTÍFICO_EMPREGAR_TERMO' name="[Científico] 'usar/utilizar' termo → empregar" type='style' tags='picky' tone_tags='formal' is_goal_specific='true'>
+        <rule id='CIENTÍFICO_EMPREGAR_TERMO' name="🔬 'usar/utilizar' termo → empregar" type='style' tags='picky' tone_tags='formal' is_goal_specific='true'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <pattern>
@@ -10424,7 +10424,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='CIENTÍFICO_FAZER_EFETUAR_REALIZAR_CONDUZIR_CONCRETIZAR_ELABORAR' name="[Científico] Fazer → efetuar/realizar/conduzir/concretizar/elaborar" default="on" type="style" tags="picky" tone_tags="academic" is_goal_specific="true">
+        <rulegroup id='CIENTÍFICO_FAZER_EFETUAR_REALIZAR_CONDUZIR_CONCRETIZAR_ELABORAR' name="🔬 Fazer → efetuar/realizar/conduzir/concretizar/elaborar" default="on" type="style" tags="picky" tone_tags="academic" is_goal_specific="true">
             <antipattern>
                 <token inflected='yes' skip='3'>fazer</token>
                 <token regexp='yes'>&vocativos;|calor|frio|d*</token>
@@ -11023,7 +11023,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
 
-        <rulegroup id='CIENTÍFICO_PARA_CONCLUIR_EM_SUMA' name="[Científico] Para concluir/resumidamente → em suma" type="style" tags='picky' tone_tags="academic" is_goal_specific="true">
+        <rulegroup id='CIENTÍFICO_PARA_CONCLUIR_EM_SUMA' name="🔬 Para concluir/resumidamente → em suma" type="style" tags='picky' tone_tags="academic" is_goal_specific="true">
             <rule>
                 <pattern>
                     <or>
@@ -11070,7 +11070,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PENSAR EM ponderar -->
-        <rule id='CIENTÍFICO_PENSAR_EM_PONDERAR' name="[Científico] Pensar em → ponderar" type="style" tags="picky" tone_tags="academic" is_goal_specific="true">
+        <rule id='CIENTÍFICO_PENSAR_EM_PONDERAR' name="🔬 Pensar em → ponderar" type="style" tags="picky" tone_tags="academic" is_goal_specific="true">
             <pattern>
                 <or>
                     <token/>
@@ -11095,7 +11095,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PRECISÃO CIENTÍFICA rigor científico -->
-        <rule id='CIENTÍFICO_PRECISAO_RIGOR_CIENTIFICO' name="[Científico] Precisão/rigor científico" type="style" tags="picky">
+        <rule id='CIENTÍFICO_PRECISAO_RIGOR_CIENTIFICO' name="🔬 Precisão/rigor científico" type="style" tags="picky">
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-10-22 (25-JUN-2021+)      -->
             <!--
             Isto deve ser feito com precisão científica. → Isto deve ser feito com rigor científico.
@@ -11113,7 +11113,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='CIENTÍFICO_TER_NOME_DESIGNAÇÃO' name="[Científico] Ter 'nome' → 'designação'" type="style" tone_tags="formal">
+        <rulegroup id='CIENTÍFICO_TER_NOME_DESIGNAÇÃO' name="🔬 Ter 'nome' → 'designação'" type="style" tone_tags="formal">
                         <rule>
                 <pattern>
                     <token postag='NC[FM].+' postag_regexp='yes'/>
@@ -11175,7 +11175,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- OS TERMOS TÉCNICOS a terminologia -->
-        <rulegroup id='CIENTÍFICO_TERMOS_TÉCNICOS_TERMINOLOGIA' name="[Científico] termos técnicos → terminologia" type='style'>
+        <rulegroup id='CIENTÍFICO_TERMOS_TÉCNICOS_TERMINOLOGIA' name="🔬 termos técnicos → terminologia" type='style'>
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-02-07 (25-JUL-2022+) -->
             <!--
             #1
@@ -11297,7 +11297,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id="AJUDAR_AUXILIAR" name="🎓[Científico] ajudar → auxiliar" type='style' tags='picky' tone_tags="academic">
+        <rulegroup id="AJUDAR_AUXILIAR" name="🎓🔬 ajudar → auxiliar" type='style' tags='picky' tone_tags="academic">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-12/26/27 (2-MAR-2023+) -->
             <!--
             SUBRULE 1:
@@ -11358,7 +11358,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='DAR_ATRIBUIR_CONFERIR_V2' name="🎓[Científico] dar → conferir" type='style' tone_tags='academic'>
+        <rule id='DAR_ATRIBUIR_CONFERIR_V2' name="🎓🔬 dar → conferir" type='style' tone_tags='academic'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <antipattern>
@@ -11395,7 +11395,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='SER_SIGNIFICATIVO' name="🎓[Científico] 'fazer toda a diferença' → 'ser significativo/expressivo'" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
+        <rulegroup id='SER_SIGNIFICATIVO' name="🎓🔬 'fazer toda a diferença' → 'ser significativo/expressivo'" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
 
             <!-- #1: é significativo -->
             <rule>
@@ -11444,7 +11444,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='FAZER_EXERCER' name="🎓[Científico] Verbo Fazer → Verbo Exercer" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
+        <rule id='FAZER_EXERCER' name="🎓🔬 Verbo Fazer → Verbo Exercer" type="style" tone_tags="academic" is_goal_specific="true" tags="picky">
             <antipattern>
                 <token postag='V.+' postag_regexp='yes'/>
                 <token min='0' max='1' postag='D[AI].+|NC.+|AQ.+' postag_regexp='yes'/>
@@ -11505,7 +11505,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- NÃO SE PODE APAGAR é indelével -->
-        <rule id='NÃO_SE_PODE_APAGAR_É_INDELÉVEL' name="🎓[Científico] 'não se pode apagar' → 'é indelével'" type="style">
+        <rule id='NÃO_SE_PODE_APAGAR_É_INDELÉVEL' name="🎓🔬 'não se pode apagar' → 'é indelével'" type="style">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-29 (2-MAR-2023+) -->
             <!--
             Eu queria, mas não se pode apagar o passado. → Eu queria, mas o passado é indelével.
