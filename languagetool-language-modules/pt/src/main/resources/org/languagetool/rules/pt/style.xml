@@ -3756,6 +3756,31 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
+        <rule id='PROXIMO_ZERO_PRATICAMENTE_NULO' name="próximo do zero → quase inexistente/praticamente nulo" type='style' tone_tags='formal' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <pattern>
+                <token postag='NC.+' postag_regexp='yes'>
+                    <exception postag_regexp='yes' postag='SPS.+|[DP].+|RG|V.+|NP.+'/>
+                    <exception regexp='yes' inflected='yes'>probabilidade|possibilidade|chance|risco|taxa|percentagem|proporção|rácio|índice|nível|valor|quantidade|montante|volume|massa|peso|densidade|concentração|intensidade|amplitude|frequência|velocidade|aceleração|temperatura|pressão|tensão|voltagem|corrente|resistência|potência|energia|força|momento|impulso|carga|campo|fluxo|gradiente|diferença|variação|desvio|erro|incerteza|precisão|exatidão|resolução|latência|tempo|duração|intervalo|distância|comprimento|altura|largura|profundidade|área|perímetro|diâmetro|raio|coeficiente|constante|parâmetro|métrica|medida|resultado|score|pontuação|classificação|ranking|desempenho|eficiência|eficácia|produtividade|rendimento|capacidade|limite|limiar|threshold</exception></token>
+                <token min='0' max='3' postag='(SPS00:)?[DP].+|N.+' postag_regexp='yes'><exception regexp='yes' inflected='yes'>probabilidade|possibilidade|chance|risco|taxa|percentagem|proporção|rácio|índice|nível|valor|quantidade|montante|volume|massa|peso|densidade|concentração|intensidade|amplitude|frequência|velocidade|aceleração|temperatura|pressão|tensão|voltagem|corrente|resistência|potência|energia|força|momento|impulso|carga|campo|fluxo|gradiente|diferença|variação|desvio|erro|incerteza|precisão|exatidão|resolução|latência|tempo|duração|intervalo|distância|comprimento|altura|largura|profundidade|área|perímetro|diâmetro|raio|coeficiente|constante|parâmetro|métrica|medida|resultado|score|pontuação|classificação|ranking|desempenho|eficiência|eficácia|produtividade|rendimento|capacidade|limite|limiar|threshold</exception></token>
+                <token min='0' max='1' regexp='yes' inflected='yes'>ser|estar</token>
+                <marker>
+                    <token regexp='yes'>próxim[ao]s?</token>
+                    <token regexp='yes'>de|do</token>
+                    <token regexp='yes'>zero|0</token>
+                </marker>
+            </pattern>
+            <message>Em sentido figurado, prefira &quot;praticamente nulo(a)&quot;/&quot;quase inexistente&quot; a &quot;próximo(a) de/do zero&quot;.</message>
+            <suggestion>quase <match no='4' postag='AQ0(.)(.)0' postag_replace='AQ0C$20'>inexistente</match></suggestion>
+            <suggestion>praticamente <match no='4' postag='AQ.+' postag_regexp='yes'>nulo</match></suggestion>
+            <example correction="quase inexistente|praticamente nula">A ética dessa pessoa é <marker>próxima do zero</marker>.</example>
+            <example correction="quase inexistente|praticamente nula">A ética dela é <marker>próxima do zero</marker>.</example>
+            <example correction="quase inexistente|praticamente nula">A ética da Ana é <marker>próxima do zero</marker>.</example>
+            <example correction="quase inexistente|praticamente nula">Ela tem uma ética <marker>próxima do zero</marker>.</example>
+            <example correction="quase inexistentes|praticamente nulas">Ela tem uma moral e ética <marker>próximas do zero</marker>.</example>
+        </rule>
+
+
         <rule id='COMO_SEGUNDO_CONFORME' name="Como/segundo → conforme" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
