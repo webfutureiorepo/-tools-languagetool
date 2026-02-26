@@ -1,5 +1,9 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Carles Monguilod;NPMSSP0
+Eugenio Pino;NPMSSP0
+Victoria Álvarez;NPFSSP0
+Serafín Castellano;NPMSSP0
 Alagna-Valsesia;NPCSG00 # esadir estacions d'esquí
 Breuil-Cervínia;NPCSG00 # esadir estacions d'esquí
 Folgaria-Lavarone-Luserna;NPCSG00 # esadir estacions d'esquí
