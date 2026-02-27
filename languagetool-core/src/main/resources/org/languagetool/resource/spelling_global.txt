@@ -10424,6 +10424,7 @@ Raoul Hausmann
 Ernst Gombrich
 Oskar Kokoschka
 Alexander von Zemlinsky
+Alexander Zemlinsky
 Eduard Hanslick
 Georg Trakl
 Jan Evangelista Purkyně
@@ -30062,3 +30063,16 @@ xAI
 Ronald Koeman
 Finnegans Wake
 Pierluigi Collina
+The Wire
+Tim Meadows
+John Conway
+John Horton Conway
+Martin Gardner
+Friedrich Salomon Perls
+Marubeni Coporation
+Rupert Lowe
+Restore Britain
+Francis M. Wilhoit
+Francis Wilhoit
+Puerto Vallarta
+Cabo San Lucas
