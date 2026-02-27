@@ -13122,7 +13122,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <!--IDEA shorten_it-->
             <pattern>
-                <token skip='2' regexp='yes' inflected='yes'>empresa|organização|entidade|instituição|agência|ONG|associação</token>
+                <token skip='2' regexp='yes' inflected='yes'>empresa|organização|entidade|instituição|agência|associação|ONG|sec?tor|administração</token>
                 <marker>
                     <token>não</token>
                     <token regexp='yes'>milita(r|res)</token>
