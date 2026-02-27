@@ -3672,10 +3672,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
 
-    <category id='ACADEMIC_SCIENTIFIC_PT_PT' name="🇵🇹 Regras académicas e científicas" type="other">
+    <category id='ACADEMIC_SCIENTIFIC_PT_PT' name="🇵🇹🎓🔬 Regras académicas e científicas" type="other">
 
 
-    <rule id='CONCLUIR_UM_CURSO' name="🇵🇹 'acabar/terminar' um curso → 'concluir'" type='style' tone_tags='academic'>
+    <rule id='CONCLUIR_UM_CURSO' name="🇵🇹🎓 'acabar/terminar' um curso → 'concluir'" type='style' tone_tags='academic'>
         <!-- Used ChatGPT 4o for enhancements and extra accuracy -->
         <pattern>
             <marker>
@@ -3699,7 +3699,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     </rule>
 
 
-        <rulegroup id='ENSINO_SUPERIOR_V2' name="🇵🇹[Científico] 'Educação' Superior → 'Ensino'" type="style" tone_tags="academic">
+        <rulegroup id='ENSINO_SUPERIOR_V2' name="🇵🇹🔬 'Educação' Superior → 'Ensino'" type="style" tone_tags="academic">
         <!-- Used ChatGPT 4o for enhancements and extra accuracy -->
 
             <rule> <!-- à -->
@@ -3747,7 +3747,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='CIENTÍFICO_DETERMINADAS_ESPECÍFICAS' name="🇵🇹[Científico] Determinados → Específicos" type="style" tone_tags="academic">
+        <rule id='CIENTÍFICO_DETERMINADAS_ESPECÍFICAS' name="🇵🇹🔬 Determinados → Específicos" type="style" tone_tags="academic">
             <pattern>
                 <token regexp="yes">para|como|por</token>
                 <token skip='4' postag='V.+' postag_regexp='yes'/>
@@ -3762,7 +3762,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='CIENTÍFICO_MAIS_IMPORTANTE_CHAVE_V3' name="🇵🇹[Científico] mais conhecidos/importantes → -chave" type="style">
+        <rule id='CIENTÍFICO_MAIS_IMPORTANTE_CHAVE_V3' name="🇵🇹🔬 mais conhecidos/importantes → -chave" type="style">
             <pattern>
                 <marker>
                     <token postag='NC.+' postag_regexp='yes' regexp='yes' inflected='yes'>adversário|área|aspec?to|ac?tividade|autor|batalha|carac?terística|categoria|cientista|cineasta|conceito|contribuição|decisão|descoberta|detalhe|domínio|elemento|escritor|escultor|etapa|evento|exemplo|fac?to|fac?tor|feito|ferramenta|figura|homem|ideia|indústria|informação|instituição|investigador|jogador|jornalista|líder|local|lugar|membro|momento|movimento|mulher|objec?tivo|objec?to|palavra|papel|peça|pergunta|período|pessoa|pesquisador|ponto|problema|questão|sec?tor|tarefa|tema|tópico|trabalho|vitória</token>
@@ -3789,7 +3789,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='GRANDES_ENORMES_RECURSOS_FINANCEIROS_AVULTADOS' name="🇵🇹[Científico] 'grandes/enormes' recursos financeiros → avultados" type="style" tags="picky">
+        <rulegroup id='GRANDES_ENORMES_RECURSOS_FINANCEIROS_AVULTADOS' name="🇵🇹🔬 'grandes/enormes' recursos financeiros → avultados" type="style" tags="picky">
             <rule>
                 <pattern>
                     <token regexp='yes'>recursos?|ganhos?|proveitos?|meios?|quantias?|perdas?|quebras?|prejuízos?</token>

@@ -3756,7 +3756,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PROXIMO_ZERO_PRATICAMENTE_NULO' name="próximo do zero → quase inexistente/praticamente nulo" type='style' tone_tags='formal' default='temp_off'>
+        <rule id='PROXIMO_ZERO_PRATICAMENTE_NULO' name="próximo do zero → quase inexistente/praticamente nulo" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token postag='NC.+' postag_regexp='yes'>
@@ -9610,7 +9610,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     </category>
 
 
-    <category id='ACADEMIC' name='Linguagem acadêmica' type='style' tone_tags="academic">
+    <category id='ACADEMIC' name='🎓 Linguagem acadêmica' type='style' tone_tags="academic">
 
 
         <rule id='AO_LONGO_DO_TEMPO' name="Ao longo do tempo → gradualmente/progressivamente" type='style' tone_tags='academic' is_goal_specific='true'>
@@ -11817,10 +11817,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
     </category>
 
-    <category id="SCIENTIFIC" name="Linguagem científica" type="style" tone_tags="scientific">
+    <category id="SCIENTIFIC" name="🔬 Linguagem científica" type="style" tone_tags="scientific">
 
 
-        <rule id='LINHA_RETA_RETA_V2' name="Traçar 'linha reta' → reta" type='style' tone_tags='scientific' is_goal_specific='true'>
+        <rule id='LINHA_RETA_RETA_V2' name="🔬 Traçar 'linha reta' → reta" type='style' tone_tags='scientific' is_goal_specific='true'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token skip='3' regexp='yes' inflected='yes'>traçar|desenhar|riscar</token>
@@ -11837,7 +11837,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id="NUMERO_DE_MOLS" name="Número de mols → massa molecular" tags="picky" is_goal_specific="true">
+        <rulegroup id="NUMERO_DE_MOLS" name="🔬 Número de mols → massa molecular" tags="picky" is_goal_specific="true">
             <rule>
                 <pattern>
                     <token postag_regexp="yes" postag="(SP.+:)?D.+MS.*" min="0"/>
@@ -11865,7 +11865,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
 
-        <rulegroup id="PESO_MOLECULAR" name="Peso molecular → massa molecular" tags="picky" is_goal_specific="true">
+        <rulegroup id="PESO_MOLECULAR" name="🔬 Peso molecular → massa molecular" tags="picky" is_goal_specific="true">
             <rule>
                 <pattern>
                     <token postag_regexp="yes" postag="(SP.+:)?D.+MS.*" min="0"/>
@@ -11892,7 +11892,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
 
-        <rule id="NUMERO_DE_AVOGADRO" name="Número de Avogadro → constante" tags="picky" is_goal_specific="true">
+        <rule id="NUMERO_DE_AVOGADRO" name="🔬 Número de Avogadro → constante" tags="picky" is_goal_specific="true">
             <pattern>
                 <token postag_regexp="yes" postag="(SP.+:)?D.+MS.*" min="0"/>
                 <token>número</token>
@@ -11904,7 +11904,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="a constante de Avogadro">Calculamos com <marker>o número de Avogadro</marker>.</example>
         </rule>
 
-        <rule id="GRAU_CENTIGRADO" name="Preferir 'grau Celsius' a 'grau centígrado'.">
+        <rule id="GRAU_CENTIGRADO" name="🔬 Preferir 'grau Celsius' a 'grau centígrado'.">
             <pattern>
                 <token regexp="yes">graus?</token>
                 <marker>
