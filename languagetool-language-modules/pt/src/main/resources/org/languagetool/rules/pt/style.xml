@@ -13114,67 +13114,52 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     </category>
 
 
-    <category id='POSITIVE' name='Linguagem positiva' type='style' tone_tags="positive">
-        <!-- NÃO MILITARES civis -->
-        <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-10-18 (2-JUL-2020+)     -->
-        <rulegroup id='NAO_MILITARES' name="Civil/Civis" tags='picky' tone_tags="positive">
+
+    <category id='POSITIVE' name='🎯 Linguagem positiva' type='style' tone_tags="positive">
+
+
+        <rule id='NAO_MILITARES_CIVIS' name="🎯 Entidade não militar → civil" tone_tags='positive'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <!--IDEA shorten_it-->
-            <rule>
-                <antipattern>
-                    <token>,</token>
+            <pattern>
+                <token skip='2' regexp='yes' inflected='yes'>empresa|organização|entidade|instituição|agência|associação|ONG|sec?tor|administração</token>
+                <marker>
                     <token>não</token>
-                    <token>militar</token>
-                    <example>É de responsabilidade civil, e não militar</example>
-                </antipattern>
-                <pattern>
-                    <token postag='N.+|AQ.+' postag_regexp='yes'/>
-                    <marker>
-                        <token>não</token>
-                        <token>militar</token>
-                    </marker>
-                </pattern>
-                <message>Veja se pretende referir uma organização/empresa civil.</message>
-                <suggestion>civil</suggestion>
-                <example correction="civil">Há uma empresa <marker>não militar</marker> a criar simuladores.</example>
-            </rule>
-            <rule>
-                <pattern>
-                    <token postag='N.+|AQ.+' postag_regexp='yes'/>
-                    <marker>
-                        <token>não</token>
-                        <token>militares</token>
-                    </marker>
-                </pattern>
-                <message>Veja se pretende referir uma organização/empresa civil.</message>
-                <suggestion>civis</suggestion>
-                <example correction="civis">Há empresas <marker>não militares</marker> a criar simuladores.</example>
-            </rule>
-        </rulegroup>
-        <!-- PERDER semanas a/para demorar semanas a/para -->
-        <rule id='PERDER_DEMORAR_LEVAR' name="Perder → Demorar/levar" type='style' tone_tags="positive">
-            <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-08-16 (25-JUN-2021+)      -->
-            <!--
-            Perdi meses a escrever o livro. → Demorei meses a escrever o livro.
-            Perdi vários meses a escrever o livro. → Demorei vários meses a escrever o livro.
-            -->
+                    <token regexp='yes'>milita(r|res)</token>
+                </marker>
+            </pattern>
+            <message>Veja se pretende referir uma entidade civil.</message>
+            <suggestion><match no='3' postag='AQ.+' postag_regexp='yes'>civil</match></suggestion>
+            <example correction="civil">Há uma empresa <marker>não militar</marker> a criar simuladores.</example>
+            <example correction="civis">Há empresas <marker>não militares</marker> a criar simuladores.</example>
+            <example>Há uma organização muito reconhecida civil.</example>
+        </rule>
+
+
+        <rule id='PERDER_DEMORAR_LEVAR_ESTAR' name="🎯 Perder → Demorar/levar/estar" type='style' tone_tags='positive'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <marker>
-                    <token inflected='yes'>perder</token>
+                    <token skip='1' postag='V.+' postag_regexp='yes' inflected='yes'>perder</token>
                 </marker>
-                <or>
-                    <token min="0" max="1" regexp='yes' inflected='yes'>&adverbios_de_intensidade;</token>
-                    <token postag='Z0.+' postag_regexp='yes'/>
-                </or>
-                <token regexp='yes' inflected='yes'>&expressoes_de_tempo;</token>
-                <token regexp="yes">a|para</token>
+                <token regexp='yes' inflected='yes'>&expressoes_de_tempo;<exception regexp='no'>tempo</exception></token>
+                <token regexp='yes'>a|para</token>
                 <token postag='V.+' postag_regexp='yes'/>
             </pattern>
-            <message>Nesta situação o verbo &quot;perder&quot; pode ser depreciativo. Utilize um alternativo.</message>
+            <message>Considere usar &quot;demorar&quot;, &quot;levar&quot; ou &quot;estar&quot; em vez de &quot;perder&quot;.</message>
             <suggestion><match no='1' postag='V.+' postag_regexp='yes'>demorar</match></suggestion>
             <suggestion><match no='1' postag='V.+' postag_regexp='yes'>levar</match></suggestion>
             <suggestion><match no='1' postag='V.+' postag_regexp='yes'>estar</match></suggestion>
             <example correction="Demorei|Levei|Estive"><marker>Perdi</marker> meses a escrever o livro.</example>
+            <example correction="Demorei|Levei|Estive"><marker>Perdi</marker> vários anos a escrever o livro.</example>
+            <example correction="Demorei|Levei|Estive"><marker>Perdi</marker> 5 anos para escrever o livro.</example>
+            <example>Ele não perdeu tempo para voltar.</example>
+            <example>Você está perdendo seu tempo a tentar convencê-lo.</example>
+            <example>Além disso, perderemos muito tempo para falar sobre os vários assuntos.</example>
         </rule>
+
+
+
     </category>
 
 
