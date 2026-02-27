@@ -13114,44 +13114,30 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     </category>
 
 
-    <category id='POSITIVE' name='Linguagem positiva' type='style' tone_tags="positive">
-        <!-- NÃO MILITARES civis -->
-        <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-10-18 (2-JUL-2020+)     -->
-        <rulegroup id='NAO_MILITARES' name="Civil/Civis" tags='picky' tone_tags="positive">
+
+    <category id='POSITIVE' name='🎯 Linguagem positiva' type='style' tone_tags="positive">
+
+
+        <rule id='NAO_MILITARES_CIVIS' name="🎯 Entidade não militar → civil" tone_tags='positive'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <!--IDEA shorten_it-->
-            <rule>
-                <antipattern>
-                    <token>,</token>
+            <pattern>
+                <token skip='2' regexp='yes' inflected='yes'>empresa|organização|entidade|instituição|agência|ONG|associação</token>
+                <marker>
                     <token>não</token>
-                    <token>militar</token>
-                    <example>É de responsabilidade civil, e não militar</example>
-                </antipattern>
-                <pattern>
-                    <token postag='N.+|AQ.+' postag_regexp='yes'/>
-                    <marker>
-                        <token>não</token>
-                        <token>militar</token>
-                    </marker>
-                </pattern>
-                <message>Veja se pretende referir uma organização/empresa civil.</message>
-                <suggestion>civil</suggestion>
-                <example correction="civil">Há uma empresa <marker>não militar</marker> a criar simuladores.</example>
-            </rule>
-            <rule>
-                <pattern>
-                    <token postag='N.+|AQ.+' postag_regexp='yes'/>
-                    <marker>
-                        <token>não</token>
-                        <token>militares</token>
-                    </marker>
-                </pattern>
-                <message>Veja se pretende referir uma organização/empresa civil.</message>
-                <suggestion>civis</suggestion>
-                <example correction="civis">Há empresas <marker>não militares</marker> a criar simuladores.</example>
-            </rule>
-        </rulegroup>
+                    <token regexp='yes'>milita(r|res)</token>
+                </marker>
+            </pattern>
+            <message>Veja se pretende referir uma entidade civil.</message>
+            <suggestion><match no='3' postag='AQ.+' postag_regexp='yes'>civil</match></suggestion>
+            <example correction="civil">Há uma empresa <marker>não militar</marker> a criar simuladores.</example>
+            <example correction="civis">Há empresas <marker>não militares</marker> a criar simuladores.</example>
+            <example>Há uma organização muito reconhecida civil.</example>
+        </rule>
+
+
         <!-- PERDER semanas a/para demorar semanas a/para -->
-        <rule id='PERDER_DEMORAR_LEVAR' name="Perder → Demorar/levar" type='style' tone_tags="positive">
+        <rule id='PERDER_DEMORAR_LEVAR' name="🎯 Perder → Demorar/levar" type='style' tone_tags="positive">
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-08-16 (25-JUN-2021+)      -->
             <!--
             Perdi meses a escrever o livro. → Demorei meses a escrever o livro.
