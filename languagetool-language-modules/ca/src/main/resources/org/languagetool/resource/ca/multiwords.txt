@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+MFC Ayat;NPMSO00
+Morad el-Khattouti el-Horami;NPMSSP0
+Alfons Durán-Pich;NPMSSP0
 Hospital Al-Ahli;NPMSG00
 Hospital Gemelli;NPMSG00
 Hospital Ibn Sina;NPMSG00
@@ -2932,7 +2935,6 @@ Ahmet Altan;NPMSSP0 # esadir
 Ahmet Necdet Sezer;NPMSSP0 # esadir
 Aida Garifullina;NPFSSP0 # esadir
 Aiko Miyawaki;NPFSSP0 # esadir
-Ailux;NPFSSP0 # esadir
 Ailyn Pérez;NPFSSP0 # esadir
 Ainhoa Garmendia;NPFSSP0 # esadir
 Aitor Arregi;NPMSSP0 # esadir
@@ -3029,7 +3031,6 @@ Ali Treki;NPMSSP0 # esadir
 Ali Yerlikaya;NPMSSP0 # esadir
 Ali Zeidan;NPMSSP0 # esadir
 Alice Coote;NPFSSP0 # esadir
-Alice;NPFSSP0 # esadir
 Alicia Giménez Bartlett;NPFSSP0 # esadir
 Alicia Pérez-Porro;NPFSSP0 # esadir
 Alicia Sanz;NPFSSP0 # esadir
@@ -3037,7 +3038,6 @@ Alina Grigore;NPFSSP0 # esadir
 Alina Pogostkina;NPFSSP0 # esadir
 Alison Balsom;NPFSSP0 # esadir
 Alisson Becker;NPMSSP0 # esadir
-Alizzz;NPMSSP0 # esadir
 Alois Alzheimer;NPMSSP0 # esadir
 Alonso Dezcallar;NPMSSP0 # esadir
 Alonso Ruizpalacios;NPMSSP0 # esadir
@@ -3140,7 +3140,6 @@ Anita Alvarez;NPFSSP0 # esadir
 Anita Hartig;NPFSSP0 # esadir
 Anja Harteros;NPFSSP0 # esadir
 Anja Kampe;NPFSSP0 # esadir
-Ankhesenamon;NPFSSP0 # esadir
 Ann Hallenberg;NPFSSP0 # esadir
 Anna Bon di Venezia;NPFSSP0 # esadir
 Anna Caterina Antonacci;NPFSSP0 # esadir
@@ -3257,12 +3256,10 @@ Aurélien Tchouaméni;NPMSSP0 # esadir
 Ava DuVernay;NPFSSP0 # esadir
 Avi Gabbay;NPMSSP0 # esadir
 Avichay Adraee;NPMSSP0 # esadir
-Awkwafina;NPFSSP0 # esadir
 Axel Kicillof;NPMSSP0 # esadir
 Axel Weber;NPMSSP0 # esadir
 Axel Witsel;NPMSSP0 # esadir
-Ay;NPMSSP0 # esadir
-Ayat;NPMSSP0 # esadir
+#Ay;NPMSSP0 # esadir
 Ayelet Shaked;NPFSSP0 # esadir
 Ayman Odeh;NPMSSP0 # esadir
 Aymeric Laporte;NPMSSP0 # esadir
@@ -3307,7 +3304,6 @@ Benjamin Cooke;NPMSSP0 # esadir
 Benjamin Dale;NPMSSP0 # esadir
 Benjamin Mkapa;NPMSSP0 # esadir
 Benjamin Schmid;NPMSSP0 # esadir
-Benjamin;NPMSSP0 # esadir
 Benoît Jacquot;NPMSSP0 # esadir
 Benoît Violier;NPMSSP0 # esadir
 Bernard Madoff;NPMSSP0 # esadir
@@ -3330,7 +3326,6 @@ Bianca Andreescu;NPFSSP0 # esadir
 Bill Nighy;NPMSSP0 # esadir
 Biniam Girmay;NPMSSP0 # esadir
 Birgitta Jónsdóttir;NPFSSP0 # esadir
-Bizarrap;NPMSSP0 # esadir
 Bjarni Benediktsson;NPMSSP0 # esadir
 Blaise Compaoré;NPMSSP0 # esadir
 Blanca Ovelar;NPFSSP0 # esadir
@@ -3376,7 +3371,6 @@ Bárbara Lennie;NPFSSP0 # esadir
 Bárbara Lluch;NPFSSP0 # esadir
 Béatrice Uria-Monzon;NPFSSP0 # esadir
 Bülent Ecevit;NPMSSP0 # esadir
-Ca7riel;NPMSSP0 # esadir
 Caeleb Dressel;NPMSSP0 # esadir
 Cai Guo-Qiang;NPMSSP0 # esadir
 Cai Qi;NPMSSP0 # esadir
@@ -3490,7 +3484,6 @@ Christianne Stotijn;NPFSSP0 # esadir
 Christina Landshamer;NPFSSP0 # esadir
 Christina Onassis;NPFSSP0 # esadir
 Christina Pluhar;NPFSSP0 # esadir
-Christo;NPMSSP0 # esadir
 Christoph Eschenbach;NPMSSP0 # esadir
 Christoph Kramer;NPMSSP0 # esadir
 Christoph Metzelder;NPMSSP0 # esadir
@@ -3532,7 +3525,6 @@ Clàudia Vives-Fierro;NPFSSP0 # esadir
 Clément Lenglet;NPMSSP0 # esadir
 Colette Maze;NPFSSP0 # esadir
 Colin Matthews;NPMSSP0 # esadir
-Colita;NPFSSP0 # esadir
 Conradin Kreutzer;NPMSSP0 # esadir
 Constance Wu;NPFSSP0 # esadir
 Constantin Trinks;NPMSSP0 # esadir
@@ -3648,14 +3640,12 @@ Dayron Robles;NPMSSP0 # esadir
 Dea Kulumbegashvili;NPFSSP0 # esadir
 Dean Spielmann;NPMSSP0 # esadir
 Deborah Voigt;NPFSSP0 # esadir
-Deco;NPMSSP0 # esadir
 Deco 4K;NPMSO00
 Deividas Dulkys;NPMSSP0 # esadir
 Dejan Bodiroga;NPMSSP0 # esadir
 Dejan Lovren;NPMSSP0 # esadir
 Delbert Mann;NPMSSP0 # esadir
 Demi Vollering;NPFSSP0 # esadir
-Demon;NPMSSP0 # esadir
 Deng Jiagui;NPMSSP0 # esadir
 Denis Gaultier;NPMSSP0 # esadir
 Denis Kozhukhin;NPMSSP0 # esadir
@@ -3690,7 +3680,6 @@ Diego Matheuz;NPMSSP0 # esadir
 Diego Ocampo;NPMSSP0 # esadir
 Diego Schwartzman;NPMSSP0 # esadir
 Dietmar Hopp;NPMSSP0 # esadir
-Dieudonné;NPMSSP0 # esadir
 Dika Mem;NPMSSP0 # esadir
 Dileita Mohamed Dileita;NPMSSP0 # esadir
 Dimitri Foulquier;NPMSSP0 # esadir
@@ -3706,7 +3695,6 @@ Djamel Mesbah;NPMSSP0 # esadir
 Dmitró Bulàtov;NPMSSP0 # esadir
 Dmitró Kuleba;NPMSSP0 # esadir
 Dmitró Txigrinski;NPMSSP0 # esadir
-Doechii;NPFSSP0 # esadir
 Dolly de Leon;NPFSSP0 # esadir
 Dolora Zajick;NPFSSP0 # esadir
 Domagoj Vida;NPMSSP0 # esadir
@@ -3723,7 +3711,6 @@ Dominika Cibulková;NPFSSP0 # esadir
 Dominique Lapierre;NPMSSP0 # esadir
 Dominique Mamberti;NPMSSP0 # esadir
 Dominique Visse;NPMSSP0 # esadir
-Dominnico;NPMSSP0 # esadir
 Don Winslow;NPMSSP0 # esadir
 Donald Wuerl;NPMSSP0 # esadir
 Donatella Di Pietrantonio;NPFSSP0 # esadir
@@ -3735,10 +3722,7 @@ Dragan Primorac;NPMSSP0 # esadir
 Drew Starkey;NPMSSP0 # esadir
 Dudi Sela;NPMSSP0 # esadir
 Dudu Aouate;NPMSSP0 # esadir
-Duffy;NPFSSP0 # esadir
-Dunga;NPMSSP0 # esadir
 Dwayne Croft;NPMSSP0 # esadir
-Dyango;NPMSSP0 # esadir
 Dylan Teuns;NPMSSP0 # esadir
 Dénes Dibusz;NPMSSP0 # esadir
 Désiré Doué;NPMSSP0 # esadir
@@ -3779,7 +3763,6 @@ Elena Petrová;NPFSSP0 # esadir
 Elena Poniatowska;NPFSSP0 # esadir
 Elena Trapé;NPFSSP0 # esadir
 Eleonora Buratto;NPFSSP0 # esadir
-Elgio;NPMSSP0 # esadir
 Elia Viviani;NPMSSP0 # esadir
 Eliahu Inbal;NPMSSP0 # esadir
 Eliaquim Mangala;NPMSSP0 # esadir
@@ -3888,7 +3871,6 @@ Eyal Zamir;NPMSSP0 # esadir
 Fabian Cancellara;NPMSSP0 # esadir
 Fabien Gabel;NPMSSP0 # esadir
 Fabienne Suter;NPFSSP0 # esadir
-Fabinho;NPMSSP0 # esadir
 Fabio Armiliato;NPMSSP0 # esadir
 Fabio Aru;NPMSSP0 # esadir
 Fabio Baggio;NPMSSP0 # esadir
@@ -3925,14 +3907,12 @@ Ferdinand Ries;NPMSSP0 # esadir
 Ferdinando Bertoni;NPMSSP0 # esadir
 Ferdinando Carulli;NPMSSP0 # esadir
 Ferland Mendy;NPMSSP0 # esadir
-Fernandinho;NPMSSP0 # esadir
 Fernando Filoni;NPMSSP0 # esadir
 Fernando Haddad;NPMSSP0 # esadir
 Fernando Meirelles;NPMSSP0 # esadir
 Fernando Méndez-Leite;NPMSSP0 # esadir
 Fernando Valdivielso;NPMSSP0 # esadir
 Fernando Villavicencio;NPMSSP0 # esadir
-Feroz;NPMSSP0 # esadir
 Ferran Barenblit;NPMSSP0 # esadir
 Ferzan Özpetek;NPMSSP0 # esadir
 Festus Mogae;NPMSSP0 # esadir
@@ -4134,7 +4114,6 @@ Giuseppe Valentini;NPMSSP0 # esadir
 Glen Powell;NPMSSP0 # esadir
 Gloria Macapagal-Arroyo;NPFSSP0 # esadir
 Godai Garcia;NPMSSP0 # esadir
-GOG;NPMSSP0 # esadir
 Goh Chok Tong;NPMSSP0 # esadir
 Golden Boy;NPMSSP0 # esadir
 Golshifteh Farahani;NPFSSP0 # esadir
@@ -4148,7 +4127,6 @@ Gottfried Reiche;NPMSSP0 # esadir
 Goukouni Oueddei;NPMSSP0 # esadir
 Grace Mugabe;NPFSSP0 # esadir
 Granville Bantock;NPMSSP0 # esadir
-Grasshopper;NPMSSP0 # esadir
 Greg Rutherford;NPMSSP0 # esadir
 Gregory Kunde;NPMSSP0 # esadir
 Grigori Iavlinski;NPMSSP0 # esadir
@@ -4171,7 +4149,6 @@ Guillermo García Calvo;NPMSSP0 # esadir
 Guillermo Moreno;NPMSSP0 # esadir
 Guillermo Osorno;NPMSSP0 # esadir
 Guiraut Riquier;NPMSSP0 # esadir
-Guitarricadelafuente;NPMSSP0 # esadir
 Gurbanguly Berdimuhamedow;NPMSSP0 # esadir
 Gustaf Sjökvist;NPMSSP0 # esadir
 Gustav Neidlinger;NPMSSP0 # esadir
@@ -4263,7 +4240,6 @@ Heorhiy Tsitaishvili;NPMSSP0 # esadir
 Herbert Lippert;NPMSSP0 # esadir
 Herbert Schuch;NPMSSP0 # esadir
 Herbert Tachezi;NPMSSP0 # esadir
-Hercules;NPMSSP0 # esadir
 Herman Strategier;NPMSSP0 # esadir
 Hervé Niquet;NPMSSP0 # esadir
 Herzi Halevi;NPMSSP0 # esadir
@@ -4279,7 +4255,6 @@ Hisao Tanaka;NPMSSP0 # esadir
 Hishammuddin Hussein;NPMSSP0 # esadir
 Hofesh Shechter;NPMSSP0 # esadir
 Hong Chau;NPFSSP0 # esadir
-Horemheb;NPMSSP0 # esadir
 Hossein Salami;NPMSSP0 # esadir
 Houari Boumédiène;NPMSSP0 # esadir
 Hovik Keuchkerian;NPMSSP0 # esadir
@@ -4705,7 +4680,6 @@ Kalu Uche;NPMSSP0 # esadir
 Kamil Syprzak;NPMSSP0 # esadir
 Kamisese Mara;NPMSSP0 # esadir
 Kaoru Mitoma;NPMSSP0 # esadir
-Kap;NPMSSP0 # esadir
 Karel Husa;NPMSSP0 # esadir
 Karel Mark Chichon;NPMSSP0 # esadir
 Karen Cargill;NPFSSP0 # esadir
@@ -4789,7 +4763,6 @@ Kocheril Raman Narayanan;NPMSSP0 # esadir
 Kodi Smit-McPhee;NPMSSP0 # esadir
 Koen Casteels;NPMSSP0 # esadir
 Koen Lenaerts;NPMSSP0 # esadir
-Koke;NPMSSP0 # esadir
 Konrad Jarnot;NPMSSP0 # esadir
 Konstantin Wolff;NPMSSP0 # esadir
 Konstantín Txúitxenko;NPMSSP0 # esadir
@@ -4837,6 +4810,7 @@ Laura Biagiotti;NPFSSP0 # esadir
 Laura Castelli;NPFSSP0 # esadir
 Laura Gómez-Lacueva;NPFSSP0 # esadir
 Laure Vega;NPFSSP0 # esadir
+Laura Fernández Vega;NPFSSP0 # esadir
 Laurent Berger;NPMSSP0 # esadir
 Laurent Blanc;NPMSSP0 # esadir
 Laurent Brochard;NPMSSP0 # esadir
@@ -4885,7 +4859,7 @@ Letsie III de Lesotho;NPMSSP0 # esadir
 Leung Chun-ying;NPMSSP0 # esadir
 Lev Mekhlis;NPMSSP0 # esadir
 Levente Molnár;NPMSSP0 # esadir
-Levi;NPMSSP0 # esadir
+#Levi;NPMSSP0 # esadir
 Levy Mwanawasa;NPMSSP0 # esadir
 Lex van Delden;NPMSSP0 # esadir
 Leymah Gbowee;NPFSSP0 # esadir
@@ -4898,12 +4872,10 @@ Li Zhanshu;NPMSSP0 # esadir
 Liamine Zéroual;NPMSSP0 # esadir
 Lianna Haroutounian;NPFSSP0 # esadir
 Lianne Dalziel;NPFSSP0 # esadir
-Liber;NPMSSP0 # esadir
 Lidia Vinyes Curtis;NPFSSP0 # esadir
 Lidón Muñoz;NPFSSP0 # esadir
 Lieke Martens;NPFSSP0 # esadir
 Lien Chan;NPMSSP0 # esadir
-Lildami;NPMSSP0 # esadir
 Lilli Paasikivi;NPFSSP0 # esadir
 Lily Collins;NPFSSP0 # esadir
 Lily Maisky;NPFSSP0 # esadir
@@ -5146,7 +5118,6 @@ Mariona Caldentey;NPFSSP0 # esadir
 Marius Brenciu;NPMSSP0 # esadir
 Marius Copil;NPMSSP0 # esadir
 Marius Flothuis;NPMSSP0 # esadir
-Mariza;NPFSSP0 # esadir
 Mark Cavendish;NPMSSP0 # esadir
 Mark Delavan;NPMSSP0 # esadir
 Mark Elder;NPMSSP0 # esadir
@@ -5161,7 +5132,6 @@ Markus Eiche;NPMSSP0 # esadir
 Marlies Schild;NPFSSP0 # esadir
 Marlis Petersen;NPFSSP0 # esadir
 Marlos Moreno;NPMSSP0 # esadir
-Marquinhos;NPMSSP0 # esadir
 Marria Pratts;NPFSSP0 # esadir
 Marta Mathéu;NPFSSP0 # esadir
 Martin Braithwaite;NPMSSP0 # esadir
@@ -5364,7 +5334,6 @@ Moisès Maicas;NPMSSP0 # esadir
 Mojca Erdmann;NPFSSP0 # esadir
 Mokgweetsi Masisi;NPMSSP0 # esadir
 Monica Green;NPFSSP0 # esadir
-Morad;NPMSSP0 # esadir
 Mordechai Vanunu;NPMSSP0 # esadir
 Morgan De Sanctis;NPMSSP0 # esadir
 Morgan Tsvangirai;NPMSSP0 # esadir
@@ -5394,7 +5363,6 @@ Myung-Whun Chung;NPMSSP0 # esadir
 Márton Fucsovics;NPMSSP0 # esadir
 Mátyás Seiber;NPMSSP0 # esadir
 Míriam Hatibi;NPFSSP0 # esadir
-Mísia;NPFSSP0 # esadir
 Mónica López;NPFSSP0 # esadir
 Nabih Berri;NPMSSP0 # esadir
 Nabil Ayouch;NPMSSP0 # esadir
@@ -5416,7 +5384,6 @@ Najim Laachraoui;NPMSSP0 # esadir
 Nalini Malani;NPFSSP0 # esadir
 Nana Akufo-Addo;NPMSSP0 # esadir
 Nancho Novo;NPMSSP0 # esadir
-Nani;NPMSSP0 # esadir
 Napoléon Coste;NPMSSP0 # esadir
 Narciso Ibáñez Serrador;NPMSSP0 # esadir
 Nariné Abgarian;NPFSSP0 # esadir
@@ -5432,19 +5399,16 @@ Natasha Mack;NPFSSP0 # esadir
 Natasha Richardson;NPFSSP0 # esadir
 Nathan Jawai;NPMSSP0 # esadir
 Nathan Milstein;NPMSSP0 # esadir
-Nature;NPMSSP0 # esadir
 Natàlia Estemírova;NPFSSP0 # esadir
 Nawaf Salam;NPMSSP0 # esadir
 Nawaz Sharif;NPMSSP0 # esadir
 Nazanín Armanian;NPFSSP0 # esadir
 Necmettin Erbakan;NPMSSP0 # esadir
-Nefertari;NPFSSP0 # esadir
 Neil Harbisson;NPMSSP0 # esadir
 Neil Shicoff;NPMSSP0 # esadir
 Nelson Goerner;NPMSSP0 # esadir
 Nelson Ávila;NPMSSP0 # esadir
 Nemanja Radoja;NPMSSP0 # esadir
-Neto;NPMSSP0 # esadir
 Netumbo Nandi-Ndaitwah;NPFSSP0 # esadir
 Ngozi Okonjo-Iweala;NPFSSP0 # esadir
 Ni Yulan;NPFSSP0 # esadir
@@ -5502,7 +5466,6 @@ Noémie Merlant;NPFSSP0 # esadir
 Nuccio Ordine;NPMSSP0 # esadir
 Nuno Dias;NPMSSP0 # esadir
 Núria Picas;NPFSSP0 # esadir
-Odette;NPFSSP0 # esadir
 Okka von der Damerau;NPFSSP0 # esadir
 Ola Gjeilo;NPMSSP0 # esadir
 Oladipo Diya;NPMSSP0 # esadir
@@ -5520,7 +5483,6 @@ Oliver Schnyder;NPMSSP0 # esadir
 Olivia Colman;gènere no-binari # esadir
 Olivier Peter;NPMSSP0 # esadir
 Olivier Py;NPMSSP0 # esadir
-Olivier;NPMSSP0 # esadir
 Olle Persson;NPMSSP0 # esadir
 Omar Abdel-Rahman;NPMSSP0 # esadir
 Omar Abdullah;NPMSSP0 # esadir
@@ -5543,10 +5505,7 @@ Otto Ketting;NPMSSP0 # esadir
 Otto Olsson;NPMSSP0 # esadir
 Otto Stich;NPMSSP0 # esadir
 Ottón Solís;NPMSSP0 # esadir
-Ouineta;NPFSSP0 # esadir
 Ousmane Sonko;NPMSSP0 # esadir
-Ovidie;NPFSSP0 # esadir
-Oz;NPMSSP0 # esadir
 Paavo Heininen;NPMSSP0 # esadir
 Pablo Machín;NPMSSP0 # esadir
 Pablo Piatti;NPMSSP0 # esadir
@@ -5617,7 +5576,6 @@ Pavel Svoboda;NPMSSP0 # esadir
 Pavlos Fyssas;NPMSSP0 # esadir
 Payal Kapadia;NPFSSP0 # esadir
 Paz Vega;NPFSSP0 # esadir
-Pedri;NPMSSP0 # esadir
 Pedro Martín-Calero;NPMSSP0 # esadir
 Pedro Opeka;NPMSSP0 # esadir
 Peng Liyuan;NPFSSP0 # esadir
@@ -5671,7 +5629,6 @@ Philippe Lazzarini;NPMSSP0 # esadir
 Philippe Mexès;NPMSSP0 # esadir
 Philippe Pierlot;NPMSSP0 # esadir
 Philippe Tabarot;NPMSSP0 # esadir
-Piaggio;NPMSSP0 # esadir
 Pier Luigi Celata;NPMSSP0 # esadir
 Piero Bellugi;NPMSSP0 # esadir
 Pierre Aubameyang;NPMSSP0 # esadir
@@ -5700,7 +5657,6 @@ Piotr Grabarczyk;NPMSSP0 # esadir
 Piotr Trochowski;NPMSSP0 # esadir
 Pippa Middleton;NPFSSP0 # esadir
 Pita Limjaroenrat;NPMSSP0 # esadir
-Pitingo;NPMSSP0 # esadir
 Pol Monen;NPMSSP0 # esadir
 Pol van Boekel;NPMSSP0 # esadir
 Prabowo Subianto;NPMSSP0 # esadir
@@ -5717,7 +5673,6 @@ Qasem Soleimani;NPMSSP0 # esadir
 Qian Qichen;NPMSSP0 # esadir
 Quincy Wilson;NPMSSP0 # esadir
 Quinn Simmons;NPMSSP0 # esadir
-Quino;NPMSSP0 # esadir
 Quvenzhané Wallis;NPFSSP0 # esadir
 Rachel Hurd-Wood;NPFSSP0 # esadir
 Rada Akbar;NPFSSP0 # esadir
@@ -5749,7 +5704,6 @@ Ramón Sáez Valcárcel;NPMSSP0 # esadir
 Ramón Vargas;NPMSSP0 # esadir
 Ranil Wickremesinghe;NPMSSP0 # esadir
 Raoni Metuktire;NPMSSP0 # esadir
-Raphael;NPMSSP0 # esadir
 Raphaël Varane;NPMSSP0 # esadir
 Rashid Khalidi;NPMSSP0 # esadir
 Rashid Ramzi;NPMSSP0 # esadir
@@ -5819,7 +5773,6 @@ Roberto Álamo;NPMSSP0 # esadir
 Robin Blaze;NPMSSP0 # esadir
 Robin Swann;NPMSSP0 # esadir
 Robin Ticciati;NPMSSP0 # esadir
-Robinho;NPMSSP0 # esadir
 Roc Blackblock;NPMSSP0 # esadir
 Rodica Radian-Gordon;NPFSSP0 # esadir
 Rodion Sxedrín;NPMSSP0 # esadir
@@ -5920,7 +5873,6 @@ Sani Abacha;NPMSSP0 # esadir
 Santi Millán;NPMSSP0 # esadir
 Santiago Peña;NPMSSP0 # esadir
 Santiago Sierra;NPMSSP0 # esadir
-Santos;NPMSSP0 # esadir
 Sara Baras;NPFSSP0 # esadir
 Sara Duterte;NPFSSP0 # esadir
 Sara Däbritz;NPFSSP0 # esadir
@@ -5985,7 +5937,6 @@ Siarhei Rutenka;NPMSSP0 # esadir
 Sibghatullah Mojaddedi;NPMSSP0 # esadir
 Siddhartha Mukherjee;NPMSSP0 # esadir
 Sidi Larbi Cherkaoui;NPMSSP0 # esadir
-Sidonie;NPFSSP0 # esadir
 Siegfried Matthus;NPMSSP0 # esadir
 Sigfrido Ranucci;NPMSSP0 # esadir
 Silvan Shalom;NPMSSP0 # esadir
@@ -6010,7 +5961,6 @@ Sirimavo Bandaranaike;NPFSSP0 # esadir
 Sitiveni Rabuka;NPMSSP0 # esadir
 Siv Jensen;NPFSSP0 # esadir
 Slobodan Praljak;NPMSSP0 # esadir
-Socunbohemio;NPMSSP0 # esadir
 Sofi Jeannin;NPFSSP0 # esadir
 Sofia de Wessex;NPFSSP0 # esadir
 Sofia Kenin;NPFSSP0 # esadir
@@ -6067,7 +6017,6 @@ Stéphanie d'Oustrac;NPFSSP0 # esadir
 Stéphanie Frappart;NPFSSP0 # esadir
 Sudarat Keyuraphan;NPFSSP0 # esadir
 Suhail Shaheen;NPMSSP0 # esadir
-Suharto;NPMSSP0 # esadir
 Suleiman Abu Ghaith;NPMSSP0 # esadir
 Sun Yang;NPMSSP0 # esadir
 Sun Yun-suan;NPMSSP0 # esadir
@@ -6123,7 +6072,6 @@ Terri Schiavo;NPFSSP0 # esadir
 Tesfaye Deriba;NPMSSP0 # esadir
 Tess Holliday;NPFSSP0 # esadir
 Tessa Thompson;NPFSSP0 # esadir
-Tetê;NPMSSP0 # esadir
 Thaksin Shinawatra;NPMSSP0 # esadir
 Than Shwe;NPMSSP0 # esadir
 Thanasi Kokkinakis;NPMSSP0 # esadir
@@ -6136,7 +6084,6 @@ Theo Walcott;NPMSSP0 # esadir
 Theobald Böhm;NPMSSP0 # esadir
 Theodor Kirchner;NPMSSP0 # esadir
 Theodor von Schacht;NPMSSP0 # esadir
-Theodora;NPFSSP0 # esadir
 Thiagus Petrus;NPMSSP0 # esadir
 Thibaut Pinot;NPMSSP0 # esadir
 Thierno Diallo;NPMSSP0 # esadir
@@ -6198,13 +6145,11 @@ Toni Nieminen;NPMSSP0 # esadir
 Toni Servillo;NPMSSP0 # esadir
 Tonny Vilhena;NPMSSP0 # esadir
 Topi Lehtipuu;NPMSSP0 # esadir
-Toquinho;NPMSSP0 # esadir
 Tornike Shengelia;NPMSSP0 # esadir
 Torsten Kerl;NPMSSP0 # esadir
 Toshio Hosokawa;NPMSSP0 # esadir
 Tran Duc Luong;NPMSSP0 # esadir
 Trent Alexander-Arnold;NPMSSP0 # esadir
-Triquell;NPMSSP0 # esadir
 Tristán Ulloa;NPMSSP0 # esadir
 Ture Rangström;NPMSSP0 # esadir
 Turgut Özal;NPMSSP0 # esadir
@@ -6280,8 +6225,6 @@ Virginia Torrecilla;NPFSSP0 # esadir
 Vitali Klitxkó;NPMSSP0 # esadir
 Vitali Milónov;NPMSSP0 # esadir
 Vitali Mutkó;NPMSSP0 # esadir
-Vitinha;NPMSSP0 # esadir
-Vitinho;NPMSSP0 # esadir
 Vittorio Gregotti;NPMSSP0 # esadir
 Vittorio Grigolo;NPMSSP0 # esadir
 Vittorio Taviani;NPMSSP0 # esadir
@@ -6361,7 +6304,6 @@ Xavier Marcé;NPMSSP0 # esadir
 Xavier Munford;NPMSSP0 # esadir
 Xesús Fraga;NPMSSP0 # esadir
 Xevi Xirgo;NPMSSP0 # esadir
-Ximbinha;NPMSSP0 # esadir
 Xiomara Castro;NPFSSP0 # esadir
 Xoel López;NPMSSP0 # esadir
 Xoán Bascuas;NPMSSP0 # esadir
@@ -6406,7 +6348,6 @@ Zanele Muholi;NPFSSP0 # esadir
 Zbigniew Ziobro;NPMSSP0 # esadir
 Zdravko Tolimir;NPMSSP0 # esadir
 Zeid Ra'ad al-Hussein;NPMSSP0 # esadir
-Zerocalcare;NPMSSP0 # esadir
 Zhang Chengdong;NPMSSP0 # esadir
 Zhang Gaoli;NPMSSP0 # esadir
 Zhang Zhan;NPFSSP0 # esadir
@@ -7661,9 +7602,9 @@ tote bag;NCFS000
 tote bags;NCFP000
 bossa tote;NCFS000
 bosses tote;NCFP000
-Faemino y Cansado;NPMNSP0
+Faemino y Cansado;NPMNSP0
 Josema Yuste;NPMSSP0
-Jorge Blass;NPMSSP0
+Jorge Blass;NPMSSP0
 Josep Gòrriz;NPMSSP0
 Gòrriz i Verdú;NPCNSP0
 Setze Jutges;NPMPO00
@@ -7749,7 +7690,7 @@ Teatre Apolo;NPMSO00
 golden visa;NCFS000
 golden visas;NCFP000
 Hoehn i Yahr;NPCNSP0
-Muñoz Peirats;NPCNSP0
+Muñoz Peirats;NPCNSP0
 Serguei Bubka;NPMSSP0
 Nandu Jubany;NPMSSP0
 cara b;NCFS000
@@ -8208,7 +8149,7 @@ Grup PRISA;NPMSO00
 Ernest Folch;NPMSSP0
 Solé Tura;NPCNSP0
 Solé i Tura;NPCNSP0
-Leticia Asenjo;NPFSSP0
+Leticia Asenjo;NPFSSP0
 Aleksandr Nevski;NPMSSP0
 Alexandre Nevski;NPMSSP0
 Beni Melal;NPCSG00
@@ -9747,16 +9688,12 @@ Juan Cruz;NPMSSP0
 Royal Society;NPFSO00
 Royal Society of London;NPFSO00
 Mark Felt;NPMSSP0
-Kansafra;NPCSG00
-Vayk;NPCSG00
-Kornidzor;NPCSG00
 Andrei Tróixev;NPMSSP0
 Ararat Mirzoyan;NPMSSP0
 Víktor Sokolov;NPMSSP0
 Roman Starovoit;NPMSSP0
 Óscar Puente;NPMSSP0
 Ana Boadas;NPFSSP0
-Mastung;NPCSG00
 Igor Matovic;NPMSSP0
 Samvel Shahramanyan;NPMSSP0
 Port Royal;NPCSG00
@@ -10206,13 +10143,11 @@ Il barbiere di Siviglia;NPMSO00
 Don Pasquale;NPMSO00
 L'elisir d'amore;NPMSO00
 Lucia di Lammermoor;NPFSO00
-Pagliacci;NPMPO00
 Cavalleria rusticana;NPFSO00
 La fanciulla del West;NPFSO00
 Madama Butterfly;NPFSO00
 Manon Lescaut;NPFSO00
 Luisa Miller;NPFSO00
-Rigoletto;NPMSO00
 Un ballo in maschera;NPMSO00
 Deutsche Grammophon;NPCNO00
 Premier League;NPFSO00
