@@ -1,5 +1,9 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Hospital Al-Ahli;NPMSG00
+Hospital Gemelli;NPMSG00
+Hospital Ibn Sina;NPMSG00
+Theodore von Kármán;NPMSSP0
 Birendra Bir Bikram Shah Dev;NPMSSP0
 Abbas El Fassi;NPMSSP0 # esadir Marroc
 Abdel Aziz Rantisi;NPMSSP0 # esadir país desconegut
