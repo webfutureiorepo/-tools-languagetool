@@ -143,7 +143,7 @@ public class CatalanRemoteRewriteHelper {
       "Respon només amb la frase dividida.",
         "EN_NO_INFINITIU_CAUSAL", "Reescriu la frase canviant la construcció 'al no + infinitiu' o " +
       "'en no + infinitiu' per 'com que...' o 'perquè...', fent els mínims canvis possibles. Respon amb la frase reescrita " +
-      "sense comentaris ni puntuació extra.",
+      "sense comentaris extra.",
   "CA_REMOTE_ESCOLTAR_SENTIR", "Reescriu aquesta frase canviant el verb 'escoltar' pel verb 'sentir', si està mal usat, és a dir, si no vol dir 'parar atenció, atendre o obeir'." +
       "No canviïs el verb si 'escoltar' vol dir 'parar atenció, atendre o obeir', i per tant està ben usat (p. ex., El vaig escoltar atentament)." +
       "Respon directament amb la frase reescrita, sense comentaris ni puntuació extra.");
