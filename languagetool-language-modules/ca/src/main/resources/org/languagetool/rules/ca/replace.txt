@@ -1,3 +1,5 @@
+ivern=hivern
+comque=com que
 trampilla=trapa|portella
 Dombas|Dombàs|Dombass=Donbàs
 Maale|Male|Malé=Male'
