@@ -11,6 +11,7 @@ Leavitt	Leavitt	NPCNSP0
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0
 Rayuela	Rayuela	NPFSO00
+Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Urriés	Urriés	NPCSG00
 Vicente	Vicente	NPCNSP0
 autocèntric	autocèntric	AQ0MS0
