@@ -3699,6 +3699,154 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     </rule>
 
 
+      <rulegroup id='PESQUISA_INVESTIGAÇÃO' name="🇵🇹🎓 Pesquisa/pesquisador → investigação/investigador" type='style' tone_tags='academic' tags='picky' default='temp_off'>
+        <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+
+          <antipattern> <!-- Search / consulta -->
+              <token regexp='yes' inflected='yes'>fazer|realizar|efetuar</token>
+              <token min='0' max='1' postag_regexp='yes' postag='(SPS00:)?[DP].+'/>
+              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <example>fazer a pesquisa</example>
+              <example>realizar pesquisa</example>
+              <example>efetuar a pesquisa</example>
+              <example>Toda vez que alguém faz uma pesquisa no Google, dois tipos de resultados aparecem.</example>
+              <example>Fazer uma pesquisa de mercado realmente vale a pena.</example>
+              <example>Quero que você faça uma pesquisa.</example>
+              <example>Jackson descobriu enquanto realizava suas pesquisas de que não havia um "som de faroeste" em 1911;</example>
+          </antipattern>
+
+          <antipattern> <!-- search / internet -->
+              <token skip='3' postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <token regexp='yes'>internet|web|google|sites?|páginas?|termos?|resultados?</token>
+              <example>Basta uma simples pesquisa pela Internet para encontrar as mais variadas formas de obter um rendimento extra.</example>
+              <example>Ele foi escolhido como o primeiro "single" de "Lunada", por seus fãs através de uma pesquisa na internet.</example>
+              <example>O Man of the Match é desde 2010 escolhido por uma pesquisa on-line no site da FIFA.</example>
+              <example>Em 2004, uma pesquisa em treze sites de Malta indicou doze em inglês e um multilíngue, sem incluir o próprio maltês.</example>
+              <example>E com a pesquisa de termos é tudo muito mais rápido.</example>
+              <example>Nenhum resultado encontrado para sua pesquisa, tente outros termos.</example>
+          </antipattern>
+
+          <antipattern> <!-- Informática -->
+              <token regexp='yes'>moto(r|res)|campos?|barras?|filtros?|caixas?|termos?|resultados?</token>
+              <token>de</token>
+              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <example>motor de pesquisa</example>
+              <example>campo de pesquisa</example>
+              <example>barra de pesquisa</example>
+          </antipattern>
+
+          <antipattern> <!-- Pesquisa bibliográfica -->
+              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <token regexp='yes'>bibliográficas?|documenta(l|is)|arquivísticas?</token>
+              <example>com base numa pesquisa bibliográfica.</example>
+          </antipattern>
+
+          <antipattern> <!-- Bases de dados -->
+              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <token>em</token>
+              <token regexp='yes'>bases?|arquivos?|repositórios?|catálogos?</token>
+              <example>Quero uma pesquisa em catálogos.</example>
+              <example>Quero uma pesquisa em repositórios.</example>
+          </antipattern>
+
+          <antipattern> <!-- Nome próprio depois de "pesquisa" -->
+              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <token>de</token>
+              <token postag_regexp='yes' postag='NP.+'/>
+              <example>pesquisa de Marco</example>
+              <example>pesquisa de Maria</example>
+              <example>A pesquisa de Cairns conduziu ao uso do capacete por motociclistas militares e civis.</example>
+              <example>As pesquisas de Américo serviram como referência também para a produção de um texto que ele mesmo escreveu</example>
+              <example>A pesquisa de Chris se concentra no processo biológico do crescimento.</example>
+          </antipattern>
+
+          <antipattern> <!-- Perguntas -->
+              <token skip='-1' postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <token postag='_PUNCT_INTERROGATION'/>
+              <example>Quem fez a pesquisa?</example>
+              <example>Que pesquisa fizeram?</example>
+              <example>De acordo com a pesquisa "Precisamos falar com os homens?"</example>
+              <example>Voce fez sua pesquisa, antes de escrever este amontoado de desinformação?</example>
+              <example>DESDE QUANDO O ANTONIO FLORA É VEREADOR, PARA FAZER PARTE DESSA PESQUISA?</example>
+              <example>O que ressaltam as pesquisas?</example>
+          </antipattern>
+
+          <antipattern> <!-- Nome de instituição -->
+              <token regexp='yes'>centros?|institutos?|laboratórios?</token>
+              <token>de</token>
+              <token regexp='yes'>pesquisas?</token>
+              <example>O trabalho pertence ao Centro de Pesquisa do Canadá.</example>
+          </antipattern>
+
+          <antipattern> <!-- Pesquisa de mercado -->
+              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+              <token>de</token>
+              <token regexp='yes'>mercados?</token>
+              <example>Para isso, basta uma breve pesquisa de mercado.</example>
+          </antipattern>
+
+          <antipattern> <!-- Citações -->
+              <token skip='3' postag='_QUOT'/>
+              <token skip='-1' postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisador(es)?|pesquisadoras?</token>
+              <token postag='_QUOT'/>
+              <example>"Os pesquisadores observaram um comportamento emergente no sistema."</example>
+              <example>«Pesquisadores tentam descobrir artista barroco mineiro».</example>
+          </antipattern>
+
+          <rule> <!-- #1: Preferir 'investigação' em contexto académico (determinante + pesquisa) -->
+              <pattern>
+                  <token postag_regexp='yes' postag='(SPS00:)?[DP].+'/>
+                  <token min='0' max='2' postag_regexp='yes' postag='A.+'/>
+                  <marker>
+                      <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+                  </marker>
+              </pattern>
+              <message>Em português europeu académico recomenda-se usar &quot;investigação&quot;.</message>
+              <suggestion><match no='3' postag='NC.+' postag_regexp='yes'>investigação</match></suggestion>
+              <example correction="investigação">A <marker>pesquisa</marker> realizada é original.</example>
+          </rule>
+
+          <rule> <!-- #2: Preferir 'investigação' em expressões académicas -->
+              <pattern>
+                  <token regexp='yes'>resultados?|objetivos?|metodologia|dados|conclus(ão|ões)</token>
+                  <token regexp='yes'>da|desta|dessa</token>
+                  <marker>
+                      <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+                  </marker>
+              </pattern>
+              <message>Em português europeu académico recomenda-se usar &quot;investigação&quot;.</message>
+              <suggestion><match no='3' postag='NC.+' postag_regexp='yes'>investigação</match></suggestion>
+              <example correction="investigação">Esta é a metodologia da <marker>pesquisa</marker>.</example>
+          </rule>
+
+          <rule> <!-- #3: ensino e investigação -->
+              <pattern>
+                  <token regexp='yes'>ensinos?</token>
+                  <token>e</token>
+                  <marker>
+                      <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
+                  </marker>
+              </pattern>
+              <message>Em português europeu académico recomenda-se usar &quot;investigação&quot;.</message>
+              <suggestion><match no='3' postag='NC.+' postag_regexp='yes'>investigação</match></suggestion>
+              <example correction="investigação">Para as universidade o importante é o ensino e <marker>pesquisa</marker>.</example>
+          </rule>
+
+          <rule> <!-- #4: Preferir 'investigador' em português europeu -->
+              <pattern>
+                  <marker>
+                      <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisador(es)?|pesquisadoras?</token>
+                  </marker>
+              </pattern>
+              <message>Em português europeu académico recomenda-se usar &quot;investigador&quot;.</message>
+              <suggestion><match no='1' postag='NC.+' postag_regexp='yes'>investigador</match></suggestion>
+              <example correction="investigador">O <marker>pesquisador</marker> analisou os dados experimentais.</example>
+              <example correction="investigadores">Há varios <marker>pesquisadores</marker> na universidade.</example>
+          </rule>
+
+      </rulegroup>
+
+
         <rulegroup id='ENSINO_SUPERIOR_V2' name="🇵🇹🔬 'Educação' Superior → 'Ensino'" type="style" tone_tags="academic">
         <!-- Used ChatGPT 4o for enhancements and extra accuracy -->
 
