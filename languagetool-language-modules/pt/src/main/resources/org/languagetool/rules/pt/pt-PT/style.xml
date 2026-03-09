@@ -3699,31 +3699,35 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     </rule>
 
 
-      <rulegroup id='PESQUISA_INVESTIGAÇÃO' name="🇵🇹🎓 Pesquisa/pesquisador → investigação/investigador" type='style' tone_tags='academic' tags='picky' default='temp_off'>
-        <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+      <rulegroup id='PESQUISA_INVESTIGAÇÃO' name="🇵🇹🎓 Pesquisar → investigar" type='style' tone_tags='academic' tags='picky' default='temp_off'>
+          <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
           <antipattern> <!-- Search / consulta -->
-              <token regexp='yes' inflected='yes'>fazer|realizar|efetuar</token>
-              <token min='0' max='1' postag_regexp='yes' postag='(SPS00:)?[DP].+'/>
+              <token skip='1' regexp='yes' inflected='yes'>fazer|realizar|efetuar</token>
               <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
-              <example>fazer a pesquisa</example>
-              <example>realizar pesquisa</example>
-              <example>efetuar a pesquisa</example>
-              <example>Toda vez que alguém faz uma pesquisa no Google, dois tipos de resultados aparecem.</example>
-              <example>Fazer uma pesquisa de mercado realmente vale a pena.</example>
-              <example>Quero que você faça uma pesquisa.</example>
+              <token min='0' max='1' postag='NC.+|AQ.+' postag_regexp='yes'/>
+              <token regexp='yes'>por|pel[ao]s?|de|d[ao]s?|n[ao]s?</token>
+              <example>Moussa e o arqueólogo Audran Labrousse realizaram uma pesquisa arquitetônica do templo do vale entre 1971 e 1981.</example>
+              <example>pelo que se fizer uma pesquisa por uma palavra em Língua Portuguesa, serão exibidas todas as palavras que possam ter</example>
+              <example>Para saber se a Tok entrega móveis na sua cidade é só fazer a pesquisa do seu CEP na página do produto</example>
               <example>Jackson descobriu enquanto realizava suas pesquisas de que não havia um "som de faroeste" em 1911;</example>
+              <example>Fiz uma pesquisa rápida de receitas de pastinacas no forno, porque queria prová-las assadas</example>
           </antipattern>
 
-          <antipattern> <!-- search / internet -->
+          <antipattern> <!-- Search / internet / mercado / opinião / bibliográfica / Informática (motor) -->
               <token skip='3' postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
-              <token regexp='yes'>internet|web|google|sites?|páginas?|termos?|resultados?</token>
+              <token regexp='yes'>internet|web|google|sites?|páginas?|termos?|resultados?|mercados?|eleitora(l|is)|opini(ão|ões)|sondage(m|ns)|inquéritos?|votaç(ão|ões)|sondas?|bibliográficas?|documenta(l|is)|arquivísticas?|moto(r|res)</token>
               <example>Basta uma simples pesquisa pela Internet para encontrar as mais variadas formas de obter um rendimento extra.</example>
               <example>Ele foi escolhido como o primeiro "single" de "Lunada", por seus fãs através de uma pesquisa na internet.</example>
               <example>O Man of the Match é desde 2010 escolhido por uma pesquisa on-line no site da FIFA.</example>
               <example>Em 2004, uma pesquisa em treze sites de Malta indicou doze em inglês e um multilíngue, sem incluir o próprio maltês.</example>
               <example>E com a pesquisa de termos é tudo muito mais rápido.</example>
               <example>Nenhum resultado encontrado para sua pesquisa, tente outros termos.</example>
+              <example>Para isso, basta uma breve pesquisa de mercado.</example>
+              <example>com base numa pesquisa bibliográfica.</example>
+              <example>As pesquisas de opinião são o barômetro da opinião pública.</example>
+              <example>A moradora do bairro Nacional, Leila Rosária Ramos, não acredita muito nas pesquisas eleitorais.</example>
+              <example>Antes de adquirir um produto, faça uma pesquisa pelo mesmo nos motores de busca.</example>
           </antipattern>
 
           <antipattern> <!-- Informática -->
@@ -3733,12 +3737,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
               <example>motor de pesquisa</example>
               <example>campo de pesquisa</example>
               <example>barra de pesquisa</example>
-          </antipattern>
-
-          <antipattern> <!-- Pesquisa bibliográfica -->
-              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
-              <token regexp='yes'>bibliográficas?|documenta(l|is)|arquivísticas?</token>
-              <example>com base numa pesquisa bibliográfica.</example>
           </antipattern>
 
           <antipattern> <!-- Bases de dados -->
@@ -3776,13 +3774,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
               <token>de</token>
               <token regexp='yes'>pesquisas?</token>
               <example>O trabalho pertence ao Centro de Pesquisa do Canadá.</example>
-          </antipattern>
-
-          <antipattern> <!-- Pesquisa de mercado -->
-              <token postag='NC.+' postag_regexp='yes' regexp='yes'>pesquisas?</token>
-              <token>de</token>
-              <token regexp='yes'>mercados?</token>
-              <example>Para isso, basta uma breve pesquisa de mercado.</example>
           </antipattern>
 
           <antipattern> <!-- Citações -->
