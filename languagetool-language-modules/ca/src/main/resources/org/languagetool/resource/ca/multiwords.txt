@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Mojtaba Khamenei;NPMSSP0
+Partido de la Ciudadanía;NPMSO00
+Partit de la Ciutadania;NPMSO00
 Teatre Coliseum;NPMSO00
 William Strunk Jr.;NPMSSP0
 William Strunk;NPMSSP0
@@ -7706,6 +7709,8 @@ Martínez Sistach;NPCNSP0
 Manel Valdivieso;MPMSSP0
 Ernest Martínez Izquierdo;MPMSSP0
 Óssip Mandelstam;NPMSSP0
+Nadejda Mandelstam;NPFSSP0
+Mikhaïl Kalinin;NPMSSP0
 Nicolau Oresme;NPMSSP0
 Anna Sahun;NPFSSP0
 Dinamo de Bucarest;NPMSO00

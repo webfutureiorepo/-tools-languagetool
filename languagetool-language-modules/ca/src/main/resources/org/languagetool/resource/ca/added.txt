@@ -24,6 +24,8 @@ comunotes	comunot	AQ0FP0
 comunots	comunot	AQ0MP0
 desarmant	desarmant	AQ0CS0
 desarmants	desarmant	AQ0CP0
+estalviable	estalviable	AQ0CS0
+estalviables	estalviable	AQ0CP0
 hiperteatralitat	hiperteatralitat	NCFS000
 hiperteatralitats	hiperteatralitat	NCFP000
 neoconfuciana	neoconfucià	AQ0FS0
