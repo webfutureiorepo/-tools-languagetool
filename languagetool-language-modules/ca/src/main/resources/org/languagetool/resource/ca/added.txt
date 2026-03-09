@@ -5,6 +5,7 @@
 ########## Dictionary fixes ##########
 ########## Additions ##########
 Aiguadolç	Aiguadolç	NPMSG00
+Basij	Basij	NPFSO00
 Coliseum	Coliseum	NPMSO00
 Dimona	Dimona	NPCSG00
 Leavitt	Leavitt	NPCNSP0
@@ -18,6 +19,8 @@ autocèntric	autocèntric	AQ0MS0
 autocèntrica	autocèntric	AQ0FS0
 autocèntrics	autocèntric	AQ0MP0
 autocèntriques	autocèntric	AQ0FP0
+basij	basij	NCCS000
+basijs	basij	NCCP000
 comunot	comunot	AQ0MS0
 comunota	comunot	AQ0FS0
 comunotes	comunot	AQ0FP0
