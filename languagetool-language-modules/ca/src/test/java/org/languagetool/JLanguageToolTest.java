@@ -23,6 +23,7 @@ import org.languagetool.language.Catalan;
 import org.languagetool.language.ValencianCatalan;
 import org.languagetool.language.BalearicCatalan;
 import org.languagetool.rules.CommaWhitespaceRule;
+import org.languagetool.rules.Rule;
 import org.languagetool.rules.RuleMatch;
 import org.languagetool.rules.ca.SimpleReplaceAnglicism;
 import org.languagetool.rules.ca.SimpleReplaceMultiwordsRule;
@@ -34,7 +35,6 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 public class JLanguageToolTest {
-
 
   private Language lang = Catalan.getInstance();
   private JLanguageTool tool = new JLanguageTool(lang);
@@ -51,10 +51,8 @@ public class JLanguageToolTest {
     assertEquals("POTSER_SIGUI", matches.get(0).getRule().getId());
 
     //ChunkTags
-
     assertEquals("[<S> Ho[ho/PP3NN000] deu[deure/VMIP3S00,GV] haver[haver/VAN00000,haver/_GV_,haver/_perfet,GV] tornat[tornar/VMP00SM0,GV] a[a/SPS00,GV] fer[fer/VMN00000,fer/complement,GV].[</S>./_PUNCT,<P/>]]",
       tool.analyzeText("Ho deu haver tornat a fer.").toString());
-
 
     assertEquals("[<S> Ho[ho/PP3NN000] he[haver/VAIP1S00,haver/_obligacio,GV] de[de/SPS00,GV] continuar[continuar/VMN00000,continuar/_GV_,GV] fent[fer/VMG00000,fent/_GV_,GV] així[així/RG].[</S>./_PUNCT,<P/>]]",
       tool.analyzeText("Ho he de continuar fent així.").toString());
@@ -287,6 +285,24 @@ public class JLanguageToolTest {
         "reivindicat la llei de serveis digitals."
       , JLanguageTool.Level.PICKY);
     assertEquals(matches.size(), 0);
+  }
+
+  /*
+   * Test any specific rule for convenience and speed. Change the rule ID.
+   */
+  @Test
+  public void testSpecificXMLRule() throws IOException {
+    for (Rule r: tool.getAllRules()) {
+      if (r.getId().equals("TAMANY")) {
+        tool.enableRule(r.getId());
+      } else {
+        tool.disableRule(r.getId());
+      }
+      List<RuleMatch> matches = tool.check("Tamany ideal de la mostra.");
+      assertEquals(1, matches.size());
+      assertEquals("[Mida ideal, Grandària ideal, Format ideal, Dimensió ideal, Proporció ideal, Volum ideal]",
+        matches.get(0).getSuggestedReplacements().toString());
+    }
   }
 
 }

@@ -25,6 +25,8 @@ comunot	comunot	AQ0MS0
 comunota	comunot	AQ0FS0
 comunotes	comunot	AQ0FP0
 comunots	comunot	AQ0MP0
+contracrònica	contracrònica	NCFS000
+contracròniques	contracrònica	NCFP000
 desarmant	desarmant	AQ0CS0
 desarmants	desarmant	AQ0CP0
 estalviable	estalviable	AQ0CS0

@@ -83,7 +83,7 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
           newPostag.append(splitNounOrigPostag.number);
         }
         newPostag.append(splitPostag.suffix);
-        AnalyzedToken at2 = new AnalyzedToken(suggestion, newPostag.toString(), suggestion);
+        AnalyzedToken at2 = new AnalyzedToken(at.getLemma(), newPostag.toString(), at.getLemma());
         atrNounList.add(at2);
       }
     } else {
