@@ -6,11 +6,14 @@
 ########## Additions ##########
 Aiguadolç	Aiguadolç	NPMSG00
 Basij	Basij	NPFSO00
+CTranslate	CTranslate	NPCNO00
+CUDA	CUDA	NPCNO00
 Coliseum	Coliseum	NPMSO00
 Dimona	Dimona	NPCSG00
 Leavitt	Leavitt	NPCNSP0
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0
+ONNX	ONNX	NPCNO00
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Urriés	Urriés	NPCSG00

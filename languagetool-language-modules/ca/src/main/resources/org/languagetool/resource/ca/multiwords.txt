@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Grandma Moses;NPFSSP0
+L'Osservatore Romano;NPMSO00
 Mojtaba Khamenei;NPMSSP0
 Partido de la Ciudadanía;NPMSO00
 Partit de la Ciutadania;NPMSO00

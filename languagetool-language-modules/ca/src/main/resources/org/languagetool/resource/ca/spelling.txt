@@ -2,10 +2,13 @@
 # completely ignored (i.e. not used to create suggestions).
 Aiguadolç
 Basij
+CTranslate
+CUDA
 Coliseum
 Dimona
 Leavitt
 Miguel
+ONNX
 Rayuela
 Rosselló-Pòrcel
 Urriés
