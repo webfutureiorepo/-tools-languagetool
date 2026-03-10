@@ -5943,6 +5943,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
   </rule>
 
   <rule id="VERB_3S_TO_NCAQ_20260310_RARE" name="It is not VMIP3S0">
+    <!-- The VMM02S0 exception below fixes: "A mulher precisa, mas" e "A mulher observa e o homem pensa." -->
     <pattern>
       <token postag='(SPS00:)?[DP].+' postag_regexp='yes'><exception scope='previous' regexp='yes'>que|e|ou</exception></token>
       <token min='1' max='2' postag='AQ.+|NC.+|VMP00.+' postag_regexp='yes'/>
@@ -5953,21 +5954,21 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
           <token postag='AQ.+' postag_regexp='yes'/> <!-- NC.+ causes FPs -->
         </and>
       </marker>
-      <token postag='SENT_END' postag_regexp='no'><exception scope='previous' postag_regexp='yes' postag='VMP00.+|NC.+'/></token>
+      <token postag='_PUNCT|SENT_END' postag_regexp='yes'><exception scope='previous' postag_regexp='yes' postag='VMM02S0|VMP00.+|NC.+'/></token>
     </pattern>
     <disambig action="remove" postag="VMIP3S0"/>
     <!--
     Examples:
-             Os soldados do Exército do Rei dos Reis, porém herdarão uma coroa de ouro, e a vida eterna.
              Não seria também porventura possuir a capacidade de entender o semelhante e de compreender a dor alheia?
              Desenvolveu o gosto pela literatura e devorou livros durante a vida inteira.
              A primeira, além da base super estreita, tem um aramado quase tridimensional nas pernas.
-             No humano se criminaliza a natureza humana .
              Considerando a situação narrada, assinale a afirmativa correta.
              Agradeço pela lembrança precisa.
+             O Expressionismo é a arte do instinto, trata-se de uma pintura dramática, subjetiva, “expressando” sentimentos humanos.
              Talvez fossem as vozes, quem sabe uma desconfiança repentina?
              Não é bom ler na sala escura.
              Gosto de dormir numa cama macia.
+             O conceito se tornou um dos pilares da ecologia profunda.
       -->
   </rule>
 
