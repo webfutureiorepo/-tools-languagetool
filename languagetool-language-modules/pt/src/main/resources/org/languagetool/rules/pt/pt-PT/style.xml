@@ -3770,10 +3770,13 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
           </antipattern>
 
           <antipattern> <!-- Nome de instituição -->
-              <token regexp='yes'>fundaç(ão|ões)|centros?|institutos?|laboratórios?</token>
+              <token regexp='yes'>fundaç(ão|ões)|centros?|institutos?|laboratórios?|universidades?|faculdades?|departamentos?</token>
               <token skip='3'>de</token>
-              <token regexp='yes'>pesquisas?</token>
+              <token case_sensitive='yes' regexp='yes'>Pesquisas?|PESQUISAS?</token>
               <example>O trabalho pertence ao Centro de Pesquisa do Canadá.</example>
+              <example>, com o apoio da Secretaria de Saúde e da Fundação de Ensino e Pesquisa em Ciência da Saúde (Fepecs).</example>
+              <example>, às margens da rodovia federal BR-324, estão o Departamento de Ensino e Pesquisa (DEP),</example>
+              <example>O trabalho teve a participação de brasileiros, financiados pela Fundação de Amparo à Pesquisa do estado de São Paulo.</example>
           </antipattern>
 
           <antipattern> <!-- Citações -->
