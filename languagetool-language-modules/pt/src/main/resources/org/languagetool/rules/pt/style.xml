@@ -11805,26 +11805,26 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PHD_TESE_REFERIREMOS_A_SEGUIR_REFERIDAS_REFERIDOS' name="🎓 Expressões do tipo 'que/como referiremos a seguir' → 'referidas a seguir'" type="style" tags="picky" tone_tags="academic">
+        <rule id='PHD_TESE_REFERIREMOS_A_SEGUIR_REFERIDAS_REFERIDOS' name="🎓 Expressões do tipo 'que refiro/referiremos/referimos' a seguir / de seguida → 'referidas'" type='style' tone_tags='academic'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <marker>
-                    <token regexp='yes'>que|como</token>
-                    <token min="0" max="1" regexp='no'>se</token>
-                    <and>
-                        <token regexp='yes' inflected='yes'>apresentar|compreender|debater|descrever|detalhar|documentar|escrever|explanar|explicar|mencionar|mostrar|observar|referir|relatar|ter|ver</token> <!-- Add verbs here as found -->
-                        <token postag='VMIF.+' postag_regexp='yes'/>
-                    </and>
-                    <token regexp='yes'>a|de</token>
-                    <token regexp='yes'>seguir|seguida</token>
+                    <token>que</token>
+                    <token postag='VMI[FP]1.+' postag_regexp='yes' regexp='yes' inflected='yes'>abordar|analisar|apresentar|avaliar|caracterizar|comparar|considerar|definir|demonstrar|descrever|detalhar|discutir|examinar|explicar|identificar|indicar|ilustrar|investigar|justificar|listar|mencionar|mostrar|notar|observar|referir|relatar|salientar|sublinhar|ver|debater|escrever</token>
                 </marker>
+                <token regexp='yes'>a|de</token>
+                <token regexp='yes'>seguir|seguida</token>
             </pattern>
             <message>&thesis_msg;</message>
-            <suggestion><match no='3' postag='VMIF.(.)0' postag_regexp="yes" postag_replace='VMP00$1F|VMP00$1M'/> a seguir</suggestion>
-            <example correction="referidas a seguir|referidos a seguir">Existem algumas críticas ao modelo, <marker>que referiremos a seguir</marker>.</example>
-            <example correction="referidas a seguir|referidos a seguir">Existem algumas críticas ao modelo, <marker>como referiremos a seguir</marker>.</example>
-            <example correction="referidas a seguir|referidos a seguir">Existem algumas críticas ao modelo, <marker>que referiremos de seguida</marker>.</example>
-            <example correction="referidas a seguir|referidos a seguir">Existem algumas críticas ao modelo, <marker>como referiremos de seguida</marker>.</example>
+            <suggestion><match no='2' postag='VMI..(.)0' postag_regexp="yes" postag_replace='VMP00$1F|VMP00$1M'/></suggestion>
+            <example correction="referida|referido">Existem algumas críticas ao modelo, <marker>que refiro</marker> a seguir.</example>
+            <example correction="referidas|referidos">Existem algumas críticas ao modelo, <marker>que referiremos</marker> a seguir.</example>
+            <example correction="referidas|referidos">Existem algumas críticas ao modelo, <marker>que referimos</marker> a seguir.</example>
+            <example correction="referida|referido">Existem algumas críticas ao modelo, <marker>que refiro</marker> de seguida.</example>
+            <example correction="referidas|referidos">Existem algumas críticas ao modelo, <marker>que referiremos</marker> de seguida.</example>
+            <example correction="referidas|referidos">Existem algumas críticas ao modelo, <marker>que referimos</marker> de seguida.</example>
         </rule>
+
 
         <rulegroup id='PHD_TESE_PODE_SER_PART_PASS_É_PART_PASS' name="🎓 Expressões do tipo 'pode ser usado' → 'é usado'" type="style" tags='picky' default='off' tone_tags="academic">
             <rule>
