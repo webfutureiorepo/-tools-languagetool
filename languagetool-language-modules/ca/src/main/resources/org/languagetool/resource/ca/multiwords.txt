@@ -1,8 +1,12 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Alfredo Bryce Echenique;NPMSO00
+Alfredo Bryce;NPMSO00
+Bryce Echenique;NPMSO00
 Grandma Moses;NPFSSP0
 L'Osservatore Romano;NPMSO00
 Mojtaba Khamenei;NPMSSP0
+Mojtaba Hosseini Khamenei;NPMSSP0
 Partido de la Ciudadanía;NPMSO00
 Partit de la Ciutadania;NPMSO00
 Teatre Coliseum;NPMSO00

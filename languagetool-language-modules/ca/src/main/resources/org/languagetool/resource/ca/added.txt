@@ -4,6 +4,7 @@
 # Format: fullform baseform postags (tab separated)
 ########## Dictionary fixes ##########
 ########## Additions ##########
+AIEA	AIEA	NPFSO00
 Aiguadolç	Aiguadolç	NPMSG00
 Basij	Basij	NPFSO00
 CTranslate	CTranslate	NPCNO00

@@ -22218,6 +22218,18 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </rule>
         <rule>
             <pattern>
+                <token regexp="yes">&anar_auxiliar;</token>
+                <marker>
+                    <token>fer</token>
+                </marker>
+                <token>fer</token>
+            </pattern>
+            <disambig action="add">
+                <wd pos="_allow_repeat"/>
+            </disambig>
+        </rule>
+        <rule>
+            <pattern>
                 <token spacebefore="no">/</token>
                 <marker>
                     <token case_sensitive="yes" spacebefore="no">a</token>
