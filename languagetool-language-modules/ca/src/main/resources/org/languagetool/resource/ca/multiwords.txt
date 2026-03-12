@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Luis Rojas Marcos;NPMSSP0
+Rojas Marcos;NPCNSP0
 Joan Baptista Escorihuela;NPMSSP0
 Joan Baptista Escorigüela;NPMSSP0
 José María Nunes;NPMSSP0

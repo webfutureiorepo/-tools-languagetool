@@ -25,6 +25,8 @@ autocèntrics	autocèntric	AQ0MP0
 autocèntriques	autocèntric	AQ0FP0
 basij	basij	NCCS000
 basijs	basij	NCCP000
+bellea	bellea	NCFS000
+bellees	bellea	NCFP000
 comunot	comunot	AQ0MS0
 comunota	comunot	AQ0FS0
 comunotes	comunot	AQ0FP0
@@ -46,7 +48,13 @@ neoconfucià	neoconfucià	AQ0MS0
 neohel·lenista	neohel·lenista	NCCS000
 neohel·lenistes	neohel·lenista	NCCP000
 ràndom	ràndom	AQ0CN0
+sintient	sintient	AQ0CS0
+sintients	sintient	AQ0CP0
+sintiència	sintiència	NCFS000
+sintiències	sintiència	NCFP000
 therian	therian	AQ0CS0
 therian	therian	NCCS000
 therians	therian	AQ0CP0
 therians	therian	NCCP000
+vellea	vellea	NCFS000
+vellees	vellea	NCFP000

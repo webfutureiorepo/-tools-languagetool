@@ -160,6 +160,7 @@ beator=beateria
 becassa=becada
 becdur=trencapinyols
 bellea=bellesa
+vellea=vellea
 bellerola=abellerol
 bellmarí=foca
 belloter=gaig
