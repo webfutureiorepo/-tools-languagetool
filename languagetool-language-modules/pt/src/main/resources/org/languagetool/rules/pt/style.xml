@@ -511,7 +511,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
 
         </rulegroup>
-        <rule id='VISTO_POR_V3' name="[Simplificar] Visto → Por" type="style" tone_tags="clarity">
+        <rule id='VISTO_POR_V3' name="✂️ Visto → Por" type="style" tone_tags="clarity">
             <!--IDEA shorten_it-->
             <pattern>
                 <token postag='NC.+|AQ.+|NP.+|VMP00.+|VMN0000' postag_regexp='yes'>
@@ -541,7 +541,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
         <!-- DOS MESMOS destes DAS MESMAS destas -->
-        <rulegroup id='DOS_MESMOS_DESTES_DAS_MESMAS_DESTAS' name="[Simplificar] 'dos mesmos'/'das mesmas' → 'destes'/'destas'" tone_tags="clarity" type="style" tags="picky">
+        <rulegroup id='DOS_MESMOS_DESTES_DAS_MESMAS_DESTAS' name="✂️ 'dos mesmos'/'das mesmas' → 'destes'/'destas'" tone_tags="clarity" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-05 (2-MAR-2023+) -->
             <!--
@@ -5066,7 +5066,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='QUE_VEM_PROXIMA' name="[Simplificar] Substantivo + que vem → próxim(ao)(s) + substantivo" type='style' tone_tags='formal'>
+        <rule id='QUE_VEM_PROXIMA' name="✂️ Substantivo + que vem → próxim(ao)(s) + substantivo" type='style' tone_tags='formal'>
             <!--IDEA shorten_it-->
 
             <pattern>
@@ -5086,7 +5086,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ATRAVÉS DE por/via/com -->
-        <rulegroup id='ATRAVES_DE_POR_VIA' name="[Simplificar] Através de → por/via/com" type="style" tone_tags="formal">
+        <rulegroup id='ATRAVES_DE_POR_VIA' name="✂️ Através de → por/via/com" type="style" tone_tags="formal">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-02-13/26 (Checked/Enhanced) (25-JUL-2022+) -->
             <!--
@@ -12109,7 +12109,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="suportados pelo nosso algoritmo">Alguns cenários <marker>que o nosso algoritmo suporta</marker>.</example>
         </rule>
         <!-- QUE É CONSIDERADA considerada -->
-        <rulegroup id='QUE_É_PARTPASS_PARTPASS' name="[Simplificar] que é + V.Part.Pass → V.Part.Pass" type='style' tone_tags="objective">
+        <rulegroup id='QUE_É_PARTPASS_PARTPASS' name="✂️ que é + V.Part.Pass → V.Part.Pass" type='style' tone_tags="objective">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-02-17 (25-JUL-2022+) -->
             <!--
@@ -12685,7 +12685,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
         <!-- ESTAR + ADVÉRBIO + A + VERBO verbo + advérbio -->
         <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-11-05 (21-OCT-2020+)     -->
-        <rulegroup id='ESTAR_ADVÉRBIO_A_VERBO_VERBO_ADVÉRBIO' name="[Simplificar] Estar + Adv + A + Verbo → Verbo + Adv" type="style" tone_tags="objective">
+        <rulegroup id='ESTAR_ADVÉRBIO_A_VERBO_VERBO_ADVÉRBIO' name="✂️ Estar + Adv + A + Verbo → Verbo + Adv" type="style" tone_tags="objective">
             <!--IDEA shorten_it-->
             <!-- ESTOU -->
             <rule>
@@ -13824,7 +13824,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
         <!-- 	AS COISAS NÃO VÃO VERBO_INF nada vai Verb_info -->
         <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-11-02 (21-OCT-2020+)     -->
-        <rule id='AS_COISAS_NÃO_VÃO_VERBO_INF' name="Nada vai + verb_inf">
+        <rule id='AS_COISAS_NÃO_VÃO_VERBO_INF' name="✂️ Nada vai + verb_inf">
             <!-- IDEA shorten_it -->
             <pattern>
                 <marker>
@@ -13841,7 +13841,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
         <!-- É NECESSÁRIO ESTAR PRESENTE é presencial -->
         <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-12-02 (21-OCT-2020+)  *START*   -->
-        <rulegroup id='PRESENTE_PRESENCIAL' name="é presencial">
+        <rulegroup id='PRESENTE_PRESENCIAL' name="✂️ é presencial">
             <!--IDEA shorten_it-->
             <rule>
                 <pattern>
@@ -13915,7 +13915,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='ESTAR_NO_ECRA' name="Estar no ecrã">
+        <rule id='ESTAR_NO_ECRA' name="✂️ Estar no ecrã">
             <!--IDEA shorten_it-->
             <pattern>
                 <token postag='(SPS00:)?PD.+' postag_regexp='yes'/>
@@ -13984,7 +13984,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='AO_MESMO_TEMPO_QUE_ENQUANTO' name=" Ao mesmo tempo que → enquanto" type="style" tags='picky' default='off'>
+        <rule id='AO_MESMO_TEMPO_QUE_ENQUANTO' name="✂️ Ao mesmo tempo que → enquanto" type="style" tags='picky' default='off'>
             <!--IDEA shorten_it-->
             <antipattern>
                 <token>ao</token>
@@ -14014,7 +14014,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="Enquanto|Simultaneamente, enquanto"><marker>Ao mesmo tempo que</marker> tenta entender as situações antes de criticar.</example>
         </rule>
         <!-- MAS NÃO TERÁ UTILIDADE mas sem utilidade -->
-        <rule id='MAS_EMBORA_CONTUDO_SEM' name="Expressões do tipo: 'não ter utilidade' → 'sem utilidade'" type='style'>
+        <rule id='MAS_EMBORA_CONTUDO_SEM' name="✂️ Expressões do tipo: 'não ter utilidade' → 'sem utilidade'" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-02-04 + 2023-03-01 (25-JUL-2022+) -->
             <!--
@@ -14043,7 +14043,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="sem">Fizeram estudos importantes, mas estes <marker>não tinham</marker> objetivos militares.</example>
         </rule>
         <!-- A NÍVEL PROFISSIONAL profissionalmente -->
-        <rulegroup id='A_NÍVEL_ADJC_NCC_ADVÉRBIO' name="[Simplificar] A nível NC/Adj → Adv" type='style'>
+        <rulegroup id='A_NÍVEL_ADJC_NCC_ADVÉRBIO' name="✂️ A nível NC/Adj → Adv" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-01-06 + 2023-01-07 (25-JUL-2022+) -->
             <!--
@@ -14137,7 +14137,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ATÉ QUE SURGIRAM  até surgirem -->
-        <rulegroup id='SIMPLIFICAR_ATÉ_QUE_ATÉ_VERBO' name="[Simplificar] Até que + Verbo → Até + V.Inf." type='style'>
+        <rulegroup id='SIMPLIFICAR_ATÉ_QUE_ATÉ_VERBO' name="✂️ Até que + Verbo → Até + V.Inf." type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-02-23 (25-JUL-2022+) -->
             <!--
@@ -14162,7 +14162,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
         <!-- COMO É VISTO conforme visto -->
-        <rule id='COMO_É_CONFORME' name="[Simplificar] Como é → Conforme" type='style'>
+        <rule id='COMO_É_CONFORME' name="✂️ Como é → Conforme" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-10-25 (25-JUL-2022+) -->
             <!--
@@ -14197,7 +14197,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- COMO SENDO A(S)/O(S)/UM/UNS/UMA(S) a(s)/o(s)/um/uns/uma(s) -->
-        <rule id='SIMPLIFICAR_COMO_SENDO' name="[Simplificar] Como sendo + a(s)/o(s)/um/uns/uma(s) → a(s)/o(s)/um/uns/uma(s)" type="style">
+        <rule id='SIMPLIFICAR_COMO_SENDO' name="✂️ Como sendo + a(s)/o(s)/um/uns/uma(s) → a(s)/o(s)/um/uns/uma(s)" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-06-05 + 2022-07-07 + 2023-02-27 (Checked/Enhanced) (5-JUN-2022+)      -->
             <!--
@@ -14262,7 +14262,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- COMO É O CASO DO NOSSO como é o nosso -->
-        <rule id='COMO_SER_O_CASO_DO' name="[Simplificar] Como é/são o caso do → Como o" type='style'>
+        <rule id='COMO_SER_O_CASO_DO' name="✂️ Como é/são o caso do → Como o" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-09-02 (25-JUL-2022+) -->
             <!--
@@ -14285,7 +14285,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- CONFORME IA REVENDO conforme revia -->
-        <rule id='CONFORME_IA_IAM_GERUNDIO_CONFORME_PASSADO' name="[Simplificar] Conforme 'ia(m) + V.Gerúndio' → 'V.Passado.'" type="style" default='on'>
+        <rule id='CONFORME_IA_IAM_GERUNDIO_CONFORME_PASSADO' name="✂️ Conforme 'ia(m) + V.Gerúndio' → 'V.Passado.'" type="style" default='on'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-04-13/14 (2-MAR-2023+) -->
             <!--
@@ -14311,7 +14311,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- CORRER O RISCO arriscar-->
-        <rulegroup id='CORRER_RISCO_ARRISCAR' name="[Simplificar] Correr o risco → arriscar" type='style'>
+        <rulegroup id='CORRER_RISCO_ARRISCAR' name="✂️ Correr o risco → arriscar" type='style'>
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-01-20/21 (Checked/Enhanced) (1-JAN-2022+)      -->
             <!--
@@ -14375,7 +14375,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id='INIMIGO_ADVERSÁRIO_ALIADO_OPONENTE' name="[Simplificar] 'do inimigo/adversário/aliado/oponente' → inimig[ao](s)/adversári[ao](s)/aliad[ao](s)/oponente(s)" type="style" tags='picky'>
+        <rulegroup id='INIMIGO_ADVERSÁRIO_ALIADO_OPONENTE' name="✂️ 'do inimigo/adversário/aliado/oponente' → inimig[ao](s)/adversári[ao](s)/aliad[ao](s)/oponente(s)" type="style" tags='picky'>
             <!--IDEA shorten_it-->
 
             <antipattern> <!-- Later use this AP for specific fixes, removing exceptions from the rules below -->
@@ -14471,7 +14471,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
         <!-- DE FORMA/MODO + ADJ adv -->
         <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-10-08 (2-JUL-2020+)     -->
-        <rule id='DE_FORMA-MODO_ADJ' name="[Simplificar] De + forma/modo + Adj → Adv" type="style" tags="picky">
+        <rule id='DE_FORMA-MODO_ADJ' name="✂️ De + forma/modo + Adj → Adv" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <antipattern>
                 <token>de</token>
@@ -14520,7 +14520,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ISSO ACONTECE DESDE A ALTURA isso acontece desde então -->
-        <rule id='DESDE_A_ALTURA_DESDE_ENTÃO' name="[Simplificar] Desde a altura → desde então" type='style'>
+        <rule id='DESDE_A_ALTURA_DESDE_ENTÃO' name="✂️ Desde a altura → desde então" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2022-10-07 (25-JUL-2022+) -->
             <!--
@@ -14549,7 +14549,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- DESDE QUE HAJA ao haver se houver-->
-        <rule id='DESDE_QUE_VERBO_AO_VERBO_INF' name="[Simplificar] Desde que + V. → ao + V.Inf." type='style' tags='picky'>
+        <rule id='DESDE_QUE_VERBO_AO_VERBO_INF' name="✂️ Desde que + V. → ao + V.Inf." type='style' tags='picky'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-03-03 (2-MAR-2023+) -->
             <!--
@@ -14578,7 +14578,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- DOS HUMANOS humano -->
-        <rulegroup id='DOS_HUMANOS_HUMANO' name="[Simplificar] Do(s) + humano(s) → humano" type="style" tags='picky'>
+        <rulegroup id='DOS_HUMANOS_HUMANO' name="✂️ Do(s) + humano(s) → humano" type="style" tags='picky'>
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-02-12 + 2022-08-28 (1-JAN-2022+)      -->
             <!--
@@ -14658,7 +14658,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
         <!-- E É/SÃO/FOI/FORAM VERBO sendo/sido/e verbo -->
-        <rule id='E_É_SÃO_FOI_FORAM_SENDO_SIDO' name="[Simplificar] E é/são/foi/foram + V. → [sendo/sido/e] + V." type="style" tags='picky'>
+        <rule id='E_É_SÃO_FOI_FORAM_SENDO_SIDO' name="✂️ E é/são/foi/foram + V. → [sendo/sido/e] + V." type="style" tags='picky'>
             <!--IDEA shorten_it-->
             <!--      Created byMarco A.G.Pinto, Portuguese rule 2022-01-18 + 2022-04-25 (Checked/Enhanced) (1-JAN-2022+)      -->
             <!--
@@ -14700,7 +14700,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example>Tom apagou a luz e foi dormir.</example>
         </rule>
 
-        <rulegroup id='E_NÃO_VERB_SEM_VERBINFINITIVE' name="[Simplificar] E não + Verbo → Sem + V.Inf." type='style' default="off">
+        <rulegroup id='E_NÃO_VERB_SEM_VERBINFINITIVE' name="✂️ E não + Verbo → Sem + V.Inf." type='style' default="off">
             <!--IDEA shorten_it-->
 
             <rule>
@@ -14747,7 +14747,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- É QUE OS TERRORISTAS SÃO VIOLENTOS é os terroristas serem violentos -->
-        <rule id='É_QUE_AS-OS_NC_É-SÃO' name="[Simplificar] É que (a/o)(s) NC é/são → É (a/o)(s) NC ser(em)" type="style" tags="picky">
+        <rule id='É_QUE_AS-OS_NC_É-SÃO' name="✂️ É que (a/o)(s) NC é/são → É (a/o)(s) NC ser(em)" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-01-18 (Checked/Enhanced) (25-JUL-2022+) -->
             <!--
@@ -14780,7 +14780,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- E QUE VERBO e verbo -->
-        <rule id='E_QUE_VERBO_E_VERBO' name="[Simplificar] E que + Verbo → E + Verbo" type='style'>
+        <rule id='E_QUE_VERBO_E_VERBO' name="✂️ E que + Verbo → E + Verbo" type='style'>
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-08-03 + 2021-08-04 + 2022-03-08 (25-JUN-2021+)      -->
             <!--
@@ -14932,7 +14932,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PRONTO A ENTREGAR E QUE MAIS NADA ERA NECESSÁRIO Pronto a entregar e nada mais era necessário -->
-        <rule id='E_QUE_ADV_VERBO_NADA_E_NADA_ADV_VERBO' name="[Simplificar] e/ou + que + Adv/Verbo + nada → e/ou + nada + Adv/Verbo" type='style'>
+        <rule id='E_QUE_ADV_VERBO_NADA_E_NADA_ADV_VERBO' name="✂️ e/ou + que + Adv/Verbo + nada → e/ou + nada + Adv/Verbo" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2022-10-05 (25-JUL-2022+) -->
             <!--
@@ -14954,7 +14954,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='EM_QUE_NAO_HA_PRONOME-INDEFINIDO' name="[Simplificar] Em que não há + Pron.Indef. → Sem Pron.Indef." type="style" tags="picky">
+        <rule id='EM_QUE_NAO_HA_PRONOME-INDEFINIDO' name="✂️ Em que não há + Pron.Indef. → Sem Pron.Indef." type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-03-31 (Checked/Enhanced) (2-MAR-2023+) -->
             <!--
@@ -14974,7 +14974,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ESTAR A VERB_INFINITIVE verb (verb1 person)-->
-        <rulegroup id='ESTAR_A_VERB-INFINITIVE' name="[Simplificar] Estar a + V.Inf. → V.1.ªPessoa" type="style">
+        <rulegroup id='ESTAR_A_VERB-INFINITIVE' name="✂️ Estar a + V.Inf. → V.1.ªPessoa" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-10-19 (2-JUL-2020+)     -->
             <rule>
@@ -15007,7 +15007,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
         <!-- MAS SIM QUE ERA DEVIDO mas era devido -->
-        <rulegroup id='MAS_QUE_ERA_VERBOPARTPASSADO_MAS_VERBOPARTPASSADO' name="[Simplificar] mas/e + que + V.Ser + V.Part.Pass. → mas/e + V.Ser + V. Part.Pass." type='style'>
+        <rulegroup id='MAS_QUE_ERA_VERBOPARTPASSADO_MAS_VERBOPARTPASSADO' name="✂️ mas/e + que + V.Ser + V.Part.Pass. → mas/e + V.Ser + V. Part.Pass." type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-10-20 (25-JUL-2022+) -->
             <!--
@@ -15063,7 +15063,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE NÃO DÁ PARA VOLTAR ATRÁS irreversível -->
-        <rule id='NÃO_DÁ_PARA_VOLTAR_ATRÁS_IRREVERSÍVEL' name="[Simplificar] 'que não dá para voltar atrás' → 'irreversível'" tone_tags="formal" type="style">
+        <rule id='NÃO_DÁ_PARA_VOLTAR_ATRÁS_IRREVERSÍVEL' name="✂️ 'que não dá para voltar atrás' → 'irreversível'" tone_tags="formal" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-29 (2-MAR-2023+) -->
             <!--
@@ -15092,7 +15092,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
         <!-- O DESENVOLVIMENTO DE desenvolver -->
-        <rulegroup id="VERBAL_NOUNS_TO_VERB" name="[Simplificar] NC Verbais para V.Inf.: 'o -mento de'/'a -ção de' → '-ar/-er/-ir'" type="style" tags="picky">
+        <rulegroup id="VERBAL_NOUNS_TO_VERB" name="✂️ NC Verbais para V.Inf.: 'o -mento de'/'a -ção de' → '-ar/-er/-ir'" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-09/10/11 (2-MAR-2023+) -->
             <!--
@@ -15289,7 +15289,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- O QUE ESTÁ ESTIPULADO o estipulado -->
-        <rule id='O_QUE_ESTAR_SER_PARTICIPIOPASSADO' name="[Simplificar] O que V.Estar/Ser + V.Part.Pass. → o + V.Part.Pass." type="style">
+        <rule id='O_QUE_ESTAR_SER_PARTICIPIOPASSADO' name="✂️ O que V.Estar/Ser + V.Part.Pass. → o + V.Part.Pass." type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-11-04/5 + 2023-01-19/20 (25-JUL-2022+) -->
             <!--
@@ -15325,7 +15325,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- O QUE TEM DE MAL que mal tem -->
-        <rule id='O_QUE_TEM_DE_MAL_QUE_MAL_TEM' name="[Simplificar] 'o que tem de mal' → 'que mal tem'" type="style">
+        <rule id='O_QUE_TEM_DE_MAL_QUE_MAL_TEM' name="✂️ 'o que tem de mal' → 'que mal tem'" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-05-23 (2-MAR-2023+) -->
             <!--
@@ -15350,7 +15350,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- DE SOFTWARE PARA O PÚBLICO de software público -->
-        <rule id='PARA_O_PÚBLICO_PÚBLICO_PÚBLICA' name="[Simplificar] Para o público → público(a)" type="style">
+        <rule id='PARA_O_PÚBLICO_PÚBLICO_PÚBLICA' name="✂️ Para o público → público(a)" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-11-17 (25-JUL-2022+) -->
             <!--
@@ -15374,7 +15374,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PARA QUANDO quando -->
-        <rule id='PARA_QUANDO_QUANDO' name="[Simplificar] Para quando → quando" type="style">
+        <rule id='PARA_QUANDO_QUANDO' name="✂️ Para quando → quando" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-11-03 (25-JUL-2022+) -->
             <!--
@@ -15396,7 +15396,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PARA QUE para -->
-        <rulegroup id='SIMPLIFICAR_PARA_QUE_PARA' name="[Simplificar] para que → para" type='style' tags='picky'>
+        <rulegroup id='SIMPLIFICAR_PARA_QUE_PARA' name="✂️ para que → para" type='style' tags='picky'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-02-23/24/26 (25-JUL-2022+) -->
             <!--
@@ -15452,7 +15452,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id='TORNAR_MELHOR_PIOR_MELHORAR_PIORAR' name="[Simplificar] Tornar melhor/pior → melhorar/simplificar">
+        <rulegroup id='TORNAR_MELHOR_PIOR_MELHORAR_PIORAR' name="✂️ Tornar melhor/pior → melhorar/simplificar">
             <!--IDEA shorten_it-->
 
             <!-- #1: melhorar -->
@@ -15489,7 +15489,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PARA QUE SAIBAM para saberem -->
-        <rulegroup id='QUE_SUBJ_VS_INF_PESS' name="[Simplificar] Para que + Verbo → Para + Verbo " type='style'>
+        <rulegroup id='QUE_SUBJ_VS_INF_PESS' name="✂️ Para que + Verbo → Para + Verbo " type='style'>
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-04-19 + 2021-04-29 + 2021-05-04 + 2021-05-05 (17-MAR-2021+)      -->
             <!--
@@ -15646,7 +15646,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- POIS AFETA ao afetar -->
-        <rule id='SIMPLIFICAR_POIS_VERBO_AO_VERBOINF' name="[Simplificar] Pois + Verbo → Ao/por/visto + V.Inf." type='style' tags='picky'>
+        <rule id='SIMPLIFICAR_POIS_VERBO_AO_VERBOINF' name="✂️ Pois + Verbo → Ao/por/visto + V.Inf." type='style' tags='picky'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-03-02/3/4 (27-FEB-2023+) -->
             <!--
@@ -15690,7 +15690,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- POR ANO anuais -->
-        <rulegroup id='POR_ANO_MÊS_SEMANA_DIA_ANUAL_MENSAL_SEMANAL_DIÁRIO_V2' name="[Simplificar] por ano/mês/semana/dia → anual/mensal/semanal/diário" type="style" tags="picky">
+        <rulegroup id='POR_ANO_MÊS_SEMANA_DIA_ANUAL_MENSAL_SEMANAL_DIÁRIO_V2' name="✂️ por ano/mês/semana/dia → anual/mensal/semanal/diário" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-03-08 (2-MAR-2023+) -->
             <!--
@@ -15784,7 +15784,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- POR ISSO aí/assim/daí/isso -->
-        <rulegroup id='POR_ISSO_AÍ_ASSIM_DAÍ_ISSO' name="[Simplificar] por isso → aí/assim/daí/isso" type="style" tags="picky">
+        <rulegroup id='POR_ISSO_AÍ_ASSIM_DAÍ_ISSO' name="✂️ por isso → aí/assim/daí/isso" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-01-24/25 (Checked/Enhanced) (1-JAN-2022+)      -->
             <!--
@@ -15810,7 +15810,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
         <!-- POUCO IMPORTA não importa -->
-        <rule id='POUCO_IMPORTA_NÃO_IMPORTA' name="[Simplificar] 'Pouco' importa → não" type="style" tags="picky" default="off">
+        <rule id='POUCO_IMPORTA_NÃO_IMPORTA' name="✂️ 'Pouco' importa → não" type="style" tags="picky" default="off">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-04-21 (2-MAR-2023+) -->
             <!--
@@ -15829,7 +15829,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='PRON_PESSOAL_REPETIDO_REMOVER_SEG_REPETICAO' name="[Simplificar] Omitir pronome pessoal redundante" type='style'>
+        <rulegroup id='PRON_PESSOAL_REPETIDO_REMOVER_SEG_REPETICAO' name="✂️ Omitir pronome pessoal redundante" type='style'>
             <!--IDEA shorten_it-->
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <rule>
@@ -15869,7 +15869,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUANDO SE ABRE UMA DEFINIÇÃO ao abrir uma definição -->
-        <rule id='QUANDO_SE_VERBO_TIPO_ABRE_M_AO_VERBO_TIPO_ABRIR_EM_V2' name="[Simplificar] 'Quando se V.Tipo.Abre(m)' → 'Ao [se] V.Tipo.Abrir(em)'" type="style" tags="picky">
+        <rule id='QUANDO_SE_VERBO_TIPO_ABRE_M_AO_VERBO_TIPO_ABRIR_EM_V2' name="✂️ 'Quando se V.Tipo.Abre(m)' → 'Ao [se] V.Tipo.Abrir(em)'" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-04-26 + 2023-05-01/4 (2-MAR-2023+) -->
             <!--
@@ -15896,7 +15896,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='QUANDO_TER_DE_QUE_VINF_AO_VINF' name="[Simplificar] 'Quando V.Ter de/que V.Inf.' com → 'Ao V.Inf.'" type="style" tags="picky">
+        <rule id='QUANDO_TER_DE_QUE_VINF_AO_VINF' name="✂️ 'Quando V.Ter de/que V.Inf.' com → 'Ao V.Inf.'" type="style" tags="picky">
             <pattern>
                 <marker>
                     <token>quando</token>
@@ -15918,7 +15918,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE É DEPOIS TRANSFORMADO depois transformado -->
-        <rule id='QUE_É_ADVERBIO_VERPARTPASSADO' name="[Simplificar] Que é + Adv + V.Part.Pass → Adv V.Part.Pass" type="style">
+        <rule id='QUE_É_ADVERBIO_VERPARTPASSADO' name="✂️ Que é + Adv + V.Part.Pass → Adv V.Part.Pass" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-12-11 (25-JUL-2022+) -->
             <!--
@@ -15954,7 +15954,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE ESTÁ/ESTÃO EM USO em uso -->
-        <rule id='QUE_ESTA_ESTAO_EM' name="[Simplificar] Que está/estão + contração/preposição → contração/preposição" type="style">
+        <rule id='QUE_ESTA_ESTAO_EM' name="✂️ Que está/estão + contração/preposição → contração/preposição" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-08-31 (25-JUL-2022+) -->
             <!--
@@ -16053,7 +16053,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE EU TENHO A FAZER a fazer -->
-        <rule id='QUE_PRONOMERETO_VERBOTER_A_VERBO_A_VERBO' name="[Simplificar] que + [Pronome Reto] + V.Ter + a + Verbo → a + verbo" type="style" tags="picky">
+        <rule id='QUE_PRONOMERETO_VERBOTER_A_VERBO_A_VERBO' name="✂️ que + [Pronome Reto] + V.Ter + a + Verbo → a + verbo" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-11-26 (25-JUL-2022+) -->
             <!--
@@ -16086,7 +16086,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='QUE_PRETENDER_PRETENDIDO' name="[Simplificar] que pretender → pretendido" type='style'>
+        <rule id='QUE_PRETENDER_PRETENDIDO' name="✂️ que pretender → pretendido" type='style'>
             <!--IDEA shorten_it-->
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
@@ -16108,7 +16108,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ME ANDAVA A ARRASTAR me arrastava -->
-        <rule id='SIMPLIFICAR_QUE_PRON_V_ANDAR_A_INFINITIVO' name="[Simplificar] que + Pron. + 'V.Andar + a + V.Inf.' → V. baseado no V.Andar" type='style' tags='picky'>
+        <rule id='SIMPLIFICAR_QUE_PRON_V_ANDAR_A_INFINITIVO' name="✂️ que + Pron. + 'V.Andar + a + V.Inf.' → V. baseado no V.Andar" type='style' tags='picky'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-03-03 (2-MAR-2023+) -->
             <!--
@@ -16154,7 +16154,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE RESULTAM DE resultantes de -->
-        <rule id='QUE_RESULTA_RESULTAM_DE_DA_DAS_DO_DOS_NA_NAS_NO_NOS' name="[Simplificar] Que + resulta(m) + de/d(a/o)(s)/n(a/o)(s) → Resultante(s) + de/d(a/o)(s)/n(a/o)(s)" type='style' tags='picky'>
+        <rule id='QUE_RESULTA_RESULTAM_DE_DA_DAS_DO_DOS_NA_NAS_NO_NOS' name="✂️ Que + resulta(m) + de/d(a/o)(s)/n(a/o)(s) → Resultante(s) + de/d(a/o)(s)/n(a/o)(s)" type='style' tags='picky'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-08-24 (25-JUL-2022+) -->
             <!--
@@ -16180,7 +16180,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE SE ENCONTRA NA na -->
-        <rule id='QUE_SE_ENCONTRAR_NA_NO_NESTA_NESTE' name="[Simplificar] que se encontr[ae](m) n[ao](s)/nest[ae](s) → n[ao](s)/nest[ae](s)" type="style" tags="picky">
+        <rule id='QUE_SE_ENCONTRAR_NA_NO_NESTA_NESTE' name="✂️ que se encontr[ae](m) n[ao](s)/nest[ae](s) → n[ao](s)/nest[ae](s)" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2022-11-13 (25-JUL-2022+) -->
             <!--
@@ -16228,7 +16228,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
         <!-- QUE + VERB + COM verb_inf + com -->
         <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-11-02 + 2020-11-14 (21-OCT-2020+)     -->
-        <rulegroup id='QUE_VERB_COM_VERBINF_COM' name="[Simplificar] Que + Verbo + Com → V.Inf. + com" type="style" tags="picky">
+        <rulegroup id='QUE_VERB_COM_VERBINF_COM' name="✂️ Que + Verbo + Com → V.Inf. + com" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <rule>
                 <pattern>
@@ -16266,7 +16266,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- NA SEMANA QUE PASSOU na semana passada -->
-        <rulegroup id='QUE_VERBOPASSADO_VERBOPARTPASSADO' name="[Simplificar] Que + V.Passado → V.Part.Pass." type="style">
+        <rulegroup id='QUE_VERBOPASSADO_VERBOPARTPASSADO' name="✂️ Que + V.Passado → V.Part.Pass." type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-10-28/29 (25-JUL-2022+) -->
             <!--
@@ -16358,7 +16358,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE OCORRE CONTINUAMENTE ocorrido continuamente -->
-        <rulegroup id='QUE_VERBOPRESENTE_CONTINUAMENTE_VERBO_PART_PASSADO' name="[Simplificar] Que + V.Presente + Adv → V.Part.Pass. + Adv" type='style' default='off'>
+        <rulegroup id='QUE_VERBOPRESENTE_CONTINUAMENTE_VERBO_PART_PASSADO' name="✂️ Que + V.Presente + Adv → V.Part.Pass. + Adv" type='style' default='off'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2022-10-09 + 2022-11-25 (25-JUL-2022+) -->
             <!--
@@ -16399,7 +16399,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE É/SÃO NC/ADJ COMO/POR nc/adj como/por -->
-        <rule id='QUE_É-SÃO_NC-ADJ_COMO-POR' name="[Simplificar] Que é/são NC/Adj como/por → NC/Adj como/por" type="style">
+        <rule id='QUE_É-SÃO_NC-ADJ_COMO-POR' name="✂️ Que é/são NC/Adj como/por → NC/Adj como/por" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-07-21 + 2021-07-22 (25-JUN-2021+)      -->
             <!--
@@ -16466,7 +16466,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE EM NC SER VERBO NUM ser verbo em nc num -->
-        <rule id='QUE_EM_NC_SER_VERBO_NUM' name="[Simplificar] Que + Em + Nome + Ser + Verbo + Num → Verbo + em + Nome + num" type='style'>
+        <rule id='QUE_EM_NC_SER_VERBO_NUM' name="✂️ Que + Em + Nome + Ser + Verbo + Num → Verbo + em + Nome + num" type='style'>
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-08-22 (25-JUN-2021+)      -->
             <!--
@@ -16488,7 +16488,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE FOI O CRIADOR o criador -->
-        <rule id='QUE_VERBO_SER_A_AS_O_OS_A_AS_O_OS' name="[Simplificar] Que + V.Ser + a(s)/o(s) → a(s)/o(s)" type="style">
+        <rule id='QUE_VERBO_SER_A_AS_O_OS_A_AS_O_OS' name="✂️ Que + V.Ser + a(s)/o(s) → a(s)/o(s)" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-01-07 + 2023-01-08 (25-JUL-2022+) -->
             <!--
@@ -16636,7 +16636,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- VERB + QUE + É/SÃO verb + ser(em) -->
-        <rulegroup id='VERB_QUE_É_VERB_SER' name="[Simplificar] Que é/são → ser(em)" type="style" tags="picky">
+        <rulegroup id='VERB_QUE_É_VERB_SER' name="✂️ Que é/são → ser(em)" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-01-14 + 2021-07-06 (Enhanced) (1-JAN-2021+)      -->
             <!--
@@ -16869,7 +16869,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- JÁ ESTÁ OCUPADA já ocupada -->
-        <rule id='QUE_JÁ_ESTAR_PARTPASS_JÁ_PARTPASS' name="[Simplificar] Que já + V.Estar + V.Part.Pass → Já + V.Part.Pass" type='style'>
+        <rule id='QUE_JÁ_ESTAR_PARTPASS_JÁ_PARTPASS' name="✂️ Que já + V.Estar + V.Part.Pass → Já + V.Part.Pass" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-02-19 (25-JUL-2022+) -->
             <!--
@@ -16894,7 +16894,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE ESTÁ ATUALMENTE atualmente -->
-        <rule id='QUE_ESTAR_ADVERB_ADVERB' name="[Simplificar] Que + V.Estar + Adv → Adv" type='style' tags='picky'>
+        <rule id='QUE_ESTAR_ADVERB_ADVERB' name="✂️ Que + V.Estar + Adv → Adv" type='style' tags='picky'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-02-19 (25-JUL-2022+) -->
             <!--
@@ -16918,7 +16918,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE PÕE/PÕEM EM pondo em -->
-        <rule id='QUE_VERB_GERUND' name="[Simplificar] Que + verbo + em → Gerúndio + em" type="style" tags='picky'>
+        <rule id='QUE_VERB_GERUND' name="✂️ Que + verbo + em → Gerúndio + em" type="style" tags='picky'>
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2021-07-23 + 2021-07-25 (25-JUN-2021+)      -->
             <!--
@@ -16964,7 +16964,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="investindo|investidas|investidos|investidoras">Há organizações <marker>que investem</marker> em causa a segurança internacional.</example>
         </rule>
         <!-- SER CAPAZ DE conseguir -->
-        <rule id='SER_CAPAZ_DE_CONSEGUIR' name="[Simplificar] Ser capaz de → Conseguir" type="style" tags='picky'>
+        <rule id='SER_CAPAZ_DE_CONSEGUIR' name="✂️ Ser capaz de → Conseguir" type="style" tags='picky'>
             <!--IDEA shorten_it-->
             <antipattern>
                 <token postag='V.+' postag_regexp='yes'/>
@@ -16992,7 +16992,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='TER_FORMA_DE_TER_COMO' name="[Simplificar] Ter/haver 'forma de' → 'como'" type='style'>
+        <rule id='TER_FORMA_DE_TER_COMO' name="✂️ Ter/haver 'forma de' → 'como'" type='style'>
             <!--IDEA shorten_it-->
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
@@ -17011,7 +17011,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- TIRAR UMA FOTO fotografar -->
-        <rule id='TIRAR_FOTOGRAFIA_FOTOGRAFAR' name="[Simplificar] Tirar fotografia/foto → fotografar" type='style'>
+        <rule id='TIRAR_FOTOGRAFIA_FOTOGRAFAR' name="✂️ Tirar fotografia/foto → fotografar" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2022-11-22 (Checked/Enhanced) (25-JUL-2022+) -->
             <!--
@@ -17038,7 +17038,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- TORNANDO POSSÍVEL permitindo -->
-        <rule id='TORNAR_POSSÍVEL_PERMITIR_POSSIBILITAR' name="[Simplificar] Tornar possível → permitir/possibilitar" type="style">
+        <rule id='TORNAR_POSSÍVEL_PERMITIR_POSSIBILITAR' name="✂️ Tornar possível → permitir/possibilitar" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-12-03 (25-JUL-2022+) -->
             <!--
@@ -17060,7 +17060,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- UNS COM OS OUTROS entre si/nós/vocês/vós -->
-        <rulegroup id='UNS_COM_OS_OUTROS_ENTRE_SI_NÓS_VÓS_VOCÊS' name="[Simplificar] Uns com os outros → entre si/nós/vós/vocês" type="style" tags="picky">
+        <rulegroup id='UNS_COM_OS_OUTROS_ENTRE_SI_NÓS_VÓS_VOCÊS' name="✂️ Uns com os outros → entre si/nós/vós/vocês" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-12-31 + 2023-01-01 (25-JUL-2022+) -->
             <!--
@@ -17142,7 +17142,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- CONTINUA A SER TÃO continua tão -->
-        <rule id='CONTINUAR_A_SER' name="[Simplificar] V.Continuar a ser tão/bastante → V.Continuar tão/bastante" type='style'>
+        <rule id='CONTINUAR_A_SER' name="✂️ V.Continuar a ser tão/bastante → V.Continuar tão/bastante" type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-02-06 (25-JUL-2022+) -->
             <!--
@@ -17167,7 +17167,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE CHEGUE O DIA chegar o dia -->
-        <rulegroup id='SER_NC_QUE_VERBO_VINFINITIVO' name="[Simplificar] V.Ser + NC + 'que + V.' → V.Inf." type='style'>
+        <rulegroup id='SER_NC_QUE_VERBO_VINFINITIVO' name="✂️ V.Ser + NC + 'que + V.' → V.Inf." type='style'>
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-02-22 (25-JUL-2022+) -->
             <!--
@@ -17199,7 +17199,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- SÃO PARA SEREM USADOS são para usar -->
-        <rule id='SER_PARA_SER_SEREM_PARTPASSADO_SER_PARA_VINFINITIVO' name="[Simplificar] V.Ser + para + V.Ser + V.Part.Pass → V.Ser + para + V.Inf" type="style">
+        <rule id='SER_PARA_SER_SEREM_PARTPASSADO_SER_PARA_VINFINITIVO' name="✂️ V.Ser + para + V.Ser + V.Part.Pass → V.Ser + para + V.Inf" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-01-18 (Checked/Enhanced) (25-JUL-2022+) -->
             <!--
@@ -17222,7 +17222,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ERA QUEM CHEGASSE PRIMEIRO era chegar primeiro -->
-        <rule id='SER_QUEM_VERB-ESSE_WORD' name="[Simplificar] V.Ser + quem + V.-asse → V.Ser + V.Inf." type="style">
+        <rule id='SER_QUEM_VERB-ESSE_WORD' name="✂️ V.Ser + quem + V.-asse → V.Ser + V.Inf." type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-01-18 (Checked/Enhanced) (25-JUL-2022+) -->
             <!--
@@ -17244,7 +17244,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- SERVE PARA permite -->
-        <rule id='SERVIR_PARA_PERMITIR' name="[Simplificar] V.Servir + para → V.Permitir" type="style" tags="picky">
+        <rule id='SERVIR_PARA_PERMITIR' name="✂️ V.Servir + para → V.Permitir" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-03-20 (2-MAR-2023+) -->
             <!--
@@ -17288,7 +17288,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='VERBO_ESTAR_A_VERBO_INF' name="[Simplificar] Verbo estar + a + V.Inf. → Verbo" type="style" tags="picky">
+        <rulegroup id='VERBO_ESTAR_A_VERBO_INF' name="✂️ Verbo estar + a + V.Inf. → Verbo" type="style" tags="picky">
             <antipattern>
                 <token inflected='yes'>estar</token>
                 <token>a</token>
@@ -17349,7 +17349,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='PASSAR_A_VERBO' name="[Simplificar] V.Passar + a + V. → V. (na forma de V.Passar)" type="style" tags="picky">
+        <rule id='PASSAR_A_VERBO' name="✂️ V.Passar + a + V. → V. (na forma de V.Passar)" type="style" tags="picky">
             <antipattern>
                 <token inflected='yes'>passar</token>
                 <token>a</token>
@@ -17382,7 +17382,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="sentir-me-ei">E <marker>passarei a sentir-me</marker> estrangeiro no meu próprio país.</example>
         </rule>
 
-        <rule id='TER_SIDO_PART_PASSADO_VERBO' name="[Simplificar] V.Ter + sido + V.Part.Pass. → V." type="style" tags='picky'>
+        <rule id='TER_SIDO_PART_PASSADO_VERBO' name="✂️ V.Ter + sido + V.Part.Pass. → V." type="style" tags='picky'>
             <antipattern>
                 <token regexp='yes'>t[eê]m</token>
                 <token>sido</token>
@@ -17418,7 +17418,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- VERBO1 QUE VERBO2 VERBO3 O QUE verbo2_infinitivo verbo3_infinitivo o que -->
-        <rule id='VERBO1_QUE_VERBO2_VERBO3_O_QUE' name="[Simplificar] verbo2 + verbo3_infinitivo" type="style">
+        <rule id='VERBO1_QUE_VERBO2_VERBO3_O_QUE' name="✂️ verbo2 + verbo3_infinitivo" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2020-10-23 + 2020-11-17 (21-OCT-2020+)     -->
             <antipattern>
@@ -17445,7 +17445,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='VIR_A_VERBO_VERBO' name="[Simplificar] Vir + a + Verbo → Verbo" type='style'>
+        <rule id='VIR_A_VERBO_VERBO' name="✂️ Vir + a + Verbo → Verbo" type='style'>
             <pattern>
                 <token inflected='yes'>vir<exception>vi</exception></token><!-- please remove "vi" as a form of "vir" from dict -->
                 <token>a</token>
@@ -17461,7 +17461,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
         <!-- VISTO QUE QUERIA visto querer -->
-        <rulegroup id='VISTO_DADO_QUE' name="[Simplificar] Visto/dado que → visto/dado V.Inf." type="style">
+        <rulegroup id='VISTO_DADO_QUE' name="✂️ Visto/dado que → visto/dado V.Inf." type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2023-01-16 (Checked/Enhanced) (25-JUL-2022+) -->
             <!--
