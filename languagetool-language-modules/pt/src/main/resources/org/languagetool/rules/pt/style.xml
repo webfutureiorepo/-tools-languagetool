@@ -5010,7 +5010,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="algo">Tudo isto para <marker>uma coisa</marker> que aconteceu.</example>
         </rule>
         <!-- DE AGORA atual/atuais -->
-        <rule id='DE_AGORA_ATUAL_ATUAIS' name="Simplificar: De agora → Atual/atuais" type='style'>
+        <rule id='DE_AGORA_ATUAL_ATUAIS' name="✂️ De agora → Atual/atuais" type='style'>
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-01-03 (25-JUL-2022+) -->
             <!--
             Qual o preço de agora? → Qual o preço atual?
@@ -12084,7 +12084,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
         <!-- QUE O NOSSO ALGORITMO SUPPORTA suportado pelo nosso algoritmo -->
-        <rule id='QUE_ARTDEF_PRONPOSS_NOMECOMUM_VERBO' name="Simplificar: Que + Art.Def.+ Pron.Poss. + NomeC. + Verbo → Verbo.Part.Pass. + pel[ao](s) + Pron.Poss. + NomeC." type="style">
+        <rule id='QUE_ARTDEF_PRONPOSS_NOMECOMUM_VERBO' name="✂️ Que + Art.Def.+ Pron.Poss. + NomeC. + Verbo → Verbo.Part.Pass. + pel[ao](s) + Pron.Poss. + NomeC." type="style">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-12-18 (25-JUL-2022+) -->
             <!--
             Alguns cenários que o nosso algoritmo suporta. → Alguns cenários suportados pelo nosso algoritmo.
@@ -12440,7 +12440,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='CAUSAR_DIFICULDADE_DIFICULTAR' name="Simplificar: 'Causar dificuldade' → Dificultar" tone_tags="objective">
+        <rule id='CAUSAR_DIFICULDADE_DIFICULTAR' name="✂️ 'Causar dificuldade' → Dificultar" tone_tags="objective">
             <!--IDEA shorten_it-->
             <pattern>
                 <marker>
@@ -12459,7 +12459,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='DE_FORA_EXTERNO_DE_DENTRO_INTERNO' name="Simplificar: de dentro/fora → interno/externo">
+        <rulegroup id='DE_FORA_EXTERNO_DE_DENTRO_INTERNO' name="✂️ de dentro/fora → interno/externo">
             <!--IDEA shorten_it-->
 
             <!-- #1: de dentro → interno -->
@@ -12882,7 +12882,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id='REMOVE_PRONOUN' name='Remoção de pronomes' type='style' tone_tags="povrem">
 
 
-        <rule id='SUBSTANTIVO_PRONOME_VERBINF_REM_PRON' name="Simplificar: Substantivo + Pronome + Verbo Infinitivo → Omitir Pronome" type='style' tone_tags="clarity">
+        <rule id='SUBSTANTIVO_PRONOME_VERBINF_REM_PRON' name="✂️ Substantivo + Pronome + Verbo Infinitivo → Omitir Pronome" type='style' tone_tags="clarity">
             <antipattern>
                 <token postag='SENT_START|CC|CS' postag_regexp='yes'/>
                 <token min='0' max='1' postag='_PUNCT|_QUOT' postag_regexp='yes'/>
@@ -12913,7 +12913,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ELA O QUE ELA ACHOU ela o que achou -->
-        <rule id='PRONOME_PESS_O_QUE_MESMO_PRONOME_PESS' name="Simplificar: Pronome P. + o + que + Pronome P. → Omitir segundo Pronome P." type="style">
+        <rule id='PRONOME_PESS_O_QUE_MESMO_PRONOME_PESS' name="✂️ Pronome P. + o + que + Pronome P. → Omitir segundo Pronome P." type="style">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-12-29 (25-JUL-2022+) -->
             <!--
             Pergunta a ela o que ela achou do texto. → Pergunta a ela o que achou do texto.
@@ -13099,7 +13099,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id='VERBO_PRON_PESS_REM_PRON_PESS' name="Simplificar: Frase com Verbo + Pronome Pessoal → Omitir Pronome Pessoal" type='style' tags="picky" tone_tags="povrem">
+        <rulegroup id='VERBO_PRON_PESS_REM_PRON_PESS' name="✂️ Frase com Verbo + Pronome Pessoal → Omitir Pronome Pessoal" type='style' tags="picky" tone_tags="povrem">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-11-29 (25-JUL-2022+) -->
             <!--
       Se me reformar DEDICAREI o resto da MINHA vida a isso. → Se me reformar DEDICAREI o resto da vida a isso.
@@ -13218,10 +13218,27 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
 
-    <category id='SHORTEN_IT' name="Linguagem concisa" type="style">
+    <category id='SHORTEN_IT' name="✂️ Linguagem concisa" type="style">
 
 
-        <rule id='CAIR_CEDER_COLAPSAR' name="Estrutura cair → ceder/colapsar" tone_tags='objective'>
+        <rule id='LOCALIZADA_SITUADA_EM_NA_NO' name="✂️ Localizada/situada em/na(s)/no(s) → em/na(s)/no(s)" tone_tags='objective' tags='picky' default='temp_off'>
+        <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <pattern>
+                <token postag='NC.+|AQ.+' postag_regexp='yes'/>
+                <token min='0' max='1' postag='_PUNCT'/>
+                <marker>
+                    <token regexp='yes'>(situad|localizad)[ao]s?</token>
+                    <token regexp='yes'>em|n[ao]s?</token>
+                </marker>
+                <token postag='NP.+' postag_regexp='yes'/>
+            </pattern>
+            <message>&quot;Localizada&quot; ou &quot;situada&quot; pode ser redundante antes de uma indicação de lugar.</message>
+            <suggestion>\4</suggestion>
+            <example correction="na">Lisboa é uma zona neutra <marker>situada na</marker> Europa.</example>
+        </rule>
+
+
+        <rule id='CAIR_CEDER_COLAPSAR' name="✂️ Estrutura cair → ceder/colapsar" tone_tags='objective'>
         <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token skip='2' regexp='yes' inflected='yes'>estrutura|edifício|prédio|ponte|viaduto|muro|parede|fachada|telhado|teto|cobertura|laje|viga|pilar|coluna|fundação|alicerce|sapata|estaca|aterro|terrapleno|barragem|dique|túnel|galeria|escavação|poço|andaime|plataforma|passarela|varanda|sacada|marquise|cais|doca|pavimento|piso|estrada|rodovia|autoestrada|via|travessia|trilho|carril|armação|suporte|escoramento|contenção|paredão|cortina|painel|placa|bloco|maciço|torre|antena|poste|mastro<exception scope='next' regexp='yes'>sem|e|ou</exception></token>
@@ -13243,7 +13260,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='OUTRA_ALTERNATIVA' name="Simplificar: Outra opção/hipótese/possibilidade/solução/via/saída → alternativa">
+        <rulegroup id='OUTRA_ALTERNATIVA' name="✂️ Outra opção/hipótese/possibilidade/solução/via/saída → alternativa">
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <rule> <!-- #1: Negative (triggered first): "alternativa" -->
@@ -13299,7 +13316,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='DEPOIS_DE_APÓS' name="Simplificar: Depois de → após">
+        <rule id='DEPOIS_DE_APÓS' name="✂️ Depois de → após">
             <antipattern>
                 <token>depois</token>
                 <token>de</token>
@@ -13330,7 +13347,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='TOTALIZAR' name="Simplificar: 'perfazer um total de' → totalizar">
+        <rule id='TOTALIZAR' name="✂️ 'perfazer um total de' → totalizar">
             <pattern>
                 <marker>
                     <token inflected='yes' regexp='yes'>alcançar|contabilizar|perfazer|somar|totalizar</token>
@@ -13347,7 +13364,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='QUE_SE_V_PRESENTE' name="Simplificar: 'que se + V. presente' → V. part. passado">
+        <rulegroup id='QUE_SE_V_PRESENTE' name="✂️ 'que se + V. presente' → V. part. passado">
 
             <antipattern>
                 <token regexp='yes'>[ao]s?|u(m|ns)|umas?</token>
@@ -13402,7 +13419,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id='DOBRO_DUAS_VEZES_MAIS_V3' name="Simplificar: 'duas vezes mais' → 'o dobro'">
+        <rulegroup id='DOBRO_DUAS_VEZES_MAIS_V3' name="✂️ 'duas vezes mais' → 'o dobro'">
 
             <antipattern>
                 <token>duas</token>
@@ -13564,7 +13581,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id='TRIPLO_TRÊS_VEZES_MAIS_V3' name="Simplificar: 'três vezes mais' → 'o triplo'">
+        <rulegroup id='TRIPLO_TRÊS_VEZES_MAIS_V3' name="✂️ 'três vezes mais' → 'o triplo'">
 
             <antipattern>
                 <token>duas</token>
@@ -13735,7 +13752,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='SER_NECESSARIO_NECESSARIO_V2' name="Simplificar: Ser necessário → necessário">
+        <rule id='SER_NECESSARIO_NECESSARIO_V2' name="✂️ Ser necessário → necessário">
             <antipattern>
                 <token postag="V.+|NC.+" postag_regexp='yes'/>
                 <token>que</token>
@@ -13774,7 +13791,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='DAR_VALOR_VALORIZAR' name="Simplificar: Verbo 'dar' + valor → valorizar" tags="picky">
+        <rule id='DAR_VALOR_VALORIZAR' name="✂️ Verbo 'dar' + valor → valorizar" tags="picky">
             <!-- IDEA shorten_it -->
             <pattern>
                 <marker>
@@ -13917,7 +13934,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='FAZER_USO_DE-USAR-RECORRER' name="Simplificar: Fazer uso de → usar/recorrer" tags="picky">
+        <rulegroup id='FAZER_USO_DE-USAR-RECORRER' name="✂️ Fazer uso de → usar/recorrer" tags="picky">
             <!-- IDEA shorten_it -->
 
             <!-- DE -->
@@ -14483,7 +14500,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='MADRUGADA_MATINAL' name="Simplificar: da madrugada/manhã → matinal" type="style">
+        <rule id='MADRUGADA_MATINAL' name="✂️ da madrugada/manhã → matinal" type="style">
             <!--IDEA shorten_it-->
             <pattern>
                 <token postag='V.+' postag_regexp='yes'/>
@@ -18039,7 +18056,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example>A área é delimitada <marker>fisicamente</marker>.</example>
         </rule>
         <!-- AS QUE quais -->
-        <rule id='AS_OS_QUE_QUAIS' name="Simplificar: [ao]s que → quais" type="style">
+        <rule id='AS_OS_QUE_QUAIS' name="✂️ [ao]s que → quais" type="style">
             <!-- Created by Marco A.G.Pinto, Portuguese rule 2022-10-01 (25-JUL-2022+) -->
             <!--
             E determinar as que obtiveram melhores resultados. → E determinar quais obtiveram melhores resultados.
@@ -18086,7 +18103,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUATRO OU MENOS SÃO SUFICIENTES até quatro são suficientes -->
-        <rule id='ATE_NUMERO_NUMERO_OU_MENOS' name="Simplificar: NÚMERO + ou menos → até NÚMERO">
+        <rule id='ATE_NUMERO_NUMERO_OU_MENOS' name="✂️ NÚMERO + ou menos → até NÚMERO">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-08-23 (25-JUL-2022+) -->
             <!--
             Tudo bate certo e quatro ou menos variáveis são suficientes na equação. → Tudo bate certo e até quatro variáveis são suficientes na equação.
@@ -18133,7 +18150,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ACONTECE DESDE OS ANOS remonta aos anos -->
-        <rule id='DESDE_TEMPO_REMONTA_TEMPO' name="Simplificar: Desde tempo → remontar tempo" type="style" tags="picky">
+        <rule id='DESDE_TEMPO_REMONTA_TEMPO' name="✂️ Desde tempo → remontar tempo" type="style" tags="picky">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-09-06/7 (25-JUL-2022+) -->
             <!--
             Isto acontece desde os anos 1990s. → Isto remonta aos anos 1990s.
@@ -18188,7 +18205,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- POR ISSO EXISTE/EXISTEM existindo -->
-        <rulegroup id='POR_ISSO_V_3PESSOA_SINGULAR_PLURAL_GERUNDIO' name="Simplificar: Por isso + verbo na 3.ª pessoa → Verbo gerúndio" type='style'>
+        <rulegroup id='POR_ISSO_V_3PESSOA_SINGULAR_PLURAL_GERUNDIO' name="✂️ Por isso + verbo na 3.ª pessoa → Verbo gerúndio" type='style'>
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-08-17/18 (25-JUL-2022+) -->
             <!--
             Os bits são o nível mais baixo existente nos computadores, por isso existem em maior quantidade. → Os bits são o nível mais baixo existente nos computadores, existindo em maior quantidade.
@@ -18233,7 +18250,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='QUE_SER_ESTAR_PARTPASSADO_V2' name="Simplificar: Que + ser/estar + part. passado → Particípio passado" type='style' tags='picky'>
+        <rule id='QUE_SER_ESTAR_PARTPASSADO_V2' name="✂️ Que + ser/estar + part. passado → Particípio passado" type='style' tags='picky'>
             <!-- The rule has been completely rewritten.
                  In my first rewrite, I used postag='VMI[IPS]3.+' for the verb "ser" and "estar".
                  In my second rewrite, I removed the 'I' ("estava(m)") postag='VMI[PS]3.+' to avoid too many false positives.
@@ -18638,7 +18655,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE JULGÁVAMOS SER MAIOR que julgávamos maior -->
-        <rule id='QUE_VERBO_SER_ADJ_QUE_VERBO_ADJ' name="Simplificar: Que + Verbo + ser + Adj (remover 'ser')">
+        <rule id='QUE_VERBO_SER_ADJ_QUE_VERBO_ADJ' name="✂️ Que + Verbo + ser + Adj (remover 'ser')">
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-09-22/29 + 2022-12-17 (25-JUL-2022+) -->
             <!--
             Você já tentou fazer algo que parecia ser impossível? → Você já tentou fazer algo que parecia impossível?
@@ -18663,7 +18680,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- COMO É O CASO DE como no/o caso de -->
-        <rule id='SIMPLIFICAR_COMO_É_O_CASO_DO_DA_DAS_DOS_DE_NO_CASO' name="Simplificar: Como é o caso d[ao](s)/de/em → Como no/o caso d[ao](s)/de/em" type="style">
+        <rule id='SIMPLIFICAR_COMO_É_O_CASO_DO_DA_DAS_DOS_DE_NO_CASO' name="✂️ Como é o caso d[ao](s)/de/em → Como no/o caso d[ao](s)/de/em" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-12-31 (Checked/Enhanced) (25-JUL-2022+) -->
             <!--
@@ -18689,7 +18706,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- E QUE e -->
-        <rule id='SIMPLIFICAR_E_QUE_E' name="Simplificar: E que → e" type="style">
+        <rule id='SIMPLIFICAR_E_QUE_E' name="✂️ E que → e" type="style">
             <!--IDEA shorten_it-->
             <!-- Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2023-01-21 + 2023-02-08 (25-JUL-2022+) -->
             <!--
@@ -18730,7 +18747,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- USAR EXPRESSÕES MAIS SIMPLES SUGERINDO VERBOS NO INFINITIVO -->
-        <rulegroup id='SIMPLIFICAR_CONVERTER_PARA_VERBO_INFINITIVO' name="Simplificar: Usar a versão com infinitivo da subordinada" type="style">
+        <rulegroup id='SIMPLIFICAR_CONVERTER_PARA_VERBO_INFINITIVO' name="✂️ Usar a versão com infinitivo da subordinada" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-02-04 (1-JAN-2022+)      -->
             <!--
@@ -18779,7 +18796,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- E QUE que -->
-        <rule id='SIMPLIFICAR_E_QUE_QUE' name="Simplificar: E que → que" type="style">
+        <rule id='SIMPLIFICAR_E_QUE_QUE' name="✂️ E que → que" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-05-27 + 2022-06-01/02 (24-MAY-2022+)      -->
             <!--
@@ -18815,7 +18832,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PODE IR AO PC E IDENTIFICAR O UTILIZADOR? Pode ir ao PC identificar o utilizador? -->
-        <rule id='SIMPLIFICAR_IR_E_PARA' name="Simplificar: Locução com verbo ‘ir’" type="style">
+        <rule id='SIMPLIFICAR_IR_E_PARA' name="✂️ Locução com verbo ‘ir’" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-05-26 + 2022-06-01 + 2022-09-09 (24-MAY-2022+)      -->
             <!--
@@ -19015,7 +19032,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- O QUE ORIGINA originando -->
-        <rule id='SIMPLIFICAR_O_QUE_VERBO_VERBOGERUNDIO' name="Simplificar: O que + V. → V. Gerúndio" type="style" tags="picky">
+        <rule id='SIMPLIFICAR_O_QUE_VERBO_VERBOGERUNDIO' name="✂️ O que + V. → V. Gerúndio" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-02-08-13/15/17/19/21 (1-JAN-2022+)      -->
             <!--
@@ -19399,7 +19416,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- PARA O DOMINGO DE HOJE para este domingo -->
-        <rulegroup id='SIMPLIFICAR_PARA_DIA_SEMANA_PARA_ESTE_DIA' name="Simplificar: Para dia semana → Para este dia" type="style">
+        <rulegroup id='SIMPLIFICAR_PARA_DIA_SEMANA_PARA_ESTE_DIA' name="✂️ Para dia semana → Para este dia" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-04-14/15 (1-JAN-2022+)      -->
             <!--
@@ -19426,7 +19443,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ,POIS : -->
-        <rule id='SIMPLIFICAR_POIS_REMOVER' name="Simplificar: Remoção de “pois” com ela(s)/ele(s)" type="style" tags="picky">
+        <rule id='SIMPLIFICAR_POIS_REMOVER' name="✂️ Remoção de “pois” com ela(s)/ele(s)" type="style" tags="picky">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-03-04/05/07 (1-JAN-2022+)      -->
             <!--
@@ -19453,7 +19470,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='SIMPLIFICAR_QUE_E_TEM_TÊM' name="Simplificar: Que/E tem/têm → com" tags='picky'>
+        <rule id='SIMPLIFICAR_QUE_E_TEM_TÊM' name="✂️ Que/E tem/têm → com" tags='picky'>
             <!--IDEA shorten_it-->
 
             <antipattern>
@@ -19592,7 +19609,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- QUE CAUSAM causados -->
-        <rule id='SIMPLIFICAR_QUE_VERBO_PARTICÍPIO_PASSADO' name="Simplificar: Que + V. → V. Part. Passado">
+        <rule id='SIMPLIFICAR_QUE_VERBO_PARTICÍPIO_PASSADO' name="✂️ Que + V. → V. Part. Passado">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-02-27 (1-JAN-2022+)      -->
             <!--
@@ -19616,7 +19633,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- ARRANJADOS É QUE PODEM arranjados podem -->
-        <rule id='SIMPLIFICAR_REMOVER_É_QUE_PARTICÍPIO' name="Simplificar: Part. Passado + é + que → Part. Passado" type="style">
+        <rule id='SIMPLIFICAR_REMOVER_É_QUE_PARTICÍPIO' name="✂️ Part. Passado + é + que → Part. Passado" type="style">
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto with Ricardo Joseh Lima suggestions, Portuguese rule 2022-04-19 (1-JAN-2022+)      -->
             <!--
@@ -19635,7 +19652,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- 	VERBO TER + PARTICÍPIO PASSADO Pret. Perf. Ind. Part. Passado -->
-        <rulegroup id='SIMPLIFICAR_VERBO_TER_MAIS_PARTICIPIO_PASSADO' name="Simplificar: V. Ter + Part. Passado → V. Pret. Perf. Ind. Part. Passado" type="style" tags='picky'>
+        <rulegroup id='SIMPLIFICAR_VERBO_TER_MAIS_PARTICIPIO_PASSADO' name="✂️ V. Ter + Part. Passado → V. Pret. Perf. Ind. Part. Passado" type="style" tags='picky'>
             <!--IDEA shorten_it-->
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-02-23 (Checked/Enhanced) (1-JAN-2022+)      -->
             <rule>
@@ -19722,7 +19739,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
         <!-- VÁRIAS VEZES vári[ao]s -->
-        <rule id='VÁRIAS_VEZES_VÁRIAS' name="Simplificar: Várias vezes → Vári[ao]s" type="style">
+        <rule id='VÁRIAS_VEZES_VÁRIAS' name="✂️ Várias vezes → Vári[ao]s" type="style">
             <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-01-23 (Checked/Enhanced) (1-JAN-2022+)      -->
             <!--
             Apagaram várias vezes publicações minhas. → Apagaram várias publicações minhas.
