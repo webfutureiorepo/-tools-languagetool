@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Joan Baptista Escorihuela;NPMSSP0
+Joan Baptista Escorigüela;NPMSSP0
+José María Nunes;NPMSSP0
 Alfredo Bryce Echenique;NPMSO00
 Alfredo Bryce;NPMSO00
 Bryce Echenique;NPMSO00
