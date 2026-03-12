@@ -13221,7 +13221,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id='SHORTEN_IT' name="✂️ Linguagem concisa" type="style">
 
 
-        <rule id='LOCALIZADA_SITUADA_EM_NA_NO' name="✂️ Localizada/situada em/na(s)/no(s) → em/na(s)/no(s)" tone_tags='objective' tags='picky' default='temp_off'>
+        <rule id='LOCALIZADA_SITUADA_EM_NA_NO' name="✂️ Localizada/situada em/na(s)/no(s) → em/na(s)/no(s)" tone_tags='objective' default='temp_off'>
         <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token postag='NC.+|AQ.+' postag_regexp='yes'/>
