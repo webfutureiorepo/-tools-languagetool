@@ -31,6 +31,7 @@ import org.languagetool.tools.StringTools;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -44,6 +45,7 @@ public class AdjustVerbSuggestionsFilter extends RuleFilter {
     JLanguageTool lt = ((PatternRule) match.getRule()).getLanguage().createDefaultJLanguageTool();
     List<String> replacements = new ArrayList<>();
     boolean numberFromNextWords = getOptional("numberFromNextWords", arguments, "false").equalsIgnoreCase("true");
+    List<String> actions = Arrays.asList(getOptional("actions", arguments, "removePronounReflexive").split(","));
     String forceNumber = getOptional("forceNumber", arguments, "");
     Synthesizer synth = getSynthesizerFromRuleMatch(match);
     int posWord = 0;
@@ -62,7 +64,7 @@ public class AdjustVerbSuggestionsFilter extends RuleFilter {
       boolean makeIntrasitive = false;
       String desiredNumber = "";
       String desiredPersona = "";
-      String action = "removePronounReflexive";
+      String action = actions.get(0);
       if (originalSuggestion.endsWith(" [intr]")) {
         originalSuggestion = originalSuggestion.substring(0, originalSuggestion.length() - 7);
         makeIntrasitive = true;
@@ -204,6 +206,13 @@ public class AdjustVerbSuggestionsFilter extends RuleFilter {
           break;
         case "addPronounReflexiveImperative": //TODO
           replacement = doAddPronounReflexiveImperative(pronounsStr, verbStr, firstVerbPersonaNumber);
+          break;
+        case "None":
+          if (isPronounsAfter) {
+            replacement = verbStr + transformDarrere(pronounsStr, verbStr);
+          } else {
+            replacement = transformDavant(pronounsStr, verbStr) + verbStr;
+          }
           break;
       }
       if (!replacement.isEmpty()) {

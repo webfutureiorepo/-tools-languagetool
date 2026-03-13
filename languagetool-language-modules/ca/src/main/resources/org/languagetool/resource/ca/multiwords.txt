@@ -1,5 +1,18 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Jean-Louis Andral;NPMSSP0
+Ainhoa Grandes Massa;NPFSSP0
+Ainhoa Grandes;NPFSSP0
+Arrós de Cardós;NPCSG00
+Sant Martí Sesserres;NPCSG00
+Parròquia d'Hortó;NPFSG00
+Sant Martí d'Aravó;NPCSG00
+Tragó de Noguera;NPCSG00
+Gurp de la Conca;NPCSG00
+Pobleta de Bellveí;NPFSG00
+Sant Martí de Barcedana;NPCSG00
+Sant Llorenç des Cardassar;NPCSG00
+Sant Llorenç del Cardassar;NPCSG00
 Luis Rojas Marcos;NPMSSP0
 Rojas Marcos;NPCNSP0
 Joan Baptista Escorihuela;NPMSSP0

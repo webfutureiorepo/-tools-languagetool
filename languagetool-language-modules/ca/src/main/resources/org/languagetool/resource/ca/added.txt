@@ -6,6 +6,7 @@
 ########## Additions ##########
 AIEA	AIEA	NPFSO00
 Aiguadolç	Aiguadolç	NPMSG00
+Ansermet	Ansermet	NPCNSP0
 Basij	Basij	NPFSO00
 CTranslate	CTranslate	NPCNO00
 CUDA	CUDA	NPCNO00
@@ -15,6 +16,8 @@ Leavitt	Leavitt	NPCNSP0
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0
 ONNX	ONNX	NPCNO00
+Palau-sator	Palau-sator	NPCSG00
+Petruixka	Petruixka	NPCNSP0
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Urriés	Urriés	NPCSG00
@@ -47,6 +50,10 @@ neoconfucians	neoconfucià	AQ0MP0
 neoconfucià	neoconfucià	AQ0MS0
 neohel·lenista	neohel·lenista	NCCS000
 neohel·lenistes	neohel·lenista	NCCP000
+polovtsiana	polovtsià	AQ0FS0
+polovtsianes	polovtsià	AQ0FP0
+polovtsians	polovtsià	AQ0MP0
+polovtsià	polovtsià	AQ0MS0
 ràndom	ràndom	AQ0CN0
 sintient	sintient	AQ0CS0
 sintients	sintient	AQ0CP0
