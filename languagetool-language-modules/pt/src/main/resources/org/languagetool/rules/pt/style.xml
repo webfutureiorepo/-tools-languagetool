@@ -13221,22 +13221,40 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id='SHORTEN_IT' name="✂️ Linguagem concisa" type="style">
 
 
-        <rule id='LOCALIZADA_SITUADA_EM_NA_NO_V2' name="✂️ Localizada/situada em/na(s)/no(s) → em/na(s)/no(s)" tone_tags='objective'>
+        <rulegroup id='LOCALIZADA_SITUADA_EM_NA_NO_V3' name="✂️ Localizada/situada em/na(s)/no(s) → em/na(s)/no(s)" tone_tags='objective'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
-            <pattern>
-                <marker>
-                    <token postag='N.+|AQ.+' postag_regexp='yes'/>
-                    <token spacebefore='no' min='0' max='1' postag='_PUNCT_COMMA'/>
-                    <token regexp='yes'>(situad|localizad)[ao]s?</token>
-                    <token regexp='yes'>em|n[ao]s?</token>
-                </marker>
-                <token postag='NP.+' postag_regexp='yes'/>
-            </pattern>
-            <message>&quot;Localizada&quot; ou &quot;situada&quot; pode ser redundante antes de uma indicação de lugar.</message>
-            <suggestion>\1 \4</suggestion>
-            <example correction="neutra na">Lisboa é uma zona <marker>neutra situada na</marker> Europa.</example>
-            <example correction="neutra na">Lisboa é uma zona <marker>neutra, situada na</marker> Europa.</example>
-        </rule>
+            <rule> <!-- #1: Proper name, keep/add comma, and show extra suggestion -->
+                <pattern>
+                    <marker>
+                        <token postag='NP.+' postag_regexp='yes'/>
+                        <token spacebefore='no' min='0' max='1' postag='_PUNCT_COMMA'/>
+                        <token regexp='yes'>(situad|localizad)[ao]s?</token>
+                        <token regexp='yes'>em|n[ao]s?</token>
+                    </marker>
+                    <token postag='NP.+' postag_regexp='yes'/>
+                </pattern>
+                <message>&quot;Localizada&quot; ou &quot;situada&quot; pode ser redundante antes de uma indicação de lugar.</message>
+                <suggestion>\1, \4</suggestion>
+                <suggestion>\1,</suggestion>
+                <example correction="Lisboa, em|Lisboa,">Aconteceu em <marker>Lisboa situada em</marker> Portugal.</example>
+                <example correction="Lisboa, em|Lisboa,">Aconteceu em <marker>Lisboa, situada em</marker> Portugal.</example>
+            </rule>
+            <rule> <!-- #2: Substantive, no comma -->
+                <pattern>
+                    <marker>
+                        <token postag='NC.+|AQ.+' postag_regexp='yes'/>
+                        <token spacebefore='no' min='0' max='1' postag='_PUNCT_COMMA'/>
+                        <token regexp='yes'>(situad|localizad)[ao]s?</token>
+                        <token regexp='yes'>em|n[ao]s?</token>
+                    </marker>
+                    <token postag='NP.+' postag_regexp='yes'/>
+                </pattern>
+                <message>&quot;Localizada&quot; ou &quot;situada&quot; pode ser redundante antes de uma indicação de lugar.</message>
+                <suggestion>\1 \4</suggestion>
+                <example correction="neutra na">Lisboa é uma zona <marker>neutra situada na</marker> Europa.</example>
+                <example correction="neutra na">Lisboa é uma zona <marker>neutra, situada na</marker> Europa.</example>
+            </rule>
+        </rulegroup>
 
 
         <rule id='CAIR_CEDER_COLAPSAR' name="✂️ Estrutura cair → ceder/colapsar" tone_tags='objective'>
