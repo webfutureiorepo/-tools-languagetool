@@ -20305,8 +20305,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
     </category>
 
-    <category id="GENERAL" name="Regras gerais de estilo" type="style" tone_tags="general">
-        <rule id="GRAU_KELVIN" name="Evitar 'grau' antes da unidade Kelvin">
+    <category id="GENERAL" name="🖌️ Regras gerais de estilo" type="style" tone_tags="general">
+        <rule id="GRAU_KELVIN" name="🖌️ Evitar 'grau' antes da unidade Kelvin">
             <pattern>
                 <token regexp="yes">graus?</token>
                 <token>kelvin</token>
@@ -20317,7 +20317,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction="kelvins">O sol tem a temperatura de 15,7 milhões de <marker>graus kelvin</marker>.</example>
         </rule>
 
-        <rule id="OK_EM_MINUSCULA" name="Preferência por 'OK' em vez de 'ok'" tags="picky">
+        <rule id="OK_EM_MINUSCULA" name="🖌️ Preferência por 'OK' em vez de 'ok'" tags="picky">
             <pattern>
                 <token case_sensitive="yes">ok</token>
             </pattern>
