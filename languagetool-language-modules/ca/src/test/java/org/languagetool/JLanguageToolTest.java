@@ -293,16 +293,15 @@ public class JLanguageToolTest {
   @Test
   public void testSpecificXMLRule() throws IOException {
     for (Rule r: tool.getAllRules()) {
-      if (r.getId().equals("TAMANY")) {
+      if (r.getId().equals("EN_NO_INFINITIU_CAUSAL")) {
         tool.enableRule(r.getId());
       } else {
         tool.disableRule(r.getId());
       }
-      List<RuleMatch> matches = tool.check("Tamany ideal de la mostra.");
-      assertEquals(1, matches.size());
-      assertEquals("[Mida ideal, Grandària ideal, Format ideal, Dimensió ideal, Proporció ideal, Volum ideal]",
-        matches.get(0).getSuggestedReplacements().toString());
     }
+    List<RuleMatch> matches = tool.check("En no tenir efectes pràctics, decideixo deixar-ho córrer");
+    assertEquals(1, matches.size());
+    assertEquals("[Com que no té, Com que no tinc]", matches.get(0).getSuggestedReplacements().toString());
   }
 
 }

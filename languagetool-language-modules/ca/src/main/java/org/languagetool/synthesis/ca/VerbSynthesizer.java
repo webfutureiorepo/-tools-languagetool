@@ -50,7 +50,14 @@ public class VerbSynthesizer {
   int numPronounsBefore = -1;
   int numPronounsAfter = -1;
   Language language;
+  boolean searchBackward = false;
 
+  public VerbSynthesizer(AnalyzedTokenReadings[] tokens, int startPos, Language lang, boolean searchBackward) {
+    this.searchBackward = searchBackward;
+    this.tokens = tokens;
+    setIndexes(startPos);
+    this.language = lang;
+  }
   public VerbSynthesizer(AnalyzedTokenReadings[] tokens, int startPos, Language lang) {
     this.tokens = tokens;
     setIndexes(startPos);
@@ -62,6 +69,11 @@ public class VerbSynthesizer {
     this.newPostag = postag;
   }
 
+  public void setPostag(String postag) {
+    this.newLemma = tokens[iFirstVerb].readingWithTagRegex(pVerb).getLemma();
+    this.newPostag = postag;
+  }
+
   public void setLemma(String lemma) {
     this.newLemma = lemma;
     this.newPostag = tokens[iFirstVerb].readingWithTagRegex(pVerb).getPOSTag();
@@ -70,9 +82,24 @@ public class VerbSynthesizer {
   private void setIndexes(int startPos) {
     int j = startPos;
     //If it is not a verb, find the first one
-    while (j < tokens.length && !isVerb(j)) {
-      j++;
+    if (searchBackward) {
+      while (j > 0 && !isVerb(j)) {
+        j--;
+      }
+      boolean foundSomeVerb = false;
+      while (j > 0 && isVerb(j)) {
+        foundSomeVerb = true;
+        j--;
+      }
+      if (foundSomeVerb) {
+        j++;
+      }
+    } else {
+      while (j < tokens.length && !isVerb(j)) {
+        j++;
+      }
     }
+
     if (isVerb(j)) {
       iFirstVerb = iLastVerb = j;
       //enrere
@@ -212,6 +239,10 @@ public class VerbSynthesizer {
     return iLastVerb;
   }
 
+  public int getLastIndex() {
+    return iLastVerb +  numPronounsAfter;
+  }
+
   public int getNumPronounsAfter() {
     return numPronounsAfter;
   }
@@ -241,6 +272,11 @@ public class VerbSynthesizer {
     return reading != null;
   }
 
+  public String getFirstVerbISPostag() {
+    AnalyzedToken reading = tokens[iFirstVerb].readingWithTagRegex(pVerbIS);
+    return reading.getPOSTag();
+  }
+
   private boolean isVerbIS(int i) {
     if (i < 0 || i >= tokens.length) {
       return false;
@@ -255,6 +291,22 @@ public class VerbSynthesizer {
 
   public boolean isUndefined() {
     return (iFirstVerb == -1 || iLastVerb == -1 || numPronounsAfter == -1 || numPronounsBefore == -1);
+  }
+
+  public boolean isPassatPerifrastic() {
+    if (iFirstVerb < 1 || iFirstVerb + 1 > tokens.length - 1) {
+      return false;
+    }
+    return tokens[iFirstVerb].hasPosTagStartingWith("VA") && tokens[iFirstVerb].hasLemma("anar")
+      && tokens[iFirstVerb + 1].hasAnyPartialPosTag("VMN", "VSN", "VAN");
+  }
+
+  public boolean isPerfet() {
+    if (iFirstVerb < 1 || iFirstVerb + 1 > tokens.length - 1) {
+      return false;
+    }
+    return tokens[iFirstVerb].hasPosTagStartingWith("VA") && tokens[iFirstVerb].hasLemma("haver")
+      && tokens[iFirstVerb + 1].hasAnyPartialPosTag("VMP", "VSP", "VAP");
   }
 
 }
