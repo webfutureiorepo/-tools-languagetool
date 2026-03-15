@@ -6176,6 +6176,15 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </pattern>
         <disambig action="remove" postag="AQ0CN0"/>
     </rule>
+    <rule id="mestre" name="mestre (nom, no adjectiu) ">
+        <pattern>
+            <token><exception postag="NC.*" postag_regexp="yes"/></token>
+            <marker>
+                <token postag="NC.*" postag_regexp="yes" regexp="yes">mestre|mestra|mestres</token>
+            </marker>
+        </pattern>
+        <disambig action="remove" postag="AQ0CP0"/>
+    </rule>
     <rule id="annual" name="desastre d'Annual">
         <pattern>
             <token regexp="yes" inflected="yes">desastre|batalla|ocupació|victòria|desfeta|derrota</token>

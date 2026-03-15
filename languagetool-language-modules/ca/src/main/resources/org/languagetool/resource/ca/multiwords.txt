@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Epic Nails;NPCNO00
+Arcadi Alibés;NPMSSP0
+Marta Torrecillas;NPFSSP0
 Jean-Louis Andral;NPMSSP0
 Ainhoa Grandes Massa;NPFSSP0
 Ainhoa Grandes;NPFSSP0
