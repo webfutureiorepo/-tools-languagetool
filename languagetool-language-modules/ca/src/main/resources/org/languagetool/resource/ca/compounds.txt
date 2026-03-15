@@ -1166,10 +1166,10 @@ pai-pai*
 pai-pais*
 Palais-Royal*
 Palau-sacosta*
-Palau-Sator*
+Palau-sator*
 #Palau-Saverdera*
 Palau-saverdera*
-Palau-Solità*
+#Palau-Solità*
 Palau-solità*
 Palau-surroca*
 Pana-sacs*

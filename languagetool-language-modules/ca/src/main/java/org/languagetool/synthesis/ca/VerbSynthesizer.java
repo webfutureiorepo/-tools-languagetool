@@ -50,18 +50,17 @@ public class VerbSynthesizer {
   int numPronounsBefore = -1;
   int numPronounsAfter = -1;
   Language language;
-  boolean searchBackward = false;
+  boolean searchBackward;
 
   public VerbSynthesizer(AnalyzedTokenReadings[] tokens, int startPos, Language lang, boolean searchBackward) {
     this.searchBackward = searchBackward;
     this.tokens = tokens;
-    setIndexes(startPos);
     this.language = lang;
+    setIndexes(startPos);
   }
+
   public VerbSynthesizer(AnalyzedTokenReadings[] tokens, int startPos, Language lang) {
-    this.tokens = tokens;
-    setIndexes(startPos);
-    this.language = lang;
+    this(tokens, startPos, lang, false);
   }
 
   public void setLemmaAndPostag(String lemma, String postag) {
@@ -81,7 +80,7 @@ public class VerbSynthesizer {
 
   private void setIndexes(int startPos) {
     int j = startPos;
-    //If it is not a verb, find the first one
+    // If it is not a verb, find the first one
     if (searchBackward) {
       while (j > 0 && !isVerb(j)) {
         j--;
@@ -145,6 +144,7 @@ public class VerbSynthesizer {
     if (i < 0 || i > tokens.length - 1) {
       return false; // out of bounds
     }
+    // TODO: handle single participles
     return tokens[i].getChunkTags().contains(new ChunkTag("GV")) || tokens[i].readingWithTagRegex(pNonParticiple) != null
       || (tokens[i].readingWithTagRegex(pParticiple) != null && tokens[i].hasPosTag("_GV_"));
   }

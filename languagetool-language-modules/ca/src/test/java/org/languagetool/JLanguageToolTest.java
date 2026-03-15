@@ -293,15 +293,15 @@ public class JLanguageToolTest {
   @Test
   public void testSpecificXMLRule() throws IOException {
     for (Rule r: tool.getAllRules()) {
-      if (r.getId().equals("EN_NO_INFINITIU_CAUSAL")) {
+      if (r.getId().equals("ESCOLTAR_SENTIR")) {
         tool.enableRule(r.getId());
       } else {
         tool.disableRule(r.getId());
       }
     }
-    List<RuleMatch> matches = tool.check("En no tenir efectes pràctics, decideixo deixar-ho córrer");
+    List<RuleMatch> matches = tool.check("Estic fart d'escoltar tothom parlant de mi.");
     assertEquals(1, matches.size());
-    assertEquals("[Com que no té, Com que no tinc]", matches.get(0).getSuggestedReplacements().toString());
+    assertEquals("[de sentir]", matches.get(0).getSuggestedReplacements().toString());
   }
 
 }

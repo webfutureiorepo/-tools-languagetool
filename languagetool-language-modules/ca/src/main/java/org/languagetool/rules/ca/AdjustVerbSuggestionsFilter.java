@@ -39,6 +39,8 @@ import static org.languagetool.rules.ca.PronomsFeblesHelper.*;
 
 public class AdjustVerbSuggestionsFilter extends RuleFilter {
 
+  final private List<String> needsApostropheChange = Arrays.asList("de", "d'", "l", "l'", "el");
+  final private List<String> needsContractionChange = Arrays.asList("a", "de", "per", "pe");
   @Override
   public RuleMatch acceptRuleMatch(RuleMatch match, Map<String, String> arguments, int patternTokenPos,
                                    AnalyzedTokenReadings[] patternTokens, List<Integer> tokenPositions) throws IOException {
@@ -228,11 +230,46 @@ public class AdjustVerbSuggestionsFilter extends RuleFilter {
       return null;
     }
     int posStartUnderline = verbSynthesizer.getFirstVerbIndex() - verbSynthesizer.getNumPronounsBefore();
+
+
+    if (verbSynthesizer.getNumPronounsBefore()==0 && posStartUnderline > 1
+      && needsApostropheChange.contains(tokens[posStartUnderline - 1].getToken().toLowerCase())
+      && anyChangeVowelConsonant(verbSynthesizer.getVerbStr(), replacements)) {
+      StringBuilder prefix = new StringBuilder();
+      if (posStartUnderline > 2 && needsContractionChange.contains(tokens[posStartUnderline - 2].getToken().toLowerCase())) {
+        prefix.append(verbSynthesizer.getStringFromTo(posStartUnderline - 2, posStartUnderline - 1).toLowerCase());
+        if (tokens[posStartUnderline].isWhitespaceBefore()) {
+          prefix.append(" ");
+        }
+        posStartUnderline = posStartUnderline - 2;
+      } else {
+        prefix.append(tokens[posStartUnderline - 1].getToken().toLowerCase());
+        if (tokens[posStartUnderline].isWhitespaceBefore()) {
+          prefix.append(" ");
+        }
+        posStartUnderline = posStartUnderline - 1;
+      }
+      for (int i = 0; i < replacements.size(); i++) {
+        replacements.set(i,prefix + replacements.get(i));
+      }
+    }
     RuleMatch ruleMatch = new RuleMatch(match.getRule(), match.getSentence(), tokens[posStartUnderline].getStartPos(),
       match.getToPos(), match.getMessage(), match.getShortMessage());
     ruleMatch.setType(match.getType());
-    ruleMatch.setSuggestedReplacements(getLanguageFromRuleMatch(match).adaptSuggestionsList(replacements, verbSynthesizer.getWholeOriginalStr()));
+    String originalStr = match.getSentence().getText().substring(tokens[posStartUnderline].getStartPos(),
+      match.getToPos());
+    ruleMatch.setSuggestedReplacements(getLanguageFromRuleMatch(match).adaptSuggestionsList(replacements, originalStr));
     return ruleMatch;
+  }
+
+  private boolean anyChangeVowelConsonant(String originalVerb, List<String> replacements) {
+    boolean originalVerbNeedsApostrophe = pApostropheNeeded.matcher(originalVerb).matches();
+    for (String replacement : replacements) {
+      if (originalVerbNeedsApostrophe != pApostropheNeeded.matcher(replacement).matches()) {
+        return true;
+      }
+    }
+    return false;
   }
 
 }
