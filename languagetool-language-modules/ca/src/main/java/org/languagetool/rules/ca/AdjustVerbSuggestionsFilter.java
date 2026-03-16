@@ -156,7 +156,12 @@ public class AdjustVerbSuggestionsFilter extends RuleFilter {
         pronounsStr = verbSynthesizer.getPronounsStrAfter();
       }
       pronounsStr = pronounsStr.toLowerCase();
-      String firstVerbPersonaNumber = verbSynthesizer.getFirstVerbPersonaNumber();
+      String firstVerbPersonaNumber;
+      if (action.equals("addPronounDative")) {
+        firstVerbPersonaNumber = verbSynthesizer.getFirstVerbPersonaNumber();
+      } else {
+        firstVerbPersonaNumber = targetPostag.substring(4,6);
+      }
       String replacement = "";
       switch (action) {
         case "addPronounEn":

@@ -79,8 +79,8 @@ public class SimpleReplaceVerbsRuleTest {
     assertEquals("cagava", matches[0].getSuggestedReplacements().get(3));
     assertEquals("havia begut oli", matches[0].getSuggestedReplacements().get(4));
     assertEquals("tocava el rebre", matches[0].getSuggestedReplacements().get(5));
-    assertEquals("em fotia", matches[0].getSuggestedReplacements().get(6));
-    assertEquals("em feia fotre", matches[0].getSuggestedReplacements().get(7));
+    assertEquals("es fotia", matches[0].getSuggestedReplacements().get(6));
+    assertEquals("es feia fotre", matches[0].getSuggestedReplacements().get(7));
     
     matches = rule.match(lt.getAnalyzedSentence("abarca"));
     assertEquals(1, matches.length);
