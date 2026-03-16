@@ -20,6 +20,7 @@ package org.languagetool.tagging.ca;
 
 import org.jetbrains.annotations.Nullable;
 import org.languagetool.*;
+import org.languagetool.chunking.ChunkTag;
 import org.languagetool.rules.SimpleReplaceDataLoader;
 import org.languagetool.tagging.BaseTagger;
 import org.languagetool.tagging.TaggedWord;
@@ -121,8 +122,13 @@ public class CatalanTagger extends BaseTagger {
       // filter for Valencian POS tags
       filterAnalyzedTokensInPlace(analyzedTokenList);
       // incorrect verbs
+      boolean isIncorrectVerb = false;
       if (analyzedTokenList.isEmpty()) {
-        addTokens(additionalTagsForIncorrectVerbs(originalWord, lowerWord), analyzedTokenList);
+        List<AnalyzedToken> tagsForIncorrectVerbs = additionalTagsForIncorrectVerbs(originalWord, lowerWord);
+        if (!tagsForIncorrectVerbs.isEmpty()) {
+          addTokens(tagsForIncorrectVerbs, analyzedTokenList);
+          isIncorrectVerb = true;
+        }
       }
       // if empty, add an analyzed token with no lemma and no postag
       if (analyzedTokenList.isEmpty()) {
@@ -131,6 +137,9 @@ public class CatalanTagger extends BaseTagger {
       AnalyzedTokenReadings atr = new AnalyzedTokenReadings(analyzedTokenList, pos);
       if (containsTypographicApostrophe) {
         atr.setTypographicApostrophe();
+      }
+      if (isIncorrectVerb) {
+        atr.setChunkTags(Collections.singletonList(new ChunkTag("_incorrect_verb_")));
       }
       tokenReadings.add(atr);
       pos += originalWord.length();
@@ -388,9 +397,6 @@ public class CatalanTagger extends BaseTagger {
         }
       }
       i++;
-    }
-    if (!additionalTaggedTokens.isEmpty()) {
-      additionalTaggedTokens.add(new AnalyzedToken(originalWord, "_incorrect_verb_", infinitive));
     }
     return additionalTaggedTokens;
   }

@@ -29,6 +29,7 @@ import org.languagetool.AnalyzedSentence;
 import org.languagetool.AnalyzedToken;
 import org.languagetool.AnalyzedTokenReadings;
 import org.languagetool.Language;
+import org.languagetool.chunking.ChunkTag;
 import org.languagetool.rules.*;
 import org.languagetool.synthesis.ca.CatalanSynthesizer;
 
@@ -46,6 +47,7 @@ public class SimpleReplaceVerbsRule extends AbstractSimpleReplaceRule {
   private static final Map<String, List<String>> wrongWords = loadFromPath("/ca/replace_verbs.txt");
   private static final Locale CA_LOCALE = new Locale("CA");
   private static final Map<String, String> argumentsMap = Map.of("actions", "None");
+  private static final ChunkTag incorrectVerbChunk = new ChunkTag("_incorrect_verb_");
 
   @Override
   public Map<String, List<String>> getWrongWords() {
@@ -93,7 +95,7 @@ public class SimpleReplaceVerbsRule extends AbstractSimpleReplaceRule {
     List<RuleMatch> ruleMatches = new ArrayList<>();
     AnalyzedTokenReadings[] tokens = sentence.getTokensWithoutWhitespace();
     for (int index = 1; index < tokens.length; index++) {
-      if (!tokens[index].hasPosTag("_incorrect_verb_")) {
+      if (!tokens[index].getChunkTags().contains(incorrectVerbChunk)) {
         continue;
       }
       // synthesize replacements
