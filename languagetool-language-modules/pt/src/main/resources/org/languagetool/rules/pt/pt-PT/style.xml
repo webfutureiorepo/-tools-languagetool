@@ -130,7 +130,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
           <antipattern>
               <token>prazer</token>
               <token skip='-1' regexp='yes'>de|em|que</token>
-              <token regexp='yes' inflected='yes'>sexo|sexual|sexualmente|orgasmo|erótico|excitação|desejo|corpo|tocar|beijo|carícia|sensual|submisso|dominar|foder|fornicar|ejacular|ejaculação|esperma|esporra|langonha|coito|pénis|vagina|clítoris|cona|boceta</token>
+              <token regexp='yes' inflected='yes'>sexo|sexual|sexualmente|orgasmo|erótico|excitação|desejo|corpo|tocar|beijo|carícia|sensual|submisso|dominar|foder|fornicar|ejacular|ejaculação|esperma|esporra|langonha|coito|pénis|vagina|clítoris|clitóris|cona|boceta</token>
               <example>Será que é possível uma mulher ter prazer em sentir-se submissa sexualmente?</example>
           </antipattern>
           <pattern>
