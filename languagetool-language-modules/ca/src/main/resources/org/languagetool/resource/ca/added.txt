@@ -12,6 +12,7 @@ CTranslate	CTranslate	NPCNO00
 CUDA	CUDA	NPCNO00
 Coliseum	Coliseum	NPMSO00
 Dimona	Dimona	NPCSG00
+Henkell	Henkell	NPCNSP0
 Leavitt	Leavitt	NPCNSP0
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0

@@ -8,6 +8,7 @@ CTranslate
 CUDA
 Coliseum
 Dimona
+Henkell
 Leavitt
 Miguel
 ONNX

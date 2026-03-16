@@ -44,6 +44,7 @@ public class CatalanTaggerTest {
 
   @Test
   public void testTagger() throws IOException {
+    TestTools.myAssert("liava", "liava/[liar]VMII1S00|liava/[liar]VMII3S00|liava/[liar]_incorrect_verb_", tokenizer, tagger);
     TestTools.myAssert("UPF", "UPF/[UPF]NPFSO00", tokenizer, tagger);
     TestTools
         .myAssert(
