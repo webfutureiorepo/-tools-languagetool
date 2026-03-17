@@ -24,6 +24,7 @@ Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Urriés	Urriés	NPCSG00
 Vicente	Vicente	NPCNSP0
 afterhours	afterhours	NCMN000
+antivaixell	antivaixell	AQ0CN0
 autocèntric	autocèntric	AQ0MS0
 autocèntrica	autocèntric	AQ0FS0
 autocèntrics	autocèntric	AQ0MP0
