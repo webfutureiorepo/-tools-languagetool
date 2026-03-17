@@ -6156,7 +6156,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <rule>
       <pattern>
         <marker>
-          <token regexp='yes' inflected='yes'>beijo|boceta|broxe|caralho|carícia|clítoris|clitóris|coito|cona|corpo|cunilíngua|cunnilingus|desejo|dominar|ejaculação|ejacular|erótico|esperma|esporra|excitação|foda|foder|fornicar|langonha|masturbação|masturbar|minete|orgasmo|pénis|queca|sensual|sexo|sexual|sexualmente|submisso|tocar|vagina</token>
+          <token regexp='yes' inflected='yes'>beijo|boceta|broxe|caralho|carícia|clítoris|clitóris|coito|cona|cunilíngua|cunnilingus|ejaculação|ejacular|erótico|esperma|esporra|excitação|foda|foder|fornicar|langonha|masturbação|masturbar|minete|orgasmo|pénis|queca|sensual|sexo|sexual|sexualmente|submisso|vagina</token>
         </marker>
       </pattern>
       <disambig action="add">
@@ -6166,7 +6166,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <rule>
       <pattern>
         <marker>
-          <token regexp='yes' inflected='yes'>anorak|avental|bata|bermuda|blazer|blusa|blusão|calça|calça-jeans|calção|calcinha|camisa|camiseta|camisola|cardigã|cardigan|casaco|colete|cueca|farda|fato|figurino|fraque|gabardina|indumentária|jaqueta|jardineira|jeans|kimono|lingerie|macacão|parka|pijama|pullover|pulover|quimono|regata|roupa|roupão|saia|short|smoking|sobretudo|soutien|suéter|sutiã|t-shirt|terno|top|traje|tshirt|túnica|uniforme|vestido</token>
+          <token postag_regexp='yes' postag='NC.+|AQ.+' regexp='yes' inflected='yes'>anorak|avental|bata|bermuda|blazer|blusa|blusão|calça|calça-jeans|calção|calcinha|camisa|camiseta|camisola|cardigã|cardigan|casaco|colete|cueca|farda|fato|figurino|fraque|gabardina|indumentária|jaqueta|jardineira|jeans|kimono|lingerie|macacão|parka|pijama|pullover|pulover|quimono|regata|roupa|roupão|saia|short|smoking|sobretudo|soutien|suéter|sutiã|t-shirt|terno|top|traje|tshirt|túnica|uniforme|vestido</token>
         </marker>
       </pattern>
       <disambig action="add">
@@ -6176,7 +6176,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <rule>
       <pattern>
         <marker>
-          <token regexp='yes' inflected='yes'>alpargata|bota|bota-cano-curto|bota-cano-longo|botim|botina|chinelinho|chinelo|chuteira|clog|collant|coturno|derby|espadrilha|flipflop|galocha|havaiana|loafer|luva|meia|meia-calça|meias-calças|mocassim|monkstrap|oxford|papete|rasteirinha|sandalia|sandália|sandália-rasa|sandalia-salto|sandália-salto|sapatilha|sapatilha-corrida|sapatilha-desportiva|sapatilha-futebol|sapato|sapato-desportivo|sapato-social|soca|tamanco|tamanco-madeira|tenis|tênis</token>
+          <token postag_regexp='yes' postag='NC.+|AQ.+' regexp='yes' inflected='yes'>alpargata|bota|bota-cano-curto|bota-cano-longo|botim|botina|chinelinho|chinelo|chuteira|clog|collant|coturno|derby|espadrilha|flipflop|galocha|havaiana|loafer|luva|meia|meia-calça|meias-calças|mocassim|monkstrap|oxford|papete|rasteirinha|sandalia|sandália|sandália-rasa|sandalia-salto|sandália-salto|sapatilha|sapatilha-corrida|sapatilha-desportiva|sapatilha-futebol|sapato|sapato-desportivo|sapato-social|soca|tamanco|tamanco-madeira|tenis|tênis</token>
         </marker>
       </pattern>
       <disambig action="add">
