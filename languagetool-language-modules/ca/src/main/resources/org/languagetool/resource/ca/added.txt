@@ -56,6 +56,14 @@ polovtsiana	polovtsià	AQ0FS0
 polovtsianes	polovtsià	AQ0FP0
 polovtsians	polovtsià	AQ0MP0
 polovtsià	polovtsià	AQ0MS0
+prebèl·lic	prebèl·lic	AQ0MS0
+prebèl·lica	prebèl·lic	AQ0FS0
+prebèl·lics	prebèl·lic	AQ0MP0
+prebèl·liques	prebèl·lic	AQ0FP0
+probèl·lic	probèl·lic	AQ0MS0
+probèl·lica	probèl·lic	AQ0FS0
+probèl·lics	probèl·lic	AQ0MP0
+probèl·liques	probèl·lic	AQ0FP0
 ràndom	ràndom	AQ0CN0
 sintient	sintient	AQ0CS0
 sintients	sintient	AQ0CP0

@@ -95,7 +95,7 @@ public class SimpleReplaceVerbsRule extends AbstractSimpleReplaceRule {
     List<RuleMatch> ruleMatches = new ArrayList<>();
     AnalyzedTokenReadings[] tokens = sentence.getTokensWithoutWhitespace();
     for (int index = 1; index < tokens.length; index++) {
-      if (!tokens[index].getChunkTags().contains(incorrectVerbChunk)) {
+      if (!tokens[index].getChunkTags().contains(incorrectVerbChunk) || tokens[index].hasPosTagStartingWith("NP")) {
         continue;
       }
       // synthesize replacements
