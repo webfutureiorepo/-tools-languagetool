@@ -6183,6 +6183,26 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         <wd pos="_CONTEXTO_CALCADO_CALCAR"/>
       </disambig>
     </rule>
+    <rule>
+      <pattern>
+        <marker>
+          <token postag_regexp='yes' postag='NC.+|AQ.+' regexp='yes' inflected='yes'>alojamento|anexo|apartamento|bungalô|casa|chácara|chalé|cobertura|condomínio|domicílio|duplex|edifício|estúdio|fazenda|flat|habitação|hostel|imóvel|kitnet|loft|mansão|moradia|penthouse|pousada|prédio|propriedade|quarto|quinta|quitinete|rancho|república|residência|sítio|triplex|vivenda</token>
+        </marker>
+      </pattern>
+      <disambig action="add">
+        <wd pos="_CONTEXTO_HABITACAO_IMOVEIS"/>
+      </disambig>
+    </rule>
+    <rule>
+      <pattern>
+        <marker>
+          <token postag_regexp='yes' postag='NC.+|AQ.+' regexp='yes' inflected='yes'>autocarro|automóvel|bicicleta|bonde|buggy|camião|caminhão|caminhonete|camioneta|carrinha|carro|carroça|carruagem|charrete|comboio|diligência|elétrico|funicular|furgão|furgoneta|kart|locomotiva|metrô|metro|microônibus|minibus|monotrilho|moto|motocicleta|motociclo|motoneta|mototáxi|ônibus|patinete|pickup|quadriciclo|reboque|scooter|segway|táxi|taxi|trailer|trem|triciclo|trotinete|van|viatura|VLT</token>
+        </marker>
+      </pattern>
+      <disambig action="add">
+        <wd pos="_CONTEXTO_VEICULOS_TERRESTRES"/>
+      </disambig>
+    </rule>
   </rulegroup>
 
 
