@@ -45,6 +45,8 @@ estalviable	estalviable	AQ0CS0
 estalviables	estalviable	AQ0CP0
 hiperteatralitat	hiperteatralitat	NCFS000
 hiperteatralitats	hiperteatralitat	NCFP000
+mastofauna	mastofauna	NCFS000
+mastofaunes	mastofauna	NCFP000
 neoconfuciana	neoconfucià	AQ0FS0
 neoconfucianes	neoconfucià	AQ0FP0
 neoconfucianista	neoconfucianista	AQ0CS0

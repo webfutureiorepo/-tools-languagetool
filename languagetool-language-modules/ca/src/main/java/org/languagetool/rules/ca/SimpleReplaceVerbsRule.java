@@ -99,6 +99,7 @@ public class SimpleReplaceVerbsRule extends AbstractSimpleReplaceRule {
         continue;
       }
       // synthesize replacements
+      // TODO maybe check for at==null, but we want to find all possible problems
       AnalyzedToken at = tokens[index].readingWithTagRegex(pVerb);
       List<String> replacementInfinitives = wrongWords.get(at.getLemma());
       RuleMatch potentialRuleMatch = createRuleMatch(tokens[index], replacementInfinitives, sentence, at.getLemma());

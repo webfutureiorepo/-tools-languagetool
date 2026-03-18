@@ -411,7 +411,11 @@ public class CatalanTagger extends BaseTagger {
     }
     List<AnalyzedToken> atl = asAnalyzedTokenListForTaggedWords(word, taggedWords);
     for (AnalyzedToken at : atl) {
-      aTokenList.add(new AnalyzedToken(word, at.getPOSTag(), lemma));
+      if (at.getPOSTag().startsWith("V")) {
+        // només verbs, no "cantada/NCFS000"
+        aTokenList.add(new AnalyzedToken(word, at.getPOSTag(), lemma));
+      }
+
     }
     return aTokenList;
   }
