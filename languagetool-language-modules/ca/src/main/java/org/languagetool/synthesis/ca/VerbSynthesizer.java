@@ -126,7 +126,8 @@ public class VerbSynthesizer {
 
     int i = 1;
     int pronounsAfter = 0;
-    while (iLastVerb + i < tokens.length && !tokens[iLastVerb + i].isWhitespaceBefore() && tokens[iLastVerb + i].hasPosTagStartingWith("P")) {
+    while (iLastVerb + i < tokens.length && !tokens[iLastVerb + i].isWhitespaceBefore()
+      && tokens[iLastVerb + i].readingWithTagRegex(pPronomFeble) != null) {
       pronounsAfter++;
       i++;
     }

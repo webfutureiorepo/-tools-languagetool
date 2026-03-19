@@ -1,5 +1,9 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+South Pars;NPCSG00
+Ludovico il Moro;NPMSSP0
+Victor Adler;NPMSSP0
+Anne Hamilton;NPFSSP0
 Universitat Tsinghua;NPFSO00
 fund.;NCFS000
 Gholamreza Soleimani;NPMSSP0
