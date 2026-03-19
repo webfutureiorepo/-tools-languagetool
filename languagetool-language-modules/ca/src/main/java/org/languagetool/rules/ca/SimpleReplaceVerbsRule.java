@@ -102,9 +102,12 @@ public class SimpleReplaceVerbsRule extends AbstractSimpleReplaceRule {
       // synthesize replacements
       AnalyzedToken at = tokens[index].readingWithTagRegex(pVerb);
       if (at == null) {
-        return null;
+        continue;
       }
       List<String> replacementInfinitives = wrongWords.get(at.getLemma());
+      if (replacementInfinitives == null) {
+        continue;
+      }
       RuleMatch potentialRuleMatch = createRuleMatch(tokens[index], replacementInfinitives, sentence, at.getLemma());
       RuleMatch finalMatch;
       AdjustVerbSuggestionsFilter filter = new AdjustVerbSuggestionsFilter();
