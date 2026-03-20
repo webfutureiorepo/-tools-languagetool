@@ -8,6 +8,7 @@ AIEA	AIEA	NPFSO00
 Aiguadolç	Aiguadolç	NPMSG00
 Ansermet	Ansermet	NPCNSP0
 Basij	Basij	NPFSO00
+CDRAM	CDRAM	NCFN000
 CTranslate	CTranslate	NPCNO00
 CUDA	CUDA	NPCNO00
 Coliseum	Coliseum	NPMSO00
@@ -22,6 +23,7 @@ Petruixka	Petruixka	NPCNSP0
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Urriés	Urriés	NPCSG00
+VRAM	VRAM	NCFN000
 Vicente	Vicente	NPCNSP0
 afterhours	afterhours	NCMN000
 antivaixell	antivaixell	AQ0CN0
@@ -47,6 +49,7 @@ hiperteatralitat	hiperteatralitat	NCFS000
 hiperteatralitats	hiperteatralitat	NCFP000
 mastofauna	mastofauna	NCFS000
 mastofaunes	mastofauna	NCFP000
+multiagent	multiagent	AQ0CN0
 neoconfuciana	neoconfucià	AQ0FS0
 neoconfucianes	neoconfucià	AQ0FP0
 neoconfucianista	neoconfucianista	AQ0CS0

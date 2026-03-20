@@ -4,6 +4,7 @@ AIEA
 Aiguadolç
 Ansermet
 Basij
+CDRAM
 CTranslate
 CUDA
 Coliseum
@@ -17,6 +18,7 @@ Petruixka
 Rayuela
 Rosselló-Pòrcel
 Urriés
+VRAM
 Vicente
 afterhours
 antivaixell
@@ -42,6 +44,7 @@ hiperteatralitat
 hiperteatralitats
 mastofauna
 mastofaunes
+multiagent
 neoconfuciana
 neoconfucianes
 neoconfucianista
