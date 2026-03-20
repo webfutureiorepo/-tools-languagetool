@@ -388,7 +388,9 @@ public class CatalanTagger extends BaseTagger {
   }
 
   private List<AnalyzedToken> tryTag(String originalWord, String infinitive, String conjugated) {
-    if (!wrongVerbs.containsKey(infinitive)) return Collections.emptyList();
+    if (!wrongVerbs.containsKey(infinitive)) {
+      return Collections.emptyList();
+    }
     return asAnalyzedTokenListWithLemma(originalWord, infinitive, getWordTagger().tag(conjugated));
   }
 
@@ -425,7 +427,6 @@ public class CatalanTagger extends BaseTagger {
         // només verbs, no "cantada/NCFS000"
         aTokenList.add(new AnalyzedToken(word, at.getPOSTag(), lemma));
       }
-
     }
     return aTokenList;
   }
