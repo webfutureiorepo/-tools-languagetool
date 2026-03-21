@@ -22920,7 +22920,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id='CONFUSED_WORDS' name="❓ Confusão de Palavras">
 
 
-        <rule id='ESTAR_TER_CONFUSAO' name="❓ estar/ter" default='temp_off'>
+        <rule id='ESTAR_TER_CONFUSAO' name="❓ estar/ter">
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <antipattern> <!-- Expressões idiomáticas -->
                 <token inflected='yes'>estar</token>
