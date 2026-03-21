@@ -12,10 +12,10 @@
 
   <unification feature="gender">
     <equivalence type="f">
-      <token postag="(noun.*?|adj|numr):f:.*|noun:anim:s:v_...:pron:pers:[21]" postag_regexp="yes" />
+      <token postag="(noun.*?|adj|numr):f:.*|noun:anim:s:v_...:pron.*:pers:[21]" postag_regexp="yes" />
     </equivalence>
     <equivalence type="m">
-      <token postag="(noun.*?|adj|numr):m:.*|noun:anim:s:v_...:pron:pers:[21]" postag_regexp="yes" />
+      <token postag="(noun.*?|adj|numr):m:.*|noun:anim:s:v_...:pron.*:pers:[21]" postag_regexp="yes" />
     </equivalence>
     <equivalence type="n">
       <token postag="(noun.*?|adj|numr):n:.*" postag_regexp="yes" />
@@ -3443,7 +3443,7 @@ category: symbols -->
         <token inflected="yes" postag_regexp="yes" postag="noun.*?:bad.*">дача</token>
       </marker>
       <token postag_regexp="yes" postag="adj.*" min="0"/>
-      <token regexp="yes" inflected="yes" postag_regexp="yes" postag="(noun|adj).*?:v_rod.*|adv.*">показання|показ|свідчення|пояснення|хабар|оцінка|згода|хибний|неправдивий|свідомо|завідомо</token>
+      <token regexp="yes" inflected="yes" postag_regexp="yes" postag="(noun|adj).*?:v_rod.*|adv.*">свідчення|пояснення|показання|роз'яснення|відповідь|показ|хабар|згода|дозвіл|оцінка|хибний|неправдивий|свідомо|завідомо</token>
     </pattern>
     <disambig action="filter" postag="noun.*?:bad.*"/>
     <example type="ambiguous"
@@ -3460,7 +3460,7 @@ category: symbols -->
 
   <rule name="Дача - будинок" id="dacha-house_1">
     <pattern>
-      <token regexp="yes" inflected="yes">на|з|неподалік|купувати|будувати|здавати</token>
+      <token regexp="yes" inflected="yes">на|і?з|біля|неподалік|купувати|будувати|здавати</token>
 <!--      <token postag_regexp="yes" postag="adj:[fp]:.*" min="0">
         <exception inflected="yes" regexp="yes">добровільний|примусовий|масовий</exception>
       </token>
@@ -3506,6 +3506,21 @@ category: symbols -->
     <example type="untouched">на добровільний дачі свідчень.</example>
   </rule>
 
+  <rule name="Дача - будинок" id="dacha-house_3">
+    <pattern>
+      <marker>
+        <token inflected="yes" postag_regexp="yes" postag="noun(?!.*?:bad).*">дача</token>
+      </marker>
+      <token postag_regexp="yes" postag="noun:anim:.:v_rod(:nv)?:prop:lname.*"/>
+    </pattern>
+    <disambig action="remove" postag="noun.*?:bad.*"/>
+    <example type="ambiguous"
+        inputform="дачі[дача/noun:inanim:f:v_dav:bad:xp2,дача/noun:inanim:f:v_dav:xp1,дача/noun:inanim:f:v_rod:bad:xp2,дача/noun:inanim:f:v_rod:xp1,дача/noun:inanim:p:v_naz:xp1,дача/noun:inanim:p:v_zna:xp1]"
+        outputform="дачі[дача/noun:inanim:f:v_dav:xp1,дача/noun:inanim:f:v_rod:xp1,дача/noun:inanim:p:v_naz:xp1,дача/noun:inanim:p:v_zna:xp1]">до <marker>дачі</marker> Павлюка.</example>
+    <example type="untouched">Від дачі показань.</example>
+    <example type="untouched">на дачі показань.</example>
+    <example type="untouched">на добровільний дачі свідчень.</example>
+  </rule>
 
   <rule name="Заморозки - мн." id="zamorozky_noun_plural_1">
     <pattern>
@@ -3717,6 +3732,28 @@ category: symbols -->
         inputform="діти[дитина/noun:anim:p:v_naz,діти/verb:perf:inf]"
         outputform="діти[дитина/noun:anim:p:v_naz]">чиїсь <marker>діти</marker>.</example>
     <example type="untouched">ніде правди діти.</example>
+  </rule>
+
+  <rule name="Душу - іменник" id="dushu-noun">
+    <pattern>
+      <token postag_regexp="yes" postag="(prep|verb).*"/>
+      <unify>
+        <feature id="gender"/>
+        <feature id="case"/>
+        <token postag_regexp="yes" postag="adj:f:.*" min="0"/>
+        <marker>
+          <token>душу</token>
+        </marker>
+      </unify>
+    </pattern>
+    <disambig action="filter" postag="noun:.*"/>
+    <example type="ambiguous"
+        inputform="душу[дусити/verb:imperf:pres:s:1:alt,душ/noun:inanim:m:v_dav,душ/noun:inanim:m:v_mis,душ/noun:inanim:m:v_rod,душа/noun:inanim:f:v_zna,душити/verb:imperf:pres:s:1]"
+        outputform="душу[душ/noun:inanim:m:v_dav,душ/noun:inanim:m:v_mis,душ/noun:inanim:m:v_rod,душа/noun:inanim:f:v_zna]">на <marker>душу</marker> населення.</example>
+    <example type="ambiguous"
+        inputform="душу[дусити/verb:imperf:pres:s:1:alt,душ/noun:inanim:m:v_dav,душ/noun:inanim:m:v_mis,душ/noun:inanim:m:v_rod,душа/noun:inanim:f:v_zna,душити/verb:imperf:pres:s:1]"
+        outputform="душу[душ/noun:inanim:m:v_dav,душ/noun:inanim:m:v_mis,душ/noun:inanim:m:v_rod,душа/noun:inanim:f:v_zna]">на його <marker>душу</marker> населення.</example>
+    <example type="untouched">а я душу їх, душу</example>
   </rule>
 
   <rule name="ласка - inanim" id="laska_inanim">
@@ -7908,6 +7945,42 @@ category: symbols -->
       outputform="во[во/prep:arch]"><marker>во</marker> ім'я
     </example>
     <example type="untouched">во яка файна</example>
+  </rule>
+
+  <rule name="воде - дієсл." id="vode_verb_1">
+    <pattern>
+      <token regexp="yes">на|по|в|у</token>
+      <token min="0" regexp="yes">.+ой</token>
+      <marker>
+        <token>воде</token>
+      </marker>
+    </pattern>
+    <disambig action="remove" postag="verb.*"/>
+    <example type="ambiguous"
+      inputform="воде[водити/verb:imperf:pres:s:3:subst]"
+      outputform="воде[воде]">водить по <marker>воде</marker>,
+    </example>
+    <example type="ambiguous"
+      inputform="воде[водити/verb:imperf:pres:s:3:subst]"
+      outputform="воде[воде]">водить по тёмной <marker>воде</marker>,
+    </example>
+    <example type="untouched">Маланку Василю воде</example>
+  </rule>
+
+  <rule name="воде - дієсл. 2" id="vode_verb_2">
+    <pattern>
+      <token regexp="yes">.*[ыёъэ].*</token>
+      <token min="0" max="20" />
+      <marker>
+        <token>воде</token>
+      </marker>
+    </pattern>
+    <disambig action="remove" postag="verb.*"/>
+    <example type="ambiguous"
+      inputform="воде[водити/verb:imperf:pres:s:3:subst]"
+      outputform="воде[воде]">быстрой <marker>воде</marker>,
+    </example>
+    <example type="untouched">Це, мабуть, мара мене воде!</example>
   </rule>
 
   <!-- TODO: other просто, but it does not buy much - still have adv and part -->

@@ -316,6 +316,7 @@
 морю морити verb:imperf:pres:s:1
 мости мостити verb:imperf:impr:s:2
 мужній мужніти verb:imperf:impr:s:2
+мудрим мудрити verb:imperf:pres:p:1:arch:subst
 мусів мус noun:inanim:p:v_rod
 мутній мутніти verb:imperf:impr:s:2
 м'якшим м'якшити verb:imperf:pres:p:1:subst

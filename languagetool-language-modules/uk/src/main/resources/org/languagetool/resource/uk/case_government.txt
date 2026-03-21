@@ -3,7 +3,6 @@
 # v_oru
 # v_zna
 # v_zna
-# v_zna:v_oru:v_dav
 #згідно v_rod
 аб'юзити v_zna:v_oru
 абелювати v_zna:v_oru:v_dav
@@ -1660,6 +1659,7 @@
 викінчуватися v_oru
 викладати v_zna:v_oru:v_dav
 викладатися v_oru:v_dav
+викладувати v_zna
 викласти v_zna:v_oru:v_dav
 викластися v_oru
 виклацати v_zna:v_oru:v_dav
@@ -3713,6 +3713,7 @@
 відкинутися v_oru:v_dav
 відкладати v_zna:v_oru:v_dav
 відкладатися v_oru
+відкладувати v_zna
 відкланятися v_dav
 відкласти v_zna:v_oru:v_dav
 відкластися v_oru
@@ -4539,6 +4540,7 @@
 відтягтися v_oru
 відтягувати v_zna:v_oru:v_dav
 відтягуватися v_oru
+відтяжити v_zna:v_oru
 відтяпати v_zna:v_oru:v_dav
 відтяти v_zna:v_oru:v_dav
 відутюжити v_zna:v_oru
@@ -4876,6 +4878,8 @@
 вкомплектувати v_zna:v_oru:v_dav
 вкомплектуватися v_oru
 вкомпонувати v_zna:v_oru:v_dav
+вконституювати v_zna:v_oru
+вконституюватися v_oru
 вконтентовувати v_zna:v_oru
 вконтентовуватися v_oru
 вконтентувати v_zna:v_oru
@@ -5082,6 +5086,7 @@
 вміситися v_oru
 вмістити v_zna:v_oru:v_dav
 вміститися v_oru
+вмісто v_rod
 вміти v_inf:v_zna
 вмішати v_zna:v_oru:v_dav
 вмішатися v_oru
@@ -6130,6 +6135,7 @@
 глорифікуватися v_oru
 глушити v_zna:v_oru:v_dav
 глушитися v_oru
+глядати v_zna
 глядіти v_zna:v_oru:v_dav
 глянсувати v_zna:v_oru:v_dav
 глянсуватися v_oru
@@ -12540,6 +12546,7 @@
 звестися v_oru
 звивати v_zna:v_oru:v_dav
 звиватися v_oru
+звидіти v_zna
 звикати v_inf
 звикнути v_inf
 звинити v_dav:v_oru
@@ -12765,6 +12772,7 @@
 згрупуватися v_oru
 згубити v_zna:v_dav
 згубитися v_oru
+згуляти v_zna
 згуртованіший v_oru
 згуртовувати v_zna:v_oru:v_dav
 згуртовуватися v_oru
@@ -12868,6 +12876,8 @@
 здійснитися v_oru
 здійснювати v_zna:v_oru
 здійснюватися v_oru
+здійсняти v_zna:v_oru
+зділати v_zna
 здірявити v_zna:v_oru:v_dav
 здірявитися v_oru
 здірявлювати v_zna:v_oru:v_dav
@@ -13508,6 +13518,8 @@
 знервованіший v_oru
 знервувати v_zna:v_oru:v_dav
 знервуватися v_oru
+знерозмірити v_zna
+знерозмірювати v_zna
 знерухомити v_zna:v_oru:v_dav
 знерухомлювати v_zna:v_oru:v_dav
 знерухомлюватися v_oru
@@ -13689,6 +13701,7 @@
 з-поза v_rod
 з-позад v_rod
 з-позаду v_rod
+з-помежи v_rod
 з-поміж v_rod
 з-понад v_rod
 з-поперед v_rod
@@ -13981,6 +13994,7 @@
 ізлизати v_zna:v_oru
 ізненавидіти v_zna
 ізняти v_zna:v_oru
+ізо v_rod:v_zna:v_oru
 ізолювати v_zna:v_oru:v_dav
 ізолюватися v_oru
 ізольованіший v_oru
@@ -13992,6 +14006,7 @@
 із-поміж v_rod
 ізробити v_zna:v_oru
 ізсередини v_rod
+ійти v_oru
 ік v_dav
 ілюмінувати v_zna:v_oru:v_dav
 ілюмінуватися v_oru
@@ -15053,6 +15068,7 @@
 магнітити v_zna:v_oru:v_dav
 мадяризувати v_zna:v_oru:v_dav
 мадяризуватися v_oru
+мажорувати v_zna
 мазати v_zna:v_oru:v_dav
 мазатися v_oru
 мазнути v_zna:v_oru:v_dav
@@ -15066,6 +15082,7 @@
 майстер v_inf
 майструвати v_zna:v_oru:v_dav
 майструватися v_oru
+макати v_zna:v_oru
 макетувати v_zna:v_oru:v_dav
 макетуватися v_oru
 максималізувати v_zna:v_oru:v_dav
@@ -15106,6 +15123,7 @@
 манячити v_oru
 манячіти v_oru
 мапувати v_zna:v_oru:v_dav
+марати v_zna:v_oru:v_dav
 марафетити v_zna:v_oru:v_dav
 маргіналізувати v_zna:v_oru
 маргіналізуватися v_oru
@@ -15416,6 +15434,7 @@
 мугикати v_zna:v_oru
 мугикнути v_zna:v_oru
 мудохатися v_oru
+мудрити v_zna
 музеєфікувати v_zna:v_oru:v_dav
 музикувати v_zna
 музичити v_zna
@@ -16112,6 +16131,7 @@
 назвати v_zna:v_oru:v_dav
 назватися v_oru:v_dav
 назводити v_zna:v_oru:v_dav
+назгадувати v_zna
 назганяти v_zna:v_oru:v_dav
 назгонити v_zna:v_oru:v_dav
 назгрібати v_zna:v_oru:v_dav
@@ -16267,6 +16287,7 @@
 наконсультувати v_zna:v_oru:v_dav
 накопати v_zna:v_rod:v_oru:v_dav
 накопатися v_oru
+накопити v_zna:v_oru
 накопичити v_zna:v_rod:v_oru:v_dav
 накопичитися v_oru:v_dav
 накопичувати v_zna:v_oru:v_dav
@@ -17966,6 +17987,7 @@
 нудити v_zna:v_oru
 нудитися v_oru
 нужда v_inf
+нуждатися v_oru
 нуліфікувати v_zna:v_oru:v_dav
 нуліфікуватися v_oru
 нумерувати v_zna:v_oru:v_dav
@@ -18440,6 +18462,7 @@
 облаштувати v_zna:v_oru:v_dav
 облаштуватися v_oru
 облаяти v_zna:v_oru
+облегчити v_zna:v_oru:v_dav
 облегшити v_zna:v_oru:v_dav
 облегшитися v_oru
 облегшувати v_zna:v_oru:v_dav
@@ -19121,6 +19144,7 @@
 огортатися v_oru
 оготівковувати v_zna:v_oru
 оготівковуватися v_oru
+ограбити v_zna
 ограбувати v_zna
 огранити v_zna:v_oru:v_dav
 огранитися v_oru
@@ -20056,6 +20080,7 @@
 освітлюватися v_oru
 освічувати v_zna:v_oru:v_dav
 освічуватися v_oru
+освободити v_zna
 освоїти v_zna:v_oru
 освоювати v_zna:v_oru:v_dav
 освоюватися v_oru
@@ -20087,6 +20112,7 @@
 осінити v_zna
 осіняти v_zna:v_oru
 осісти v_zna:v_oru:v_dav
+осіяти v_zna
 оскалитися v_oru
 оскаржити v_zna:v_oru
 оскаржувати v_zna:v_oru
@@ -20340,6 +20366,7 @@
 очорнитися v_oru
 очорнювати v_zna:v_oru:v_dav
 очорняти v_zna:v_oru:v_dav
+очуднювати v_zna
 очухрати v_zna:v_oru
 ошанцювати v_zna:v_oru:v_dav
 ошарпати v_zna:v_oru:v_dav
@@ -20471,6 +20498,7 @@
 пахтіти v_oru:v_dav
 пахущий v_oru
 пацифікувати v_zna:v_oru:v_dav
+пацнути v_zna:v_oru
 пацькати v_zna:v_oru
 пацьнути v_zna
 пашіти v_oru:v_dav
@@ -21790,6 +21818,8 @@
 перепікатися v_oru
 переплавити v_zna:v_oru:v_dav
 переплавитися v_oru
+переплавлювати v_zna:v_oru
+переплавлюватися v_oru
 переплавляти v_zna:v_oru:v_dav
 переплавлятися v_oru
 переплакати v_zna
@@ -22574,6 +22604,7 @@
 печалити v_zna:v_oru:v_dav
 печалитися v_oru
 печатати v_zna:v_oru
+печерувати v_zna:v_oru
 пилити v_zna:v_oru:v_dav
 пилитися v_oru
 пилососити v_zna:v_oru:v_dav
@@ -22601,6 +22632,7 @@
 пити v_zna:v_oru
 питлювати v_zna:v_oru:v_dav
 питлюватися v_oru
+пихати v_zna
 пихкати v_oru
 пихкотіти v_oru
 пихнути v_oru
@@ -23716,6 +23748,7 @@
 плеснутися v_oru
 плести v_zna:v_oru:v_dav
 плестися v_oru
+пливати v_oru
 пливти v_oru
 плинути v_oru:v_dav
 плисти v_oru
@@ -26971,6 +27004,7 @@
 попрацювати v_oru
 попресувати v_zna:v_oru:v_dav
 попри v_zna:v_mis:v_rod
+по-при v_zna:v_mis:v_rod
 поприбивати v_zna:v_oru:v_dav
 поприбирати v_zna:v_oru:v_dav
 поприбиратися v_oru
@@ -27166,6 +27200,7 @@
 порадіти v_dav
 порадувати v_zna:v_oru
 порадуватися v_dav
+поразити v_zna:v_oru
 поралити v_oru
 поранжувати v_zna:v_oru:v_dav
 поранити v_zna:v_oru:v_dav
@@ -28339,6 +28374,7 @@
 пресуватися v_oru
 прещедрий v_oru
 при v_mis
+прибавити v_zna:v_oru
 прибавляти v_zna:v_oru:v_dav
 прибарахлитися v_oru
 приберегти v_zna:v_dav
@@ -28658,6 +28694,7 @@
 прикипати v_oru
 прикипіти v_oru
 прикінчити v_zna:v_oru:v_dav
+прикінчувати v_zna:v_oru
 прикладати v_zna:v_oru:v_dav
 прикладатися v_oru
 прикласти v_zna:v_oru:v_dav
@@ -28841,6 +28878,7 @@
 примислити v_zna
 примислювати v_zna
 примінити v_zna
+приміняти v_zna
 примірити v_zna:v_oru:v_dav
 приміритися v_oru
 примірювати v_zna:v_oru:v_dav
@@ -29044,6 +29082,7 @@
 приплющитися v_oru
 приплющувати v_zna:v_oru:v_dav
 приплющуватися v_oru
+приплямкувати v_oru
 припнути v_zna:v_oru:v_dav
 припнутися v_oru
 приповзати v_oru
@@ -29328,6 +29367,8 @@
 пританцьовувати v_oru
 притарабанити v_zna:v_oru:v_dav
 притарабанитися v_oru
+притаскати v_zna
+притаскувати v_zna
 притаювати v_zna
 прителющити v_zna:v_oru:v_dav
 притемнити v_zna:v_oru:v_dav
@@ -29447,6 +29488,7 @@
 прихвалювати v_zna:v_oru:v_dav
 прихватизувати v_zna:v_oru
 прихватизуватися v_oru
+прихватити v_zna:v_oru
 прихворіти v_oru
 прихилити v_zna:v_oru:v_dav
 прихилитися v_oru
@@ -29583,6 +29625,7 @@
 приютити v_zna
 приязний v_dav
 приязніший v_dav
+прияти v_dav
 пріоритезувати v_zna:v_oru:v_dav
 пріч v_rod
 про v_zna
@@ -30842,6 +30885,7 @@
 протиставлений v_dav
 протиставляти v_zna:v_oru:v_dav
 протиставлятися v_oru:v_dav
+протистати v_dav
 протистояти v_oru:v_dav
 протитрувати v_zna:v_oru:v_dav
 протів v_rod
@@ -31181,6 +31225,7 @@
 радуватися v_dav
 радянізувати v_zna:v_oru:v_dav
 радянізуватися v_oru
+разити v_zna:v_oru
 районувати v_zna:v_oru:v_dav
 районуватися v_oru
 ралити v_zna:v_oru:v_dav
@@ -31208,6 +31253,7 @@
 раціонувати v_zna:v_oru:v_dav
 рачкувати v_oru
 раяти v_oru:v_dav
+рванути v_zna:v_oru:v_dav
 рвати v_zna:v_oru:v_dav
 рватися v_oru
 рвонути v_zna:v_oru:v_dav
@@ -31547,6 +31593,7 @@
 розбігатися v_oru
 розбігатися v_oru
 розбігтися v_oru
+розбірати v_zna
 розблиснути v_oru
 розблоковувати v_zna:v_oru:v_dav
 розблоковуватися v_oru
@@ -32535,6 +32582,7 @@
 розпаровувати v_zna:v_oru:v_dav
 розпарсити v_zna:v_oru:v_dav
 розпарувати v_oru
+розпарцелювати v_zna:v_oru
 розпарювати v_zna:v_oru:v_dav
 розпарюватися v_oru
 розпаскуджувати v_zna:v_oru:v_dav
@@ -33094,6 +33142,7 @@
 розтоптатися v_oru
 розтоптувати v_zna:v_oru:v_dav
 розтоптуватися v_oru
+розторгнути v_zna
 розторгуватися v_oru
 розтормошити v_zna:v_oru:v_dav
 розтормошитися v_oru
@@ -33221,6 +33270,7 @@
 розхльостати v_zna:v_oru:v_dav
 розхльостувати v_zna:v_oru:v_dav
 розхльостуватися v_oru
+розходжувати v_zna
 розходити v_zna
 розходитися v_oru
 розходитися v_oru
@@ -33396,6 +33446,7 @@
 ронити v_zna
 роняти v_zna
 російщити v_zna:v_oru:v_dav
+росказати v_zna:v_dav:v_oru
 росподіляти v_zna:v_oru:v_dav
 росподілятися v_oru
 рости v_oru
@@ -33415,7 +33466,8 @@
 руйнувати v_zna:v_oru:v_dav
 руйнуватися v_oru
 рукоплескати v_zna
-рукопокладати v_zna:v_oru:v_dav
+рукопокладати v_zna:v_oru
+рукопокласти v_zna:v_oru
 рулити v_oru
 рулювати v_oru
 рум'янити v_zna:v_oru:v_dav
@@ -33787,6 +33839,7 @@
 склинцювати v_zna:v_oru:v_dav
 склити v_zna:v_oru:v_dav
 склитися v_oru
+склонити v_zna:v_oru
 склонитися v_oru
 склонувати v_zna:v_oru:v_dav
 склоняти v_zna:v_oru:v_dav
@@ -34037,13 +34090,14 @@
 славитися v_oru
 славний v_oru
 славно v_oru
-славословити v_zna:v_oru
+славословити v_zna
 слати v_zna:v_oru:v_dav
 слати v_zna:v_oru:v_dav
 слатися v_oru:v_dav
 слатися v_oru:v_dav
 слинити v_zna:v_oru:v_dav
 слинитися v_oru
+слихати v_zna
 слід v_inf:v_dav
 слідити v_oru
 слідкувати v_oru
@@ -34099,11 +34153,14 @@
 соборуватися v_oru
 совати v_zna:v_oru:v_dav
 соватися v_oru
+совгати v_zna:v_oru
 совгатися v_oru
 совістити v_zna:v_oru:v_dav
 совітати v_zna:v_dav
+совітувати v_zna:v_dav
 согрішати v_oru
 согрішити v_oru
+содержувати v_zna
 содіяти v_dav:v_oru
 сокотити v_zna
 солити v_zna:v_oru:v_dav
@@ -34207,6 +34264,7 @@
 спекулювати v_oru
 спекульнути v_oru
 спереду v_rod
+сперезати v_zna
 сперти v_zna:v_oru:v_dav
 спертися v_oru
 специфікувати v_zna:v_oru:v_dav
@@ -34258,7 +34316,8 @@
 співмірно v_dav
 співоплачувати v_zna:v_oru
 співоплачуватися v_oru
-співпереживати v_zna:v_oru:v_dav
+співпереживати v_zna:v_dav
+співпережити v_zna
 співрозмірний v_dav
 співспонсорувати v_zna
 співставити v_zna
@@ -34553,6 +34612,7 @@
 сприйматися v_oru
 сприйняти v_zna:v_oru
 сприйнятися v_oru
+сприкрити v_zna:v_oru
 спримітивізувати v_zna:v_oru:v_dav
 спримітизувати v_zna:v_oru:v_dav
 спримітизуватися v_oru
@@ -35375,6 +35435,7 @@
 торпедувати v_zna:v_oru:v_dav
 торпедуватися v_oru
 торсати v_zna:v_oru:v_dav
+торсонути v_zna:v_oru
 тортурувати v_zna:v_oru:v_dav
 торувати v_zna:v_oru:v_dav
 торуватися v_oru
@@ -35502,6 +35563,7 @@
 трусонути v_zna:v_oru:v_dav
 трусонутися v_oru
 трухнути v_zna:v_oru:v_dav
+трюхати v_oru
 тряснути v_zna:v_oru:v_dav
 трясонути v_zna:v_oru:v_dav
 трясонутися v_oru
@@ -35530,6 +35592,7 @@
 турбулізувати v_zna:v_oru:v_dav
 турляти v_zna:v_oru:v_dav
 турнути v_zna:v_oru:v_dav
+тусати v_zna:v_oru
 тушити v_zna:v_oru:v_dav
 тушитися v_oru
 тушкувати v_zna:v_oru:v_dav
@@ -35776,6 +35839,7 @@
 угнутися v_oru
 уговкати v_zna:v_oru:v_dav
 уговкувати v_zna:v_oru:v_dav
+уговорити v_zna:v_oru
 уговорювати v_zna:v_oru:v_dav
 уговорюватися v_oru
 уговоряти v_zna:v_oru
@@ -35852,6 +35916,7 @@
 удатися v_inf:v_dav
 удатний v_inf
 удача v_inf
+удекорувати v_zna:v_oru
 удержавити v_zna:v_oru:v_dav
 удержавлювати v_zna:v_oru:v_dav
 удержати v_zna:v_oru:v_dav
@@ -36073,6 +36138,8 @@
 укомплектувати v_zna:v_oru:v_dav
 укомплектуватися v_oru
 укомпонувати v_zna:v_oru:v_dav
+уконституювати v_zna:v_oru
+уконституюватися v_oru
 уконтентовувати v_zna:v_oru
 уконтентовуватися v_oru
 уконтентувати v_zna:v_oru
@@ -36522,6 +36589,7 @@
 упопружити v_zna:v_oru:v_dav
 упорати v_zna:v_oru:v_dav
 упоратися v_oru
+упорівень v_dav
 упороти v_zna:v_oru:v_dav
 упорскувати v_zna:v_oru:v_dav
 упорскуватися v_oru
@@ -36973,6 +37041,7 @@
 уторопати v_zna
 уторувати v_zna:v_oru:v_dav
 утотожнити v_zna:v_oru:v_dav
+утотожнювати v_zna:v_oru:v_dav
 уточити v_zna:v_oru:v_dav
 уточитися v_oru
 уточнити v_zna:v_oru:v_dav
@@ -36999,6 +37068,7 @@
 утримувати v_zna:v_oru:v_dav
 утримуватися v_oru
 утрирувати v_zna:v_oru:v_dav
+утрудитися v_oru
 утруднити v_zna:v_oru:v_dav
 утруднитися v_oru
 утруднювати v_zna:v_oru:v_dav
