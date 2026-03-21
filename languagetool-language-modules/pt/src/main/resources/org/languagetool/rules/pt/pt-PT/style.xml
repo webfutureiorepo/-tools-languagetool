@@ -139,28 +139,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
       </rulegroup>
 
 
-      <rule id="PRAZER_GOSTO_V2" name="🇵🇹🤵 'prazer' → 'gosto' (uso formal)" type='style' tone_tags='formal'>
-          <!-- ChatGPT 5 and new disambiguator for 2026+ -->
-          <antipattern>
-              <token>prazer</token>
-              <token skip='-1' regexp='yes'>de|em|que</token>
-              <token regexp='yes' inflected='yes'>sexo|sexual|sexualmente|orgasmo|erótico|excitação|desejo|corpo|tocar|beijo|carícia|sensual|submisso|dominar|foder|fornicar|ejacular|ejaculação|esperma|esporra|langonha|coito|pénis|vagina|clítoris|clitóris|cona|boceta</token>
-              <example>Será que é possível uma mulher ter prazer em sentir-se submissa sexualmente?</example>
-          </antipattern>
-          <pattern>
-              <token skip='3' regexp='yes' inflected='yes'>ser|ter</token>
-              <marker>
-                  <token>prazer</token>
-              </marker>
-              <token regexp='yes'>de|em|que</token>
-          </pattern>
-          <message>Se não estiver relacionado com uma sensação física ou sexual, prefira &quot;gosto&quot;.</message>
-          <suggestion>gosto</suggestion>
-          <example correction="gosto">Terei o maior <marker>prazer</marker> em convidá-los.</example>
-          <example correction="gosto">É com enorme <marker>prazer</marker> que o recebemos.</example>
-      </rule>
-
-
     <rule id='CICLO_VICIOSO' name="🇵🇹 Calinada: 'ciclo' vicioso → 'círculo'" tone_tags='objective'>
        <!-- ChatGPT 5 and new disambiguator for 2026+ -->
        <pattern>
@@ -3563,6 +3541,28 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         <example correction="estivermos">Quando <marker>tivermos</marker> a ver TV.</example>
         <example correction="estiveram">Elas <marker>tiveram</marker> a ver TV.</example>
     </rule>
+
+
+      <rule id="PRAZER_GOSTO_V2" name="🇵🇹🤵 'prazer' → 'gosto' (uso formal)" type='style' tone_tags='formal'>
+          <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+          <antipattern>
+              <token>prazer</token>
+              <token skip='-1' regexp='yes'>de|em|que</token>
+              <token postag='_CONTEXTO_SEXUAL_EROTICO'/>
+              <example>Será que é possível uma mulher ter prazer em sentir-se submissa sexualmente?</example>
+          </antipattern>
+          <pattern>
+              <token skip='3' regexp='yes' inflected='yes'>ser|ter</token>
+              <marker>
+                  <token>prazer</token>
+              </marker>
+              <token regexp='yes'>de|em|que</token>
+          </pattern>
+          <message>Se não estiver relacionado com uma sensação física ou sexual, prefira &quot;gosto&quot;.</message>
+          <suggestion>gosto</suggestion>
+          <example correction="gosto">Terei o maior <marker>prazer</marker> em convidá-los.</example>
+          <example correction="gosto">É com enorme <marker>prazer</marker> que o recebemos.</example>
+      </rule>
 
 
     </category>

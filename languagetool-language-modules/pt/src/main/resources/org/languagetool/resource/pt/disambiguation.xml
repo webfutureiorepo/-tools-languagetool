@@ -6151,12 +6151,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
       -->
   </rule>
 
-
   <rulegroup id="CONTEXT_BASED" name="contexto">
     <rule>
       <pattern>
         <marker>
-          <token regexp='yes' inflected='yes'>beijo|boceta|broxe|caralho|carícia|clítoris|clitóris|coito|cona|cunilíngua|cunnilingus|ejaculação|ejacular|erótico|esperma|esporra|excitação|foda|foder|fornicar|langonha|masturbação|masturbar|minete|orgasmo|pénis|queca|sensual|sexo|sexual|sexualmente|submisso|vagina</token>
+          <token regexp='yes' inflected='yes'>beijo|boceta|broxe|caralho|carícia|clítoris|clitóris|coito|cona|cunilíngua|cunnilingus|dildo|ejaculação|ejacular|erótico|esperma|esporra|excitação|foda|foder|fornicar|langonha|masturbação|masturbar|minete|orgasmo|pénis|preservativo|queca|sensual|sexo|sexual|sexualmente|submisso|vagina|vibrador</token>
         </marker>
       </pattern>
       <disambig action="add">
