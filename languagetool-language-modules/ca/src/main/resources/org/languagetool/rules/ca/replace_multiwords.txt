@@ -919,3 +919,4 @@ Santa Colona de Gramenet=Santa Coloma de Gramenet
 Santa Colona=Santa Coloma	¿Volíeu dir "Santa Coloma"?
 bombo i platillo|bombo y platillo=bombo i platerets
 Gottlieb Frege=Gottlob Frege
+do et des=do ut des	Expressió llatina.
