@@ -10,7 +10,9 @@ CUDA
 Centcom
 Coliseum
 Dimona
+Griezmann
 Henkell
+LaGuardia
 Leavitt
 Miguel
 ONNX
@@ -118,6 +120,10 @@ neoconfucians
 neoconfucià
 neohel·lenista
 neohel·lenistes
+perdedor
+perdedora
+perdedores
+perdedors
 polovtsiana
 polovtsianes
 polovtsians

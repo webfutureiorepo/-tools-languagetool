@@ -69,7 +69,7 @@ public class VerbSynthesizer {
   }
 
   public void setPostag(String postag) {
-    this.newLemma = tokens[iFirstVerb].readingWithTagRegex(pVerb).getLemma();
+    this.newLemma = tokens[iLastVerb].readingWithTagRegex(pVerb).getLemma();
     this.newPostag = postag;
   }
 

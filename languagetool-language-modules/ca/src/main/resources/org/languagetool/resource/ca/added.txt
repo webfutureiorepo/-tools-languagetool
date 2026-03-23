@@ -14,7 +14,9 @@ CUDA	CUDA	NPCNO00
 Centcom	Centcom	NPMSO00
 Coliseum	Coliseum	NPMSO00
 Dimona	Dimona	NPCSG00
+Griezmann	Griezmann	NPCNSP0
 Henkell	Henkell	NPCNSP0
+LaGuardia	LaGuardia	NPCNG00
 Leavitt	Leavitt	NPCNSP0
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0
@@ -147,6 +149,10 @@ neoconfucians	neoconfucià	AQ0MP0
 neoconfucià	neoconfucià	AQ0MS0
 neohel·lenista	neohel·lenista	NCCS000
 neohel·lenistes	neohel·lenista	NCCP000
+perdedor	perdedor	NCMS000
+perdedora	perdedor	NCFS000
+perdedores	perdedor	NCFP000
+perdedors	perdedor	NCMP000
 polovtsiana	polovtsià	AQ0FS0
 polovtsianes	polovtsià	AQ0FP0
 polovtsians	polovtsià	AQ0MP0

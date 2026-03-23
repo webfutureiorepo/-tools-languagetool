@@ -9731,6 +9731,13 @@ Copyright (C) 2012 Jaume Ortolà i Font
             <wd lemma="crear"/>
         </disambig>
     </rule>
+    <rule id="gran_adjectiu" name="gran (adjectiu, no nom)">
+        <!-- TODO: en quins casos cal que sigui substantiu? -->
+        <pattern>
+            <token postag="AQ.*" postag_regexp="yes">gran</token>
+        </pattern>
+        <disambig action="remove" postag="NC.*"/>
+    </rule>
     <rulegroup id="MONA" name="mona (nom o adjectiu)">
         <rule>
             <pattern>
