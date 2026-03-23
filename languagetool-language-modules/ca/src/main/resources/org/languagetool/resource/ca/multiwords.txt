@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+happy flower;AQ0CN0
+happy flower;NCCS000
+happy flowers;NCCP000
 South Pars;NPCSG00
 Ludovico il Moro;NPMSSP0
 Victor Adler;NPMSSP0
