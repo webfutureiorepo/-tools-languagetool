@@ -176,7 +176,7 @@ public class VerbSynthesizer {
     } else {
       for (int i = iFirstVerb; i <= iLastVerb; i++) {
         if (i == iFirstVerb) {
-          String[] synthesized = synth.synthesize(firstVerb, newPostag);
+          String[] synthesized = synth.synthesize(firstVerb, adjustPostagTolemma(firstVerb.getLemma(), newPostag));
           if (synthesized != null && synthesized.length > 0) {
             result.append(synthesized[0]);
           }

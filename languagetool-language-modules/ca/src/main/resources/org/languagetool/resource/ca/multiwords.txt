@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Rudolf Kalman;NPMSSP0
 happy flower;AQ0CN0
 happy flower;NCCS000
 happy flowers;NCCP000

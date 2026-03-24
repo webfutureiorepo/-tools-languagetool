@@ -16,6 +16,7 @@ Coliseum	Coliseum	NPMSO00
 Dimona	Dimona	NPCSG00
 Griezmann	Griezmann	NPCNSP0
 Henkell	Henkell	NPCNSP0
+Kalman	Kalman	NPCNSP0
 LaGuardia	LaGuardia	NPCNG00
 Leavitt	Leavitt	NPCNSP0
 Miguel	Miguel	NPCN000
