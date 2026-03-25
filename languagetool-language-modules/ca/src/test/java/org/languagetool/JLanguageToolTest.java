@@ -292,16 +292,16 @@ public class JLanguageToolTest {
    */
   @Test
   public void testSpecificXMLRule() throws IOException {
-    for (Rule r: tool.getAllRules()) {
+    /*for (Rule r: tool.getAllRules()) {
       if (r.getId().startsWith("LIAR_SE_A")) {
         tool.enableRule(r.getId());
       } else {
         tool.disableRule(r.getId());
       }
-    }
-    List<RuleMatch> matches = tool.check("Es van liar a pals.");
+    }*/
+    List<RuleMatch> matches = tool.check("Tornaren a revisitar", JLanguageTool.Level.PICKY);
     assertEquals(1, matches.size());
-    assertEquals("[Se les van heure a bastonades]", matches.get(0).getSuggestedReplacements().toString());
+    assertEquals("[Revisitaren]", matches.get(0).getSuggestedReplacements().toString());
   }
 
 }

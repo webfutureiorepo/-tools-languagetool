@@ -228,6 +228,14 @@ desfossilitzéssiu	desfossilitzar	VMSI2P02
 desfossilitzí	desfossilitzar	VMIS1S00
 dramot	dramot	NCMS000
 dramots	dramot	NCMP000
+escriptorassa	escriptoràs	NCFS000
+escriptorasses	escriptoràs	NCFP000
+escriptorassos	escriptoràs	NCMP000
+escriptoret	escriptoret	NCMS000
+escriptoreta	escriptoret	NCFS000
+escriptoretes	escriptoret	NCFP000
+escriptorets	escriptoret	NCMP000
+escriptoràs	escriptoràs	NCMS000
 espresso	espresso	AQ0CN0
 espresso	espresso	NCMS000
 espressos	espresso	NCMP000
