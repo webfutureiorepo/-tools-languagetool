@@ -58,29 +58,33 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
     }
     final String desiredGenderOrigStr = getOptional("gender", arguments, "");
     final String desiredNumberOrigStr = getOptional("number", arguments, "");
-    final String lemmaSelect = getRequired("lemmaSelect", arguments);
+    final String lemmaSelect = getRequired("lemmaSelect", arguments); // it could be optional
     final String newLemma = getOptional("newLemma", arguments, "");
     final boolean keepOriginal = getOptional("keepOriginal", arguments, "false").equalsIgnoreCase("true");
 
     List<String> suggestions = new ArrayList<>();
     List<AnalyzedToken> atrNounList = new ArrayList<>();
     AnalyzedToken atrNounOrig = tokens[posWord].readingWithTagRegex(lemmaSelect);
-    GenderAndNumberSplit splitNounOrigPostag = splitGenderAndNumber(atrNounOrig);
     if (!newLemma.isEmpty()) {
       AnalyzedToken at = new AnalyzedToken(atrNounOrig.getToken(), atrNounOrig.getPOSTag(), newLemma);
       atrNounList.add(at);
     } else if (match.getSuggestedReplacements().size() > 0) {
+      GenderAndNumberSplit splitNounOrigPostag = null;
+      if (atrNounOrig != null) {
+        splitNounOrigPostag = splitGenderAndNumber(atrNounOrig);
+      }
       for (String suggestion : match.getSuggestedReplacements()) {
         List<AnalyzedTokenReadings> atrs = tagger.tag(Arrays.asList(suggestion));
         AnalyzedToken at = atrs.get(0).readingWithTagRegex(splitGenderNumber);
         GenderAndNumberSplit splitPostag = splitGenderAndNumber(at);
         StringBuilder newPostag = new StringBuilder(splitPostag.prefix);
+        String number = !desiredNumberOrigStr.isEmpty() ? desiredNumberOrigStr
+          : (splitNounOrigPostag != null ? splitNounOrigPostag.number : splitPostag.number);
+        String gender = !desiredGenderOrigStr.isEmpty() ? desiredGenderOrigStr : splitPostag.gender;
         if (splitPostag.prefix.startsWith("V")) {
-          newPostag.append(!desiredNumberOrigStr.isEmpty() ? desiredNumberOrigStr : splitNounOrigPostag.number);
-          newPostag.append(!desiredGenderOrigStr.isEmpty() ? desiredGenderOrigStr : splitPostag.gender);
+          newPostag.append(number).append(gender);
         } else {
-          newPostag.append(!desiredGenderOrigStr.isEmpty() ? desiredGenderOrigStr : splitPostag.gender);
-          newPostag.append(!desiredNumberOrigStr.isEmpty() ? desiredNumberOrigStr : splitNounOrigPostag.number);
+          newPostag.append(gender).append(number);
         }
         newPostag.append(splitPostag.suffix);
         AnalyzedToken at2 = new AnalyzedToken(at.getLemma(), newPostag.toString(), at.getLemma());

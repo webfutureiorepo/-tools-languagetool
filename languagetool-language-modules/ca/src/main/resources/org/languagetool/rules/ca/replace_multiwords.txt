@@ -922,3 +922,4 @@ Gottlieb Frege=Gottlob Frege
 do et des=do ut des	Expressió llatina.
 títere con cabeza=canya dreta	L'expressió 'no deixar canya dreta' vol dir 'destruir-ho tot, no perdonar res'.
 a diestro i siniestro|a diestro y siniestro=a tort i a dret
+largo y tendido|largo i tendido=profusament|llargament|extensament

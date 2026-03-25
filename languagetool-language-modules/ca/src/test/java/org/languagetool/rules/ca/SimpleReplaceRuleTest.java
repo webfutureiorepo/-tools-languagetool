@@ -54,8 +54,8 @@ public class SimpleReplaceRuleTest {
     // incorrect sentences:
     RuleMatch[] matches = rule.match(lt.getAnalyzedSentence("El recader fa huelga."));
     assertEquals(2, matches.length);
-    assertEquals("ordinari", matches[0].getSuggestedReplacements().get(0));
-    assertEquals("transportista", matches[0].getSuggestedReplacements().get(1));
+    assertEquals("L'ordinari", matches[0].getSuggestedReplacements().get(0));
+    assertEquals("El transportista", matches[0].getSuggestedReplacements().get(1));
     assertEquals("vaga", matches[1].getSuggestedReplacements().get(0));
     
     matches = rule.match(lt.getAnalyzedSentence("EEUU"));
