@@ -23670,7 +23670,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
         <pattern>
             <token chunk="GV" postag="_reflexiu"/>
             <marker>
-                <token chunk="GV"/>
+                <token chunk="GV"><exception postag="V.[SIM].*" postag_regexp="yes"/></token>
             </marker>
         </pattern>
         <disambig action="add">
