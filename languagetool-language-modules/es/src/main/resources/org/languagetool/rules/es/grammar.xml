@@ -6889,6 +6889,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <message>Posible confusión: "<match no="3"/>" es un verbo en modo subjuntivo, improbable en este contexto.</message>
                 <suggestion><match no="3" postag="(V.)S(.*)" postag_regexp="yes" postag_replace="$1I$2"/></suggestion>
                 <example correction="duele|duelo">Me <marker>duela</marker> la garganta.</example>
+                <example>Sin evidencia de lesiones intra o extraaxiales aparentes por este método de imagen.</example>
             </rule>
             <rule>
                 <pattern>
@@ -7003,6 +7004,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example>- Ganes o pierdas, ¡te encantará!</example>
                 <example>Sin importar cuánto lo piense no comprendo cómo ella obtuvo esa información secreta.</example>
                 <example>Placas de ateroma blandas y calcificadas en aorta abdominal e ilíacas.</example>
+                <example>Sin evidencia de lesiones intra o extraaxiales aparentes por este método de imagen.</example>
             </rule>
         </rulegroup>
         <rulegroup id="SUBJUNTIVO_FUTURO" name="confusión cantara/cantará">
@@ -7383,6 +7385,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <message>Si es imperativo, el pronombre va detrás del verbo.</message>
                 <suggestion><match no="2" postag="VMSP1S0" postag_regexp="yes" postag_replace="VMM03S0:PP1CP000"/></suggestion>
                 <example correction="Avísenos"><marker>Nos avise</marker> cuanto antes.</example>
+                <example>El conducto pancreático principal muestra calibre y trayecto normal.</example>
             </rule>
             <rule>
                 <antipattern>
@@ -7497,6 +7500,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example>Tomar parte en cuantas actividades organice la asociación.</example>
                 <example>O revise la puntuación.</example>
                 <example>Archivo de la lista de correo en mail-archive.com</example>
+                <example>El conducto pancreático principal muestra calibre y trayecto normal.</example>
                 <!--<example>Cada uno exprese su opinión.</example>
                 ambigous: ¡Sí! ¡Gane dos veces seguidas! -->
             </rule>
@@ -15545,7 +15549,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                     <token>beta</token>
                     <token spacebefore="no">-</token>
                     <token inflected="yes" regexp="yes">talasemia|2-microglobulina|antagonista|feniletilamina|fructofuranosidasa|fructosidasa</token>
-                    <example>Tenemos un  paciente con beta-talasemia.</example>
+                    <example>Tenemos un paciente con beta-talasemia.</example>
                 </antipattern>
                 <pattern>
                     <token>beta</token>
@@ -19095,6 +19099,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example>se ha observado que bajo pruebas genéticas poseen porcentajes pequeños</example>
                 <example>Organizadas bajo forma mercantil.</example>
                 <example>El derecho muestra desviación en valgo.</example>
+                <example>Los espacios articulares del meso y retro pie se encuentra dentro de límites normales.</example>
+                <example>Se extiende en el cuadrante superior derecho con trayecto del dreno que atraviesa la pared abdominal.</example>
             </rule>
             <rule>
                 <!-- catch-all rule without suggestions-->
@@ -23762,6 +23768,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
                 <example>No es la primera vez que saco buena nota en el examen.</example>
                 <example>Pago media corona, y tengo entrada.</example>
                 <example>Que este momento valga, porque, francamente... es todo lo que tenemos.</example>
+                <example>Se observa en región axilar izquierda tejido fibroglandular.</example>
                 <!--
                 La eternidad dura harto.
                 Ella fue al concierto acompañada de una amiga.

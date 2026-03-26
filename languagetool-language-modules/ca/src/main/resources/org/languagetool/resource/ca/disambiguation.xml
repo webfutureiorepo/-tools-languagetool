@@ -3769,7 +3769,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
                     <token>intra</token>
                 </marker>
                 <token postag="CC"/>
-                <token regexp="yes">inter.*</token>
+                <token regexp="yes">inter.*|extra.*</token>
             </pattern>
             <disambig action="ignore_spelling"/>
         </rule>

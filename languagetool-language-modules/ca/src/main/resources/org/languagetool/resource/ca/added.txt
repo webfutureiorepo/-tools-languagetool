@@ -241,6 +241,8 @@ espresso	espresso	NCMS000
 espressos	espresso	NCMP000
 estalviable	estalviable	AQ0CS0
 estalviables	estalviable	AQ0CP0
+fibroglandular	fibroglandular	AQ0CS0
+fibroglandulars	fibroglandular	AQ0CP0
 hiperteatralitat	hiperteatralitat	NCFS000
 hiperteatralitats	hiperteatralitat	NCFP000
 mastofauna	mastofauna	NCFS000
