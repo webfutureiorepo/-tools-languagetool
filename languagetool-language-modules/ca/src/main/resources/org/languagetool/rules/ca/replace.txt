@@ -1,3 +1,6 @@
+buçó=bústia
+buçons=bústies
+usufructe=usdefruit
 incluint=incloent
 barrena=barrina
 devenir=esdevenir

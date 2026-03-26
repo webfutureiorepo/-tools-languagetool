@@ -84,13 +84,12 @@ public class SimpleReplaceRule extends AbstractSimpleReplaceRule {
   @Override
   public RuleMatch[] match(AnalyzedSentence sentence) throws IOException {
     RuleMatch[] potentialMatches = super.match(sentence);
+    ConvertToGenderAndNumberFilter filter = new ConvertToGenderAndNumberFilter();
+    filter.setLanguage(getLanguage());
     List<RuleMatch> ruleMatches = new ArrayList<>();
     // Adjust determinants and adjectives
     for (RuleMatch potentialRuleMatch : potentialMatches) {
-      RuleMatch finalMatch;
-      ConvertToGenderAndNumberFilter filter = new ConvertToGenderAndNumberFilter();
-      filter.setLanguage(getLanguage());
-      finalMatch = filter.acceptRuleMatch(potentialRuleMatch, argumentsMap, 0, null, null);
+      RuleMatch finalMatch = filter.acceptRuleMatch(potentialRuleMatch, argumentsMap, 0, null, null);
       if (finalMatch != null) {
         ruleMatches.add(finalMatch);
       }
