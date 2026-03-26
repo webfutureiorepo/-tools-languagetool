@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Woody Woodpecker;NPMSSP0
+Daffy Duck;NPMSSP0
 La Tour d'Argent;NPFSO00
 Tour d'Argent;NPFSO00
 Ramon Pelegero;NPMSSP0

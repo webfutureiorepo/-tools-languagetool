@@ -65,6 +65,11 @@ public class SimpleReplaceRuleTest {
     matches = rule.match(lt.getAnalyzedSentence("Aconteixements"));
     assertEquals(1, matches.length);
     assertEquals("Esdeveniments", matches[0].getSuggestedReplacements().get(0));
+
+    matches = rule.match(lt.getAnalyzedSentence("Els desencontres."));
+    assertEquals(1, matches.length);
+    assertEquals("[desavinences, desacords, topades, manca d'acord, manca de coincidència]",
+      matches[0].getSuggestedReplacements().toString());
     
   }
 

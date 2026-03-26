@@ -75,7 +75,14 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
       }
       for (String suggestion : match.getSuggestedReplacements()) {
         List<AnalyzedTokenReadings> atrs = tagger.tag(Arrays.asList(suggestion));
+        //TODO: handle multiwords: manca d'acord
         AnalyzedToken at = atrs.get(0).readingWithTagRegex(splitGenderNumber);
+        if (at == null || !suggestions.isEmpty()) {
+          // if there is any suggestion without gender and number, use the list of suggestions with no change
+          suggestions.addAll(match.getSuggestedReplacements());
+          atrNounList.clear();
+          break;
+        }
         GenderAndNumberSplit splitPostag = splitGenderAndNumber(at);
         StringBuilder newPostag = new StringBuilder(splitPostag.prefix);
         String number = !desiredNumberOrigStr.isEmpty() ? desiredNumberOrigStr
