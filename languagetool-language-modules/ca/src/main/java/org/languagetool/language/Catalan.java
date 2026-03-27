@@ -401,6 +401,8 @@ public class Catalan extends Language {
 
   private RuleMatch adjustCatalanMatch(RuleMatch ruleMatch, Set<String> enabledRules) {
     String errorStr = ruleMatch.getOriginalErrorStr();
+    boolean hasTypographicApostrophe = Arrays.stream(ruleMatch.getSentence().getTokensWithoutWhitespace())
+      .anyMatch(x -> x.hasTypographicApostrophe());
     List<String> suggestedReplacements = ruleMatch.getSuggestedReplacements();
     List<SuggestedReplacement> newReplacements = new ArrayList<>();
     for (String suggestedReplacement : suggestedReplacements) {
@@ -423,7 +425,8 @@ public class Catalan extends Language {
           continue;
         }
       }
-      if (enabledRules.contains("APOSTROF_TIPOGRAFIC") && newReplStr.length() > 1) {
+      if ((enabledRules.contains("APOSTROF_TIPOGRAFIC") || hasTypographicApostrophe) && newReplStr.length() > 1
+        && !enabledRules.contains("APOSTROF_RECTE")) {
         newReplStr = newReplStr.replace("'", "’");
       }
       if (enabledRules.contains("EXIGEIX_POSSESSIUS_U") && newReplStr.length() > 3) {
