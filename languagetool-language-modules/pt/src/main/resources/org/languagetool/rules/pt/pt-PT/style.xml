@@ -2319,6 +2319,15 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
         <!-- Inserted global antipatterns for all subrules on top. -->
 
+        <antipattern> <!-- Expressão idiomática bíblica -->
+            <token regexp='yes'>[dn]?o</token>
+            <token>senhor</token>
+            <token>teu</token>
+            <token>deus</token>
+            <example>Não pronunciar o nome do Senhor teu Deus em vão.</example>
+            <example>Porque eu, o SENHOR teu Deus, sou Deus zeloso.</example>
+        </antipattern>
+
         <antipattern>
             <token regexp='no'>de</token> <!-- Add more words as they are found -->
             <token regexp='yes'>vocês?</token>
