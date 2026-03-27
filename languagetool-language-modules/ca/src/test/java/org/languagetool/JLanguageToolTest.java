@@ -299,9 +299,9 @@ public class JLanguageToolTest {
         tool.disableRule(r.getId());
       }
     }*/
-    List<RuleMatch> matches = tool.check("Tornaren a revisitar", JLanguageTool.Level.PICKY);
+    List<RuleMatch> matches = tool.check("La seguent solució", JLanguageTool.Level.PICKY);
     assertEquals(1, matches.size());
-    assertEquals("[Revisitaren]", matches.get(0).getSuggestedReplacements().toString());
+    assertEquals("[La següent, El seient]", matches.get(0).getSuggestedReplacements().toString());
   }
 
 }

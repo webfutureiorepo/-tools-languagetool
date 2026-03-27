@@ -68,9 +68,13 @@ public class SimpleReplaceRuleTest {
 
     matches = rule.match(lt.getAnalyzedSentence("Els desencontres."));
     assertEquals(1, matches.length);
-    assertEquals("[desavinences, desacords, topades, manca d'acord, manca de coincidència]",
+    assertEquals("[Les desavinences, Els desacords, Les topades, La manca d'acord, La manca de coincidència]",
       matches[0].getSuggestedReplacements().toString());
-    
+
+    matches = rule.match(lt.getAnalyzedSentence("La seguent solució."));
+    assertEquals(1, matches.length);
+    assertEquals("[La següent, El seient]",
+      matches[0].getSuggestedReplacements().toString());
   }
 
 }

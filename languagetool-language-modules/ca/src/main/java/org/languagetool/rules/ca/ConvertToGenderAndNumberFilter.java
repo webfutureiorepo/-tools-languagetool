@@ -40,9 +40,10 @@ import static org.languagetool.rules.ca.ApostophationHelper.getPrepositionAndDet
 
 public class ConvertToGenderAndNumberFilter extends RuleFilter {
 
-  private Pattern splitGenderNumber = Pattern.compile("(N.|A..|V.P..|D..|PX.)(.)(.)(.*)");
-  private Pattern splitGenderNumberNoNoun = Pattern.compile("(A..|V.P..|D..|PX.)(.)(.)(.*)");
-  private Pattern splitGenderNumberAdjective = Pattern.compile("(A..|V.P..|PX.)(.)(.)(.*)");
+  private final static Pattern splitGenderNumber = Pattern.compile("(N.|A..|V.P..|D..|PX.)(.)(.)(.*)");
+  private final static Pattern splitGenderNumberNoNoun = Pattern.compile("(A..|V.P..|D..|PX.)(.)(.)(.*)");
+  private final static Pattern splitGenderNumberAdjective = Pattern.compile("(A..|V.P..|PX.)(.)(.)(.*)");
+  private final static List<String> formsToIgnore = Arrays.asList("mes", "las");
 
   @Nullable
   @Override
@@ -74,10 +75,12 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
         splitNounOrigPostag = splitGenderAndNumber(atrNounOrig);
       }
       for (String suggestion : match.getSuggestedReplacements()) {
-        List<AnalyzedTokenReadings> atrs = tagger.tag(Arrays.asList(suggestion));
-        //TODO: handle multiwords: manca d'acord
+        String[] parts = suggestion.split(" ", 2);
+        String word = parts[0];
+        String remainder = parts.length > 1 ? parts[1] : "";
+        List<AnalyzedTokenReadings> atrs = tagger.tag(Arrays.asList(word));
         AnalyzedToken at = atrs.get(0).readingWithTagRegex(splitGenderNumber);
-        if (at == null || !suggestions.isEmpty()) {
+        if (at == null || !suggestions.isEmpty() || at.getPOSTag().startsWith("NP")) {
           // if there is any suggestion without gender and number, use the list of suggestions with no change
           suggestions.addAll(match.getSuggestedReplacements());
           atrNounList.clear();
@@ -94,7 +97,11 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
           newPostag.append(gender).append(number);
         }
         newPostag.append(splitPostag.suffix);
-        AnalyzedToken at2 = new AnalyzedToken(at.getLemma(), newPostag.toString(), at.getLemma());
+        String completeForm = at.getLemma();
+        if (!remainder.isEmpty()) {
+          completeForm = completeForm + " " + remainder;
+        }
+        AnalyzedToken at2 = new AnalyzedToken(completeForm, newPostag.toString(), at.getLemma());
         atrNounList.add(at2);
       }
     } else {
@@ -108,6 +115,19 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
       GenderAndNumberSplit splitPostag = splitGenderAndNumber(atrNoun);
       String desiredGenderStr = (!desiredGenderOrigStr.isEmpty() ? desiredGenderOrigStr : splitPostag.gender);
       String desiredNumberStr = (!desiredNumberOrigStr.isEmpty() ? desiredNumberOrigStr : splitPostag.number);
+      //if gender = C, look into the words before and after
+      if (desiredGenderStr.equals("C") && posWord - 1 > 0) {
+        GenderAndNumberSplit splitPostag2 = splitGenderAndNumber(tokens[posWord - 1].readingWithTagRegex(splitGenderNumber));
+        if (splitPostag2 != null && splitPostag2.gender.equals("F") || splitPostag2.gender.equals("M")) {
+          desiredGenderStr = splitPostag2.gender;
+        }
+      }
+      if (desiredGenderStr.equals("C") && posWord + 1 < tokens.length) {
+        GenderAndNumberSplit splitPostag2 = splitGenderAndNumber(tokens[posWord + 1].readingWithTagRegex(splitGenderNumber));
+        if (splitPostag2 != null && splitPostag2.gender.equals("F") || splitPostag2.gender.equals("M")) {
+          desiredGenderStr = splitPostag2.gender;
+        }
+      }
       for (char genderCh : desiredGenderStr.toCharArray()) {
         for (char numberCh : desiredNumberStr.toCharArray()) {
           String desiredGender = String.valueOf(genderCh);
@@ -133,9 +153,9 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
           String addTot = "";
           while (!stop && i > 1) {
             i--;
-            AnalyzedToken atr = tokens[i].readingWithTagRegex(splitGenderNumberNoNoun); //getReadingWithPriority
-            // (tokens[i]);
-            if (tokens[i].hasPosTag("_perfet") || tokens[i].hasPosTag("_GV_") || tokens[i].getChunkTags().contains(new ChunkTag("GV"))) {
+            AnalyzedToken atr = tokens[i].readingWithTagRegex(splitGenderNumberNoNoun);
+            if (tokens[i].hasPosTag("_perfet") || tokens[i].hasPosTag("_GV_") || tokens[i].getChunkTags().contains(new ChunkTag("GV"))
+            || formsToIgnore.contains(tokens[i].getToken().toLowerCase())) {
               atr = null;
             }
             if (atr != null) {
@@ -217,6 +237,9 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
           boolean isThereConjunction = false;
           while (!stop && i < tokens.length - 1) {
             i++;
+            if (formsToIgnore.contains(tokens[i].getToken().toLowerCase())) {
+              break;
+            }
             AnalyzedToken atr = tokens[i].readingWithTagRegex(splitGenderNumberAdjective);
             if (isThereConjunction && tokens[i].hasPosTagStartingWith("NC")) {
               atr = null;
@@ -306,6 +329,8 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
   private String synthesizeWithGenderAndNumber(AnalyzedToken atr, GenderAndNumberSplit splitPostag, String gender,
                                                String number,
                                                Synthesizer synth) throws IOException {
+    String[] parts = atr.getToken().split(" ", 2);
+    String remainder = parts.length > 1 ? parts[1] : "";
     if (splitPostag.prefix.startsWith("V")) {
       String keepGender = gender;
       gender = number;
@@ -318,7 +343,11 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
     String[] synhtesized = synth.synthesize(atr, splitPostag.prefix + "[" + gender + addGender + "]"
       + "[" + number + "N" + "]" + splitPostag.suffix, true);
     if (synhtesized.length > 0) {
-      return synhtesized[0];
+      String synthesizedSuggestion = synhtesized[0];
+      if (!remainder.isEmpty()) {
+        synthesizedSuggestion = synthesizedSuggestion + " " + remainder;
+      }
+      return synthesizedSuggestion;
     } else {
       return "";
     }
