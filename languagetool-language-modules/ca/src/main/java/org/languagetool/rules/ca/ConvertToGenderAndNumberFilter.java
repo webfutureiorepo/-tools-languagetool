@@ -29,10 +29,7 @@ import org.languagetool.tagging.Tagger;
 import org.languagetool.tools.StringTools;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -66,10 +63,10 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
     List<String> suggestions = new ArrayList<>();
     List<AnalyzedToken> atrNounList = new ArrayList<>();
     AnalyzedToken atrNounOrig = tokens[posWord].readingWithTagRegex(lemmaSelect);
-    if (!newLemma.isEmpty()) {
+    if (!newLemma.isEmpty() && atrNounOrig != null) {
       AnalyzedToken at = new AnalyzedToken(atrNounOrig.getToken(), atrNounOrig.getPOSTag(), newLemma);
       atrNounList.add(at);
-    } else if (match.getSuggestedReplacements().size() > 0) {
+    } else if (!match.getSuggestedReplacements().isEmpty()) {
       GenderAndNumberSplit splitNounOrigPostag = null;
       if (atrNounOrig != null) {
         splitNounOrigPostag = splitGenderAndNumber(atrNounOrig);
@@ -78,9 +75,9 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
         String[] parts = suggestion.split(" ", 2);
         String word = parts[0];
         String remainder = parts.length > 1 ? parts[1] : "";
-        List<AnalyzedTokenReadings> atrs = tagger.tag(Arrays.asList(word));
+        List<AnalyzedTokenReadings> atrs = tagger.tag(Collections.singletonList(word));
         AnalyzedToken at = atrs.get(0).readingWithTagRegex(splitGenderNumber);
-        if (at == null || !suggestions.isEmpty() || at.getPOSTag().startsWith("NP")) {
+        if (at == null || at.getPOSTag() == null || at.getPOSTag().startsWith("NP")) {
           // if there is any suggestion without gender and number, use the list of suggestions with no change
           suggestions.addAll(match.getSuggestedReplacements());
           atrNounList.clear();
@@ -118,13 +115,13 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
       //if gender = C, look into the words before and after
       if (desiredGenderStr.equals("C") && posWord - 1 > 0) {
         GenderAndNumberSplit splitPostag2 = splitGenderAndNumber(tokens[posWord - 1].readingWithTagRegex(splitGenderNumber));
-        if (splitPostag2 != null && splitPostag2.gender.equals("F") || splitPostag2.gender.equals("M")) {
+        if (splitPostag2 != null && (splitPostag2.gender.equals("F") || splitPostag2.gender.equals("M"))) {
           desiredGenderStr = splitPostag2.gender;
         }
       }
       if (desiredGenderStr.equals("C") && posWord + 1 < tokens.length) {
         GenderAndNumberSplit splitPostag2 = splitGenderAndNumber(tokens[posWord + 1].readingWithTagRegex(splitGenderNumber));
-        if (splitPostag2 != null && splitPostag2.gender.equals("F") || splitPostag2.gender.equals("M")) {
+        if (splitPostag2 != null && (splitPostag2.gender.equals("F") || splitPostag2.gender.equals("M"))) {
           desiredGenderStr = splitPostag2.gender;
         }
       }
@@ -148,7 +145,7 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
           int i = posWord;
           String prepositionToAdd = "";
           boolean addDeterminer = false;
-          boolean addedDemostrative = false;
+          boolean addedDemonstrative = false;
           StringBuilder conditionalAddedString = new StringBuilder();
           String addTot = "";
           while (!stop && i > 1) {
@@ -158,14 +155,14 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
             || formsToIgnore.contains(tokens[i].getToken().toLowerCase())) {
               atr = null;
             }
-            if (atr != null) {
+            if (atr != null && atr.getPOSTag() != null && atr.getLemma() != null) {
               if (atr.getPOSTag().startsWith("DA")) {
                 suggestionBuilder.insert(0, conditionalAddedString);
                 conditionalAddedString.setLength(0);
                 addDeterminer = true;
                 startPos = i;
               } else {
-                if (!addDeterminer && !addedDemostrative) {
+                if (!addDeterminer && !addedDemonstrative) {
                   String s = synthesizeWithGenderAndNumber(atr, splitGenderAndNumber(atr), desiredGender,
                     desiredNumber, synth);
                   if (s.isEmpty()) {
@@ -182,9 +179,9 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
                   suggestionBuilder.insert(0, s);
                   startPos = i;
                   if (atr.getPOSTag().startsWith("DD")) {
-                    addedDemostrative = true;
+                    addedDemonstrative = true;
                   }
-                  if (atr.getPOSTag().startsWith("D") && !atr.getPOSTag().startsWith("DN") && !addedDemostrative) {
+                  if (atr.getPOSTag().startsWith("D") && !atr.getPOSTag().startsWith("DN") && !addedDemonstrative) {
                     stop = true;
                   }
                 } else {
@@ -252,13 +249,13 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
               }
               suggestionBuilder.append(conditionalAddedString);
               conditionalAddedString.setLength(0);
-              suggestionBuilder.append(" " + s);
+              suggestionBuilder.append(" ").append(s);
               endPos = i;
             } else if (tokens[i].hasPosTagStartingWith("RG")) {
-              conditionalAddedString.append(" " + tokens[i].getToken());
+              conditionalAddedString.append(" ").append(tokens[i].getToken());
             } else if (tokens[i].hasPosTag("CC")) {
               isThereConjunction = true;
-              conditionalAddedString.append(" " + tokens[i].getToken());
+              conditionalAddedString.append(" ").append(tokens[i].getToken());
             } else if (tokens[i].hasPosTag("_PUNCT_CONT")) {
               conditionalAddedString.append(tokens[i].getToken());
             } else {
@@ -299,7 +296,7 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
     return ruleMatch;
   }
 
-  class GenderAndNumberSplit {
+  static class GenderAndNumberSplit {
     String prefix;
     String suffix;
     String gender;
@@ -307,6 +304,9 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
   }
 
   private GenderAndNumberSplit splitGenderAndNumber(AnalyzedToken atr) {
+    if (atr==null || atr.getPOSTag() == null) {
+      return null;
+    }
     GenderAndNumberSplit results = new GenderAndNumberSplit();
     Matcher matcherSplit = splitGenderNumber.matcher(atr.getPOSTag());
     if (matcherSplit.matches()) {
@@ -340,10 +340,10 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
     if (splitPostag.prefix.startsWith("DA")) {
       addGender = "";
     }
-    String[] synhtesized = synth.synthesize(atr, splitPostag.prefix + "[" + gender + addGender + "]"
+    String[] synthesized = synth.synthesize(atr, splitPostag.prefix + "[" + gender + addGender + "]"
       + "[" + number + "N" + "]" + splitPostag.suffix, true);
-    if (synhtesized.length > 0) {
-      String synthesizedSuggestion = synhtesized[0];
+    if (synthesized.length > 0) {
+      String synthesizedSuggestion = synthesized[0];
       if (!remainder.isEmpty()) {
         synthesizedSuggestion = synthesizedSuggestion + " " + remainder;
       }

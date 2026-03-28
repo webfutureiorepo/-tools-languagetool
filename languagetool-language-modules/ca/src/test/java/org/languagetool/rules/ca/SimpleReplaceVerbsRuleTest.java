@@ -182,6 +182,9 @@ public class SimpleReplaceVerbsRuleTest {
 
     matches = rule.match(lt.getAnalyzedSentence("Influí en pràcticament tots els gèneres de la música dance des dels anys 70 fins ara."));
     assertEquals(0, matches.length);
+
+    matches = rule.match(lt.getAnalyzedSentence("Moldejant-les"));
+    assertEquals("[Modelant-les, Afaiçonant-les]", matches[0].getSuggestedReplacements().toString());
   }
 
 }

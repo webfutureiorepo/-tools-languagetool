@@ -265,8 +265,7 @@ public class AdjustVerbSuggestionsFilter extends RuleFilter {
       }
     }
     // extend the ending position if there are pronouns after the verb
-    int endingPos = Math.max(match.getToPos(), tokens[verbSynthesizer.getLastIndex()
-      + verbSynthesizer.getNumPronounsAfter()].getStartPos());
+    int endingPos = Math.max(match.getToPos(), tokens[verbSynthesizer.getLastIndex()].getStartPos());
     RuleMatch ruleMatch = new RuleMatch(match.getRule(), match.getSentence(), tokens[posStartUnderline].getStartPos(),
       endingPos, match.getMessage(), match.getShortMessage());
     ruleMatch.setType(match.getType());
