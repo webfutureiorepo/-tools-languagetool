@@ -19264,6 +19264,15 @@ Copyright (C) 2012 Jaume Ortolà i Font
             </disambig>
         </rule>
     </rulegroup>
+    <rule id="mateix" name="mateix (no pronom) davant de nom">
+        <pattern>
+            <marker>
+                <token postag="A.*" postag_regexp="yes" inflected="yes">mateix</token>
+            </marker>
+            <token postag="[NA].*|V.P.*" postag_regexp="yes"/>
+        </pattern>
+        <disambig action="remove" postag="PI.*"/>
+    </rule>
     <rulegroup id="nom_en_complement" name="nom en complement">
         <rule>
             <pattern>
