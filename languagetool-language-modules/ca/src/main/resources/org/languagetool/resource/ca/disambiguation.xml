@@ -17885,6 +17885,15 @@ Copyright (C) 2012 Jaume Ortolà i Font
             </pattern>
             <disambig action="remove" postag="A.*"/>
         </rule>
+        <rule>
+            <pattern>
+                <marker>
+                    <token postag="V.*" postag_regexp="yes">baixa<exception postag="_GN_FS"/></token>
+                </marker>
+                <token postag="D.*" postag_regexp="yes"/>
+            </pattern>
+            <disambig action="remove" postag="A.*"/>
+        </rule>
     </rulegroup>
     <rulegroup id="viu" name="viu (adj o verb)">
         <rule>

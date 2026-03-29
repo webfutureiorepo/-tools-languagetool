@@ -73,8 +73,10 @@ public class SimpleReplaceRuleTest {
 
     matches = rule.match(lt.getAnalyzedSentence("La seguent solució."));
     assertEquals(1, matches.length);
-    assertEquals("[La següent, El seient]",
-      matches[0].getSuggestedReplacements().toString());
+    assertEquals("[La següent, El seient]", matches[0].getSuggestedReplacements().toString());
+
+    matches = rule.match(lt.getAnalyzedSentence("Un caminet poc ciclable baixa uns metres."));
+    assertEquals("[poc pedalable, poc ciclista]", matches[0].getSuggestedReplacements().toString());
   }
 
 }
