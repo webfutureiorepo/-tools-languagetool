@@ -3697,28 +3697,32 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
       </rule>
 
 
-    <rule id='CONCLUIR_UM_CURSO' name="🇵🇹🎓 'acabar/terminar' um curso → 'concluir'" type='style' tone_tags='academic'>
-        <!-- Used ChatGPT 4o for enhancements and extra accuracy -->
-        <pattern>
-            <marker>
-                <token skip='4' regexp="yes" inflected='yes'>acabar|finalizar|terminar<exception scope='next' postag_regexp='yes' postag='V.+'/></token>
-            </marker>
-            <token inflected='yes' regexp="yes">aprendizagem|bacharela[dt]o|certificação|curso|doutorado|doutoramento|ensino|especialização|estágio|estudo|faculdade|formação|graduação|grau|licenciatura|MBA|mestrado|PhD|pós-doutoramento|pós-graduação|universidade<exception scope="previous" regexp="yes">às?|aos?|em|n[ao]s?</exception></token>
-        </pattern>
-        <message>Em situações formais, como currículos, discursos ou correspondência oficial, &quot;concluir&quot; é mais apropriado.</message>
-        <suggestion><match no='1' postag='V.+' postag_regexp='yes'>concluir</match></suggestion>
-        <example correction="concluir">Vou <marker>acabar</marker> o meu doutoramento.</example>
-        <example correction="concluiu">Ele <marker>terminou</marker> um mestrado em gestão.</example>
-        <example correction="concluiu">A Ana <marker>terminou</marker> o seu grande PhD em gestão.</example>
-        <example correction="concluiu">O Rui <marker>acabou</marker> hoje o PhD.</example>
-        <example>Desativada no final dos anos 40, a escola acabou ocupada pela Faculdade de Medicina de Ribeirão Preto.</example>
-        <example>Ele acabou de sair da universidade.</example>
-        <example>Meu irmão acabou de ser efetivado na universidade onde dá aula.</example>
-        <example>A empresa acaba de reformular seus cursos online gratuitos, em parceria com a FGV Online.</example>
-        <example>Ele acaba de concluir a faculdade.</example>
-        <example>O livro acaba com sua ida à faculdade.</example>
-        <example>Muitos estudantes foram presos e a polícia se empenhava em acabar com as ocupações em universidades.</example>
-    </rule>
+      <rule id='CONCLUIR_UM_CURSO' name="🇵🇹🎓 'acabar/terminar' um curso → 'concluir'" type='style' tone_tags='academic'>
+          <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+          <pattern>
+              <marker>
+                  <!-- skip='4' gives the best results -->
+                  <token skip='4' regexp='yes' inflected='yes'>acabar|finalizar|terminar
+                      <exception scope='next' regexp='no'>com</exception>
+                      <exception scope='next' postag_regexp='yes' postag='V.+'/></token>
+              </marker>
+              <token inflected='yes' regexp='yes'>aprendizagem|bacharelado|bacharelato|certificação|curso|doutorado|doutoramento|ensino|especialização|estágio|estudo|faculdade|formação|graduação|grau|licenciatura|MBA|mestrado|PhD|pós-doutoramento|pós-graduação|universidade|disciplina
+                  <exception scope='previous' regexp='yes'>às?|aos?|em|n[ao]s?|pel[ao]s?</exception></token>
+          </pattern>
+          <message>Em contextos académicos formais, &quot;concluir&quot; é geralmente preferido a &quot;acabar&quot;, &quot;terminar&quot; ou &quot;finalizar&quot;.</message>
+          <suggestion><match no='1' postag='V.+' postag_regexp='yes'>concluir</match></suggestion>
+          <example correction="concluir">Vou <marker>acabar</marker> o meu doutoramento.</example>
+          <example correction="concluiu">Ele <marker>terminou</marker> um mestrado em gestão.</example>
+          <example correction="concluiu">A Ana <marker>terminou</marker> o seu grande PhD em gestão.</example>
+          <example correction="concluiu">O Rui <marker>acabou</marker> hoje o PhD.</example>
+          <example>Desativada no final dos anos 40, a escola acabou ocupada pela Faculdade de Medicina de Ribeirão Preto.</example>
+          <example>Ele acabou de sair da universidade.</example>
+          <example>Meu irmão acabou de ser efetivado na universidade onde dá aula.</example>
+          <example>A empresa acaba de reformular seus cursos online gratuitos, em parceria com a FGV Online.</example>
+          <example>Ele acaba de concluir a faculdade.</example>
+          <example>O livro acaba com sua ida à faculdade.</example>
+          <example>Muitos estudantes foram presos e a polícia se empenhava em acabar com as ocupações em universidades.</example>
+      </rule>
 
 
       <rulegroup id='PESQUISA_INVESTIGAÇÃO' name="🇵🇹🎓 Pesquisar → investigar" type='style' tone_tags='academic' tags='picky'>
