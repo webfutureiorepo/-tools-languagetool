@@ -28,6 +28,8 @@ Urriés
 VRAM
 Vicente
 afterhours
+agroparc
+agroparcs
 antivaixell
 autocèntric
 autocèntrica
@@ -208,6 +210,10 @@ perdedor
 perdedora
 perdedores
 perdedors
+planxadet
+planxadeta
+planxadetes
+planxadets
 polovtsiana
 polovtsianes
 polovtsians

@@ -1,3 +1,5 @@
+sirope=xarop
+siropes=xarops
 cresquent=creixent
 buçó=bústia
 buçons=bústies

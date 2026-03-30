@@ -33,6 +33,8 @@ Urriés	Urriés	NPCSG00
 VRAM	VRAM	NCFN000
 Vicente	Vicente	NPCNSP0
 afterhours	afterhours	NCMN000
+agroparc	agroparc	NCMS000
+agroparcs	agroparc	NCMP000
 antivaixell	antivaixell	AQ0CN0
 autocèntric	autocèntric	AQ0MS0
 autocèntrica	autocèntric	AQ0FS0
@@ -262,6 +264,10 @@ perdedor	perdedor	NCMS000
 perdedora	perdedor	NCFS000
 perdedores	perdedor	NCFP000
 perdedors	perdedor	NCMP000
+planxadet	planxadet	AQ0MS0
+planxadeta	planxadet	AQ0FS0
+planxadetes	planxadet	AQ0FP0
+planxadets	planxadet	AQ0MP0
 polovtsiana	polovtsià	AQ0FS0
 polovtsianes	polovtsià	AQ0FP0
 polovtsians	polovtsià	AQ0MP0
