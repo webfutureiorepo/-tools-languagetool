@@ -1020,6 +1020,15 @@ public abstract class Language {
     return ruleMatches;
   }
 
+  /**
+   * This function is called by JLanguageTool after CleanOverlappingFilter removes overlapping ruleMatches
+   * @return post-filtered ruleMatches
+   * @since 6.8
+   */
+  public List<RuleMatch> filterRuleMatchesAfterOverlapping(List<RuleMatch> ruleMatches) {
+    return ruleMatches;
+  }
+
   public MultitokenSpeller getMultitokenSpeller() {
     return null;
   }

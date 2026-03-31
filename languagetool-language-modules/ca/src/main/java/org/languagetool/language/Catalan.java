@@ -454,8 +454,7 @@ public class Catalan extends Language {
         }
       }
     }
-    RuleMatch newRuleMatch = new RuleMatch(ruleMatch, newReplacements);
-    return newRuleMatch.trimMatchEnds();
+    return new RuleMatch(ruleMatch, newReplacements);
   }
 
   private String removeOldDiacritics(String s) {
@@ -579,6 +578,13 @@ public class Catalan extends Language {
 
   public MultitokenSpeller getMultitokenSpeller() {
     return CatalanMultitokenSpeller.INSTANCE;
+  }
+
+  @Override
+  public List<RuleMatch> filterRuleMatchesAfterOverlapping(List<RuleMatch> ruleMatches) {
+    List<RuleMatch> result = ruleMatches.stream().map(RuleMatch::trimMatchEnds).collect(java.util.stream.Collectors.toList());
+    Collections.sort(result);
+    return result;
   }
 
   @Override
