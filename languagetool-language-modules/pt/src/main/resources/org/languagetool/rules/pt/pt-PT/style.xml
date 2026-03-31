@@ -393,19 +393,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     </rulegroup>
 
 
-    <rule id='ALUGAR_CASA' name="🇵🇹 'alugar' imóvel → 'arrendar'" type='style' tone_tags="objective">
-        <pattern>
-            <marker>
-                <token skip='4' inflected='yes'>alugar</token>
-            </marker>
-            <token regexp='yes' inflected='yes'>apartamento|casa|habitação|imóvel|moradia|vivenda</token>
-        </pattern>
-        <message>Se não pretende realçar o tipo de imóvel, considere <suggestion><match no='1' postag='V.+' postag_regexp='yes'>arrendar</match></suggestion>.</message>
-        <example correction="arrendar">Vou <marker>alugar</marker> uma casa em Lisboa.</example>
-        <example correction="Arrendei"><marker>Aluguei</marker> um apartamento em Lisboa.</example>
-    </rule>
-
-
 <rulegroup id='ORDINAL_ABREVIATION' name="🇵🇹 Abreviatura de ordinais: 1º → 1.º" tone_tags="formal">
     <!--  Created by Tiago F. Santos, 20-07-2017 -->
     <url>https://ciberduvidas.iscte-iul.pt/artigos/rubricas/idioma/ainda-sobre-a-abreviatura-do-numeral-ordinal-com-ou-sem-o-sobrescrito-sublinhado/2680</url>
@@ -496,6 +483,21 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
     <category id='FORMAL_SPEECH_PT_PT' name='🇵🇹 Linguagem Formal' type='register' tone_tags="formal">
+
+
+      <rule id='ALUGAR_CASA' name="🇵🇹🤵 'alugar' imóvel → 'arrendar'" type='style' tone_tags='formal'>
+          <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+          <pattern>
+              <marker>
+                  <token skip='4' inflected='yes'>alugar</token>
+              </marker>
+              <token postag='_CONTEXTO_HABITACAO_IMOVEIS'/>
+          </pattern>
+          <message>Em português europeu, &quot;arrendar&quot; é geralmente preferido para imóveis.</message>
+          <suggestion><match no='1' postag='V.+' postag_regexp='yes'>arrendar</match></suggestion>
+          <example correction="arrendar">Vou <marker>alugar</marker> uma casa em Lisboa.</example>
+          <example correction="Arrendei"><marker>Aluguei</marker> um apartamento em Lisboa.</example>
+      </rule>
 
 
         <rulegroup id='INFORMALITIES' name="🇵🇹👔 Evitar linguagem informal" default="on" tags="picky" tone_tags="formal">
