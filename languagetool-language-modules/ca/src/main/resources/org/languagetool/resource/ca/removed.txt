@@ -19,6 +19,7 @@ Der	Der	NPCN000
 Dimona	Dimona	NPCN000
 Española	Española	NPCN000
 Espresso	Espresso	NPCN000
+Esprit	Esprit	NPCN000
 Kharq	Kharq	NPCSG00
 Létra	Létra	NPCN000
 Nakhitxevan	Nakhitxevan	NPCSG00
