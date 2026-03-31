@@ -923,3 +923,7 @@ do et des=do ut des	Expressió llatina.
 títere con cabeza=canya dreta	L'expressió 'no deixar canya dreta' vol dir 'destruir-ho tot, no perdonar res'.
 a diestro i siniestro|a diestro y siniestro=a tort i a dret
 largo y tendido|largo i tendido=profusament|llargament|extensament
+es pasa=es passa	El verb 'passar' s'escriu amb dues esses.
+és pasa=és passa|es passa	«És» (del verb ‘ser’) s’escriu amb accent. «Es» (pronom) acompanya un verb en tercera persona.
+que ra=que era	Possible confusió.
+de bolit=de bòlit
