@@ -1,3 +1,4 @@
+lija=paper de vidre
 sirope=xarop
 siropes=xarops
 cresquent=creixent
