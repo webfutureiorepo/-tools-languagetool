@@ -238,6 +238,10 @@ escriptoreta	escriptoret	NCFS000
 escriptoretes	escriptoret	NCFP000
 escriptorets	escriptoret	NCMP000
 escriptoràs	escriptoràs	NCMS000
+espermiologia	espermiologia	NCFS000
+espermiologies	espermiologia	NCFP000
+espillet	espillet	NCMS000
+espillets	espillet	NCMP000
 espresso	espresso	AQ0CN0
 espresso	espresso	NCMS000
 espressos	espresso	NCMP000
@@ -278,6 +282,11 @@ perdedor	perdedor	NCMS000
 perdedora	perdedor	NCFS000
 perdedores	perdedor	NCFP000
 perdedors	perdedor	NCMP000
+pescaclics	pescaclics	AQ0CN0
+picadet	picadet	AQ0MS0
+picadeta	picadet	AQ0FS0
+picadetes	picadet	AQ0FP0
+picadets	picadet	AQ0MP0
 pinaci	pinaci	AQ0MS0
 pinacis	pinaci	AQ0MP0
 pinzellaire	pinzellaire	NCCS000

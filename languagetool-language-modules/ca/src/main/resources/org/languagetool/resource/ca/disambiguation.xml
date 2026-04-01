@@ -11868,8 +11868,8 @@ Copyright (C) 2012 Jaume Ortolà i Font
     <rule id="nomverb_verb0" name="verb/no_verb + verb">
         <!-- Quan no hi era respiràvem més a gust. -->
         <antipattern>
-            <token>va</token>
-            <token postag="VMIS3S00"/>
+            <token regexp="yes">va|hem</token>
+            <token postag="VMIS3S00|VMIP3S00" postag_regexp="yes"/>
         </antipattern>
         <pattern>
             <token><exception postag="&pronom_feble;|RN" postag_regexp="yes"/></token>
@@ -15079,8 +15079,8 @@ Copyright (C) 2012 Jaume Ortolà i Font
     </rule>
     <rule id="nomverb_verb" name="nom/verb + verb">
         <antipattern>
-            <token>va</token>
-            <token postag="VMIS3S00"/>
+            <token regexp="yes">va|hem</token>
+            <token postag="VMIS3S00|VMIP3S00" postag_regexp="yes"/>
         </antipattern>
         <pattern>
             <token><exception postag="&pronom_feble;|RN" postag_regexp="yes"/></token>

@@ -186,6 +186,14 @@ public final class MorfologikCatalanSpellerRule extends MorfologikSpellerRule {
         if (parts[1].length() == 1 && !ESPAI_AMB_SUFIX.contains(parts[1].toLowerCase())) {
           continue;
         }
+        // remove preposition + inflected verb
+        if (parts[1].length() > 1 && PREPOSICIONS.contains(parts[0].toLowerCase())) {
+          String newSuggestion = parts[1];
+          List<AnalyzedTokenReadings> atkn = tagger.tag(List.of(newSuggestion));
+          if (atkn.get(0).matchesPosTagRegex(VERB_INDSUBJ) && !atkn.get(0).matchesPosTagRegex(NOM)) {
+            continue;
+          }
+        }
       }
 
       // Don't change first suggestions if they match word without diacritics
@@ -198,14 +206,6 @@ public final class MorfologikCatalanSpellerRule extends MorfologikSpellerRule {
 
       // move some split words to first place
       if (parts.length == 2) {
-        // remove preposition + inflected verb
-        if (parts[1].length() > 1 && PREPOSICIONS.contains(parts[0].toLowerCase())) {
-          String newSuggestion = parts[1];
-          List<AnalyzedTokenReadings> atkn = tagger.tag(List.of(newSuggestion));
-          if (atkn.get(0).matchesPosTagRegex(VERB_INDSUBJ) && !atkn.get(0).matchesPosTagRegex(NOM)) {
-            continue;
-          }
-        }
         if (parts[1].length() > 1 && PARTICULA_INICIAL.contains(parts[0].toLowerCase())) {
           String newSuggestion = parts[1];
           List<AnalyzedTokenReadings> atkn = tagger.tag(List.of(newSuggestion));
@@ -256,12 +256,10 @@ public final class MorfologikCatalanSpellerRule extends MorfologikSpellerRule {
   @Override
   protected List<SuggestedReplacement> getAdditionalTopSuggestions(List<SuggestedReplacement> suggestions, String word)
       throws IOException {
-    List<String> suggestionsList = suggestions.stream().map(SuggestedReplacement::getReplacement)
-        .collect(Collectors.toList());
-    return SuggestedReplacement.convert(getAdditionalTopSuggestionsString(suggestionsList, word));
+    return SuggestedReplacement.convert(getAdditionalTopSuggestionsString(word));
   }
 
-  private List<String> getAdditionalTopSuggestionsString(List<String> suggestions, String word) throws IOException {
+  private List<String> getAdditionalTopSuggestionsString(String word) throws IOException {
     /*
      * if (word.length() < 5) { return Collections.emptyList(); }
      */
