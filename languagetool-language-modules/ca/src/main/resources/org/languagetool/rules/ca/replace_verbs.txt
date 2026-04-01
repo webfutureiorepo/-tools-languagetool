@@ -3,6 +3,7 @@
 #acometre=escometre|envestir
 #surtir efecte=tenir efecte|produir efecte|fer efecte|donar resultat|esdevenir efectiu
 nesitar|necitar|nessitar=necessitar
+pasar=passar
 devenir=esdevenir
 vilificar=vilipendiar|vituperar|ultratjar
 hidrogenitzar=hidrogenar

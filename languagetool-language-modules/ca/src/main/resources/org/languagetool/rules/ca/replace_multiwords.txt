@@ -927,3 +927,4 @@ es pasa=es passa	El verb 'passar' s'escriu amb dues esses.
 és pasa=es passa|és passa	«Es» (pronom) acompanya un verb en tercera persona. «És» (del verb ‘ser’) s’escriu amb accent.
 que ra=que era	Possible confusió.
 de bolit=de bòlit
+Cristòbal Colom|Cristóbal Colom=Cristòfor Colom|Cristóbal Colón

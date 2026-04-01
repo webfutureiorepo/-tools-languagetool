@@ -797,9 +797,16 @@ public class MorfologikCatalanSpellerRuleTest {
     matches = rule.match(lt.getAnalyzedSentence("empots"));
     assertEquals(1, matches.length);
     assertEquals("em pots", matches[0].getSuggestedReplacements().get(0));
+
     matches = rule.match(lt.getAnalyzedSentence("enspodeu"));
     assertEquals(1, matches.length);
     assertEquals("ens podeu", matches[0].getSuggestedReplacements().get(0));
+
+    matches = rule.match(lt.getAnalyzedSentence("Agustin"));
+    assertEquals(1, matches.length);
+    //No: A gustin
+    assertEquals("Agostin", matches[0].getSuggestedReplacements().get(0));
+    assertEquals("Agustí", matches[0].getSuggestedReplacements().get(1));
 
     // hashtags, url, email
     assertEquals(0, rule.match(lt.getAnalyzedSentence("(#sensepastanagues)")).length);

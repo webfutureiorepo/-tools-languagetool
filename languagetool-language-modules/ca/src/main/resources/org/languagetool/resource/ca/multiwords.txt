@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Cristòfor Colom;NPMSSP0
 L'Esprit Nouveau;NPMSO00
 Woody Woodpecker;NPMSSP0
 Daffy Duck;NPMSSP0
