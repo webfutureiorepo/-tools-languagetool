@@ -924,6 +924,6 @@ títere con cabeza=canya dreta	L'expressió 'no deixar canya dreta' vol dir 'des
 a diestro i siniestro|a diestro y siniestro=a tort i a dret
 largo y tendido|largo i tendido=profusament|llargament|extensament
 es pasa=es passa	El verb 'passar' s'escriu amb dues esses.
-és pasa=és passa|es passa	«És» (del verb ‘ser’) s’escriu amb accent. «Es» (pronom) acompanya un verb en tercera persona.
+és pasa=es passa|és passa	«Es» (pronom) acompanya un verb en tercera persona. «És» (del verb ‘ser’) s’escriu amb accent.
 que ra=que era	Possible confusió.
 de bolit=de bòlit

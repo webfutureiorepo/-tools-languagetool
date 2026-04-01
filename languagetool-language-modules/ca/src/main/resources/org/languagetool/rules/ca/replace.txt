@@ -1,3 +1,4 @@
+qué=què|que
 lija=paper de vidre
 sirope=xarop
 siropes=xarops
