@@ -211,6 +211,10 @@ hiperràpides
 hiperràpids
 hiperteatralitat
 hiperteatralitats
+lentet
+lenteta
+lentetes
+lentets
 mastofauna
 mastofaunes
 multiagent
