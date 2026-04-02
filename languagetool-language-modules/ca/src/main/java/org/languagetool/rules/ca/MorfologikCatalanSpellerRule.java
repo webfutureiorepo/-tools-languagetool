@@ -85,7 +85,7 @@ public final class MorfologikCatalanSpellerRule extends MorfologikSpellerRule {
   private static final Pattern VERB_GER = Pattern.compile("V.G.*");
 
   /* lemma exceptions */
-  public static final String[] LemmasToIgnore =  new String[] {"enterar", "sentar", "conseguir", "alcançar", "entimar"};
+  public static final String[] LemmasToIgnore =  new String[] {"enterar", "sentar", "conseguir", "alcançar", "entimar", "pisar"};
   public static final String[] LemmasToAllow =  new String[] {"enter", "sentir"};
 
   private static final List<String> inalambric = Arrays.asList("inalàmbric", "inalàmbrica", "inalàmbrics", "inal" +
