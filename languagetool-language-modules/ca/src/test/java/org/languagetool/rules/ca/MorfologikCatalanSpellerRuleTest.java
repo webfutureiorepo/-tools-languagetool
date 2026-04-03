@@ -135,8 +135,9 @@ public class MorfologikCatalanSpellerRuleTest {
     assertSuggestionsTest("después", "[després, desprès, despès, dèspotes, descoes]", 1);
     assertSuggestionsTest("dessinstalasio", "[desinstal·làssiu, desinstal·lació, desinstal·lassin, desinstal·lassis, desinstal·lessin]", 1);
 
-    assertSuggestionsTest("matitzàrem", "[matisarem, matisàrem, emetitzarem, emetitzàrem, matisara]", 1);
-    assertSuggestionsTest("tamitzéssim", "[tamisàssim, tamiséssim, tamisassin, tamisassis, tamisessin]", 1);
+    // done by simple replace verb
+    //assertSuggestionsTest("matitzàrem", "[matisarem, matisàrem, emetitzarem, emetitzàrem, matisara]", 1);
+    //assertSuggestionsTest("tamitzéssim", "[tamisàssim, tamiséssim, tamisassin, tamisassis, tamisessin]", 1);
     assertSuggestionsTest("adquireixquen", "[adquirisquen, adquiresquen, adquirisques, adquiresques, adquiresquin]", 1);
     assertSuggestionsTest("calificació", "[qualificació, calcificació, cerificació, gelificació, salificació]", 1);
     assertSuggestionsTest("desconte", "[descompte, descompta, descomptat, descomptes, desmunta]", 1);

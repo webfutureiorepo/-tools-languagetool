@@ -2,6 +2,9 @@
 #extendre=estendre #caldria afegir el paradigma verbal
 #acometre=escometre|envestir
 #surtir efecte=tenir efecte|produir efecte|fer efecte|donar resultat|esdevenir efectiu
+improvitzar=improvisar
+matitzar=matisar
+tamitzar=tamisar
 nesitar|necitar|nessitar=necessitar
 pasar=passar
 devenir=esdevenir

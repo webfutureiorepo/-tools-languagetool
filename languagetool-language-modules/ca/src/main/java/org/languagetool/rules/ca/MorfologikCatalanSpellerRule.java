@@ -30,7 +30,6 @@ import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public final class MorfologikCatalanSpellerRule extends MorfologikSpellerRule {
 
@@ -83,6 +82,7 @@ public final class MorfologikCatalanSpellerRule extends MorfologikSpellerRule {
   private static final Pattern VERB_INFGERIMP = Pattern.compile("V.[NGM].*");
   private static final Pattern VERB_INF = Pattern.compile("V.N.*");
   private static final Pattern VERB_GER = Pattern.compile("V.G.*");
+  private static final Pattern VERB_BALEAR = Pattern.compile("V......B");
 
   /* lemma exceptions */
   public static final String[] LemmasToIgnore =  new String[] {"enterar", "sentar", "conseguir", "alcançar", "entimar", "pisar"};
@@ -209,7 +209,7 @@ public final class MorfologikCatalanSpellerRule extends MorfologikSpellerRule {
         if (parts[1].length() > 1 && PARTICULA_INICIAL.contains(parts[0].toLowerCase())) {
           String newSuggestion = parts[1];
           List<AnalyzedTokenReadings> atkn = tagger.tag(List.of(newSuggestion));
-          boolean isBalear = atkn.get(0).hasPosTag("VMIP1S0B") && !atkn.get(0).hasPosTagStartingWith("N");
+          boolean isBalear = atkn.get(0).matchesPosTagRegex(VERB_BALEAR) && !atkn.get(0).hasPosTagStartingWith("N");
           if (!isBalear) {
             newSuggestions.add(posNewSugg, suggestions.get(i));
             continue;

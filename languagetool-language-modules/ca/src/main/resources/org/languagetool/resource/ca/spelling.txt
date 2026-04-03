@@ -11,6 +11,8 @@ CUDA
 Centcom
 Coliseum
 Dimona
+Gnossienne
+Gnossiennes
 Gratacós
 Griezmann
 Henkell
