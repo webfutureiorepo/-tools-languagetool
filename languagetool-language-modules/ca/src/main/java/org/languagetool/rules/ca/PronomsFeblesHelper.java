@@ -127,6 +127,16 @@ public class PronomsFeblesHelper {
     // pronoms erronis?
   };
 
+  final private static Map<String, String> incorrectOrders = new HashMap<>();
+  static {
+    incorrectOrders.put("me se", "se'm");
+    incorrectOrders.put("me s'", "se m'");
+    incorrectOrders.put("te se", "se't");
+    incorrectOrders.put("te s'", "se t'");
+    incorrectOrders.put("li se", "se li");
+    incorrectOrders.put("li s'", "se li");
+  }
+
   final static Pattern pApostropheNeeded = Pattern.compile("h?[aeiouàèéíòóú].*", Pattern.CASE_INSENSITIVE);
   final static Pattern pApostropheNeededEnd = Pattern.compile(".*[aei]", Pattern.CASE_INSENSITIVE);
   public final static Pattern pPronomFeble = Pattern.compile("P0.{6}|PP3CN000|PP3NN000|PP3..A00|PP[123]CP000|PP3CSD00");
@@ -163,7 +173,8 @@ public class PronomsFeblesHelper {
 
   public static String transform(String inputPronom, PronounPosition pronounPos) {
     int i = 0;
-    inputPronom = inputPronom.trim();
+    inputPronom = inputPronom.toLowerCase().trim();
+    inputPronom = incorrectOrders.getOrDefault(inputPronom, inputPronom);
     while (i < pronomsFebles.length && !inputPronom.equalsIgnoreCase(pronomsFebles[i])) {
       i++;
     }
