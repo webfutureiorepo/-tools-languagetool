@@ -33,6 +33,7 @@ import org.languagetool.rules.spelling.SpellingCheckRule;
 
 import java.io.*;
 import java.util.*;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 
@@ -394,13 +395,22 @@ public class MorfologikMultiSpeller {
     return getSuggestionsFromSpellers(word, userDictSpellers);
   }
 
+  private final Cache<String, List<String>> defaultDictSuggestionsCache =
+    CacheBuilder.newBuilder()
+      .maximumSize(2000)
+      .build();
+
   /**
    * @param word misspelled word
    * @return suggestions from built-in dictionaries
    * @since 4.5
    */
   public List<String> getSuggestionsFromDefaultDicts(String word) {
-    return getSuggestionsFromSpellers(word, defaultDictSpellers);
+    try {
+      return defaultDictSuggestionsCache.get(word, () -> getSuggestionsFromSpellers(word, defaultDictSpellers));
+    } catch (ExecutionException e) {
+      throw new RuntimeException("Error generating suggestions for: " + word, e.getCause());
+    }
   }
 
   /**
