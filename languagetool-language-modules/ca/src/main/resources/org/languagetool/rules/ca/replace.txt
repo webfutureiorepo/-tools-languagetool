@@ -1,3 +1,13 @@
+obriguera=obrira
+obrigueres=obrires
+obriguérem=obrírem
+obriguéreu=obríreu
+obrigueren=obriren
+obrigués=obrís
+obriguessis=obrissis
+obriguéssim=obríssim
+obriguéssiu=obríssiu
+obriguessin=obrissin
 qué=què|que
 lija=paper de vidre
 sirope=xarop
