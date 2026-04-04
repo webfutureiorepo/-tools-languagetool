@@ -31,6 +31,7 @@ Palau-sator	Palau-sator	NPCSG00
 Petruixka	Petruixka	NPCNSP0
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
+Sinera	Sinera	NPFSG00
 Urriés	Urriés	NPCSG00
 VRAM	VRAM	NCFN000
 Vicente	Vicente	NPCNSP0
@@ -255,6 +256,8 @@ guisador	guisador	AQ0MS0
 guisadora	guisador	AQ0FS0
 guisadores	guisador	AQ0FP0
 guisadors	guisador	AQ0MP0
+hibridesa	hibridesa	NCFS000
+hibrideses	hibridesa	NCFP000
 hiperreligiosa	hiperreligiós	AQ0FS0
 hiperreligioses	hiperreligiós	AQ0FP0
 hiperreligiositat	hiperreligiositat	NCFS000
@@ -284,6 +287,7 @@ neohel·lenista	neohel·lenista	NCCS000
 neohel·lenistes	neohel·lenista	NCCP000
 neurosarcoïdosi	neurosarcoïdosi	NCFS000
 neurosarcoïdosis	neurosarcoïdosi	NCFP000
+obreportes	obreportes	NCMN000
 perdedor	perdedor	NCMS000
 perdedora	perdedor	NCFS000
 perdedores	perdedor	NCFP000
@@ -319,6 +323,10 @@ polovtsiana	polovtsià	AQ0FS0
 polovtsianes	polovtsià	AQ0FP0
 polovtsians	polovtsià	AQ0MP0
 polovtsià	polovtsià	AQ0MS0
+preadaptatiu	preadaptatiu	AQ0MS0
+preadaptatius	preadaptatiu	AQ0MP0
+preadaptativa	preadaptatiu	AQ0FS0
+preadaptatives	preadaptatiu	AQ0FP0
 prebèl·lic	prebèl·lic	AQ0MS0
 prebèl·lica	prebèl·lic	AQ0FS0
 prebèl·lics	prebèl·lic	AQ0MP0

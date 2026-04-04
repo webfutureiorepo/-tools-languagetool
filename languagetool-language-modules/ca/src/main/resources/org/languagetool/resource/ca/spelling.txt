@@ -26,6 +26,7 @@ Palau-sator
 Petruixka
 Rayuela
 Rosselló-Pòrcel
+Sinera
 Urriés
 VRAM
 Vicente
@@ -201,6 +202,8 @@ guisador
 guisadora
 guisadores
 guisadors
+hibridesa
+hibrideses
 hiperreligiosa
 hiperreligioses
 hiperreligiositat
@@ -230,6 +233,7 @@ neohel·lenista
 neohel·lenistes
 neurosarcoïdosi
 neurosarcoïdosis
+obreportes
 perdedor
 perdedora
 perdedores
@@ -265,6 +269,10 @@ polovtsiana
 polovtsianes
 polovtsians
 polovtsià
+preadaptatiu
+preadaptatius
+preadaptativa
+preadaptatives
 prebèl·lic
 prebèl·lica
 prebèl·lics

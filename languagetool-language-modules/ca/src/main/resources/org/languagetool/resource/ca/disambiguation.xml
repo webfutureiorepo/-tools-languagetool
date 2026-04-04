@@ -9635,8 +9635,8 @@ Copyright (C) 2012 Jaume Ortolà i Font
                         </and>
                     </marker>
                 </unify>
-                <token min="0" postag="RN|RG" postag_regexp="yes"/>
-                <token postag="V.[SIP].*|AQ.*|&pronom_feble;" postag_regexp="yes"><exception regexp="yes">objecte|anant</exception></token>
+                <token min="0" max="4" postag="RN|RG|&pronom_feble;" postag_regexp="yes"/>
+                <token postag="V.[SIP].*|AQ.*" postag_regexp="yes"><exception regexp="yes">objecte|anant</exception></token>
             </pattern>
             <disambig action="remove" postag="V.[SIM].*|RG|DI.*|SPS00|PI.*"/>
             <example type="untouched">Se la veu tranquil·la.</example>

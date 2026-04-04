@@ -13105,6 +13105,7 @@ apolat de sodi	NCMS000
 a bene placito;_Latin_
 a capite ad calcem;_Latin_
 a contrario;_Latin_
+a divinis;LOC_ADV
 a Deucalione;_Latin_
 a falsis principiis proficisci;_Latin_
 #a fortiori;_Latin_
