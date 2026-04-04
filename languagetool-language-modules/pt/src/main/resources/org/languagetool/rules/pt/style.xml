@@ -19778,6 +19778,24 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
+        <rule id='VER_OBSERVAR_CONSTATAR_V2' name="🎓 Ver → observar/constatar" type='style' tone_tags='academic' is_goal_specific='true' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <!-- This rule used to have thousands of FPs. It is now very strict using the most common academic used words -->
+            <pattern>
+                <marker>
+                    <token skip='1' inflected='yes'>ver</token>
+                </marker>
+                <token skip='1' regexp='yes'>que|n[ao]s?|em</token>
+                <token postag='NC.+|AQ.+' postag_regexp='yes' regexp='yes' inflected='yes'>dado|resultado|figura|tabela|gráfico|estudo|análise|evidência|amostra|variável|modelo|experiência|ensaio|distribuição|correlação</token>
+            </pattern>
+            <message>Em contexto formal/científico, prefira &quot;observar&quot; ou &quot;constatar&quot;.</message>
+            <suggestion><match no='1' postag='V.+' postag_regexp='yes'>observar</match></suggestion>
+            <suggestion><match no='1' postag='V.+' postag_regexp='yes'>constatar</match></suggestion>
+            <example correction="observar|constatar">É fácil como podem <marker>ver</marker> na figura.</example>
+            <example correction="observar|constatar">Podemos <marker>ver</marker> que há correlação.</example>
+        </rule>
+
+
         <rulegroup id='VER_OBSERVAR_CONSTATAR' name="🎓 Ver → Observar/Constatar" type="style" tags="picky" tone_tags="academic" is_goal_specific="true">
             <antipattern>
                 <token case_sensitive="yes">VI</token>
