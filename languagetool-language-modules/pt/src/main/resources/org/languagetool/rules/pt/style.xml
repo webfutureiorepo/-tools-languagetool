@@ -3687,10 +3687,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
 
 
-    <category id='FORMAL' name='Linguagem formal' type='style' tone_tags="formal">
+    <category id='FORMAL' name='🤵 Linguagem formal' type='style' tone_tags="formal">
 
 
-        <rulegroup id='LENTO_MOROSO' name="Lento → moroso" type='style' tone_tags='formal'>
+        <rulegroup id='LENTO_MOROSO' name="🤵 Lento → moroso" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <rule> <!-- #1: lentidão → morosidade -->
@@ -3737,7 +3737,23 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='UNS_ALGUNS_UMAS_ALGUMAS' name="uns/umas → alguns/algumas" type='style' tone_tags='formal'>
+        <rule id='NAO_DEIXAR_QUE_PERMITIR' name="🤵 Não 'deixar' que → permitir" type='style' tone_tags='formal' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <pattern>
+                <token>não</token>
+                <token min='0' max='1' regexp='yes' inflected='yes'>poder|dever</token>
+                <marker>
+                    <token inflected='yes'>deixar</token>
+                </marker>
+                <token>que</token>
+            </pattern>
+            <message>A expressão &quot;permitir&quot; é mais formal e direta do que &quot;deixar que&quot;.</message>
+            <suggestion><match no='3' postag='V.+' postag_regexp='yes'>permitir</match></suggestion>
+            <example correction="permitir">Não posso <marker>deixar</marker> que ele faça isso.</example>
+        </rule>
+
+
+        <rule id='UNS_ALGUNS_UMAS_ALGUMAS' name="🤵 uns/umas → alguns/algumas" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token regexp='yes' inflected='yes'>fazer|haver</token>
@@ -3753,7 +3769,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='PROXIMO_ZERO_PRATICAMENTE_NULO' name="próximo do zero → quase inexistente/praticamente nulo" type='style' tone_tags='formal'>
+        <rule id='PROXIMO_ZERO_PRATICAMENTE_NULO' name="🤵 próximo do zero → quase inexistente/praticamente nulo" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token postag='NC.+' postag_regexp='yes'>
@@ -3778,7 +3794,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='COMO_SEGUNDO_CONFORME' name="Como/segundo → conforme" type='style' tone_tags='formal'>
+        <rule id='COMO_SEGUNDO_CONFORME' name="🤵 Como/segundo → conforme" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <marker>
@@ -3826,7 +3842,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='FAZER_PROCEDER' name="Formalização: fazer → proceder a (atos administrativos)" type='style' tone_tags='formal'>
+        <rule id='FAZER_PROCEDER' name="🤵 fazer → proceder a (atos administrativos)" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <pattern>
@@ -3903,7 +3919,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='DECIDIR_DELIBERAR' name="Decidir → deliberar (órgão colegiado)" type='style' tone_tags='formal'>
+        <rule id='DECIDIR_DELIBERAR' name="🤵 Decidir → deliberar (órgão colegiado)" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <pattern>
@@ -3923,7 +3939,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rulegroup id='SOBRE_QUAL_QUAIS_INFLACIONADO' name="Construção 'sobre qual/quais' inflacionada" type='style' tone_tags='formal'>
+        <rulegroup id='SOBRE_QUAL_QUAIS_INFLACIONADO' name="🤵 Construção 'sobre qual/quais' inflacionada" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
 
             <rule> <!-- #1: Comparativos/superlativos irregulares (adjetivos) -->
