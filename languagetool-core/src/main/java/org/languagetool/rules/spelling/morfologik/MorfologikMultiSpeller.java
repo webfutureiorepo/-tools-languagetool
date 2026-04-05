@@ -373,8 +373,14 @@ public class MorfologikMultiSpeller {
     }
     Collections.sort(result);
     List<String> wordResults = new ArrayList<>();
+    int maxWeightDiff = (language != null ? language.getSpellerMaxWeightDiff() : -1);
+    int prevWeight = -1;
     for (WeightedSuggestion weightedSuggestion : result) {
+      if (maxWeightDiff > 0 && prevWeight > 0 && (weightedSuggestion.getWeight() - prevWeight > maxWeightDiff)) {
+        break;
+      }
       wordResults.add(weightedSuggestion.getWord());
+      prevWeight = weightedSuggestion.getWeight();
     }
     return wordResults;
   }

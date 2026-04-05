@@ -387,9 +387,15 @@ public class Catalan extends Language {
     }
     return super.getPriorityForId(id);
   }
-  
+
+  @Override
   public boolean hasMinMatchesRules() {
     return true;
+  }
+
+  @Override
+  public int getSpellerMaxWeightDiff() {
+    return 15;
   }
   
   @Override

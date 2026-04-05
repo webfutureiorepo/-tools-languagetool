@@ -1,3 +1,6 @@
+Agustin|Agustín=Agustí
+ambun=amb un
+ambuns=amb uns
 reseteig|reseteo=inicialització
 sortigués|surtigués=sortís
 sortigues|surtigues=sortís|surtis
