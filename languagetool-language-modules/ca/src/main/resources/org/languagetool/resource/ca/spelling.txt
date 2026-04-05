@@ -20,6 +20,8 @@ Kalman
 Kharg
 LaGuardia
 Leavitt
+Maven
+Menjòmetre
 Miguel
 ONNX
 Palau-sator
@@ -220,6 +222,8 @@ lentet
 lenteta
 lentetes
 lentets
+macroabocador
+macroabocadors
 mastofauna
 mastofaunes
 multiagent

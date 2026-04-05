@@ -1,3 +1,10 @@
+reseteig|reseteo=inicialització
+sortigués|surtigués=sortís
+sortigues|surtigues=sortís|surtis
+sortiguessis|surtiguessis|sortiguesis|surtiguesis=sortissis
+sortiguessin|surtiguessin|sortiguesin|surtiguesin=sortissin
+sortiguéssim|surtiguéssim|sortiguésim|surtiguésim|sortiguessim|surtiguessim|sortiguesim|surtiguesim=sortíssim
+sortiguéssiu|surtiguéssiu|sortiguésiu|surtiguésiu|sortiguessiu|surtiguessiu|sortiguesiu|surtiguesiu=sortíssiu
 obriguera=obrira
 obrigueres=obrires
 obriguérem=obrírem

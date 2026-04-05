@@ -928,3 +928,5 @@ es pasa=es passa	El verb 'passar' s'escriu amb dues esses.
 que ra=que era	Possible confusió.
 de bolit=de bòlit
 Cristòbal Colom|Cristóbal Colom=Cristòfor Colom|Cristóbal Colón
+ni tants sol=ni tan sols
+més el collaret que el gos|més el collar que el gos=més el farciment que el gall|més el pa que el companatge|més la salsa que el pollastre	Expressió equivalent.

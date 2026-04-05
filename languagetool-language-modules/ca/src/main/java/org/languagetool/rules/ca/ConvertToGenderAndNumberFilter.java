@@ -125,6 +125,15 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
           desiredGenderStr = splitPostag2.gender;
         }
       }
+      // Prioritize gender and number in the original
+      if (splitPostag != null) {
+        if (desiredGenderStr.contains(splitPostag.gender)) {
+          desiredGenderStr = splitPostag.gender + desiredGenderStr.replace(splitPostag.gender, "");
+        }
+        if (desiredNumberStr.contains(splitPostag.number)) {
+          desiredNumberStr = splitPostag.number + desiredNumberStr.replace(splitPostag.number, "");
+        }
+      }
       for (char genderCh : desiredGenderStr.toCharArray()) {
         for (char numberCh : desiredNumberStr.toCharArray()) {
           String desiredGender = String.valueOf(genderCh);
@@ -151,8 +160,9 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
           while (!stop && i > 1) {
             i--;
             AnalyzedToken atr = tokens[i].readingWithTagRegex(splitGenderNumberNoNoun);
-            if (tokens[i].hasPosTag("_perfet") || tokens[i].hasPosTag("_GV_") || tokens[i].getChunkTags().contains(new ChunkTag("GV"))
-            || formsToIgnore.contains(tokens[i].getToken().toLowerCase())) {
+            if (!tokens[i].hasPosTagStartingWith("D") // incloem l'article fins i tot si està marcat com a _GV_
+              && (tokens[i].hasPosTag("_perfet") || tokens[i].hasPosTag("_GV_") || tokens[i].getChunkTags().contains(new ChunkTag("GV")))
+              || formsToIgnore.contains(tokens[i].getToken().toLowerCase())) {
               atr = null;
             }
             if (atr != null && atr.getPOSTag() != null && atr.getLemma() != null) {
