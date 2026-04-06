@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Feria de Abril;NPFSO00
 Sundiata Keita;NPMSSP0
 Charles-Jean de la Vallée-Poussin;NPMSSP0
 de la Vallée-Poussin;NPCNSP0

@@ -15,8 +15,8 @@ CUDA	CUDA	NPCNO00
 Centcom	Centcom	NPMSO00
 Coliseum	Coliseum	NPMSO00
 Dimona	Dimona	NPCSG00
-Gnossienne	Gnossiennes	NPFS000
-Gnossiennes	Gnossiennes	NPFP000
+Gnossienne	Gnossiennes	NPFSO00
+Gnossiennes	Gnossiennes	NPFPO00
 Gratacós	Gratacós	NPCNSP0
 Griezmann	Griezmann	NPCNSP0
 Henkell	Henkell	NPCNSP0
@@ -41,6 +41,8 @@ Vicente	Vicente	NPCNSP0
 afterhours	afterhours	NCMN000
 agroparc	agroparc	NCMS000
 agroparcs	agroparc	NCMP000
+andalusitzacions	andalusització	NCFP000
+andalusització	andalusització	NCFS000
 antivaixell	antivaixell	AQ0CN0
 autocèntric	autocèntric	AQ0MS0
 autocèntrica	autocèntric	AQ0FS0
