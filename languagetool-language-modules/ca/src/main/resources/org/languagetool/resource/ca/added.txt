@@ -34,6 +34,7 @@ Petruixka	Petruixka	NPCNSP0
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Sinera	Sinera	NPFSG00
+Sundiata	Sundiata	NPMSSP0
 Urriés	Urriés	NPCSG00
 VRAM	VRAM	NCFN000
 Vicente	Vicente	NPCNSP0

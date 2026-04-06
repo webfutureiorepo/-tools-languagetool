@@ -191,7 +191,8 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
                   if (atr.getPOSTag().startsWith("DD")) {
                     addedDemonstrative = true;
                   }
-                  if (atr.getPOSTag().startsWith("D") && !atr.getPOSTag().startsWith("DN") && !addedDemonstrative) {
+                  if (atr.getPOSTag().startsWith("D") && !atr.getPOSTag().startsWith("DN") && !addedDemonstrative
+                  && !atr.getLemma().equalsIgnoreCase("quant")) {
                     stop = true;
                   }
                 } else {

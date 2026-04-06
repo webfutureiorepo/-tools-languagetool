@@ -4948,6 +4948,20 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </rule>
         <!-- Altres combinacions són col·loquials: ve-li aquí -->
     </rulegroup>
+    <rule id="uns_quants" name="uns quants">
+        <pattern>
+            <token postag="DI0MP0|PI0MP000" postag_regexp="yes">uns</token>
+            <token postag="DI0MP0|PI0MP000" postag_regexp="yes">quants</token>
+        </pattern>
+        <disambig action="filterall"></disambig>
+    </rule>
+    <rule id="unes_quantes" name="unes quantes">
+        <pattern>
+            <token postag="DI0FP0|PI0FP000" postag_regexp="yes">unes</token>
+            <token postag="DI0FP0|PI0FP000" postag_regexp="yes">quantes</token>
+        </pattern>
+        <disambig action="filterall"></disambig>
+    </rule>
     <rulegroup id="no_se_quin" name="no sé quin">
         <rule>
             <pattern>
