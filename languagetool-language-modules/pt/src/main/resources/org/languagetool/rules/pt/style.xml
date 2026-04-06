@@ -4928,45 +4928,6 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <!-- VESTIR calçar -->
-        <rule id='CONFUSÃO_VESTIR_CALÇAR' name="[Confusão] vestir/calçar" tags='picky' tone_tags="formal">
-            <antipattern>
-                <token>vestidos</token>
-                <token min="0" max="1" negate="yes" regexp="yes">botas?|chinelos?|galochas?|luvas?|meias?|peúgas?|sandálias?|sapatilhas?|sapatos?|ténis</token>
-                <token postag='_PUNCT'/>
-            </antipattern>
-            <antipattern>
-                <token inflected="yes" skip="2">vestir</token>
-                <token regexp="yes">meias?</token>
-                <token min="0">-</token>
-                <token regexp="yes">calças?</token>
-                <example>vesti a meia-calça</example>
-            </antipattern>
-            <antipattern>
-                <token inflected="yes">vestir</token>
-                <token postag="_PUNCT|_QUOT" postag_regexp="yes"/>
-                <example>As roupas que vestimos, os sapatos que usamos.</example>
-            </antipattern>
-            <pattern>
-                <marker>
-                    <token inflected="yes">vestir
-                        <exception regexp="yes">vestidos?|vestes</exception>
-                    </token>
-                </marker>
-                <token min="0" max="2" negate="yes" regexp="yes">botas?|chinelos?|galochas?|luvas?|meias?|peúgas?|sandálias?|sapatilhas?|sapatos?|t[éê]nis</token>
-                <token regexp="yes">botas?|chinelos?|galochas?|meias?|peúgas?|sandálias?|sapatilhas?|sapatos?|t[éê]nis</token>
-            </pattern>
-            <message>Prefira o verbo &quot;calçar&quot; nas extremidades dos membros do corpo.</message>
-            <suggestion><match no='1' postag='V.+' postag_regexp='yes'>calçar</match></suggestion>
-            <example correction="calçar">Vou <marker>vestir</marker> os sapatos.</example>
-            <example>Vou calçar os sapatos.</example>
-            <example>Não se esqueça de calçar as meias.</example>
-
-            <example>Kullervo abriu a arca que continha seus tesouros, deixando ver galas soberbas, vestidos esplêndidos, meias bordadas com fios de ouro, cintos e broches de prata.</example>
-            <example>Vence a indústria do luxo, porque a disputa hoje é sobre os melhores e piores vestidos, sapatos, acessórios, publicados exaustivamente pela imprensa internacional e, claro, repercutidos aqui no Brasil.</example>
-        </rule>
-
-
         <rule id='DIFERENTES' name="Ser diferente → Diferir" tags='picky'>
             <pattern>
                 <token postag='NC.+|AQ.+|NP.+|[DP].+' postag_regexp='yes'/>
