@@ -22920,7 +22920,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id='CONFUSED_WORDS' name="❓ Confusão de Palavras">
 
 
-        <rulegroup id="CONFUSÃO_VESTIR_CALÇAR_V2" name="❓ vestir/calçar" default='temp_off'>
+        <rulegroup id="CONFUSÃO_VESTIR_CALÇAR" name="❓ vestir/calçar">
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <!-- Had to use exception NC.+|AQ.+ in the verbs vestir/calçar due to wrong disambiguation in some cases - 2026-04-06 -->
 
