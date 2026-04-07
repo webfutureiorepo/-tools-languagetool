@@ -3737,7 +3737,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='NAO_DEIXAR_QUE_PERMITIR' name="🤵 Não 'deixar' que → permitir" type='style' tone_tags='formal' default='temp_off'>
+        <rule id='NAO_DEIXAR_QUE_PERMITIR' name="🤵 Não 'deixar' que → permitir" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token>não</token>
