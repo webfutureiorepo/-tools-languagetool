@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Lunar Orbiter;NPMSO00
+Lunar Reconnaissance Orbiter;NPMSO00
 Feria de Abril;NPFSO00
 Sundiata Keita;NPMSSP0
 Charles-Jean de la Vallée-Poussin;NPMSSP0

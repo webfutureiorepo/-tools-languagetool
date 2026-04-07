@@ -224,7 +224,10 @@ public class ConvertToGenderAndNumberFilter extends RuleFilter {
               }
               stop = true;
             } else if (tokens[i].hasPosTag("_PUNCT_CONT") || tokens[i].hasPosTag("CC")) {
-              if (posWord - i == 1) {
+              if ((posWord - i == 1) ||
+                // tot i que
+                (i > 1 && (tokens[i].getToken().equalsIgnoreCase("i")
+                  && tokens[i - 1].getToken().equalsIgnoreCase("tot")))) {
                 stop = true;
               } else {
                 conditionalAddedString.insert(0, tokens[i].getToken() + " ");
