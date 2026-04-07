@@ -1493,6 +1493,15 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
     <!-- group: велика літера -->
 
     <rule id="z_velykoiy" name="Назви з великої">
+      <antipattern>
+        <token regexp="yes">(не)?хай</token>
+        <token>господь</token>
+      </antipattern>
+      <antipattern>
+        <token>господь</token>
+        <token regexp="yes">і?з</token>
+        <token regexp="yes">тобою|вами</token>
+      </antipattern>
       <pattern>
         <and>
           <token case_sensitive="yes" regexp="yes">[а-яіїєґ].*</token>
@@ -1506,6 +1515,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
       <example correction="Різдва">готувався до <marker>різдва</marker></example>
       <example>по тонкому покрову</example>
       <example>така затишна господа</example>
+      <example>нехай господь помагає</example>
     </rule>
 
     <!-- group: інші -->
@@ -1656,7 +1666,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
       <example correction="примʼятий|прим’ятий|прим'ятий">він <marker>прим"ятий</marker>.</example>
       <example correction="примʼятий|прим’ятий|прим'ятий">він <marker>прим´ятий</marker>.</example>
       <example correction="привʼязати|прив’язати|прив'язати">там <marker>прив”язати</marker>.</example>
+      <!-- 
       <example correction="привʼязати|прив’язати|прив'язати">ось там <marker>прив`язати</marker>.</example>
+      -->
     </rule>
 
   </category>
