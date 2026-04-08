@@ -497,6 +497,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
                   <token min='0' max='1'>melhores</token>
                   <token>cumprimentos</token>
               </marker>
+              <token postag='SENT_END|_PUNCT' postag_regexp='yes'/>
           </pattern>
           <message>Para manter um tom formal, utilize &quot;Com os melhores cumprimentos&quot; como fórmula de despedida.</message>
           <suggestion>Com os melhores cumprimentos</suggestion>
