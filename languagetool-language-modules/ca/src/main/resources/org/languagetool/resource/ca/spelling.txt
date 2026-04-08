@@ -185,6 +185,8 @@ desfossilitzéssiu
 desfossilitzí
 dramot
 dramots
+entregable
+entregables
 escriptorassa
 escriptorasses
 escriptorassos
@@ -225,6 +227,8 @@ lentet
 lenteta
 lentetes
 lentets
+lliurable
+lliurables
 macroabocador
 macroabocadors
 mastofauna

@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Sciences Po;NPMSO00
+Sciences Po Paris;NPMSO00
 Lunar Orbiter;NPMSO00
 Lunar Reconnaissance Orbiter;NPMSO00
 Feria de Abril;NPFSO00

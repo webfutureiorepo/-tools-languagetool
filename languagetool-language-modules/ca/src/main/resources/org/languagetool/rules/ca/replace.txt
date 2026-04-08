@@ -1,3 +1,4 @@
+desglós=desglossament
 Agustin|Agustín=Agustí
 ambun=amb un
 ambuns=amb uns
