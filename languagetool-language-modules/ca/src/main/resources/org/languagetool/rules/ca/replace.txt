@@ -1,3 +1,12 @@
+vierteaigues|vierteaigües|vierteaguas=trencaaigües
+ocluït|ocluit=clos|oclòs
+ocluïts|ocluits=closos|oclosos
+ocluïda|ocluida=closa|oclosa
+ocluïdes|ocluides=closes|ocloses
+varilla|barilla=vareta|barreta|barnilla
+varilles|barilles=varetes|barretes|barnilles
+envolvent=envoltant|envolupant
+envolvents=envoltants|envolupants
 desglós=desglossament
 Agustin|Agustín=Agustí
 ambun=amb un
