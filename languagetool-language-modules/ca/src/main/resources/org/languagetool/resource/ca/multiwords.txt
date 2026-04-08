@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Josep Maria Albaigès;NPMSSP0
 Sciences Po;NPMSO00
 Sciences Po Paris;NPMSO00
 Lunar Orbiter;NPMSO00

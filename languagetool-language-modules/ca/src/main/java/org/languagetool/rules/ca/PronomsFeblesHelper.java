@@ -135,6 +135,10 @@ public class PronomsFeblesHelper {
     incorrectOrders.put("te s'", "se t'");
     incorrectOrders.put("li se", "se li");
     incorrectOrders.put("li s'", "se li");
+    incorrectOrders.put("mi", "m'hi");
+    incorrectOrders.put("si", "s'hi");
+    incorrectOrders.put("nosi", "-nos-hi");
+    incorrectOrders.put("losi", "-los-hi");
   }
 
   final static Pattern pApostropheNeeded = Pattern.compile("h?[aeiouàèéíòóú].*", Pattern.CASE_INSENSITIVE);

@@ -1,3 +1,4 @@
+donarmi=donar-me|donar-li
 vierteaigues|vierteaigües|vierteaguas=trencaaigües
 ocluït|ocluit=clos|oclòs
 ocluïts|ocluits=closos|oclosos
