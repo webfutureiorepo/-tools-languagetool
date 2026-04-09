@@ -3,6 +3,7 @@
 AIEA
 Aiguadolç
 Ansermet
+Arnaud
 Basij
 Behçet
 CDRAM
@@ -16,6 +17,9 @@ Gnossiennes
 Gratacós
 Griezmann
 Henkell
+IECMA
+Ifigenia
+Ifigenies
 Kalman
 Kharg
 LaGuardia
@@ -23,6 +27,7 @@ Leavitt
 Maven
 Menjòmetre
 Miguel
+Nakamoto
 ONNX
 OpenCode
 Palau-sator
@@ -34,6 +39,7 @@ Sundiata
 Urriés
 VRAM
 Vicente
+XTEC
 afterhours
 agroparc
 agroparcs
@@ -48,6 +54,8 @@ basij
 basijs
 bellea
 bellees
+breakdance
+breakdancing
 cappelada
 cappelades
 cappelat
@@ -120,6 +128,9 @@ contorsionéssiu
 contorsioní
 contracrònica
 contracròniques
+cranialment
+desaprenentatge
+desaprenentatges
 desarmant
 desarmants
 desfossilitz
@@ -285,6 +296,10 @@ polovtsiana
 polovtsianes
 polovtsians
 polovtsià
+postpenitenciari
+postpenitenciaris
+postpenitenciària
+postpenitenciàries
 preadaptatiu
 preadaptatius
 preadaptativa

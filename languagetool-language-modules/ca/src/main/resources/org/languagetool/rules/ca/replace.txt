@@ -1,3 +1,5 @@
+cuartel|quartel=caserna|quarter
+cuartels|quartels=casernes|quarters
 donarmi=donar-me|donar-li
 vierteaigues|vierteaigües|vierteaguas=trencaaigües
 ocluït|ocluit=clos|oclòs

@@ -7,6 +7,7 @@
 AIEA	AIEA	NPFSO00
 Aiguadolç	Aiguadolç	NPMSG00
 Ansermet	Ansermet	NPCNSP0
+Arnaud	Arnaud	NPCNSP0
 Basij	Basij	NPFSO00
 Behçet	Behçet	NPCNSP0
 CDRAM	CDRAM	NCFN000
@@ -20,6 +21,9 @@ Gnossiennes	Gnossiennes	NPFPO00
 Gratacós	Gratacós	NPCNSP0
 Griezmann	Griezmann	NPCNSP0
 Henkell	Henkell	NPCNSP0
+IECMA	IECMA	NPMSO00
+Ifigenia	Ifigenia	NPFSSP0
+Ifigenies	Ifigenia	NPFPSP0
 Kalman	Kalman	NPCNSP0
 Kharg	Kharg	NPCSG00
 LaGuardia	LaGuardia	NPCNG00
@@ -28,6 +32,7 @@ Maven	Maven	NPCNO00
 Menjòmetre	Menjòmetre	NPMSO00
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0
+Nakamoto	Nakamoto	NPCNSP0
 ONNX	ONNX	NPCNO00
 OpenCode	OpenCode	NPMSO00
 Palau-sator	Palau-sator	NPCSG00
@@ -39,6 +44,7 @@ Sundiata	Sundiata	NPMSSP0
 Urriés	Urriés	NPCSG00
 VRAM	VRAM	NCFN000
 Vicente	Vicente	NPCNSP0
+XTEC	XTEC	NPFSO00
 afterhours	afterhours	NCMN000
 agroparc	agroparc	NCMS000
 agroparcs	agroparc	NCMP000
@@ -53,6 +59,8 @@ basij	basij	NCCS000
 basijs	basij	NCCP000
 bellea	bellea	NCFS000
 bellees	bellea	NCFP000
+breakdance	breakdance	NCMS000
+breakdancing	breakdancing	NCMS000
 cappelada	cappelat	AQ0FS0
 cappelades	cappelat	AQ0FP0
 cappelat	cappelat	AQ0MS0
@@ -149,6 +157,9 @@ contorsionéssiu	contorsionar	VMSI2P02
 contorsioní	contorsionar	VMIS1S00
 contracrònica	contracrònica	NCFS000
 contracròniques	contracrònica	NCFP000
+cranialment	cranialment	RG
+desaprenentatge	desaprenentatge	NCMS000
+desaprenentatges	desaprenentatge	NCMP000
 desarmant	desarmant	AQ0CS0
 desarmants	desarmant	AQ0CP0
 desfossilitz	desfossilitzar	VMIP1S0B
@@ -339,6 +350,10 @@ polovtsiana	polovtsià	AQ0FS0
 polovtsianes	polovtsià	AQ0FP0
 polovtsians	polovtsià	AQ0MP0
 polovtsià	polovtsià	AQ0MS0
+postpenitenciari	postpenitenciari	AQ0MS0
+postpenitenciaris	postpenitenciari	AQ0MP0
+postpenitenciària	postpenitenciari	AQ0FS0
+postpenitenciàries	postpenitenciari	AQ0FP0
 preadaptatiu	preadaptatiu	AQ0MS0
 preadaptatius	preadaptatiu	AQ0MP0
 preadaptativa	preadaptatiu	AQ0FS0

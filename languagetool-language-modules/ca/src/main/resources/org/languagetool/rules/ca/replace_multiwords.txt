@@ -933,3 +933,4 @@ més el collaret que el gos|més el collar que el gos=més el farciment que el g
 hi ga=hi ha	¿Volíeu dir "hi ha" (del verb 'haver-hi')?
 feria d'abril|fèria d'abril=Feria de Abril|Fira d'Abril
 passos següents a seguir=passos següents|passos que cal seguir	Eviteu la redundància.
+Mr. Hide=Mr. Hyde

@@ -1,5 +1,11 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Llegenda àuria;NPFSO00
+Legenda aurea;NPFSO00
+Legenda sanctorum;NPFSO00
+Jacopo da Varazze;NPMSSP0
+Jacopo da Varagine;NPMSSP0
+Jaume de Voràgine;NPMSSP0
 Josep Maria Albaigès;NPMSSP0
 Sciences Po;NPMSO00
 Sciences Po Paris;NPMSO00
