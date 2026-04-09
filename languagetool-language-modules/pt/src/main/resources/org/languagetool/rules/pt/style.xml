@@ -3741,9 +3741,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <marker>
-                    <token skip='1' inflected='yes'>passar
-                        <exception scope='next' postag='SPS.+|DA.+' postag_regexp='yes'/>
-                        <exception scope='next'>por</exception></token>
+                    <token skip='1' inflected='yes'>passar<exception scope='next' postag='SPS.+|DA.+' postag_regexp='yes'/></token>
                 </marker>
                 <token regexp='yes' inflected='yes'>dificuldade|problema|crise|adversidade|contratempo|percalço|sofrimento|angústia|aflição|privação|carência</token>
             </pattern>
@@ -3758,6 +3756,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example>Quando perdemos isso ou quando passamos o problema para outra pessoa.</example>
             <example>Os seus últimos anos de vida foram passados em sofrimento e viagens constantes ao estrangeiro.</example>
             <example>Podemos passar pelo problema sem dificuldade.</example>
+            <example>Podemos passar por problemas sem vacilar.</example>
         </rule>
 
 
