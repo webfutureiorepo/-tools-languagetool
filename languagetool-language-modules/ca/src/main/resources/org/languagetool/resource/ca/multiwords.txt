@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Freida McFadden;NPFSSP0
+Sarah Cohen;NPFSSP0
+Ágatha Ruiz de la Prada;NPFSSP0
 Llegenda àuria;NPFSO00
 Legenda aurea;NPFSO00
 Legenda sanctorum;NPFSO00
