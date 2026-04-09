@@ -3760,6 +3760,22 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
+        <rule id='DURANTE_ESTE_O_PRESENTE' name="🤵 Forma administrativa: 'presente' + expressão temporal" type='style' tone_tags='formal' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <pattern>
+                <token>durante</token>
+                <marker>
+                    <token regexp='yes'>est[ae]</token>
+                </marker>
+                <token regexp='yes'>mês|ano|semestre|trimestre|período|ciclo|exercício|dia|intervalo|prazo|lapso|momento|instante|semana|data|fase|época</token>
+            </pattern>
+            <message>Em contexto formal, use &quot;presente&quot; com períodos de tempo (&quot;presente mês&quot;, &quot;presente semana&quot;). Em linguagem comum, prefira &quot;este/esta&quot;.</message>
+            <suggestion><match no='2' postag='DD0(.)S0' postag_replace='DA0$1S0'>o</match> presente</suggestion>
+            <example correction="a presente">Vou tratar disso durante <marker>esta</marker> semana.</example>
+            <example correction="o presente">Vou tratar disso durante <marker>este</marker> mês.</example>
+        </rule>
+
+
         <rule id='NAO_DEIXAR_QUE_PERMITIR' name="🤵 Não 'deixar' que → permitir" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
