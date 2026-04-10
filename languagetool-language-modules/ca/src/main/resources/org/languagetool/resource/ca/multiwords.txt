@@ -1,5 +1,11 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+John Francis Clauser;NPMSSP0
+John F. Clauser;NPMSSP0
+Emilia Pérez;NPFSSP0
+Rachin Ravindra;NPMSSP0
+Iphigénie en Aulide;NPFSO00
+Iphigénie en Tauride;NPFSO00
 Freida McFadden;NPFSSP0
 Sarah Cohen;NPFSSP0
 Ágatha Ruiz de la Prada;NPFSSP0
