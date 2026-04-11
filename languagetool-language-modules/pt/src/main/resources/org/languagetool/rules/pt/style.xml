@@ -3737,7 +3737,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='PASSAR_POR_DIFICULDADES' name="🤵 'Passar' [situação negativa] → 'passar por'/enfrentar" type='style' tone_tags='formal' default='temp_off'>
+        <rule id='PASSAR_POR_DIFICULDADES' name="🤵 'Passar' [situação negativa] → 'passar por'/enfrentar" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <marker>
@@ -3760,7 +3760,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rule>
 
 
-        <rule id='DURANTE_ESTE_O_PRESENTE' name="🤵 Forma administrativa: 'presente' + expressão temporal" type='style' tone_tags='formal' default='temp_off'>
+        <rule id='DURANTE_ESTE_O_PRESENTE' name="🤵 Forma administrativa: 'presente' + expressão temporal" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token>durante</token>
