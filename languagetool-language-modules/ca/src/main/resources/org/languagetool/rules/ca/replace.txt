@@ -1,3 +1,7 @@
+avantpenúltim=antepenúltim
+avantpenúltims=antepenúltims
+avantpenúltima=antepenúltima
+avantpenúltimes=antepenúltimes
 cuartel|quartel=caserna|quarter
 cuartels|quartels=casernes|quarters
 donarmi=donar-me|donar-li
