@@ -261,7 +261,7 @@ public class PronomsFeblesHelper {
     String replacement = "";
     if (pronounsAfter) {
       if (pContainsReflexivePronoun.matcher(pronounsStr.toLowerCase()).matches()) {
-        return verbStr + pronounsStr;
+        return verbStr + transformDarrere(pronounsStr, verbStr);
       }
       if (verbStr.endsWith("r") || verbStr.endsWith("re")) {
         return verbStr + transformDarrere("-se", verbStr);
