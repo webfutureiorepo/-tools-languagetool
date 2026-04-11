@@ -6,6 +6,7 @@
 ########## Additions ##########
 AIEA	AIEA	NPFSO00
 Aiguadolç	Aiguadolç	NPMSG00
+Aldocumar	Aldocumar	NPMSO00
 Ansermet	Ansermet	NPCNSP0
 Arnaud	Arnaud	NPCNSP0
 Arquillué	Arquillué	NPCNSP0
@@ -18,6 +19,7 @@ CTranslate	CTranslate	NPCNO00
 CUDA	CUDA	NPCNO00
 Centcom	Centcom	NPMSO00
 Coliseum	Coliseum	NPMSO00
+DevOps	DevOps	NCMN000
 Dimona	Dimona	NPCSG00
 Gnossienne	Gnossiennes	NPFSO00
 Gnossiennes	Gnossiennes	NPFPO00
@@ -43,9 +45,11 @@ Petruixka	Petruixka	NPCNSP0
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Sinera	Sinera	NPFSG00
+Sintrom	Sintrom	NPMSO00
 Sundiata	Sundiata	NPMSSP0
 Urriés	Urriés	NPCSG00
 VRAM	VRAM	NCFN000
+Ventolin	Ventolin	NPMSO00
 Vicente	Vicente	NPCNSP0
 XTEC	XTEC	NPFSO00
 afterhours	afterhours	NCMN000
@@ -650,6 +654,8 @@ supercorrecta	supercorrecte	AQ0FS0
 supercorrecte	supercorrecte	AQ0MS0
 supercorrectes	supercorrecte	AQ0CP0
 supervacacions	supervacacions	NCFP000
+teleformacions	teleformació	NCFP000
+teleformació	teleformació	NCFS000
 therian	therian	AQ0CS0
 therian	therian	NCCS000
 therians	therian	AQ0CP0

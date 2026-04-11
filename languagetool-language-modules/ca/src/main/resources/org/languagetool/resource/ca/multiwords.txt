@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Afrika Bambaataa;NPMSSP0
 John Francis Clauser;NPMSSP0
 John F. Clauser;NPMSSP0
 Emilia Pérez;NPFSSP0
