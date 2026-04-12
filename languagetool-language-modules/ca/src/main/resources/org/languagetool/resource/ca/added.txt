@@ -69,10 +69,16 @@ bellea	bellea	NCFS000
 bellees	bellea	NCFP000
 breakdance	breakdance	NCMS000
 breakdancing	breakdancing	NCMS000
+brunelleschiana	brunelleschià	AQ0FS0
+brunelleschianes	brunelleschià	AQ0FP0
+brunelleschians	brunelleschià	AQ0MP0
+brunelleschià	brunelleschià	AQ0MS0
 cappelada	cappelat	AQ0FS0
 cappelades	cappelat	AQ0FP0
 cappelat	cappelat	AQ0MS0
 cappelats	cappelat	AQ0MP0
+claustret	claustret	NCMS000
+claustrets	claustret	NCMP000
 coallotjament	coallotjament	NCMS000
 coallotjaments	coallotjament	NCMP000
 comunot	comunot	AQ0MS0
@@ -387,6 +393,8 @@ hiperràpides	hiperràpid	AQ0FP0
 hiperràpids	hiperràpid	AQ0MP0
 hiperteatralitat	hiperteatralitat	NCFS000
 hiperteatralitats	hiperteatralitat	NCFP000
+hordeïna	hordeïna	NCFS000
+hordeïnes	hordeïna	NCFP000
 impeachment	impeachment	NCMS000
 impeachments	impeachment	NCMP000
 jainista	jainista	AQ0CS0
@@ -472,6 +480,8 @@ probèl·lic	probèl·lic	AQ0MS0
 probèl·lica	probèl·lic	AQ0FS0
 probèl·lics	probèl·lic	AQ0MP0
 probèl·liques	probèl·lic	AQ0FP0
+redecoracions	redecoració	NCFP000
+redecoració	redecoració	NCFS000
 reenquadr	reenquadrar	VMIP1S0B
 reenquadra	reenquadrar	VMIP3S00
 reenquadra	reenquadrar	VMM02S00
@@ -556,6 +566,8 @@ reenquadrésseu	reenquadrar	VMSI2P05
 reenquadréssim	reenquadrar	VMSI1P02
 reenquadréssiu	reenquadrar	VMSI2P02
 reenquadrí	reenquadrar	VMIS1S00
+reresagrari	reresagrari	NCMS000
+reresagraris	reresagrari	NCMP000
 retratisme	retratisme	NCMS000
 retratismes	retratisme	NCMP000
 rinxolet	rinxolet	NCMS000

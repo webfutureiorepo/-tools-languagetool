@@ -64,10 +64,16 @@ bellea
 bellees
 breakdance
 breakdancing
+brunelleschiana
+brunelleschianes
+brunelleschians
+brunelleschià
 cappelada
 cappelades
 cappelat
 cappelats
+claustret
+claustrets
 coallotjament
 coallotjaments
 comunot
@@ -309,6 +315,8 @@ hiperràpides
 hiperràpids
 hiperteatralitat
 hiperteatralitats
+hordeïna
+hordeïnes
 impeachment
 impeachments
 jainista
@@ -392,6 +400,8 @@ probèl·lic
 probèl·lica
 probèl·lics
 probèl·liques
+redecoracions
+redecoració
 reenquadr
 reenquadra
 reenquadrada
@@ -452,6 +462,8 @@ reenquadrésseu
 reenquadréssim
 reenquadréssiu
 reenquadrí
+reresagrari
+reresagraris
 retratisme
 retratismes
 rinxolet
