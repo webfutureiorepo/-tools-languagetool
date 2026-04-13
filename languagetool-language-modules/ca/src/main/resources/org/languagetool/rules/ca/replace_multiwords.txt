@@ -935,3 +935,5 @@ feria d'abril|fèria d'abril=Feria de Abril|Fira d'Abril
 passos següents a seguir=passos següents|passos que cal seguir	Eviteu la redundància.
 Mr. Hide=Mr. Hyde
 Úrsula von der Leyen=Ursula von der Leyen
+Peter Magyar=Péter Magyar
+Peter Eötvös=Péter Eötvös

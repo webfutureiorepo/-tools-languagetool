@@ -52,7 +52,7 @@ public class CatalanRemoteRewriteHelper {
   private static final Logger logger = LoggerFactory.getLogger(CatalanRemoteRewriteHelper.class);
 
   static boolean isRemoteServiceAvailable() {
-    return (SERVER_URL != null && API_KEY !=null && MODEL_ID != null);
+    return (SERVER_URL != null);
   }
 
   static String sendPostRequest(String sentence, String ruleid) {
@@ -75,12 +75,9 @@ public class CatalanRemoteRewriteHelper {
     logger.info("Requesting server " + SERVER_URL + " for rule " + ruleid);
     try {
       JSONObject payload = new JSONObject();
-      payload.put("model", MODEL_ID);
-      JSONArray messages = new JSONArray();
-      //messages.put(new JSONObject().put("role", "system").put("content", PROMPTS.get(ruleid)));
-      //messages.put(new JSONObject().put("role", "user").put("content", sentence));
-      messages.put(new JSONObject().put("role", "user").put("content",  PROMPTS.get(ruleid) + "\n\n" + sentence));
-      payload.put("messages", messages);
+      payload.put("system_prompt", PROMPTS.get(ruleid));
+      payload.put("user_prompt", sentence);
+      payload.put("temperature", 0.0);
       byte[] input = payload.toString().getBytes(StandardCharsets.UTF_8);
       URL url = new URL(SERVER_URL);
       conn = (HttpURLConnection) url.openConnection();
@@ -88,7 +85,9 @@ public class CatalanRemoteRewriteHelper {
       conn.setDoOutput(true);
       conn.setUseCaches(false); // IMPORTANT: En POST sempre a false
       conn.setInstanceFollowRedirects(true);
-      conn.setRequestProperty("Authorization", "Bearer " + API_KEY);
+      if (API_KEY != null && !API_KEY.isEmpty()) {
+          conn.setRequestProperty("Authorization", "Bearer " + API_KEY);
+      }
       conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
       conn.setRequestProperty("Accept", "application/json");
       //conn.setRequestProperty("HTTP-Referer", "");
@@ -116,11 +115,7 @@ public class CatalanRemoteRewriteHelper {
         }
         if (code == HttpURLConnection.HTTP_OK) {
           JSONObject jsonResponse = new JSONObject(response.toString());
-          return jsonResponse.getJSONArray("choices")
-            .getJSONObject(0)
-            .getJSONObject("message")
-            .getString("content")
-            .trim();
+          return jsonResponse.getString("response").trim();
         } else {
           System.err.println("API error (" + code + "): " + response + "// PAYLOAD: " + payload.toString());
           logger.error("API error (" + code + "): " + response);
