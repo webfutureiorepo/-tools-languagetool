@@ -3,6 +3,7 @@
 AIEA
 Aiguadolç
 Aldocumar
+Almisrà
 Ansermet
 Arnaud
 Arquillué
@@ -29,6 +30,7 @@ Kalman
 Kharg
 LaGuardia
 Leavitt
+Magyar
 Maven
 Menjòmetre
 Miguel

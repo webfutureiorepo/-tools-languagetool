@@ -7,6 +7,7 @@
 AIEA	AIEA	NPFSO00
 Aiguadolç	Aiguadolç	NPMSG00
 Aldocumar	Aldocumar	NPMSO00
+Almisrà	Almisrà	NPCSG00
 Ansermet	Ansermet	NPCNSP0
 Arnaud	Arnaud	NPCNSP0
 Arquillué	Arquillué	NPCNSP0
@@ -33,6 +34,7 @@ Kalman	Kalman	NPCNSP0
 Kharg	Kharg	NPCSG00
 LaGuardia	LaGuardia	NPCNG00
 Leavitt	Leavitt	NPCNSP0
+Magyar	Magyar	NPCNSP0
 Maven	Maven	NPCNO00
 Menjòmetre	Menjòmetre	NPMSO00
 Miguel	Miguel	NPCN000

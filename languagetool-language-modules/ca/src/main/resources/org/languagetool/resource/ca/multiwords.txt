@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Juan José Linz;NPMSSP0
+Juan J. Linz;NPMSSP0
+Juan Linz;NPMSSP0
 Louis-Gabriel Suchet;NPMSSP0
 New York Philharmonic;NPFSO00
 New York Philharmonic Orchestra;NPFSO00
