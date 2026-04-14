@@ -16699,7 +16699,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
                 <token postag='VMSF.+' postag_regexp='yes'/>
                 <token>que</token>
                 <token inflected='yes'>ser</token>
-                <token postag='VMP00.+' postag_regexp='yes'/>
+                <token postag='VMP00.+' postag_regexp='yes'><exception postag_regexp='yes' postag='AQ.+'/></token>
                 <example>Se me garantir que é publicado este ano letivo.</example>
             </antipattern>
 
