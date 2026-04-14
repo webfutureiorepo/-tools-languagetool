@@ -542,6 +542,13 @@ class CompoundTagger {
             || leftWord.endsWith("о")
             || PosTagHelper.hasPosTag(rightAnalyzedTokens, Pattern.compile("adj.*")) ) {
 
+          // Кримсько-Татарський - :bad
+          List<TaggedWord> lowerCompound = tagAsIsAndWithLowerCase(word.toLowerCase());
+          if( PosTagHelper.hasPosTag2(lowerCompound, Pattern.compile("adj.*bad")) ) {
+            List<AnalyzedToken> lowerCompoundToken = ukrainianTagger.asAnalyzedTokenListForTaggedWordsInternal(word, lowerCompound);
+              return lowerCompoundToken;
+          }
+          
           // tag Чорноморське/noun і чорноморське adj
           List<TaggedWord> rightWdList2 = tagAsIsAndWithLowerCase(rightWord);
           List<AnalyzedToken> rightAnalyzedTokens2 = ukrainianTagger.asAnalyzedTokenListForTaggedWordsInternal(rightWord, rightWdList2);

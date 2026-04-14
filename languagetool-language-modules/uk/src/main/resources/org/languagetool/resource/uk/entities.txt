@@ -19,6 +19,7 @@
 В-52 noun:m:nv
 Грім-2 noun:m:nv
 Ка-[0-9]+ noun:m:nv             # вертоліт
+ІСРС-2 noninfl
 Лелека-[0-9].* noun:m:nv
 М[іІ]-[56] noun:f:nv:np:prop                 # служба
 М[іІ][Гг]-[А-Я0-9]+ noun:m:nv

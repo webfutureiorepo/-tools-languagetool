@@ -85,7 +85,7 @@ public class UkrainianTaggerTest {
 
   @Test
   public void testPropLowerCase() throws IOException {
-    TestTools.myAssert("вкраїна", "вкраїна/[вкраїна]noun:inanim:f:v_naz:prop:geo:bad", tokenizer, tagger);
+    TestTools.myAssert("вкраїна", "вкраїна/[вкраїна]noun:inanim:f:v_naz:prop:geo:bad:err", tokenizer, tagger);
   }
   
   @Test
@@ -102,7 +102,7 @@ public class UkrainianTaggerTest {
     TestTools.myAssert("D", "D/[null]null", tokenizer, tagger);
 
     // latin number with cyrillic
-    TestTools.myAssert("ХІХ", "ХІХ/[ХІХ]number:latin:bad", tokenizer, tagger);
+    TestTools.myAssert("ХІХ", "ХІХ/[ХІХ]number:latin:bad:err", tokenizer, tagger);
     TestTools.myAssert("ІV", "ІV/[ІV]number:latin:bad", tokenizer, tagger);
     TestTools.myAssert("ХІХ-го", "ХІХ-го/[ХІХ-го]number:latin:bad", tokenizer, tagger);
     TestTools.myAssert("V-типу", "V-типу/[null]null", tokenizer, tagger);
@@ -565,8 +565,9 @@ public class UkrainianTaggerTest {
     TestTools.myAssert("Івано-Франківська", "Івано-Франківська/[Івано-Франківськ]noun:inanim:m:v_rod:prop:geo|Івано-Франківська/[івано-франківський]adj:f:v_kly|Івано-Франківська/[івано-франківський]adj:f:v_naz", tokenizer, tagger);
     TestTools.myAssert("Івано-Франківської", "Івано-Франківської/[івано-франківський]adj:f:v_rod", tokenizer, tagger);
     TestTools.myAssert("Переяслав-Хмельницького", "Переяслав-Хмельницького/[переяслав-хмельницький]adj:m:v_rod|Переяслав-Хмельницького/[переяслав-хмельницький]adj:m:v_zna:ranim|Переяслав-Хмельницького/[переяслав-хмельницький]adj:n:v_rod", tokenizer, tagger);
-    // bad removed in disambig
-    TestTools.myAssert("Південно-Західній", "Південно-Західній/[південно-західний]adj:f:v_dav|Південно-Західній/[південно-західний]adj:f:v_mis|Південно-Західній/[південно-західній]adj:f:v_dav:bad|Південно-Західній/[південно-західній]adj:f:v_mis:bad|Південно-Західній/[південно-західній]adj:m:v_kly:bad|Південно-Західній/[південно-західній]adj:m:v_naz:bad|Південно-Західній/[південно-західній]adj:m:v_zna:rinanim:bad", tokenizer, tagger);
+    // bad removed later in disambig
+    TestTools.myAssert("Південно-Західній", "Південно-Західній/[південно-західний]adj:f:v_dav|Південно-Західній/[південно-західний]adj:f:v_mis"
+        + "|Південно-Західній/[південно-західній]adj:f:v_dav:bad:err|Південно-Західній/[південно-західній]adj:f:v_mis:bad:err|Південно-Західній/[південно-західній]adj:m:v_kly:bad:err|Південно-Західній/[південно-західній]adj:m:v_naz:bad:err|Південно-Західній/[південно-західній]adj:m:v_zna:rinanim:bad:err", tokenizer, tagger);
     TestTools.myAssert("Південно-Східної", "Південно-Східної/[південно-східний]adj:f:v_rod", tokenizer, tagger);
     
     TestTools.myAssert("аль-Каїда", "Аль-Каїда/[Аль-Каїда]noun:inanim:f:v_naz:prop:bad", tokenizer, tagger);
@@ -716,8 +717,12 @@ public class UkrainianTaggerTest {
         "Західно-Удмуртської/[західно-удмуртський]adj:f:v_rod:bad"
         , tokenizer, tagger);
 
+    TestTools.myAssert("Кримсько-Татарський",
+        "Кримсько-Татарський/[кримсько-татарський]adj:m:v_kly|Кримсько-Татарський/[кримсько-татарський]adj:m:v_kly:bad:err|Кримсько-Татарський/[кримсько-татарський]adj:m:v_naz|Кримсько-Татарський/[кримсько-татарський]adj:m:v_naz:bad:err|Кримсько-Татарський/[кримсько-татарський]adj:m:v_zna:rinanim|Кримсько-Татарський/[кримсько-татарський]adj:m:v_zna:rinanim:bad:err"
+        , tokenizer, tagger);
+    
     TestTools.myAssert("внутрішньо-економічної",
-        "внутрішньо-економічної/[внутрішньо-економічний]adj:f:v_rod:bad"
+        "внутрішньо-економічної/[внутрішньо-економічний]adj:f:v_rod:bad:err"
         , tokenizer, tagger);
 
     TestTools.myAssert("всесвітньо-відомої",

@@ -532,7 +532,7 @@ public class UkrainianHybridDisambiguationTest {
     TestTools.myAssert("Держдепартамент", "/[null]SENT_START Держдепартамент/[Держдепартамент]noun:inanim:m:v_naz:prop|Держдепартамент/[Держдепартамент]noun:inanim:m:v_zna:prop",
         tokenizer, sentenceTokenizer, tagger, disambiguator);
 
-    TestTools.myAssert("держземагентства", "/[null]SENT_START держземагентства/[держземагентство]noun:inanim:n:v_rod:bad",
+    TestTools.myAssert("держземагентства", "/[null]SENT_START держземагентства/[держземагентство]noun:inanim:n:v_rod:bad:err",
         tokenizer, sentenceTokenizer, tagger, disambiguator);
   }
 

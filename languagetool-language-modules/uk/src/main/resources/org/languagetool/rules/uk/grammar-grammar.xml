@@ -2790,6 +2790,17 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
       <example correction="відкрив">він <marker>відрив</marker> двері</example>
     </rule>
 
+    <rule id="kruzhok" name="Кружок і гурток">
+      <pattern>
+        <token inflected="yes" postag_regexp="yes" postag="adj:[mp]:.*" regexp="yes">спортивн.*|літературн.*|історичн.*|художн.*|.*шкільн.*|шаховий|театральний|студентський|аматорський|академічний</token>
+        <marker>
+          <token inflected="yes">кружок</token>
+        </marker>
+      </pattern>
+      <message>Правильно: <suggestion><match no="2" regexp_match="(?iu)круж(.*)" regexp_replace="гурт$1"/></suggestion>?</message>
+      <example correction="гуртка">спортивного <marker>кружка</marker></example>
+    </rule>
+
     <rulegroup id="vika_viku" name="Віка і віку">
       <rule>
         <pattern>

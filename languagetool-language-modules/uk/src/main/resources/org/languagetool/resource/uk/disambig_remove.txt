@@ -2,7 +2,7 @@
 # These worms are in the dictionary but extremely rare and cause ambiguity for frequent words.
 # Anything with conditional logic should go into disambiguation.xml
 
-А-БА-БА-ГА-ЛА-МА-ГА а-ба-ба-га-ла-ма-га noun:inanim:f:v_naz:prop:bad
+А-БА-БА-ГА-ЛА-МА-ГА а-ба-ба-га-ла-ма-га noun:inanim:f:v_naz:prop:bad:err
 бабій бабіти verb:imperf:impr:s:2
 бадьорим бадьорити verb:imperf:pres:p:1:subst
 бабів бабіти verb:imperf:past:m
@@ -22,7 +22,7 @@
 білій біліти verb:imperf:impr:s:2
 білій-білій біліти-біліти verb:imperf:impr:s:2
 білім білити verb:imperf:impr:p:1
-Білорусі Білорус noun:anim:m:v_mis:prop:lname
+Білорусі білорус noun:anim:m:v_mis|Білорус noun:anim:m:v_mis:prop:lname
 блакитній блакитніти verb:imperf:impr:s:2
 благоустрою благоустроїти verb:perf:futr:s:1:bad
 борозни борознити verb:imperf:impr:s:2
@@ -195,9 +195,9 @@
 загрози загрозити verb:perf:impr:s:2
 задню заднити verb:perf:futr:s:1:arch
 заздрять заздріти verb:perf:futr:p:3:arch
+зайці зайка noun:anim:f.*
 закривав закривавити verb:perf:impr:s:2
-зале зал noun:inanim:m:v_kly
-зале заля noun:inanim:f:v_kly:alt
+зале зал noun:inanim:m:v_kly|заля noun:inanim:f:v_kly:alt
 залі заля noun:inanim:f:.*
 замало замати verb:perf:past:n:arch
 замах зам noun:anim:p:v_mis:bad
@@ -253,8 +253,10 @@
 кислим кислити verb:imperf:pres:p:1:subst
 киснем киснути verb:imperf:pres:p:1:subst
 кілько кілька noun:anim:f:v_kly
+кіп кіпа noun:inanim:p:v_rod:bad
 клей клеїти verb:imperf:impr:s:2
 клеймо клеїти verb:imperf:impr:p:1
+Кличка кличка noun:inanim:f:v_naz
 клячу клячати verb:imperf:pres:s:1:arch
 княжим княжити verb:imperf:pres:p:1:subst
 княжу княжити verb:imperf:pres:s:1
@@ -300,6 +302,7 @@
 #коли
 Має Мая noun:anim:f:v_kly:prop:fname
 майну майнути verb:perf:futr:s:1
+Максим максима noun:inanim:p:v_rod
 малій маліти verb:imperf:impr:s:2
 мати мата noun:inanim:.*
 меблі мебля noun:inanim:f:v_.*
@@ -329,8 +332,7 @@
 МОК мокнути verb:imperf:past:m
 Морено морити verb:imperf:impers
 морю морити verb:imperf:pres:s:1
-мости мостити verb:imperf:impr:s:2
-мости мость noun:anim:f:v_rod:up19:arch
+мости мостити verb:imperf:impr:s:2|мость noun:anim:f:v_rod:up19:arch
 мості мость noun:anim:f:v_.*:arch
 мужній мужніти verb:imperf:impr:s:2
 мудрим мудрити verb:imperf:pres:p:1:arch:subst
@@ -352,7 +354,7 @@
 невидержко невидержка noun:inanim:f:v_kly
 недобрий недобрити verb:perf:impr:s:2
 недогляди недоглядіти verb:perf:impr:s:2:xp2
-недопустимо недопустити verb:perf:futr:p:1:bad
+недопустимо недопустити verb:perf:futr:p:1:bad:err
 нікчемній нікчемніти verb:imperf:impr:s:2
 неможна неможний adj:f:v_...:arch
 німій німіти verb:imperf:impr:s:2
@@ -382,6 +384,7 @@
 пар парити verb:imperf:impr:s:2
 параной паранойя noun:inanim:p:v_rod:alt
 парубочим парубочити verb:imperf:pres:p:1:subst
+Пашу пахати verb:imperf:pres:s:1:bad:xp1|пашіти verb:imperf:pres:s:1|паша noun:anim:m:v_zna|паша noun:inanim:f:v_zna
 пере пер noun:anim:m:v_kly
 перевищать перевищати verb:imperf:inf:short:arch
 перевтоми перевтомити verb:perf:impr:s:2
@@ -419,7 +422,6 @@
 подій подіяти verb:perf:impr:s:2
 подію подіяти verb:perf:futr:s:1
 подовж подовжити verb:perf:impr:s:2
-погрози погрозити verb:perf:impr:s:2
 поймать поймати verb:perf:inf:short:slang
 поле полоти verb:imperf:pres:s:3
 полем полоти verb:imperf:pres:p:1:subst
@@ -454,8 +456,8 @@
 приводним приводнити verb:perf:futr:p:1:subst
 признак признака noun:inanim:p:v_rod
 прикраси прикрасити verb:perf:impr:s:2
-прими приняти verb:perf:impr:s:2:bad
-приму приняти verb:perf:futr:s:1:bad
+прими приняти verb:perf:impr:s:2:bad:err
+приму приняти verb:perf:futr:s:1:bad:err
 прийшла прийшлий adj:f:.*
 Прип'ять прип'яти verb:perf:inf:short
 притомній притомніти verb:imperf:impr:s:2
@@ -531,6 +533,7 @@
 скупим скупити verb:perf:futr:p:1:subst
 сліди слідити verb:imperf:impr:s:2
 сліпим сліпити verb:imperf:pres:p:1:subst
+слухові слух noun:.*
 смачній смачніти verb:imperf:impr:s:2
 совіти совіти verb:imperf:inf
 сором соромити verb:imperf:impr:s:2
@@ -577,6 +580,7 @@
 треба треба noun:inanim:f:v_naz
 три терти verb:imperf:impr:s:2
 три-три терти-терти verb:imperf:impr:s:2
+трону тронути verb:perf:futr:s:1:bad
 труби трубити verb:imperf:impr:s:2
 тупим тупити verb:imperf:pres:p:1:subst
 тупій тупіти verb:imperf:impr:s:2
@@ -621,7 +625,7 @@
 чесне чеснути verb:perf:futr:s:3
 чесну чеснути verb:perf:futr:s:1
 чистим чистити verb:imperf:pres:p:1:subst
-член-кореспондент член-кореспондент noun:anim:m:v_naz:bad:xp2
+член-кореспондент член-кореспондент noun:anim:m:v_naz:bad:err:xp2
 Чому Чома noun:inanim:f:v_zna:prop:geo
 чорним чорнити verb:imperf:pres:p:1:subst
 чорній чорніти verb:imperf:impr:s:2

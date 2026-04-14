@@ -4428,6 +4428,18 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
       </rule>
     </rulegroup>
 
+    <rule id="torgovelnyi_vs_torgivelnyi" name="Торговельний і торгівельний">
+      <pattern>
+        <token regexp="yes">.*торговельн.*</token>
+      </pattern>
+      <message>Правильно (аналогічно до купівельний, будівельний...): <suggestion><match 
+        no="1" regexp_match="(?iu)(.*тор)говельн(.*)" regexp_replace="$1гівельн$2"/></suggestion></message>
+      <url>https://iul-nasu.org.ua/najnovishi-rekomendatsiyi.html</url>
+      <example correction="риботоргівельного"><marker>риботорговельного</marker></example>
+      <example correction="Торгівельного"><marker>Торговельного</marker></example>
+      <example>торгівля</example>
+    </rule>
+
 <!--
     схоже, «відсутній» не має такого чіткого розділення
 
