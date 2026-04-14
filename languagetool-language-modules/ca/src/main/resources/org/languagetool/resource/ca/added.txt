@@ -16,6 +16,7 @@ Basij	Basij	NPFSO00
 Behçet	Behçet	NPCNSP0
 Breton	Breton	NPCNSP0
 CDRAM	CDRAM	NCFN000
+CSKA	CSKA	NPMSO00
 CTranslate	CTranslate	NPCNO00
 CUDA	CUDA	NPCNO00
 Centcom	Centcom	NPMSO00
@@ -27,6 +28,7 @@ Gnossiennes	Gnossiennes	NPFPO00
 Gratacós	Gratacós	NPCNSP0
 Griezmann	Griezmann	NPCNSP0
 Henkell	Henkell	NPCNSP0
+ICCROM	ICCROM	NPMSO00
 IECMA	IECMA	NPMSO00
 Ifigenia	Ifigenia	NPFSSP0
 Ifigenies	Ifigenia	NPFPSP0
@@ -42,6 +44,7 @@ Miguel	Miguel	NPMSSP0
 Nakamoto	Nakamoto	NPCNSP0
 ONNX	ONNX	NPCNO00
 OpenCode	OpenCode	NPMSO00
+Ostrom	Ostrom	NPCNSP0
 Palau-sator	Palau-sator	NPCSG00
 Petruixka	Petruixka	NPCNSP0
 Rayuela	Rayuela	NPFSO00

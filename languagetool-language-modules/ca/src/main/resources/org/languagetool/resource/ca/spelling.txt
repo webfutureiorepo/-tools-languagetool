@@ -12,6 +12,7 @@ Basij
 Behçet
 Breton
 CDRAM
+CSKA
 CTranslate
 CUDA
 Centcom
@@ -23,6 +24,7 @@ Gnossiennes
 Gratacós
 Griezmann
 Henkell
+ICCROM
 IECMA
 Ifigenia
 Ifigenies
@@ -37,6 +39,7 @@ Miguel
 Nakamoto
 ONNX
 OpenCode
+Ostrom
 Palau-sator
 Petruixka
 Rayuela
