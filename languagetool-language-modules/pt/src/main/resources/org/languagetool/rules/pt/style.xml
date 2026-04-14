@@ -9680,6 +9680,25 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
     <category id='ACADEMIC' name='🎓 Linguagem acadêmica' type='style' tone_tags="academic">
 
 
+        <rule id='COISA_DE_CERCA_DE_APROXIMADAMENTE' name="🎓🤵 Há 'coisa de' → 'cerca de'/aproximadamente" type='style' tone_tags='formal' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <pattern>
+                <token>há</token>
+                <marker>
+                    <token>coisa</token>
+                    <token>de</token>
+                </marker>
+                <token postag='Z0.+' postag_regexp='yes'/>
+                <token regexp='yes' inflected='yes'>&expressoes_de_tempo;</token>
+            </pattern>
+            <message>Expressão coloquial. Em textos formais ou académicos, prefira &quot;há cerca de&quot; ou &quot;há aproximadamente&quot;.</message>
+            <suggestion>cerca de</suggestion>
+            <suggestion>aproximadamente</suggestion>
+            <example correction="cerca de|aproximadamente">Há <marker>coisa de</marker> um mês fui lá.</example>
+            <example correction="cerca de|aproximadamente">Há <marker>coisa de</marker> dois dias fui lá.</example>
+        </rule>
+
+
         <rule id='AO_LONGO_DO_TEMPO' name="🎓 Ao longo do tempo → gradualmente/progressivamente" type='style' tone_tags='academic' is_goal_specific='true'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
@@ -16675,6 +16694,14 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <!--
       Eu acho que é perigoso subir aquela montanha sozinho. → Eu acho ser perigoso subir aquela montanha sozinho.
       -->
+
+            <antipattern>
+                <token postag='VMSF.+' postag_regexp='yes'/>
+                <token>que</token>
+                <token inflected='yes'>ser</token>
+                <token postag='VMP00.+' postag_regexp='yes'><exception postag_regexp='yes' postag='AQ.+'/></token>
+                <example>Se me garantir que é publicado este ano letivo.</example>
+            </antipattern>
 
             <antipattern>
                 <token postag='SPS00:DA.+' postag_regexp='yes'/>
