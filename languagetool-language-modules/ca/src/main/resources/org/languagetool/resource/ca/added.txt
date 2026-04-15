@@ -670,11 +670,15 @@ sintient	sintient	AQ0CS0
 sintients	sintient	AQ0CP0
 sintiència	sintiència	NCFS000
 sintiències	sintiència	NCFP000
+soci	soci	AQ0MS0
+socis	soci	AQ0MP0
 speed	speed	NCMN000
 supercorrecta	supercorrecte	AQ0FS0
 supercorrecte	supercorrecte	AQ0MS0
 supercorrectes	supercorrecte	AQ0CP0
 supervacacions	supervacacions	NCFP000
+sòcia	soci	AQ0FS0
+sòcies	soci	AQ0FP0
 teleformacions	teleformació	NCFP000
 teleformació	teleformació	NCFS000
 therian	therian	AQ0CS0

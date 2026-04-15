@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Mercatus Center;NPMSO00
+Zanny Minton Beddoes;NPFSSP0
+Gregor Samsa;NPMSSP0
 Pasqual Maragall;NPMSSP0
 Simona Sajeva;NPFSSP0
 Juan José Linz;NPMSSP0
