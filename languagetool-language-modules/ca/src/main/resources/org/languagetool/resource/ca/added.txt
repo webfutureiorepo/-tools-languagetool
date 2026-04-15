@@ -82,6 +82,10 @@ cappelada	cappelat	AQ0FS0
 cappelades	cappelat	AQ0FP0
 cappelat	cappelat	AQ0MS0
 cappelats	cappelat	AQ0MP0
+castellanomadrileny	castellanomadrileny	AQ0MS0
+castellanomadrilenya	castellanomadrileny	AQ0FS0
+castellanomadrilenyes	castellanomadrileny	AQ0FP0
+castellanomadrilenys	castellanomadrileny	AQ0MP0
 claustret	claustret	NCMS000
 claustrets	claustret	NCMP000
 coallotjament	coallotjament	NCMS000

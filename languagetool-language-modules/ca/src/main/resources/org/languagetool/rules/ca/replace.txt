@@ -3544,3 +3544,4 @@ Užhorod=Újhorod
 Grand=Gran
 Kharq=Kharg
 Esprit=Esperit
+Pascual=Pasqual

@@ -39,7 +39,6 @@ public class CatalanRemoteRewriteHelper {
 
   private static final String SERVER_URL = System.getenv("CA_REMOTE_REWRITE_SERVER");
   private static final String API_KEY = System.getenv("CA_REMOTE_REWRITE_API_KEY");
-  private static final String MODEL_ID = System.getenv("CA_REMOTE_REWRITE_MODEL_ID");
   private static int TIMEOUT_MS;
   static {
     try {
@@ -52,7 +51,7 @@ public class CatalanRemoteRewriteHelper {
   private static final Logger logger = LoggerFactory.getLogger(CatalanRemoteRewriteHelper.class);
 
   static boolean isRemoteServiceAvailable() {
-    return (SERVER_URL != null);
+    return (SERVER_URL != null && !SERVER_URL.isEmpty());
   }
 
   static String sendPostRequest(String sentence, String ruleid) {

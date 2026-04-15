@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Pasqual Maragall;NPMSSP0
 Simona Sajeva;NPFSSP0
 Juan José Linz;NPMSSP0
 Juan J. Linz;NPMSSP0

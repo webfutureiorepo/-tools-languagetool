@@ -29,6 +29,7 @@ Nakhitxevan	Nakhitxevan	NPCSG00
 Palau-Sator	Palau-Sator	NPCSG00
 Palau-Solità	Palau-Solità	NPCSG00
 Partido	Partido	NPCN000
+Pascual	Pascual	NPCN000
 Salon	Salon	NPCN000
 Sangre	Sangre	NPCN000
 Uno	Uno	NPCN000
