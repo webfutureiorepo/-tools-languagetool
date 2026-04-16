@@ -245,6 +245,15 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
 
             <antipattern>
                 <token>que</token>
+                <token postag='PI.+' postag_regexp='yes'/>
+                <token postag='RG'/>
+                <token postag='VMI.+' postag_regexp='yes'/>
+                <example>A troika provou o que muitos já suspeitavam.</example>
+                <example>Estudos mostram que muitos ainda sonham em fugir das suas casas.</example>
+            </antipattern>
+
+            <antipattern>
+                <token>que</token>
                 <token postag='RG'/>
                 <token postag='RG'/>
                 <token postag='VMI[IPS].S.+' postag_regexp='yes'/>
@@ -323,7 +332,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
                         <exception postag_regexp='yes' postag='CC|RN|SPS0.+'/>
                         <exception regexp='yes'>então|sempre</exception> <!-- Force exceptions -->
                     </token>
-                    <token postag='VMI[CFIMPS].+' postag_regexp='yes'>
+                    <token postag='VMI.+' postag_regexp='yes'>
                         <exception scope='next' postag_regexp='yes' postag='VMN0000|VMP00.+|Z0CN0|CS'/>
                         <exception postag='VMIP2P0'/>
                     </token>
