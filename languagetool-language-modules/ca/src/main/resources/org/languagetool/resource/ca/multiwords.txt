@@ -1,5 +1,9 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Pál Esterházy;NPMSSP0
+Òmnia l'Bakkali Tahiri;NPFSSP0
+Òmnia l'Bakkali;NPFSSP0
+l'Bakkali;NPFSSP0
 Mercatus Center;NPMSO00
 Zanny Minton Beddoes;NPFSSP0
 Gregor Samsa;NPMSSP0
@@ -1159,7 +1163,11 @@ Fábio Coentrao;NPMSSP0 # esadir Portugal
 Félix Alejandro Maradiaga Blandón;NPMSSP0 # esadir Nicaragua
 Félix Maradiaga;NPMSSP0 # esadir Nicaragua
 Gabriel Ferraté Pascual;NPMSSP0 # esadir Catalunya
+Gabriel Ferraté i Pascual;NPMSSP0 # esadir Catalunya
 Gabriel Ferraté;NPMSSP0 # esadir Catalunya
+Gabriel Ferrater;NPMSSP0
+Gabriel Ferrater Soler;NPMSSP0
+Ferraté Pascual;NPCNSP0
 Gabriel Magalhães;NPMSSP0 # esadir Portugal
 Gašper Marguč;NPMSSP0 # esadir Eslovènia
 Genís Sinca;NPMSSP0 # esadir Catalunya

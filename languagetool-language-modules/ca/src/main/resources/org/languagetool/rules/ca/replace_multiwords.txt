@@ -937,3 +937,5 @@ Mr. Hide=Mr. Hyde
 Úrsula von der Leyen=Ursula von der Leyen
 Peter Magyar=Péter Magyar
 Peter Eötvös=Péter Eötvös
+de forma i manera que|de mode i manera que=de manera que	Eviteu la redundància.
+a poder ser possible=si pot ser|si és possible	Eviteu una expressió redundant.
