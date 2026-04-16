@@ -575,6 +575,8 @@ reenquadrésseu	reenquadrar	VMSI2P05
 reenquadréssim	reenquadrar	VMSI1P02
 reenquadréssiu	reenquadrar	VMSI2P02
 reenquadrí	reenquadrar	VMIS1S00
+refactoritzacions	refactorització	NCFP000
+refactorització	refactorització	NCFS000
 reresagrari	reresagrari	NCMS000
 reresagraris	reresagrari	NCMP000
 retratisme	retratisme	NCMS000

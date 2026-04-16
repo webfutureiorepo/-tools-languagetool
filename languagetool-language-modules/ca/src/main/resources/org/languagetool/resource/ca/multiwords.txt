@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Just Sellés;NPMSSP0
+Just I. Sellés;NPMSSP0
 Pál Esterházy;NPMSSP0
 Òmnia l'Bakkali Tahiri;NPFSSP0
 Òmnia l'Bakkali;NPFSSP0

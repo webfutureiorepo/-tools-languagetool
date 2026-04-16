@@ -13929,7 +13929,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
                 </marker>
                 <token regexp="yes">de|d'</token>
                 <token min="0" postag="D.*" postag_regexp="yes"/>
-                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|legislatura|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
+                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
             </pattern>
             <disambig action="replace">
                 <wd lemma="fi" pos="NCFS000"/>
@@ -13942,7 +13942,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
                 </marker>
                 <token regexp="yes">de|d'</token>
                 <token min="0" postag="D.*" postag_regexp="yes"/>
-                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|legislatura|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
+                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
             </pattern>
             <disambig action="replace">
                 <wd lemma="fi" pos="NCFP000"/>
@@ -13957,7 +13957,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
                 </marker>
                 <token regexp="yes">de|d'</token>
                 <token min="0" postag="D.*" postag_regexp="yes"/>
-                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|legislatura|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
+                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
             </pattern>
             <disambig action="replace" postag="NCMS000"/>
         </rule>
@@ -13968,7 +13968,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
                 </marker>
                 <token regexp="yes">de|d'</token>
                 <token min="0" postag="D.*" postag_regexp="yes"/>
-                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|legislatura|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
+                <token regexp="yes">trajecte|viatge|festa|etapa|període|època|era|mandat|&parts_dia;|&periodes_temps;|&unitats_temps;</token>
             </pattern>
             <disambig action="replace" postag="NCMP000"/>
         </rule>
