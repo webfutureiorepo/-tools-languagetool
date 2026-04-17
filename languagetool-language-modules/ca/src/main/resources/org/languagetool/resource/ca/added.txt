@@ -27,6 +27,7 @@ Gnossienne	Gnossiennes	NPFSO00
 Gnossiennes	Gnossiennes	NPFPO00
 Gratacós	Gratacós	NPCNSP0
 Griezmann	Griezmann	NPCNSP0
+Hari	Hari	NPMSG00
 Henkell	Henkell	NPCNSP0
 ICCROM	ICCROM	NPMSO00
 IECMA	IECMA	NPMSO00
@@ -49,6 +50,7 @@ Palau-sator	Palau-sator	NPCSG00
 Petruixka	Petruixka	NPCNSP0
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
+Rostec	Rostec	NPCNO00
 Sinera	Sinera	NPFSG00
 Sintrom	Sintrom	NPMSO00
 Sundiata	Sundiata	NPMSSP0
@@ -63,6 +65,9 @@ agroparcs	agroparc	NCMP000
 andalusitzacions	andalusització	NCFP000
 andalusització	andalusització	NCFS000
 antiaccidents	antiaccidents	AQ0CN0
+antitrumpisme	antitrumpisme	NCMS000
+antitrumpista	antitrumpista	AQ0CS0
+antitrumpistes	antitrumpista	AQ0CP0
 antivaixell	antivaixell	AQ0CN0
 autocèntric	autocèntric	AQ0MS0
 autocèntrica	autocèntric	AQ0FS0

@@ -23,6 +23,7 @@ Gnossienne
 Gnossiennes
 Gratacós
 Griezmann
+Hari
 Henkell
 ICCROM
 IECMA
@@ -44,6 +45,7 @@ Palau-sator
 Petruixka
 Rayuela
 Rosselló-Pòrcel
+Rostec
 Sinera
 Sintrom
 Sundiata
@@ -58,6 +60,9 @@ agroparcs
 andalusitzacions
 andalusització
 antiaccidents
+antitrumpisme
+antitrumpista
+antitrumpistes
 antivaixell
 autocèntric
 autocèntrica
