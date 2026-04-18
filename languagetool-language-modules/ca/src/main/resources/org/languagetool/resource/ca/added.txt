@@ -39,10 +39,14 @@ LaGuardia	LaGuardia	NPCNG00
 Leavitt	Leavitt	NPCNSP0
 Magyar	Magyar	NPCNSP0
 Maven	Maven	NPCNO00
+McNeil	McNeil	NPCNSP0
+McNeill	McNeill	NPCNSP0
 Menjòmetre	Menjòmetre	NPMSO00
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0
+Minnie	Minnie	NPFSSP0
 Nakamoto	Nakamoto	NPCNSP0
+Niebuhr	Niebuhr	NPCNSP0
 ONNX	ONNX	NPCNO00
 OpenCode	OpenCode	NPMSO00
 Ostrom	Ostrom	NPCNSP0

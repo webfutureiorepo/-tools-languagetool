@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Minnie Mouse;NPFSSP0
 Chatbot Arena;NPMSO00
 Can Diviu;NPMSG00
 mas Diviu;NPMSG00

@@ -1,3 +1,5 @@
+alomillor|alumilló|alomilló|alumillor=potser|segons com,|si molt convé,
+fotball=futbol
 avantpenúltim=antepenúltim
 avantpenúltims=antepenúltims
 avantpenúltima=antepenúltima
