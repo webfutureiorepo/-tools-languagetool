@@ -16354,7 +16354,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <url>https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/sobre-o-uso-de-maiusculas-e-de-minusculas/30160</url>
 
             <antipattern>
-                <token regexp='yes' case_sensitive='yes'>Sra?|Dra?</token>
+                <token regexp='yes' case_sensitive='yes'>Sra?|Dra?|SRA?|DRA?</token>
                 <token spacebefore='no' postag='_PUNCT_PERIOD'/>
             </antipattern>
 
