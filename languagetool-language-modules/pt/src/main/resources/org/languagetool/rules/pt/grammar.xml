@@ -16379,6 +16379,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
                 <suggestion><match no='1' case_conversion='startupper'/>.</suggestion>
                 <url>https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/doutor-dr-e-licenciado/179</url>
                 <example correction="Dr.">Exmo <marker>dr.</marker> Costa,</example>
+                <example correction="Dra.">Exma <marker>dra.</marker> Costa,</example>
             </rule>
         </rulegroup>
 
