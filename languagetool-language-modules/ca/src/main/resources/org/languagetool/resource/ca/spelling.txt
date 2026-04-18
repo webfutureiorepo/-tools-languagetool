@@ -457,6 +457,8 @@ hordeïna
 hordeïnes
 impeachment
 impeachments
+inescindible
+inescindibles
 jainista
 jainistes
 kàrmic
@@ -604,6 +606,8 @@ reenquadréssiu
 reenquadrí
 refactoritzacions
 refactorització
+relegitimacions
+relegitimació
 reresagrari
 reresagraris
 retratisme

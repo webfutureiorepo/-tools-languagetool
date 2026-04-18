@@ -583,6 +583,8 @@ hordeïna	hordeïna	NCFS000
 hordeïnes	hordeïna	NCFP000
 impeachment	impeachment	NCMS000
 impeachments	impeachment	NCMP000
+inescindible	inescindible	AQ0CS0
+inescindibles	inescindible	AQ0CP0
 jainista	jainista	AQ0CS0
 jainista	jainista	NCCS000
 jainistes	jainista	AQ0CP0
@@ -756,6 +758,8 @@ reenquadréssiu	reenquadrar	VMSI2P02
 reenquadrí	reenquadrar	VMIS1S00
 refactoritzacions	refactorització	NCFP000
 refactorització	refactorització	NCFS000
+relegitimacions	relegitimació	NCFP000
+relegitimació	relegitimació	NCFS000
 reresagrari	reresagrari	NCMS000
 reresagraris	reresagrari	NCMP000
 retratisme	retratisme	NCMS000

@@ -169,7 +169,11 @@ public class CatalanRemoteRewriteHelper {
     Map.entry("Hi hagué un accident greu a l'autopista entre un camió i un turisme, morint els passatgers del turisme al cap de poc.",
       "Hi hagué un accident greu a l'autopista entre un camió i un turisme i els passatgers del turisme van morir al cap de poc."),
     Map.entry("Va arribar tard a l'examen, perdent així després tota oportunitat d'aprovar l'assignatura.",
-        "Va arribar tard a l'examen i, per això, va perdre tota oportunitat d'aprovar l'assignatura.")
+        "Va arribar tard a l'examen i, per això, va perdre tota oportunitat d'aprovar l'assignatura."),
+    Map.entry("Van anul·lar la reunió, convocant-la per a la setmana següent.",
+        "Van anul·lar la reunió i la van convocar per a la setmana següent."),
+    Map.entry("Van anul·lar la reunió, convocant-la per a la propera setmana.",
+        "Van anul·lar la reunió i la van convocar per a la propera setmana.")
 
   ),
     "CA_SPLIT_LONG_SENTENCE", Map.ofEntries(
