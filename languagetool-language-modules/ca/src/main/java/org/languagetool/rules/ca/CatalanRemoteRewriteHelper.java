@@ -50,6 +50,8 @@ public class CatalanRemoteRewriteHelper {
   }
   private static final Logger logger = LoggerFactory.getLogger(CatalanRemoteRewriteHelper.class);
 
+  private static int MAX_SENTENCE_CHARS = 550;
+
   static boolean isRemoteServiceAvailable() {
     return (SERVER_URL != null && !SERVER_URL.isEmpty());
   }
@@ -67,6 +69,10 @@ public class CatalanRemoteRewriteHelper {
       }
     }
     if (!isRemoteServiceAvailable()) {
+      return "";
+    }
+    // ignorem frases molt llargues, no tractem d'arreglar-les
+    if (sentence.length() > MAX_SENTENCE_CHARS) {
       return "";
     }
     HttpURLConnection conn = null;
