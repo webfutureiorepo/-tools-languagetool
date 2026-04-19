@@ -607,8 +607,20 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </rule>
         <rule>
             <pattern>
+                <token regexp="yes">[\(\[\{]</token>
                 <marker>
-                    <token regexp="yes" spacebefore="no">['"’”»]<exception postag="_QM_OPEN|allow_saxon_genitive" postag_regexp="yes"/></token>
+                    <token regexp="yes" spacebefore="no">['"]<exception postag="_QM_OPEN|allow_saxon_genitive" postag_regexp="yes"/></token>
+                </marker>
+                <token spacebefore="no"/>
+            </pattern>
+            <disambig action="add">
+                <wd pos="_QM_OPEN"/>
+            </disambig>
+        </rule>
+        <rule>
+            <pattern>
+                <marker>
+                    <token regexp="yes" spacebefore="no">['"’”»]<exception postag="_QM_OPEN|allow_saxon_genitive" postag_regexp="yes"/><exception scope="previous">(</exception></token>
                 </marker>
             </pattern>
             <disambig action="add">

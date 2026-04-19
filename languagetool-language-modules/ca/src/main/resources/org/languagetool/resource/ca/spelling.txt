@@ -47,6 +47,7 @@ OpenCode
 Ostrom
 Palau-sator
 Petruixka
+Quine
 Rayuela
 Rosselló-Pòrcel
 Rostec

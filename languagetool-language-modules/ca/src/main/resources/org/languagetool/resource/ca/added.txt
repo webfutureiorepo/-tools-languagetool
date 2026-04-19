@@ -52,6 +52,7 @@ OpenCode	OpenCode	NPMSO00
 Ostrom	Ostrom	NPCNSP0
 Palau-sator	Palau-sator	NPCSG00
 Petruixka	Petruixka	NPCNSP0
+Quine	Quine	NPCNSP0
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Rostec	Rostec	NPCNO00
