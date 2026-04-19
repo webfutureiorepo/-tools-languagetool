@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+il Fatto Quotidiano;NPMSO00
+Fatto Quotidiano;NPMSO00
 Minnie Mouse;NPFSSP0
 Chatbot Arena;NPMSO00
 Can Diviu;NPMSG00

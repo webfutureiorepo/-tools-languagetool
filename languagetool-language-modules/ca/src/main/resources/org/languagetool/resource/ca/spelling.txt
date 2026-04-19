@@ -17,6 +17,7 @@ CTranslate
 CUDA
 Centcom
 Coliseum
+Corriere
 DevOps
 Dimona
 Gnossienne
@@ -547,6 +548,10 @@ probèl·lic
 probèl·lica
 probèl·lics
 probèl·liques
+procrastinador
+procrastinadora
+procrastinadores
+procrastinadors
 redecoracions
 redecoració
 reenquadr

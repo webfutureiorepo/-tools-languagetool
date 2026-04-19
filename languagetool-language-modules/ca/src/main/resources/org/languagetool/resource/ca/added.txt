@@ -21,6 +21,7 @@ CTranslate	CTranslate	NPCNO00
 CUDA	CUDA	NPCNO00
 Centcom	Centcom	NPMSO00
 Coliseum	Coliseum	NPMSO00
+Corriere	Corriere	NPMSO00
 DevOps	DevOps	NCMN000
 Dimona	Dimona	NPCSG00
 Gnossienne	Gnossiennes	NPFSO00
@@ -675,6 +676,10 @@ probèl·lic	probèl·lic	AQ0MS0
 probèl·lica	probèl·lic	AQ0FS0
 probèl·lics	probèl·lic	AQ0MP0
 probèl·liques	probèl·lic	AQ0FP0
+procrastinador	procrastinador	AQ0MS0
+procrastinadora	procrastinador	AQ0FS0
+procrastinadores	procrastinador	AQ0FP0
+procrastinadors	procrastinador	AQ0MP0
 redecoracions	redecoració	NCFP000
 redecoració	redecoració	NCFS000
 reenquadr	reenquadrar	VMIP1S0B
