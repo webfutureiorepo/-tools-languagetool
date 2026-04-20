@@ -4091,6 +4091,16 @@ Copyright (C) 2012 Jaume Ortolà i Font
         </pattern>
         <disambig action="filterall"/>
     </rule>
+    <rule id="trucada" name="trucada (nom no adj)">
+        <pattern>
+            <marker>
+                <token postag="NCF.*" postag_regexp="yes" inflected="yes">trucada</token>
+            </marker>
+            <token inflected="yes">de</token>
+            <token>telèfon</token>
+        </pattern>
+        <disambig action="filterall"/>
+    </rule>
     <rulegroup id="deixar_a_part" name="deixar a part, a banda, de banda">
         <rule>
             <pattern>
@@ -18098,11 +18108,15 @@ Copyright (C) 2012 Jaume Ortolà i Font
             <token regexp="yes">me|ma</token>
             <token postag="V.P..SM." postag_regexp="yes"/>
         </antipattern>
+        <antipattern>
+            <token regexp="yes" inflected="yes">ser|estar|haver</token>
+            <token postag="V.P.*" postag_regexp="yes"/>
+        </antipattern>
         <rule>
             <!--  paraules que habitualment no són participi si no han concordat (darrere de "de"?: base de dades, sistema de partits -->
             <pattern>
                 <and>
-                    <token postag="V.P.*" postag_regexp="yes" regexp="yes">costats?|vista|partida|dada|dades|partits?|estats?|beguda|begudes|llibertat|llibertats<exception postag="_GN_.*|_GV_" postag_regexp="yes"/><exception scope="previous" regexp="yes">e|as|em|eu|an</exception></token>
+                    <token postag="V.P.*" postag_regexp="yes" regexp="yes">costats?|vista|partida|dada|dades|partits?|estats?|beguda|begudes|llibertat|llibertats|trucada|trucades<exception postag="_GN_.*|_GV_" postag_regexp="yes"/><exception scope="previous" regexp="yes">e|as|em|eu|an</exception></token>
                     <token postag="N.*" postag_regexp="yes"/>
                 </and>
             </pattern>

@@ -24,12 +24,15 @@ Coliseum	Coliseum	NPMSO00
 Corriere	Corriere	NPMSO00
 DevOps	DevOps	NCMN000
 Dimona	Dimona	NPCSG00
+Fafni	Fafni	NPMSSP0
+Fàfnir	Fàfnir	NPMSSP0
 Gnossienne	Gnossiennes	NPFSO00
 Gnossiennes	Gnossiennes	NPFPO00
 Gratacós	Gratacós	NPCNSP0
 Griezmann	Griezmann	NPCNSP0
 Hari	Hari	NPMSG00
 Henkell	Henkell	NPCNSP0
+Huysmans	Huysmans	NPCNSP0
 ICCROM	ICCROM	NPMSO00
 IECMA	IECMA	NPMSO00
 Ifigenia	Ifigenia	NPFSSP0
@@ -38,6 +41,7 @@ Kalman	Kalman	NPCNSP0
 Kharg	Kharg	NPCSG00
 LaGuardia	LaGuardia	NPCNG00
 Leavitt	Leavitt	NPCNSP0
+Lerna	Lerna	NPFSG00
 Magyar	Magyar	NPCNSP0
 Maven	Maven	NPCNO00
 McNeil	McNeil	NPCNSP0
@@ -60,6 +64,7 @@ Rostec	Rostec	NPCNO00
 Sinera	Sinera	NPFSG00
 Sintrom	Sintrom	NPMSO00
 Sundiata	Sundiata	NPMSSP0
+Susanoo	Susanoo	NPMSSP0
 Urriés	Urriés	NPCSG00
 VRAM	VRAM	NCFN000
 Ventolin	Ventolin	NPMSO00
@@ -609,6 +614,9 @@ macroabocador	macroabocador	NCMS000
 macroabocadors	macroabocador	NCMP000
 mastofauna	mastofauna	NCFS000
 mastofaunes	mastofauna	NCFP000
+matadracs	matadracs	AQ0CN0
+megafauna	megafauna	NCFS000
+megafaunes	megafauna	NCFP000
 metaliteratura	metaliteratura	NCFS000
 metaliteratures	metaliteratura	NCFP000
 minivacacions	minivacacions	NCFP000

@@ -20,12 +20,15 @@ Coliseum
 Corriere
 DevOps
 Dimona
+Fafni
+Fàfnir
 Gnossienne
 Gnossiennes
 Gratacós
 Griezmann
 Hari
 Henkell
+Huysmans
 ICCROM
 IECMA
 Ifigenia
@@ -34,6 +37,7 @@ Kalman
 Kharg
 LaGuardia
 Leavitt
+Lerna
 Magyar
 Maven
 McNeil
@@ -55,6 +59,7 @@ Rostec
 Sinera
 Sintrom
 Sundiata
+Susanoo
 Urriés
 VRAM
 Ventolin
@@ -481,6 +486,9 @@ macroabocador
 macroabocadors
 mastofauna
 mastofaunes
+matadracs
+megafauna
+megafaunes
 metaliteratura
 metaliteratures
 minivacacions
