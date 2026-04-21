@@ -29,6 +29,7 @@ Ifigeni	Ifigeni	NPMSSP0
 Kharq	Kharq	NPCSG00
 Létra	Létra	NPCN000
 Nakhitxevan	Nakhitxevan	NPCSG00
+Nauru	Nauru	NPMSG00
 Palau-Sator	Palau-Sator	NPCSG00
 Palau-Solità	Palau-Solità	NPCSG00
 Partido	Partido	NPCN000

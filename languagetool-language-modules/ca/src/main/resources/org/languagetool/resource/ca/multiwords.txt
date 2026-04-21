@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Louis Isidore Duperrey;NPMSSP0
+Hans Lassen Martens;NPMSSP0
+Tübinger Stift;NPCSO00
 Ramon Martí i Alsina;NPMSSP0
 Martí Alsina;NPCNSP0
 Hidra de Lerna;NPFSSP0
@@ -11259,7 +11262,6 @@ Doctor Music Festival	NPMSO00
 Black Music Festival	NPMSO00
 Universal Music	NPMSO00
 Universal Music Group	NPMSO00
-Feria de Abril	NCFS000
 edat mitjana	NCFS000
 pasta brisa	NCFS000
 silenci tens	NCMS000
