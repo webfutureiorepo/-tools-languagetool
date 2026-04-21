@@ -133,7 +133,7 @@ class CompoundTagger {
     dashPrefixes = ExtraDictionaryLoader.loadMap("/uk/dash_prefixes.txt");
     dashPrefixesInvalid = ExtraDictionaryLoader.loadSet("/uk/dash_prefixes_invalid.txt");
     noDashPrefixes2019 = dashPrefixes.entrySet().stream()
-         .filter(e -> e.getValue().contains("up92"))
+         .filter(e -> e.getValue().contains("alt"))
          .map(e -> e.getKey())
          .collect(Collectors.toSet());
 
@@ -533,7 +533,7 @@ class CompoundTagger {
 
     if( Character.isUpperCase(rightWord.charAt(0)) ) {
       if (word.startsWith("пів-")) {
-        List<AnalyzedToken> newAnalyzedTokens = addPluralNvTokens(word, rightAnalyzedTokens, ":up92");
+        List<AnalyzedToken> newAnalyzedTokens = addPluralNvTokens(word, rightAnalyzedTokens, ":alt");
         return newAnalyzedTokens;
       }
       else {
@@ -1562,7 +1562,7 @@ class CompoundTagger {
 //        }
 
         // міні-БПЛА - ok for up19 too
-        if( ! extraTag.equals(":up92") || ! Character.isUpperCase(analyzedToken.getLemma().charAt(0)) ) {
+        if( ! extraTag.equals(":alt") || ! Character.isUpperCase(analyzedToken.getLemma().charAt(0)) ) {
           if( StringUtils.isNotEmpty(extraTag) ) {
             posTag = PosTagHelper.addIfNotContains(posTag, extraTag);
           }
@@ -1705,9 +1705,9 @@ class CompoundTagger {
       if( apoNeeded == apo.isEmpty() ){
         addTag.add(":bad");
       }
-      if( noDashPrefixes2019.contains(prefix) ) {
-        addTag.add(":up19");
-      }
+//      if( noDashPrefixes2019.contains(prefix) ) {
+//        addTag.add(":up19");
+//      }
 
       if( right.length() >= 4 && ! StringTools.isCapitalizedWord(right) ) {
         List<TaggedWord> rightWdList = wordTagger.tag(right);

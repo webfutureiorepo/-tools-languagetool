@@ -13,7 +13,7 @@
 бай баяти verb:imperf:impr:s:2:arch
 байдужій байдужіти verb:imperf:impr:s:2
 барв барвити verb:imperf:impr:s:2
-безвісти безвість noun:inanim:f:v_rod:up19
+безвісти безвість noun:inanim:f:v_rod
 безглуздій безглуздіти verb:imperf:impr:s:2
 безлюдній безлюдніти verb:imperf:impr:s:2
 безсилій безсиліти verb:imperf:impr:s:2
@@ -179,7 +179,7 @@
 експортну експортнути verb:perf:futr:s:1:slang
 жалю жалити verb:imperf:pres:s:1
 Женю женити verb:perf:futr:s:1
-жести жесть noun:inanim:f:v_rod:up19:slang
+жести жесть noun:inanim:f:v_rod:slang
 живим живити verb:imperf:pres:p:1:subst
 жило жила noun:.*
 жовтим жовтити verb:imperf:pres:p:1:subst
@@ -332,7 +332,7 @@
 МОК мокнути verb:imperf:past:m
 Морено морити verb:imperf:impers
 морю морити verb:imperf:pres:s:1
-мости мостити verb:imperf:impr:s:2|мость noun:anim:f:v_rod:up19:arch
+мости мостити verb:imperf:impr:s:2|мость noun:anim:f:v_rod:arch
 мості мость noun:anim:f:v_.*:arch
 мужній мужніти verb:imperf:impr:s:2
 мудрим мудрити verb:imperf:pres:p:1:arch:subst
@@ -556,7 +556,7 @@
 суворій суворіти verb:imperf:impr:s:2
 сусід сусіда noun:anim:p:v_.*
 суті сутий adj:p:v.*
-суть бути verb:imperf:pres:p:3:rare
+суть бути verb:imperf:pres:p:3:arch
 твердим твердити verb:imperf:pres:p:1:subst.*
 твердій твердіти verb:imperf:impr:s:2
 твердь твердити verb:imperf:impr:s:2:xp1

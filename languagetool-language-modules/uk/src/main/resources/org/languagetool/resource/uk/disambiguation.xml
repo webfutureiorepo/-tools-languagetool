@@ -260,7 +260,7 @@ category: symbols -->
     </pattern>
     <disambig action="filter" postag="noun:anim:.*?prop:fname:alt" />
     <example type="ambiguous"
-        inputform="Адель[Адель/noun:anim:f:v_dav:nv:prop:fname:alt,Адель/noun:anim:f:v_kly:nv:prop:fname:alt,Адель/noun:anim:f:v_naz:nv:prop:fname:alt,Адель/noun:anim:f:v_naz:prop:fname:up19,Адель/noun:anim:f:v_oru:nv:prop:fname:alt,Адель/noun:anim:f:v_rod:nv:prop:fname:alt,Адель/noun:anim:f:v_zna:nv:prop:fname:alt,Адель/noun:anim:f:v_zna:prop:fname:up19]"
+        inputform="Адель[Адель/noun:anim:f:v_dav:nv:prop:fname:alt,Адель/noun:anim:f:v_kly:nv:prop:fname:alt,Адель/noun:anim:f:v_naz:nv:prop:fname:alt,Адель/noun:anim:f:v_naz:prop:fname,Адель/noun:anim:f:v_oru:nv:prop:fname:alt,Адель/noun:anim:f:v_rod:nv:prop:fname:alt,Адель/noun:anim:f:v_zna:nv:prop:fname:alt,Адель/noun:anim:f:v_zna:prop:fname]"
         outputform="Адель[Адель/noun:anim:f:v_dav:nv:prop:fname:alt,Адель/noun:anim:f:v_kly:nv:prop:fname:alt,Адель/noun:anim:f:v_naz:nv:prop:fname:alt,Адель/noun:anim:f:v_oru:nv:prop:fname:alt,Адель/noun:anim:f:v_rod:nv:prop:fname:alt,Адель/noun:anim:f:v_zna:nv:prop:fname:alt]">з <marker>Адель</marker>.</example>
     <example type="untouched">Адель прийшла додому</example>
   </rule>
@@ -2225,7 +2225,7 @@ category: symbols -->
     </pattern>
     <disambig action="filter" postag="intj:bad"/>
     <example type="ambiguous"
-        inputform="Єсть[бути/verb:imperf:pres:p:1:predic:rare,бути/verb:imperf:pres:p:2:predic:rare,бути/verb:imperf:pres:p:3:predic:rare,бути/verb:imperf:pres:s:1:predic:rare,бути/verb:imperf:pres:s:2:predic:rare,бути/verb:imperf:pres:s:3:predic:rare,єсть/intj:bad]"
+        inputform="Єсть[бути/verb:imperf:pres:p:1:predic:arch,бути/verb:imperf:pres:p:2:predic:arch,бути/verb:imperf:pres:p:3:predic:arch,бути/verb:imperf:pres:s:1:predic:arch,бути/verb:imperf:pres:s:2:predic:arch,бути/verb:imperf:pres:s:3:predic:arch,єсть/intj:bad]"
         outputform="Єсть[єсть/intj:bad]"
         ><marker>Єсть</marker>!</example>
   </rule>
@@ -2242,7 +2242,7 @@ category: symbols -->
     </pattern>
     <disambig action="filter" postag="intj:bad"/>
     <example type="ambiguous"
-        inputform="Єсть[бути/verb:imperf:pres:p:1:predic:rare,бути/verb:imperf:pres:p:2:predic:rare,бути/verb:imperf:pres:p:3:predic:rare,бути/verb:imperf:pres:s:1:predic:rare,бути/verb:imperf:pres:s:2:predic:rare,бути/verb:imperf:pres:s:3:predic:rare,єсть/intj:bad]"
+        inputform="Єсть[бути/verb:imperf:pres:p:1:predic:arch,бути/verb:imperf:pres:p:2:predic:arch,бути/verb:imperf:pres:p:3:predic:arch,бути/verb:imperf:pres:s:1:predic:arch,бути/verb:imperf:pres:s:2:predic:arch,бути/verb:imperf:pres:s:3:predic:arch,єсть/intj:bad]"
         outputform="Єсть[єсть/intj:bad]"
         ><marker>Єсть</marker>, товаришу майоре!</example>
   </rule>
@@ -2259,7 +2259,7 @@ category: symbols -->
     </pattern>
     <disambig action="filter" postag="intj:bad"/>
     <example type="ambiguous"
-        inputform="Єсть[бути/verb:imperf:pres:p:1:predic:rare,бути/verb:imperf:pres:p:2:predic:rare,бути/verb:imperf:pres:p:3:predic:rare,бути/verb:imperf:pres:s:1:predic:rare,бути/verb:imperf:pres:s:2:predic:rare,бути/verb:imperf:pres:s:3:predic:rare,єсть/intj:bad]"
+        inputform="Єсть[бути/verb:imperf:pres:p:1:predic:arch,бути/verb:imperf:pres:p:2:predic:arch,бути/verb:imperf:pres:p:3:predic:arch,бути/verb:imperf:pres:s:1:predic:arch,бути/verb:imperf:pres:s:2:predic:arch,бути/verb:imperf:pres:s:3:predic:arch,єсть/intj:bad]"
         outputform="Єсть[єсть/intj:bad]"
         ><marker>Єсть</marker> пробігтися до берега!</example>
   </rule>
@@ -2272,8 +2272,8 @@ category: symbols -->
     </pattern>
     <disambig action="remove" postag="intj:bad"/>
     <example type="ambiguous"
-        inputform="єсть[бути/verb:imperf:pres:p:1:predic:rare,бути/verb:imperf:pres:p:2:predic:rare,бути/verb:imperf:pres:p:3:predic:rare,бути/verb:imperf:pres:s:1:predic:rare,бути/verb:imperf:pres:s:2:predic:rare,бути/verb:imperf:pres:s:3:predic:rare,єсть/intj:bad]"
-        outputform="єсть[бути/verb:imperf:pres:p:1:predic:rare,бути/verb:imperf:pres:p:2:predic:rare,бути/verb:imperf:pres:p:3:predic:rare,бути/verb:imperf:pres:s:1:predic:rare,бути/verb:imperf:pres:s:2:predic:rare,бути/verb:imperf:pres:s:3:predic:rare]"
+        inputform="єсть[бути/verb:imperf:pres:p:1:predic:arch,бути/verb:imperf:pres:p:2:predic:arch,бути/verb:imperf:pres:p:3:predic:arch,бути/verb:imperf:pres:s:1:predic:arch,бути/verb:imperf:pres:s:2:predic:arch,бути/verb:imperf:pres:s:3:predic:arch,єсть/intj:bad]"
+        outputform="єсть[бути/verb:imperf:pres:p:1:predic:arch,бути/verb:imperf:pres:p:2:predic:arch,бути/verb:imperf:pres:p:3:predic:arch,бути/verb:imperf:pres:s:1:predic:arch,бути/verb:imperf:pres:s:2:predic:arch,бути/verb:imperf:pres:s:3:predic:arch]"
         >чи <marker>єсть</marker> у нас культура</example>
   </rule>
 
@@ -5322,8 +5322,8 @@ category: symbols -->
     </pattern>
     <disambig action="filter" postag="noun.*:prop:geo"/>
     <example type="ambiguous"
-        inputform="Ізюму[Ізюм/noun:inanim:m:v_dav:prop:geo,Ізюм/noun:inanim:m:v_rod:prop:geo:up19,ізюм/noun:inanim:m:v_dav:bad,ізюм/noun:inanim:m:v_rod:bad]"
-        outputform="Ізюму[Ізюм/noun:inanim:m:v_dav:prop:geo]">Приїхав з <marker>Ізюму</marker>.</example>
+        inputform="Ізюму[Ізюм/noun:inanim:m:v_dav:prop:geo,Ізюм/noun:inanim:m:v_rod:prop:geo,ізюм/noun:inanim:m:v_dav:bad,ізюм/noun:inanim:m:v_rod:bad]"
+        outputform="Ізюму[Ізюм/noun:inanim:m:v_dav:prop:geo,Ізюм/noun:inanim:m:v_rod:prop:geo]">Приїхав з <marker>Ізюму</marker>.</example>
     <example type="untouched">вироби з ізюму.</example>
   </rule>
 
