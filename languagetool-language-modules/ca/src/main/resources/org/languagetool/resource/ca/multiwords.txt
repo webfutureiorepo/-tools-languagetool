@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Ramon Martí i Alsina;NPMSSP0
+Martí Alsina;NPCNSP0
 Hidra de Lerna;NPFSSP0
 Völsunga saga;NPFSO00
 Saga völsunga;NPFSO00
