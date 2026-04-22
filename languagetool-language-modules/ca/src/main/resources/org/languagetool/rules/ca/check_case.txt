@@ -50,21 +50,32 @@ Vall de Cofrents
 Vall de Laguar
 el Vinalopó Mitjà
 l'Alt Camp
+Alt Camp
 l'Alt Empordà
+Alt Empordà
 l'Alt Penedès
+Alt Penedès
 l'Alt Urgell
+Alt Urgell
 l'Alta Ribagorça
+Alta Ribagorça
 l'Anoia
 el Bages
 el Baix Camp
+Baix Camp
 el Baix Ebre
+Baix Ebre
 el Baix Empordà
+Baix Empordà
 el Baix Llobregat
+Baix Llobregat
 el Baix Penedès
+Baix Penedès
 el Barcelonès
 el Berguedà
 la Cerdanya
 la Conca de Barberà
+Conca de Barberà
 el Garraf
 #les Garrigues
 la Garrotxa
