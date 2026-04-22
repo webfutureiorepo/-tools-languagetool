@@ -17,6 +17,7 @@ CTranslate
 CUDA
 Centcom
 Coliseum
+Compaq
 Corriere
 DevOps
 Dimona
@@ -107,6 +108,8 @@ cappelada
 cappelades
 cappelat
 cappelats
+carallot
+carallots
 castellanomadrileny
 castellanomadrilenya
 castellanomadrilenyes

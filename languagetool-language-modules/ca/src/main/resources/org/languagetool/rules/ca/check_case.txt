@@ -2475,6 +2475,8 @@ Ministeri d'Economia i Hisenda
 Ministeri de Defensa
 Ministeri d'Educació
 Ministeri d'Educació i Formació Professional i Esport
+Ministeri d'Educació i Ciència
+Ministeri d'Educació i Cultura
 cap d'Hornos
 Sant Pau Extramurs
 Sant Pere del Vaticà

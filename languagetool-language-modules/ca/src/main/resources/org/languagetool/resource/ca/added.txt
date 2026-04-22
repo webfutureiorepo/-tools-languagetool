@@ -21,6 +21,7 @@ CTranslate	CTranslate	NPCNO00
 CUDA	CUDA	NPCNO00
 Centcom	Centcom	NPMSO00
 Coliseum	Coliseum	NPMSO00
+Compaq	Compaq	NPCNSP0
 Corriere	Corriere	NPMSO00
 DevOps	DevOps	NCMN000
 Dimona	Dimona	NPCSG00
@@ -112,6 +113,8 @@ cappelada	cappelat	AQ0FS0
 cappelades	cappelat	AQ0FP0
 cappelat	cappelat	AQ0MS0
 cappelats	cappelat	AQ0MP0
+carallot	carallot	AQ0MS0
+carallots	carallot	AQ0MP0
 castellanomadrileny	castellanomadrileny	AQ0MS0
 castellanomadrilenya	castellanomadrileny	AQ0FS0
 castellanomadrilenyes	castellanomadrileny	AQ0FP0
