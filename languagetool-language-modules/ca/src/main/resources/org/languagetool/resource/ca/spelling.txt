@@ -74,6 +74,10 @@ agroparcs
 andalusitzacions
 andalusització
 antiaccidents
+anticonservador
+anticonservadora
+anticonservadores
+anticonservadors
 antitrumpisme
 antitrumpista
 antitrumpistes
@@ -491,6 +495,8 @@ inescindible
 inescindibles
 inessencial
 inessencials
+ingestionable
+ingestionables
 intercausalitat
 intercausalitats
 jainista

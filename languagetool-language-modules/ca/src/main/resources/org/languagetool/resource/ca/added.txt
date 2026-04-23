@@ -79,6 +79,10 @@ agroparcs	agroparc	NCMP000
 andalusitzacions	andalusització	NCFP000
 andalusització	andalusització	NCFS000
 antiaccidents	antiaccidents	AQ0CN0
+anticonservador	anticonservador	AQ0MS0
+anticonservadora	anticonservador	AQ0FS0
+anticonservadores	anticonservador	AQ0FP0
+anticonservadors	anticonservador	AQ0MP0
 antitrumpisme	antitrumpisme	NCMS000
 antitrumpista	antitrumpista	AQ0CS0
 antitrumpistes	antitrumpista	AQ0CP0
@@ -617,6 +621,8 @@ inescindible	inescindible	AQ0CS0
 inescindibles	inescindible	AQ0CP0
 inessencial	inessencial	AQ0CS0
 inessencials	inessencial	AQ0CP0
+ingestionable	ingestionable	AQ0CS0
+ingestionables	ingestionable	AQ0CP0
 intercausalitat	intercausalitat	NCFS000
 intercausalitats	intercausalitat	NCFP000
 jainista	jainista	AQ0CS0
