@@ -19821,6 +19821,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <suggestion>repetidamente</suggestion>
             <example correction="repetidamente">Apagaram <marker>várias vezes</marker> publicações minhas.</example>
             <example correction="repetidamente">Apagaram <marker>várias vezes</marker> comentários do Rui.</example>
+            <example>Por várias vezes caminhos foram percorridos sem resultados.</example>
         </rule>
 
 
