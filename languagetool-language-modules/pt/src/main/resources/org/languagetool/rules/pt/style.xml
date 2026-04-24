@@ -19807,26 +19807,20 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <!-- VÁRIAS VEZES vári[ao]s -->
-        <rule id='VÁRIAS_VEZES_VÁRIAS' name="✂️ Várias vezes → Vári[ao]s" type="style">
-            <!--      Created by Marco A.G.Pinto, Portuguese rule 2022-01-23 (Checked/Enhanced) (1-JAN-2022+)      -->
-            <!--
-            Apagaram várias vezes publicações minhas. → Apagaram várias publicações minhas.
-            Apagaram várias vezes comentários meus. → Apagaram vários comentários meus.
-            Apagaram várias vezes comentários do Rui. → Apagaram vários comentários do Rui.
-            -->
+        <rule id='VÁRIAS_VEZES_REPETIDAMENTE' name="✂️ Várias vezes → repetidamente" type='style' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
-                <token postag='V.+' postag_regexp='yes'/>
                 <marker>
-                    <token>várias</token>
+                    <token>várias<exception scope='previous' postag='SPS00'/></token> <!-- exception "POR várias vezes" -->
                     <token>vezes</token>
                 </marker>
-                <token postag='NC.P.+' postag_regexp='yes'/>
-                <token postag='DP.+|SPS.+' postag_regexp='yes'/>
+                <token min='0' max='1' postag='_PUNCT'/>
+                <token postag='N.+|AQ.+' postag_regexp='yes'><exception postag_regexp='yes' postag='V.+'/></token> <!-- Very strict to avoid FPs -->
             </pattern>
-            <message>&simplify_msg;</message>
-            <suggestion><match no='4' postag='NC(.)P000' postag_replace='DI0$1P0'>vários</match></suggestion>
-            <example correction="várias">Apagaram <marker>várias vezes</marker> publicações minhas.</example>
+            <message>Pode simplificar &quot;várias vezes&quot; para &quot;repetidamente&quot;.</message>
+            <suggestion>repetidamente</suggestion>
+            <example correction="repetidamente">Apagaram <marker>várias vezes</marker> publicações minhas.</example>
+            <example correction="repetidamente">Apagaram <marker>várias vezes</marker> comentários do Rui.</example>
         </rule>
 
 
