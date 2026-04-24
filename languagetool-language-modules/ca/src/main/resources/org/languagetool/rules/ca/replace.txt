@@ -1,3 +1,6 @@
+Sigena|Sijena=Sixena
+rite=ritu
+rites=ritus
 feran=faran|seran|feren|Ferran
 nublat=nuvolat
 nublada=nuvolada

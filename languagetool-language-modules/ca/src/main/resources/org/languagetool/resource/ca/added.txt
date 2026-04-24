@@ -705,6 +705,8 @@ polovtsiana	polovtsià	AQ0FS0
 polovtsianes	polovtsià	AQ0FP0
 polovtsians	polovtsià	AQ0MP0
 polovtsià	polovtsià	AQ0MS0
+postentrenament	postentrenament	NCMS000
+postentrenaments	postentrenament	NCMP000
 postpenitenciari	postpenitenciari	AQ0MS0
 postpenitenciaris	postpenitenciari	AQ0MP0
 postpenitenciària	postpenitenciari	AQ0FS0
@@ -912,10 +914,14 @@ semiparlamentari	semiparlamentari	AQ0MS0
 semiparlamentaris	semiparlamentari	AQ0MP0
 semiparlamentària	semiparlamentari	AQ0FS0
 semiparlamentàries	semiparlamentari	AQ0FP0
-sintient	sintient	AQ0CS0
-sintients	sintient	AQ0CP0
-sintiència	sintiència	NCFS000
-sintiències	sintiència	NCFP000
+sentient	sentient	AQ0CS0
+sentients	sentient	AQ0CP0
+sentiència	sentiència	NCFS000
+sentiències	sentiència	NCFP000
+sintent	sintent	AQ0CS0
+sintents	sintent	AQ0CP0
+sintència	sintència	NCFS000
+sintències	sintència	NCFP000
 soci	soci	AQ0MS0
 socis	soci	AQ0MP0
 speed	speed	NCMN000

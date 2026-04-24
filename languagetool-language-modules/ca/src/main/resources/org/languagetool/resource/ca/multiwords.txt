@@ -1,5 +1,9 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Mars Attacks;NPCNO00
+Eduardo Dato Iradier;NPMSSP0
+Eduardo Dato;NPMSSP0
+Dato Iradier;NPCNSP0
 Louis Isidore Duperrey;NPMSSP0
 Hans Lassen Martens;NPMSSP0
 Tübinger Stift;NPCSO00

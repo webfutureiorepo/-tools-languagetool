@@ -577,6 +577,8 @@ polovtsiana
 polovtsianes
 polovtsians
 polovtsià
+postentrenament
+postentrenaments
 postpenitenciari
 postpenitenciaris
 postpenitenciària
@@ -736,10 +738,14 @@ semiparlamentari
 semiparlamentaris
 semiparlamentària
 semiparlamentàries
-sintient
-sintients
-sintiència
-sintiències
+sentient
+sentients
+sentiència
+sentiències
+sintent
+sintents
+sintència
+sintències
 soci
 socis
 speed
