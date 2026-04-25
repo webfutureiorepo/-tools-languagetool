@@ -19807,15 +19807,16 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='VÁRIAS_VEZES_REPETIDAMENTE' name="✂️ Várias vezes → repetidamente" type='style' default='temp_off'>
+        <rule id='VÁRIAS_VEZES_REPETIDAMENTE' name="✂️ Várias vezes → repetidamente" type='style'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
+                <token postag='V.+' postag_regexp='yes'/>
                 <marker>
-                    <token>várias<exception scope='previous' postag='SPS00'/></token> <!-- exception "POR várias vezes" -->
+                    <token>várias</token>
                     <token>vezes</token>
                 </marker>
                 <token min='0' max='1' postag='_PUNCT'/>
-                <token postag='N.+|AQ.+' postag_regexp='yes'><exception postag_regexp='yes' postag='V.+|RG'/></token> <!-- Very strict to avoid FPs -->
+                <token postag='NC.+' postag_regexp='yes'><exception postag_regexp='yes' postag='V.+|AQ.+|RG'/></token> <!-- Very strict to avoid FPs -->
             </pattern>
             <message>Pode simplificar &quot;várias vezes&quot; para &quot;repetidamente&quot;.</message>
             <suggestion>repetidamente</suggestion>
