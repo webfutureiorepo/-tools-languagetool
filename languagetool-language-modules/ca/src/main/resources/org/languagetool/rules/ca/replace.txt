@@ -1,3 +1,4 @@
+repelús|repel·lús=repulsió|repugnància|esgarrifança
 baterista=bateria
 bateristes=bateries
 proliferament=proliferació
@@ -16,7 +17,7 @@ atrevés=a través
 se'li=se li
 mismíssim|mismissim=mateix|en persona
 mismíssima|mismissima=mateixa|en persona
-mismíssims|mismissims=mateixo|en persona
+mismíssims|mismissims=mateixos|en persona
 mismíssimes|mismissimes=mateixes|en persona
 finde=cap de setmana
 findes=caps de setmana
