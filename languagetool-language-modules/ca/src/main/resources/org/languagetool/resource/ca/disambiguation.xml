@@ -6071,6 +6071,11 @@ Copyright (C) 2012 Jaume Ortolà i Font
             <token>de</token>
             <token regexp="yes" inflected="yes">canó|pistola|fusell</token>
         </antipattern>
+        <antipattern>
+            <token regexp="yes">fins|finsa</token>
+            <token min="0">a</token>
+            <token>aviat</token>
+        </antipattern>
         <pattern>
             <token regexp="yes">&formes_HAVER_sense_hac;</token>
             <token min="0" regexp="yes">&particula_entre_auxiliar_participi;</token>

@@ -1,6 +1,9 @@
 #Només funciona amb verbs de la primera conjugació, acabats en -ar, que són la majoria
 #extendre=estendre #caldria afegir el paradigma verbal
 #acometre=escometre|envestir
+machihembrar|matxihembrar|machiembrar|matxiembrar=encadellar
+sellegar=segellar
+alegar=al·legar
 nivellar=anivellar
 surtir=sortir
 desposar=casar|esposar
@@ -82,7 +85,7 @@ metamorfositzar=metamorfosar|metamorfitzar
 rebujar=rebutjar
 retxasar|retxassar|retxaçar=rebutjar|refusar
 concebir=concebre
-travesar|atravesar|atravessar=travessar
+travesar|atravesar|atravessar|atrevesar|atrevessar=travessar
 reblincar|rebrincar=revinclar
 pitorrear|pitorrejar=rifar|passejar|fotre|burlar|riure
 aperturar=obrir|inaugurar
@@ -166,7 +169,7 @@ difundir=difondre
 sobreseguir=sobreseure
 confundir=confondre
 permanèixer=restar|estar|quedar|romandre
-resetejar=reiniciar|reinicialitzar
+resetejar|resetear=reiniciar|reinicialitzar
 ramdomitzar=aleatoritzar
 adentrar=endinsar
 ingeniar=enginyar
