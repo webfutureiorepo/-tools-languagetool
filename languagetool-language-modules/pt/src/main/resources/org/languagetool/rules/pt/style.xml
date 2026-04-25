@@ -19807,7 +19807,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='VÁRIAS_VEZES_REPETIDAMENTE' name="✂️ Várias vezes → repetidamente" type='style' default='temp_off'>
+        <rule id='VÁRIAS_VEZES_REPETIDAMENTE' name="✂️ Várias vezes → repetidamente" type='style'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <marker>
