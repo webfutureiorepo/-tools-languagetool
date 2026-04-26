@@ -30,6 +30,7 @@ FUNDAE	FUNDAE	NPFSO00
 Fafni	Fafni	NPMSSP0
 Fortasec	Fortasec	NPMSO00
 Fàfnir	Fàfnir	NPMSSP0
+Gehry	Gehry	NPCNSP0
 Gnossienne	Gnossiennes	NPFSO00
 Gnossiennes	Gnossiennes	NPFPO00
 Gratacós	Gratacós	NPCNSP0

@@ -110,7 +110,7 @@
 <!ENTITY expressio_DOS_NOMS "tàndem|balanç|format|proporció|aliatge|antagonisme|associació|binomi|cicle|concordança|connexió|contraposició|corpus|correcció|corrector|debat|diccionari|dualitat|eix|figura|interpretació|paral·lel|parell|parella|raó|relació|ràtio|taula|traducció|traductor|equivalent|equivalència|columna|mobilitat|reacció|dicotomia|confusió|interacció|díade|bilingüe|trilingüe|oposició|divisió">
 <!ENTITY denominacio "element|paraula|mot|terme|expressió|vocable|nom|tipus|denominació|gentilici|terminació|arrel|lema">
 <!ENTITY apostrophe "['’´`′&#x0092;&#x0091;]">
-<!ENTITY common_english_nouns_feminine "School|Tower|University|Society|League|Corporation|Association|Gallery|Navy|Area|Cup|Foundation|Conference|Tool|Union|Agency|Company|Force|Licence|License|Station|House|Suite">
+<!ENTITY common_english_nouns_feminine "School|Tower|University|Society|League|Corporation|Association|Gallery|Navy|Area|Cup|Foundation|Conference|Tool|Union|Agency|Company|Force|Licence|License|Station|House|Suite|Orchestra">
 <!ENTITY common_english_nouns_masculine "FC|CF|Fest|Club|TM|UD|UE|SD|Team|Day|Center|Centre|Hilton|Group|Museum|Studio|College|Trophy|Squadron|Game">
 <!ENTITY noms_TE_INFUSIO "agulla|all|alvocat|amiana|angèlica|anís|api|arbre|avajó|bedoll|berbena|bombolles|Boston|bresquilla|bresquiller|buguenvíl·lia|burro|camamilla|campana|canyella|Canàries|carxofa|citronel·la|civada|clau|coca|compost|cua|dent|enciam|espècia|estrella|eucaliptus|eucaliputs|farigola|fenigrec|fenoll|flor|fong|fonoll|fruit|fruita|frígola|fulla|gengibre|gerd|gerdó|gesmil|gesmiler|gessamí|Grècia|herba|hibisc|insulina|Jamaica|Java|julivert|kombutxa|lavanda|llavor|lletuga|llima|llimona|llimó|llorer|menta|mirtil|nabiu|Nadal|nespre|olivera|ordi|orenga|ortiga|pinya|pinyol|poliol|poma|préssec|quina|regalèssia|roca|roibos|romaní|romer|rosa|rosella|senigrec|taronga|tertúlia|til·la|valeriana|massala">
 <!ENTITY adjectius_TE_INFUSIO "descafeïnat|mòlt|jove|conegut|preparat|empaquetat|xin[èé]s|amargant|sud-americà|instantani|lleuger|indi|roquer|dolç|fals|bord|tradicional|gal·l[éè]s|pudent|salvatge|àrab|angl[éè]s|fosc|negre|verd|vermell|blanc|gelat|fred|calent|turc|fermentat|oolong">
@@ -209,7 +209,7 @@
 <!ENTITY apostrofen_ela "Slesvig|Slesvig-Holstein|striptease|Sporting|statu|scherzo|ftalat|snack|Stradivarius|zwitterió|Hble|spogomi|ska|n-èsim|n-èsima">
 <!ENTITY unitats "CV|cc|aC|dC|AM|PM|MB|GB|TB|M|m?[lL]|mmHg|dB|mm|cm|dm|m|km|d|h|min|s|seg|g|kg|Hz|[kM]Hz|°[FC]|K|pts|ptes|M?[£€$]|(mm|cm|dm|m|km)[23²³]">
 <!ENTITY unitats_SI "(da|h|k|M|G|T|P|E|Z|Y|d|c|m|µ|n|p|f|a|z|y)?(m|g|s|A|K|cd|mol|Hz|N|Pa|J|W|Wh|C|V|Ω|S|F|T|Wb|H|rad|sr|lm|lx|Bq|Gy|Sv|kat|l|L)[²³23]?">
-<!ENTITY unitats_temps "segon|minut|hora|horeta|dia|jorn|jornada|setmana|quinzena|mes|(tri|quadri|se)mestre|any|lustre|dècada|decenni|segle|mil·lenni|mil·lenari">
+<!ENTITY unitats_temps "segon|minut|hora|horeta|dia|jorn|jornada|setmana|quinzena|mes|trimestre|quadrimestre|semestre|any|lustre|dècada|decenni|segle|mil·lenni|mil·lenari|minutet|segonet|anyet">
 <!ENTITY periodes_temps "molt|poc|temps|temporada|temporadeta|estona|estoneta|estació|curs|eternitat|legislatura"> <!-- vida, període -->
 <!ENTITY verbs_no_apostrofen "halar|ioditzar|iotitzar|iodurar|iodar|hackejar">
 <!ENTITY verbs_no_intrans_consonant "criticar|convidar|facultar|nomenar|desheretar|satisfer|felicitar|perjudicar|concernir|cansar|sorprendre|complaure|silenciar|convèncer|persuadir"> <!--|preocupar|molestar-->

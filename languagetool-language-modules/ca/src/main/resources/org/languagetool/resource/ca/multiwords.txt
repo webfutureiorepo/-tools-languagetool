@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Tilson Thomas;NPCNSP0
+Olga Sacharoff;NPFSSP0
 Mars Attacks;NPCNO00
 Eduardo Dato Iradier;NPMSSP0
 Eduardo Dato;NPMSSP0
