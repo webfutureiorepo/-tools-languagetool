@@ -1,3 +1,5 @@
+contrats=contractes|contrast
+contrat=contracte|contrast
 repelús|repel·lús=repulsió|repugnància|esgarrifança
 baterista=bateria
 bateristes=bateries
