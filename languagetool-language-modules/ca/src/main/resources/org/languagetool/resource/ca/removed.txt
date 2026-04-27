@@ -41,5 +41,7 @@ Urriés	Urriés	NPCN000
 Vieja	Vieja	NPCN000
 Zombie	Zombie	NPCN000
 Zombies	Zombies	NPCN000
+blaveta	blaveta	NCFS000
+blavetes	blaveta	NCFP000
 procorrent	procorrent	NCMS000
 procorrents	procorrent	NCMP000

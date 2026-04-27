@@ -5299,6 +5299,11 @@ Copyright (C) 2012 Jaume Ortolà i Font
             <token inflected="yes" regexp="yes">voler|deure|poder|preferir|desitjar</token>
             <token postag="V.N.*" postag_regexp="yes"/>
         </antipattern>
+        <antipattern>
+            <!-- "te dona" és ambigu-->
+            <token inflected="yes">donar</token>
+            <token postag="[DAN].*" postag_regexp="yes"/>
+        </antipattern>
         <pattern>
             <token>te</token>
             <marker>
