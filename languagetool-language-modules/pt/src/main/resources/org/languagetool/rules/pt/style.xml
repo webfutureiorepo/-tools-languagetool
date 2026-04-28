@@ -9348,7 +9348,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='ACHAR_QUE' name="🤵 'achar' que → considerar/entender/julgar/supor/pensar" tags='picky' type='style' tone_tags='formal' default='temp_off'>
+        <rule id='ACHO_QUE' name="🤵 'achar' que → considerar/entender/julgar/supor/pensar" tags='picky' type='style' tone_tags='formal' default='temp_off'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token postag='PP.+|D[AI].+|SENT_START|_PUNCT' postag_regexp='yes'/>
