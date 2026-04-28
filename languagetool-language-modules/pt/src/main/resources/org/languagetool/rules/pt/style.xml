@@ -9347,21 +9347,28 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             </rule>
         </rulegroup>
 
-        <rule id='ACHO_QUE' name="penso/julgo que" tags='picky' default='off'>
+
+        <rule id='ACHO_QUE' name="🤵 'achar' que → considerar/entender/julgar/supor/pensar" tags='picky' type='style' tone_tags='formal' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
-                <token postag='C.+' postag_regexp='yes'/>
+                <token postag='PP.+|D[AI].+|SENT_START|_PUNCT' postag_regexp='yes'/>
+                <token min='0' max='2' postag='N.+|AQ.+|RM|RG|RN' postag_regexp='yes'><exception postag_regexp='yes' postag='V.+'/></token>
                 <marker>
-                    <token inflected='yes'>achar</token>
-                    <token>que</token>
+                    <token  postag='V.+' postag_regexp='yes' inflected='yes'>achar</token>
                 </marker>
+                <token>que</token>
             </pattern>
             <message>&informal_msg;</message>
-            <suggestion><match no='2' postag='V.+' postag_regexp='yes'>pensar</match> que</suggestion>
-            <suggestion><match no='2' postag='V.+' postag_regexp='yes'>julgar</match> que</suggestion>
-            <suggestion><match no='2' postag='V.+' postag_regexp='yes'>acreditar</match> que</suggestion>
-            <suggestion><match no='2' postag='V.+' postag_regexp='yes'>supor</match> que</suggestion>
-            <example correction='pensávamos que|julgávamos que|acreditávamos que|supúnhamos que'>Já não íamos lá há algum tempo porque <marker>achávamos que</marker> a qualidade tinha vindo a cair.</example>
+            <suggestion><match no='3' postag='V.+' postag_regexp='yes'>considerar</match></suggestion>
+            <suggestion><match no='3' postag='V.+' postag_regexp='yes'>entender</match></suggestion>
+            <suggestion><match no='3' postag='V.+' postag_regexp='yes'>julgar</match></suggestion>
+            <suggestion><match no='3' postag='V.+' postag_regexp='yes'>supor</match></suggestion>
+            <suggestion><match no='3' postag='V.+' postag_regexp='yes'>pensar</match></suggestion>
+            <example correction='considero|entendo|julgo|suponho|penso'>Não <marker>acho</marker> que a solução seja viável.</example>
+            <example correction='considera|entende|julga|supõe|pensa'>O Rui <marker>acha</marker> que decidiu bem.</example>
+            <example correction='considera|entende|julga|supõe|pensa'>A Ana realmente <marker>acha</marker> que escolheu bem.</example>
         </rule>
+
 
         <rule id='BASEIA-SE_EM' name="Tem por base" default='off'>
             <!--      Created by Marco A.G.Pinto, Portuguese rule      -->
