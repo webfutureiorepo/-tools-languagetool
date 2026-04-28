@@ -3528,6 +3528,86 @@ category: symbols -->
     <example type="untouched">переконати шляхом примусу.</example>
   </rule>
 
+  <rule name="осі - вісь" id="osi_vis_1">
+    <pattern>
+      <token regexp="yes" inflected="yes">навколо|до|вздовж|відносно|від|біля|держава</token>
+      <token postag_regexp="yes" postag="adj:f:v_rod.*" min="0"/>
+      <marker>
+        <token>осі</token>
+      </marker>
+    </pattern>
+    <disambig action="filter" postag="noun:inanim:f:v_rod"/>
+    <example type="ambiguous"
+        inputform="осі[вісь/noun:inanim:f:v_dav,вісь/noun:inanim:f:v_rod,вісь/noun:inanim:p:v_naz,вісь/noun:inanim:p:v_zna,оса/noun:anim:f:v_dav,осей/adj:p:v_naz:pron:dem:arch,осей/adj:p:v_zna:rinanim:pron:dem:arch]"
+        outputform="осі[вісь/noun:inanim:f:v_rod]">навколо своєї <marker>осі</marker>.</example>
+    <example type="ambiguous"
+        inputform="осі[вісь/noun:inanim:f:v_dav,вісь/noun:inanim:f:v_rod,вісь/noun:inanim:p:v_naz,вісь/noun:inanim:p:v_zna,оса/noun:anim:f:v_dav,осей/adj:p:v_naz:pron:dem:arch,осей/adj:p:v_zna:rinanim:pron:dem:arch]"
+        outputform="осі[вісь/noun:inanim:f:v_rod]">з державами <marker>осі</marker>.</example>
+    <example type="untouched">на осі були смужки</example>
+  </rule>
+
+  <rule name="осі - вісь" id="osi_vis_2">
+    <pattern>
+      <token regexp="yes" inflected="yes">по</token>
+      <token postag_regexp="yes" postag="adj:f:v_mis.*" min="0"/>
+      <marker>
+        <token>осі</token>
+      </marker>
+    </pattern>
+    <disambig action="filter" postag="noun:inanim:f:v_mis"/>
+    <example type="ambiguous"
+        inputform="осі[вісь/noun:inanim:f:v_dav,вісь/noun:inanim:f:v_mis,вісь/noun:inanim:f:v_rod,вісь/noun:inanim:p:v_naz,вісь/noun:inanim:p:v_zna,оса/noun:anim:f:v_dav,оса/noun:anim:f:v_mis,осей/adj:p:v_naz:pron:dem:arch,осей/adj:p:v_zna:rinanim:pron:dem:arch]"
+        outputform="осі[вісь/noun:inanim:f:v_mis]">по <marker>осі</marker>.</example>
+    <example type="untouched">на осі були смужки</example>
+  </rule>
+
+  <rule name="в тумані" id="v_tumani">
+    <pattern>
+      <token regexp="yes">[ву]</token>
+      <token postag_regexp="yes" postag="adj:m:v_mis.*" min="0"/>
+      <marker>
+        <token>тумані</token>
+      </marker>
+    </pattern>
+    <disambig action="filter" postag="noun:inanim:m:v_mis:xp2"/>
+    <example type="ambiguous"
+        inputform="тумані[туман/noun:inanim:m:v_mis:arch:xp1,туман/noun:inanim:m:v_mis:xp2]"
+        outputform="тумані[туман/noun:inanim:m:v_mis:xp2]">в синьому <marker>тумані</marker>.</example>
+    <example type="untouched">тумані</example>
+  </rule>
+
+  <rule name="плитка - ім." id="plitka_noun">
+    <pattern>
+      <unify>
+        <feature id="gender"/>
+        <feature id="case"/>
+        <token postag_regexp="yes" postag="adj:f:v_(naz|oru).*"/>
+        <marker>
+          <token inflected="yes" postag_regexp="yes" postag="noun:inanim:f:v_(naz|oru).*">плитка</token>
+        </marker>
+      </unify>
+    </pattern>
+    <disambig action="filter" postag="noun:inanim:f:v_.*"/>
+    <example type="ambiguous"
+        inputform="плитка[плитка/noun:inanim:f:v_naz,плиткий/adj:f:v_kly:compb:arch,плиткий/adj:f:v_naz:compb:arch]"
+        outputform="плитка[плитка/noun:inanim:f:v_naz]">керамічна <marker>плитка</marker>.</example>
+    <example type="untouched">ця річка, вона плитка</example>
+  </rule>
+
+  <rule name="урядовці - мн." id="uryadovtsi_plural">
+    <pattern>
+      <token postag_regexp="yes" postag="adj:p:v_naz.*"/>
+      <marker>
+        <token>урядовці</token>
+      </marker>
+    </pattern>
+    <disambig action="filter" postag="noun:anim:p:v_naz.*"/>
+    <example type="ambiguous"
+        inputform="урядовці[урядовець/noun:anim:m:v_mis,урядовець/noun:anim:p:v_kly,урядовець/noun:anim:p:v_naz,урядовка/noun:anim:f:v_dav:arch,урядовка/noun:anim:f:v_mis:arch]"
+        outputform="урядовці[урядовець/noun:anim:p:v_naz]">державні <marker>урядовці</marker>.</example>
+    <example type="untouched">цій урядовці</example>
+  </rule>
+
   <rule name="Меж - іменн." id="mezh_noun_1">
     <antipattern>
       <token>меж</token>
