@@ -9348,11 +9348,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rule id='ACHO_QUE' name="🤵 'achar' que → considerar/entender/julgar/supor/pensar" tags='picky' type='style' tone_tags='formal' default='temp_off'>
+        <rule id='ACHAR_QUE' name="🤵 'achar' que → considerar/entender/julgar/supor/pensar" tags='picky' type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
                 <token postag='PP.+|D[AI].+|SENT_START|_PUNCT' postag_regexp='yes'/>
-                <token min='0' max='2' postag='N.+|AQ.+|RM|RG|RN' postag_regexp='yes'><exception postag_regexp='yes' postag='V.+'/></token>
+                <token min='0' max='2' postag='N.+|AQ.+|RM|RG|RN|CC' postag_regexp='yes'><exception postag_regexp='yes' postag='V.+'/></token>
                 <marker>
                     <token  postag='V.+' postag_regexp='yes' inflected='yes'>achar</token>
                 </marker>
@@ -9367,6 +9367,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
             <example correction='considero|entendo|julgo|suponho|penso'>Não <marker>acho</marker> que a solução seja viável.</example>
             <example correction='considera|entende|julga|supõe|pensa'>O Rui <marker>acha</marker> que decidiu bem.</example>
             <example correction='considera|entende|julga|supõe|pensa'>A Ana realmente <marker>acha</marker> que escolheu bem.</example>
+            <example correction='considera|entende|julga|supõe|pensa'>A Ana ainda <marker>acha</marker> que escolheu bem.</example>
         </rule>
 
 
