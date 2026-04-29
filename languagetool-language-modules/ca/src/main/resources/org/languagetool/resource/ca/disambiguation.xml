@@ -23249,7 +23249,7 @@ Copyright (C) 2012 Jaume Ortolà i Font
             <pattern>
                 <token spacebefore="yes">-</token>
                 <marker>
-                    <token regexp="yes" spacebefore="no">indre|ldre|ns|scs|scos|igs|ix|eix|é|ena|è|it|ert|ir|ar|er|re|ívola?</token>
+                    <token regexp="yes" spacebefore="no">indre|ldre|ns|scs|scos|igs|ix|eix|é|ena|è|it|ert|ir|ar|er|re|ívola?|itzar</token>
                 </marker>
             </pattern>
             <disambig action="immunize"/>

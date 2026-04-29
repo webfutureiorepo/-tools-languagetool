@@ -784,6 +784,12 @@ espresso	espresso	NCMS000
 espressos	espresso	NCMP000
 estalviable	estalviable	AQ0CS0
 estalviables	estalviable	AQ0CP0
+etnocràcia	etnocràcia	NCFS000
+etnocràcies	etnocràcia	NCFP000
+etnocràtic	etnocràtic	AQ0MS0
+etnocràtica	etnocràtic	AQ0FS0
+etnocràtics	etnocràtic	AQ0MP0
+etnocràtiques	etnocràtic	AQ0FP0
 euro-iuan	euro-iuan	NCMS000
 euro-iuans	euro-iuan	NCMP000
 expresoner	expresoner	NCMS000

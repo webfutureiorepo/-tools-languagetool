@@ -506,3 +506,5 @@ frames=fotogrames
 rebranding=redefinició de marca|actualització de marca|renovació de marca
 shutdown=tancament administratiu
 NATO=OTAN
+forensic=forense|informe forense
+forensics=forenses|informes forenses
