@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Park Ji-min;NPMSSP0
+Magnus von Horn;NPMSSP0
 NDR Elbphilharmonie Orchester;NPFSO00
 Tilson Thomas;NPCNSP0
 Olga Sacharoff;NPFSSP0

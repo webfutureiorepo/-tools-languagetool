@@ -1,3 +1,4 @@
+ficcionalització=ficcionament|ficció
 daportar=d'aportar|deportar
 contrats=contractes|contrast
 contrat=contracte|contrast
