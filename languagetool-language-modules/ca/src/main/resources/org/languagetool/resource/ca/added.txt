@@ -24,6 +24,7 @@ Centcom	Centcom	NPMSO00
 Coliseum	Coliseum	NPMSO00
 Compaq	Compaq	NPCNSP0
 Corriere	Corriere	NPMSO00
+Cospedal	Cospedal	NPCNSP0
 DevOps	DevOps	NCMN000
 Dimona	Dimona	NPCSG00
 FUNDAE	FUNDAE	NPFSO00
