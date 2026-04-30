@@ -1,5 +1,11 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+J. Craig Venter Institute;NPMSO00
+Emili Sagi;NPMSSP0
+Aristip de Cirene;NPMSSP0
+Joseph-Marie Degérando;NPMSSP0
+Joseph-Marie de Gérando;NPMSSP0
+de Gérando;NPCNSP0
 von Laue;NPCNSP0
 Chris Bonington;NPMSSP0
 Luis Bárcenas;NPMSSP0

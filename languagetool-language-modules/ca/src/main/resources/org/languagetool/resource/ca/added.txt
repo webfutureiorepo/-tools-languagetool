@@ -764,6 +764,8 @@ despavimentéssiu	despavimentar	VMSI2P02
 despavimentí	despavimentar	VMIS1S00
 dramot	dramot	NCMS000
 dramots	dramot	NCMP000
+e-single	e-single	NCMS000
+e-singles	e-single	NCMP000
 entregable	entregable	AQ0CS0
 entregables	entregable	AQ0CP0
 epifenomènic	epifenomènic	AQ0MS0
