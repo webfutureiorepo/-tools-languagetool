@@ -785,6 +785,10 @@ hipsteritzéssiu
 hipsteritzí
 hordeïna
 hordeïnes
+ideador
+ideadora
+ideadores
+ideadors
 impeachment
 impeachments
 inescindible
@@ -960,6 +964,8 @@ postentrenament
 postentrenaments
 postfeixisme
 postfeixismes
+postinstitucional
+postinstitucionals
 postpenitenciari
 postpenitenciaris
 postpenitenciària

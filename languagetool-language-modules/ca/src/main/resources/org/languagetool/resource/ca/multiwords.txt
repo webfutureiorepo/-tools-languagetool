@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+von Laue;NPCNSP0
 Chris Bonington;NPMSSP0
 Luis Bárcenas;NPMSSP0
 Park Ji-min;NPMSSP0

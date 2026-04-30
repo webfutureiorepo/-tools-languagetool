@@ -1,3 +1,5 @@
+inamobilitat=inamovibilitat|immobilitat
+inamobilitats=inamovibilitats|immobilitats
 ficcionalització=ficcionament|ficció
 daportar=d'aportar|deportar
 contrats=contractes|contrast

@@ -1009,6 +1009,10 @@ hipsteritzéssiu	hipsteritzar	VMSI2P02
 hipsteritzí	hipsteritzar	VMIS1S00
 hordeïna	hordeïna	NCFS000
 hordeïnes	hordeïna	NCFP000
+ideador	ideador	AQ0MS0
+ideadora	ideador	AQ0FS0
+ideadores	ideador	AQ0FP0
+ideadors	ideador	AQ0MP0
 impeachment	impeachment	NCMS000
 impeachments	impeachment	NCMP000
 inescindible	inescindible	AQ0CS0
@@ -1210,6 +1214,8 @@ postentrenament	postentrenament	NCMS000
 postentrenaments	postentrenament	NCMP000
 postfeixisme	postfeixisme	NCMS000
 postfeixismes	postfeixisme	NCMP000
+postinstitucional	postinstitucional	AQ0CS0
+postinstitucionals	postinstitucional	AQ0CP0
 postpenitenciari	postpenitenciari	AQ0MS0
 postpenitenciaris	postpenitenciari	AQ0MP0
 postpenitenciària	postpenitenciari	AQ0FS0

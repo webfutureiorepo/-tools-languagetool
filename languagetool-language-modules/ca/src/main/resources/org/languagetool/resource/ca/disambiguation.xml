@@ -10948,7 +10948,8 @@ Copyright (C) 2012 Jaume Ortolà i Font
                 <unify>
                     <feature id="nombre"/>
                     <feature id="genere"/>
-                    <token postag="D[^R].*|A.*|V.P.*" postag_regexp="yes"/>
+                    <token postag="D[^R].*" postag_regexp="yes"/>
+                    <token postag="A.*|V.P.*" min="0" postag_regexp="yes"/>
                     <marker>
                         <token postag="N.*" postag_regexp="yes">era</token>
                     </marker>
