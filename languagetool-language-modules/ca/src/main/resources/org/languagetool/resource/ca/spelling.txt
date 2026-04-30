@@ -5,6 +5,7 @@ Aiguadolç
 Aldocumar
 Almisrà
 Ansermet
+Aristip
 Arnaud
 Arquillué
 Artaud
@@ -890,6 +891,10 @@ microtitulacions
 microtitulació
 minivacacions
 minivacances
+morfogenètic
+morfogenètica
+morfogenètics
+morfogenètiques
 multiagent
 neoconfuciana
 neoconfucianes
