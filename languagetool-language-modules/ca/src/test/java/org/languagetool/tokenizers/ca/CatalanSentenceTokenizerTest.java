@@ -142,6 +142,8 @@ public class CatalanSentenceTokenizerTest {
     testSplit("el jesuïta alemany J.E. Nithard");
 
     testSplit("PERNIL DOLÇ\nBACON\nPEPERONI\nPEBROT VERD\nOLIVES");
+
+    testSplit("El framework .NET o ASP.NET o Microsoft.Net");
   }
 
   private void testSplit(final String... sentences) {
