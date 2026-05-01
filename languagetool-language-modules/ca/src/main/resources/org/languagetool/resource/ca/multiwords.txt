@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Universitat Rutgers;NPFSO00
 Helena Garcia Melero;NPFSSP0
 Garcia Melero;NPCNSP0
 J. Craig Venter Institute;NPMSO00
