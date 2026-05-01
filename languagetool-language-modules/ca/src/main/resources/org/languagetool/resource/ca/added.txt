@@ -54,6 +54,7 @@ Magyar	Magyar	NPCNSP0
 Maven	Maven	NPCNO00
 McNeil	McNeil	NPCNSP0
 McNeill	McNeill	NPCNSP0
+Melero	Melero	NPCNSP0
 Menjòmetre	Menjòmetre	NPMSO00
 Miguel	Miguel	NPCN000
 Miguel	Miguel	NPMSSP0
@@ -67,6 +68,7 @@ Ostrom	Ostrom	NPCNSP0
 Palau-sator	Palau-sator	NPCSG00
 Petruixka	Petruixka	NPCNSP0
 Quine	Quine	NPCNSP0
+RBA	RBA	NPCNO00
 Rayuela	Rayuela	NPFSO00
 Rosselló-Pòrcel	Rosselló-Pòrcel	NPCNSP0
 Rostec	Rostec	NPCNO00

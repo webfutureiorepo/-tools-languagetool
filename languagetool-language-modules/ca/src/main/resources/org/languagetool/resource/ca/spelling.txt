@@ -50,6 +50,7 @@ Magyar
 Maven
 McNeil
 McNeill
+Melero
 Menjòmetre
 Miguel
 Minnie
@@ -62,6 +63,7 @@ Ostrom
 Palau-sator
 Petruixka
 Quine
+RBA
 Rayuela
 Rosselló-Pòrcel
 Rostec
