@@ -3746,6 +3746,63 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
+        <rulegroup id='ANIMO_ALENTO_PARA' name="🤵 Não ter mais ânimo/alento para [emocional]" type='style' tone_tags='formal' default='temp_off'>
+            <!-- ChatGPT 5 and new disambiguator for 2026+ -->
+            <!-- I had to create three MAIN rules because of the "me" appearing as "me" and "mim" -->
+
+            <rule> <!-- #1: "tenho" -->
+                <pattern>
+                    <token>não</token>
+                    <marker>
+                        <token>tenho</token>
+                        <token min='0' max='1'>mais</token>
+                        <token regexp='yes'>ânimo|alento</token>
+                    </marker>
+                    <token>para</token>
+                    <token postag='V.+' postag_regexp='yes'/>
+                </pattern>
+                <message>Expressão potencialmente informal/emocional. Em contexto formal, considere uma alternativa mais neutra.</message>
+                <suggestion>reúno, neste momento, as condições</suggestion>
+                <suggestion>me encontro, neste momento, em condições</suggestion>
+                <example correction="reúno, neste momento, as condições|me encontro, neste momento, em condições">Não <marker>tenho mais ânimo</marker> para continuar.</example>
+            </rule>
+
+            <rule> <!-- #2: "temos" -->
+                <pattern>
+                    <token>não</token>
+                    <marker>
+                        <token>temos</token>
+                        <token min='0' max='1'>mais</token>
+                        <token regexp='yes'>ânimo|alento</token>
+                    </marker>
+                    <token>para</token>
+                    <token postag='V.+' postag_regexp='yes'/>
+                </pattern>
+                <message>Expressão potencialmente informal/emocional. Em contexto formal, considere uma alternativa mais neutra.</message>
+                <suggestion>reunimos, neste momento, as condições</suggestion>
+                <suggestion>nos encontramos, neste momento, em condições</suggestion>
+                <example correction="reunimos, neste momento, as condições|nos encontramos, neste momento, em condições">Não <marker>temos mais ânimo</marker> para prosseguir.</example>
+            </rule>
+
+            <rule> <!-- #3: "têm" -->
+                <pattern>
+                    <token>não</token>
+                    <marker>
+                        <token>têm</token>
+                        <token min='0' max='1'>mais</token>
+                        <token regexp='yes'>ânimo|alento</token>
+                    </marker>
+                    <token>para</token>
+                    <token postag='V.+' postag_regexp='yes'/>
+                </pattern>
+                <message>Expressão potencialmente informal/emocional. Em contexto formal, considere uma alternativa mais neutra.</message>
+                <suggestion>reúnem, neste momento, as condições</suggestion>
+                <suggestion>se encontram, neste momento, em condições</suggestion>
+                <example correction="reúnem, neste momento, as condições|se encontram, neste momento, em condições">Não <marker>têm mais ânimo</marker> para prosseguir.</example>
+            </rule>
+        </rulegroup>
+
+
         <rule id='PASSAR_POR_DIFICULDADES' name="🤵 'Passar' [situação negativa] → 'passar por'/enfrentar" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <pattern>
