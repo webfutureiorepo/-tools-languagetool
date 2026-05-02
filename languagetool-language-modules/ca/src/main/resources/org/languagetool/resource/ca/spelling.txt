@@ -13,6 +13,8 @@ Basij
 Behçet
 Binibèquer
 Breton
+Bärenreiter
+Bärenreiter-Verlag
 CDRAM
 CSKA
 CTranslate
@@ -62,6 +64,8 @@ OpenCode
 Ostrom
 Palau-sator
 Petruixka
+Philharmonie
+Queensferry
 Quine
 RBA
 Rayuela
@@ -642,6 +646,8 @@ fatxosfera
 fatxosferes
 fibroglandular
 fibroglandulars
+fibrogènesi
+fibrogènesis
 ficcionament
 ficcionaments
 grafoterapeuta
@@ -870,6 +876,8 @@ ingestionable
 ingestionables
 intercausalitat
 intercausalitats
+invasivitat
+invasivitats
 jainista
 jainistes
 kàrmic
@@ -1149,6 +1157,8 @@ reenquadréssiu
 reenquadrí
 refactoritzacions
 refactorització
+reglamentista
+reglamentistes
 relegitimacions
 relegitimació
 reresagrari

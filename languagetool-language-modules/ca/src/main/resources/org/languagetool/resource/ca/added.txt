@@ -17,6 +17,8 @@ Basij	Basij	NPFSO00
 Behçet	Behçet	NPCNSP0
 Binibèquer	Binibèquer	NPCSG00
 Breton	Breton	NPCNSP0
+Bärenreiter	Bärenreiter	NPCNO00
+Bärenreiter-Verlag	Bärenreiter-Verlag	NPCSO00
 CDRAM	CDRAM	NCFN000
 CSKA	CSKA	NPMSO00
 CTranslate	CTranslate	NPCNO00
@@ -67,6 +69,8 @@ OpenCode	OpenCode	NPMSO00
 Ostrom	Ostrom	NPCNSP0
 Palau-sator	Palau-sator	NPCSG00
 Petruixka	Petruixka	NPCNSP0
+Philharmonie	Philharmonie	NPFSO00
+Queensferry	Queensferry	NPCSG00
 Quine	Quine	NPCNSP0
 RBA	RBA	NPCNO00
 Rayuela	Rayuela	NPFSO00
@@ -818,6 +822,8 @@ fatxosfera	fatxosfera	NCFS000
 fatxosferes	fatxosfera	NCFP000
 fibroglandular	fibroglandular	AQ0CS0
 fibroglandulars	fibroglandular	AQ0CP0
+fibrogènesi	fibrogènesi	NCFS000
+fibrogènesis	fibrogènesi	NCFP000
 ficcionament	ficcionament	NCMS000
 ficcionaments	ficcionament	NCMP000
 grafoterapeuta	grafoterapeuta	NCCS000
@@ -1118,6 +1124,8 @@ ingestionable	ingestionable	AQ0CS0
 ingestionables	ingestionable	AQ0CP0
 intercausalitat	intercausalitat	NCFS000
 intercausalitats	intercausalitat	NCFP000
+invasivitat	invasivitat	NCFS000
+invasivitats	invasivitat	NCFP000
 jainista	jainista	AQ0CS0
 jainista	jainista	NCCS000
 jainistes	jainista	AQ0CP0
@@ -1447,6 +1455,8 @@ reenquadréssiu	reenquadrar	VMSI2P02
 reenquadrí	reenquadrar	VMIS1S00
 refactoritzacions	refactorització	NCFP000
 refactorització	refactorització	NCFS000
+reglamentista	reglamentista	AQ0CS0
+reglamentistes	reglamentista	AQ0CP0
 relegitimacions	relegitimació	NCFP000
 relegitimació	relegitimació	NCFS000
 reresagrari	reresagrari	NCMS000

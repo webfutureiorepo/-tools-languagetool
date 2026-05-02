@@ -1,5 +1,16 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Universitat Brandeis;NPFSO00
+The Ferry;NPMSG00
+Fiódor Fiódorovitx Màrtens;NPMSSP0
+Fiódor Màrtens;NPMSSP0
+opus posthumous;NCMN000
+Opus Posthumous;NCMN000
+op. posth.;NCMN000
+Philharmonie de Paris;NPFSO00
+Philharmonie de París;NPFSO00
+Gobierno de España;NPMSO00
+Govern d'Espanya;NPMSO00
 Universitat Rutgers;NPFSO00
 Helena Garcia Melero;NPFSSP0
 Garcia Melero;NPCNSP0

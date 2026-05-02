@@ -1,3 +1,4 @@
+fluxes=fluxos|fluixes
 inamobilitat=inamovibilitat|immobilitat
 inamobilitats=inamovibilitats|immobilitats
 ficcionalització=ficcionament|ficció
