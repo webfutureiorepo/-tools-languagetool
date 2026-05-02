@@ -1,5 +1,7 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Universitat París-Dauphine;NPFSO00
+París-Dauphine;NPFSO00
 Universitat Brandeis;NPFSO00
 The Ferry;NPMSG00
 Fiódor Fiódorovitx Màrtens;NPMSSP0
