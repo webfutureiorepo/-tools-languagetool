@@ -1,3 +1,7 @@
+recluïda=reclosa
+recluïdes=recloses
+recluït=reclòs
+recluïts=reclosos
 fluxes=fluxos|fluixes
 inamobilitat=inamovibilitat|immobilitat
 inamobilitats=inamovibilitats|immobilitats
