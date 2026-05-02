@@ -50,6 +50,19 @@ public class JLanguageToolTest {
     assertEquals(1, matches.size());
     assertEquals("POTSER_SIGUI", matches.get(0).getRule().getId());
 
+
+    matches = tool.check("No sé què dir. No aconseguia a dormir per la calor.");
+    assertEquals(1, matches.size());
+    assertEquals(14, matches.get(0).getFromPosSentence());
+    assertEquals(16, matches.get(0).getToPosSentence());
+    assertEquals(29, matches.get(0).getFromPos());
+    assertEquals(31, matches.get(0).getToPos());
+
+    matches = tool.check("Se m'han saltat les llàgrimes.");
+    assertEquals(1, matches.size());
+    assertEquals(0, matches.get(0).getFromPosSentence());
+    assertEquals(3, matches.get(0).getToPosSentence());
+
     //ChunkTags
     assertEquals("[<S> Ho[ho/PP3NN000] deu[deure/VMIP3S00,GV] haver[haver/VAN00000,haver/_GV_,haver/_perfet,GV] tornat[tornar/VMP00SM0,GV] a[a/SPS00,GV] fer[fer/VMN00000,fer/complement,GV].[</S>./_PUNCT,<P/>]]",
       tool.analyzeText("Ho deu haver tornat a fer.").toString());

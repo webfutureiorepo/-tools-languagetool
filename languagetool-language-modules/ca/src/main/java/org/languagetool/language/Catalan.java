@@ -552,9 +552,25 @@ public class Catalan extends Language {
 
   private RuleMatch adjustCatalanMatch(RuleMatch ruleMatch, Set<String> enabledRules) {
     String errorStr = ruleMatch.getOriginalErrorStr();
+    List<String> suggestedReplacements = ruleMatch.getSuggestedReplacements();
+    // Avoid two white spaces after removing a word
+    if (suggestedReplacements.size() == 1 && suggestedReplacements.get(0).equals("")) {
+      String sentenceText = ruleMatch.getSentence().getText();
+      int fromSent = ruleMatch.getFromPosSentence();
+      int toSent = ruleMatch.getToPosSentence();
+      if (fromSent >= 0 && toSent + 1 <= sentenceText.length()
+        && (fromSent == 0 || sentenceText.substring(fromSent - 1, fromSent).equals(" "))
+        && sentenceText.substring(toSent, toSent + 1).equals(" ")) {
+        RuleMatch newRuleMatch = new RuleMatch(ruleMatch.getRule(), ruleMatch.getSentence(),
+          ruleMatch.getFromPos(), ruleMatch.getToPos() + 1,
+          ruleMatch.getMessage(), ruleMatch.getShortMessage());
+        newRuleMatch.setSentencePosition(fromSent, toSent + 1);
+        newRuleMatch.setSuggestedReplacement("");
+        return newRuleMatch;
+      }
+    }
     boolean hasTypographicApostrophe = Arrays.stream(ruleMatch.getSentence().getTokensWithoutWhitespace())
       .anyMatch(x -> x.hasTypographicApostrophe());
-    List<String> suggestedReplacements = ruleMatch.getSuggestedReplacements();
     List<SuggestedReplacement> newReplacements = new ArrayList<>();
     for (String suggestedReplacement : suggestedReplacements) {
       String newReplStr = suggestedReplacement;
