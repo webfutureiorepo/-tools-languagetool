@@ -3784,11 +3784,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
                 <example correction="reunimos, neste momento, as condições|nos encontramos, neste momento, em condições">Não <marker>temos mais ânimo</marker> para prosseguir.</example>
             </rule>
 
-            <rule> <!-- #3: "têm" -->
+            <rule> <!-- #3: "tem" -->
                 <pattern>
                     <token>não</token>
                     <marker>
-                        <token>têm</token>
+                        <token>tem</token>
                         <token min='0' max='1'>mais</token>
                         <token regexp='yes'>ânimo|alento</token>
                     </marker>
@@ -3796,9 +3796,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
                     <token postag='V.+' postag_regexp='yes'/>
                 </pattern>
                 <message>Expressão potencialmente informal/emocional. Em contexto formal, considere uma alternativa mais neutra.</message>
-                <suggestion>reúnem, neste momento, as condições</suggestion>
-                <suggestion>se encontram, neste momento, em condições</suggestion>
-                <example correction="reúnem, neste momento, as condições|se encontram, neste momento, em condições">Não <marker>têm mais ânimo</marker> para prosseguir.</example>
+                <suggestion>reúne, neste momento, as condições</suggestion>
+                <suggestion>se encontra, neste momento, em condições</suggestion>
+                <example correction="reúne, neste momento, as condições|se encontra, neste momento, em condições">Não <marker>tem mais ânimo</marker> para prosseguir.</example>
             </rule>
         </rulegroup>
 
