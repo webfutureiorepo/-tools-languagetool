@@ -71,6 +71,7 @@ Niebuhr	Niebuhr	NPCNSP0
 ONNX	ONNX	NPCNO00
 OpenCode	OpenCode	NPMSO00
 Ostrom	Ostrom	NPCNSP0
+PAI	PAI	NCMN000
 Palau-sator	Palau-sator	NPCSG00
 Petruixka	Petruixka	NPCNSP0
 Philharmonie	Philharmonie	NPFSO00
