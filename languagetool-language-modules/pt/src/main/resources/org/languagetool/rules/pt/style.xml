@@ -3746,7 +3746,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
         </rulegroup>
 
 
-        <rulegroup id='ANIMO_ALENTO_PARA' name="🤵 Não ter mais ânimo/alento para [emocional]" type='style' tone_tags='formal' default='temp_off'>
+        <rulegroup id='ANIMO_ALENTO_PARA' name="🤵 Não ter mais ânimo/alento para [emocional]" type='style' tone_tags='formal'>
             <!-- ChatGPT 5 and new disambiguator for 2026+ -->
             <!-- I had to create three MAIN rules because of the "me" appearing as "me" and "mim" -->
 
