@@ -22,6 +22,7 @@ Dimona	Dimona	NPCN000
 Española	Española	NPCN000
 Espresso	Espresso	NPCN000
 Esprit	Esprit	NPCN000
+Feruk	Feruk	NPCN000
 Gnossiennes	Gnossiennes	NPCN000
 Haria	Haria	NPCN000
 Haría	Haría	NPCN000

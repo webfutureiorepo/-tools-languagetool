@@ -32,6 +32,7 @@ DevOps	DevOps	NCMN000
 Dimona	Dimona	NPCSG00
 FUNDAE	FUNDAE	NPFSO00
 Fafni	Fafni	NPMSSP0
+Faruk	Faruk	NPCN000
 Fortasec	Fortasec	NPMSO00
 Fàfnir	Fàfnir	NPMSSP0
 Gehry	Gehry	NPCNSP0
@@ -80,6 +81,7 @@ Sinera	Sinera	NPFSG00
 Sintrom	Sintrom	NPMSO00
 Sundiata	Sundiata	NPMSSP0
 Susanoo	Susanoo	NPMSSP0
+Umm-Kulthum	Umm-Kulthum	NPFSSP0
 Urriés	Urriés	NPCSG00
 VRAM	VRAM	NCFN000
 Ventolin	Ventolin	NPMSO00

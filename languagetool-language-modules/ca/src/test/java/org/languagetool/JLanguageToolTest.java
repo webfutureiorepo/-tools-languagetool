@@ -50,19 +50,6 @@ public class JLanguageToolTest {
     assertEquals(1, matches.size());
     assertEquals("POTSER_SIGUI", matches.get(0).getRule().getId());
 
-
-    matches = tool.check("No sé què dir. No aconseguia a dormir per la calor.");
-    assertEquals(1, matches.size());
-    assertEquals(14, matches.get(0).getFromPosSentence());
-    assertEquals(16, matches.get(0).getToPosSentence());
-    assertEquals(29, matches.get(0).getFromPos());
-    assertEquals(31, matches.get(0).getToPos());
-
-    matches = tool.check("Se m'han saltat les llàgrimes.");
-    assertEquals(1, matches.size());
-    assertEquals(0, matches.get(0).getFromPosSentence());
-    assertEquals(3, matches.get(0).getToPosSentence());
-
     //ChunkTags
     assertEquals("[<S> Ho[ho/PP3NN000] deu[deure/VMIP3S00,GV] haver[haver/VAN00000,haver/_GV_,haver/_perfet,GV] tornat[tornar/VMP00SM0,GV] a[a/SPS00,GV] fer[fer/VMN00000,fer/complement,GV].[</S>./_PUNCT,<P/>]]",
       tool.analyzeText("Ho deu haver tornat a fer.").toString());
@@ -70,6 +57,12 @@ public class JLanguageToolTest {
     assertEquals("[<S> Ho[ho/PP3NN000] he[haver/VAIP1S00,haver/_obligacio,GV] de[de/SPS00,GV] continuar[continuar/VMN00000,continuar/_GV_,GV] fent[fer/VMG00000,fent/_GV_,GV] així[així/RG].[</S>./_PUNCT,<P/>]]",
       tool.analyzeText("Ho he de continuar fent així.").toString());
 
+  }
+
+  @Test
+  public void testGlobalSpelling() throws IOException {
+    List<RuleMatch>  matches = tool.check("Johann Sebastian Bach, cantata BWV 126");
+    assertEquals(0, matches.size());
   }
 
   @Test
@@ -173,7 +166,22 @@ public class JLanguageToolTest {
     matches = tool.check("A nivell d'ensenyament superior.");
     assertEquals(matches.get(0).getSuggestedReplacements().toString(),
       "[En l'àmbit d', A escala d', A , En , Pel que fa a , Quant a ]");
+  }
 
+  @Test
+  public void testAdjustCatalanMatch() throws IOException {
+    List<RuleMatch> matches = tool.check("No sé què dir. No aconseguia a dormir per la calor.");
+    //avoid two white spaces after removing word
+    assertEquals(1, matches.size());
+    assertEquals(14, matches.get(0).getFromPosSentence());
+    assertEquals(16, matches.get(0).getToPosSentence());
+    assertEquals(29, matches.get(0).getFromPos());
+    assertEquals(31, matches.get(0).getToPos());
+
+    matches = tool.check("Se m'han saltat les llàgrimes.");
+    assertEquals(1, matches.size());
+    assertEquals(0, matches.get(0).getFromPosSentence());
+    assertEquals(3, matches.get(0).getToPosSentence());
   }
 
   @Test

@@ -28,6 +28,7 @@ DevOps
 Dimona
 FUNDAE
 Fafni
+Faruk
 Fortasec
 Fàfnir
 Gehry
@@ -75,6 +76,7 @@ Sinera
 Sintrom
 Sundiata
 Susanoo
+Umm-Kulthum
 Urriés
 VRAM
 Ventolin
