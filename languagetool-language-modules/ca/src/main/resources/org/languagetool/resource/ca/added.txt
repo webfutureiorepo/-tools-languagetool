@@ -43,6 +43,7 @@ Griezmann	Griezmann	NPCNSP0
 Hamming	Hamming	NPCNSP0
 Hari	Hari	NPMSG00
 Henkell	Henkell	NPCNSP0
+Henze	Henze	NPCNSP0
 Huysmans	Huysmans	NPCNSP0
 ICCROM	ICCROM	NPMSO00
 IECMA	IECMA	NPMSO00
@@ -930,6 +931,12 @@ hinduïtzésseu	hinduïtzar	VMSI2P05
 hinduïtzéssim	hinduïtzar	VMSI1P02
 hinduïtzéssiu	hinduïtzar	VMSI2P02
 hinduïtzí	hinduïtzar	VMIS1S00
+hipercentralista	hipercentralista	AQ0CS0
+hipercentralistes	hipercentralista	AQ0CP0
+hipercentralitzada	hipercentralitzat	AQ0FS0
+hipercentralitzades	hipercentralitzat	AQ0FP0
+hipercentralitzat	hipercentralitzat	AQ0MS0
+hipercentralitzats	hipercentralitzat	AQ0MP0
 hiperreligiosa	hiperreligiós	AQ0FS0
 hiperreligioses	hiperreligiós	AQ0FP0
 hiperreligiositat	hiperreligiositat	NCFS000
@@ -1371,6 +1378,8 @@ reapliquéssiu	reaplicar	VMSI2P02
 reapliquí	reaplicar	VMIS1S00
 redecoracions	redecoració	NCFP000
 redecoració	redecoració	NCFS000
+reel	reel	NCMS000
+reels	reel	NCMP000
 reenquadr	reenquadrar	VMIP1S0B
 reenquadra	reenquadrar	VMIP3S00
 reenquadra	reenquadrar	VMM02S00

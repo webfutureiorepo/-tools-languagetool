@@ -1,5 +1,8 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+Jan Raich;NPMSSP0
+Le Sacre du printemps;NPFSO00
+Werner Henze;NPMSSP0
 Universitat París-Dauphine;NPFSO00
 París-Dauphine;NPFSO00
 Universitat Brandeis;NPFSO00

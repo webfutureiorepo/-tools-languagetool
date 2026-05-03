@@ -39,6 +39,7 @@ Griezmann
 Hamming
 Hari
 Henkell
+Henze
 Huysmans
 ICCROM
 IECMA
@@ -730,6 +731,12 @@ hinduïtzésseu
 hinduïtzéssim
 hinduïtzéssiu
 hinduïtzí
+hipercentralista
+hipercentralistes
+hipercentralitzada
+hipercentralitzades
+hipercentralitzat
+hipercentralitzats
 hiperreligiosa
 hiperreligioses
 hiperreligiositat
@@ -1097,6 +1104,8 @@ reapliquéssiu
 reapliquí
 redecoracions
 redecoració
+reel
+reels
 reenquadr
 reenquadra
 reenquadrada
