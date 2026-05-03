@@ -35,6 +35,7 @@ Fafni	Fafni	NPMSSP0
 Faruk	Faruk	NPCN000
 Fortasec	Fortasec	NPMSO00
 Fàfnir	Fàfnir	NPMSSP0
+Gatsby	Gatsby	NPMSSP0
 Gehry	Gehry	NPCNSP0
 Gnossienne	Gnossiennes	NPFSO00
 Gnossiennes	Gnossiennes	NPFPO00
@@ -52,6 +53,7 @@ Ifigenies	Ifigenia	NPFPSP0
 Kalman	Kalman	NPCNSP0
 Kharg	Kharg	NPCSG00
 LaGuardia	LaGuardia	NPCNG00
+Larkin	Larkin	NPCNSP0
 Leavitt	Leavitt	NPCNSP0
 Lerna	Lerna	NPFSG00
 Magyar	Magyar	NPCNSP0
@@ -1200,6 +1202,8 @@ oleoquímic	oleoquímic	AQ0MS0
 oleoquímica	oleoquímic	AQ0FS0
 oleoquímics	oleoquímic	AQ0MP0
 oleoquímiques	oleoquímic	AQ0FP0
+paperassos	paperàs	NCMP000
+paperàs	paperàs	NCMS000
 perdedor	perdedor	NCMS000
 perdedora	perdedor	NCFS000
 perdedores	perdedor	NCFP000

@@ -31,6 +31,7 @@ Fafni
 Faruk
 Fortasec
 Fàfnir
+Gatsby
 Gehry
 Gnossienne
 Gnossiennes
@@ -48,6 +49,7 @@ Ifigenies
 Kalman
 Kharg
 LaGuardia
+Larkin
 Leavitt
 Lerna
 Magyar
@@ -950,6 +952,8 @@ oleoquímic
 oleoquímica
 oleoquímics
 oleoquímiques
+paperassos
+paperàs
 perdedor
 perdedora
 perdedores

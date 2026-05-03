@@ -1,3 +1,5 @@
+ésclar=és clar
+volguent=volent
 recluïda=reclosa
 recluïdes=recloses
 recluït=reclòs

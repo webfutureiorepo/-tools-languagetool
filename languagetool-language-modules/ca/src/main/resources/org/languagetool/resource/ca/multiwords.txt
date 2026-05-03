@@ -1,5 +1,6 @@
 #Catalan multiwords file used for chunking
 #separatorRegExp=[\t;]
+El gran Gatsby;NPMSO00
 Jan Raich;NPMSSP0
 Le Sacre du printemps;NPFSO00
 Werner Henze;NPMSSP0
